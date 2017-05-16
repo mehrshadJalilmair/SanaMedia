@@ -1,0 +1,12 @@
+PODS:
+  - SwipeableTabBarController (1.0.4)
+
+DEPENDENCIES:
+  - SwipeableTabBarController
+
+SPEC CHECKSUMS:
+  SwipeableTabBarController: a52688ad47614ba98611df30a788202db90620fe
+
+PODFILE CHECKSUM: 37f3e310caaa133191be16ae106a943a119ec6d6
+
+COCOAPODS: 1.2.1.beta.1
