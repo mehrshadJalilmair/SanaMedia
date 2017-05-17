@@ -7,6 +7,9 @@ target 'SanaMedia' do
 
   # Pods for SanaMedia
   pod "SwipeableTabBarController"
+  pod "ExpandableTableViewController"
+  pod 'Alamofire', '~> 4.4'
+  pod "EasyToast"
 
   target 'SanaMediaTests' do
     inherit! :search_paths

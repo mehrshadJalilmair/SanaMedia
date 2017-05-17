@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2CF435C1C8F78FD931C3421458ADA7F3'
+               BlueprintIdentifier = 'C8456FF24E9C7E2EBF0ED83E89F64470'
                BlueprintName = 'SwipeableTabBarController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SwipeableTabBarController.framework'>

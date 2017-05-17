@@ -9,6 +9,10 @@
 import UIKit
 import SwipeableTabBarController
 
+
+//Global Vars
+let singleton = Singleton.getInstance()
+
 class TabBar: SwipeableTabBarController {
 
     override func viewDidLoad() {

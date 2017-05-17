@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>EasyToast.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ExpandableTableViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SanaMedia.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +42,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2CF435C1C8F78FD931C3421458ADA7F3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>35537F55F06024B7B5021A63CCE81AF7</key>
+		<key>67E2B747F3A3F423D13BCF06C6664535</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>96AFA871D25A87F6FCCFED071D32EBC8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BBFB14FEC2F020426E66CAD3C6979DA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7A27CEE1A5A58B01166DDC8469E0871</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C8456FF24E9C7E2EBF0ED83E89F64470</key>
 		<dict>
 			<key>primary</key>
 			<true/>

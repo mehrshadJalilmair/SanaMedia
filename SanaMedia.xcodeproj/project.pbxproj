@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1E82C21ECC395B00EA0FC6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C11ECC395B00EA0FC6 /* Movie.swift */; };
+		2F1E82C41ECC3DF600EA0FC6 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C31ECC3DF600EA0FC6 /* Music.swift */; };
+		2F1E82C81ECCD10C00EA0FC6 /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */; };
+		2F1E82CA1ECCD11A00EA0FC6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C91ECCD11A00EA0FC6 /* Image.swift */; };
+		2F1E82CC1ECCD92500EA0FC6 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */; };
 		2FF1B7E51ECAE0B300CB176D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1B7E41ECAE0B300CB176D /* AppDelegate.swift */; };
 		2FF1B7E71ECAE0B300CB176D /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1B7E61ECAE0B300CB176D /* TabBar.swift */; };
 		2FF1B7EA1ECAE0B300CB176D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1B7E81ECAE0B300CB176D /* Main.storyboard */; };
@@ -42,6 +47,11 @@
 
 /* Begin PBXFileReference section */
 		17D6BC9B183B53348A193ECA /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaMediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1E82C11ECC395B00EA0FC6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2F1E82C31ECC3DF600EA0FC6 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
+		2F1E82C91ECCD11A00EA0FC6 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		2FF1B7E11ECAE0B300CB176D /* SanaMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanaMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF1B7E41ECAE0B300CB176D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FF1B7E61ECAE0B300CB176D /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -97,6 +107,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1E82B91ECC37F600EA0FC6 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				2F1E82BF1ECC38B500EA0FC6 /* Category */,
+				2F1E82BE1ECC38B000EA0FC6 /* Stream */,
+				2F1E82BD1ECC38AB00EA0FC6 /* News */,
+				2F1E82BC1ECC38A500EA0FC6 /* Main */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		2F1E82BA1ECC380B00EA0FC6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2F1E82BB1ECC383F00EA0FC6 /* StoryBoards */,
+				2FF1B7E41ECAE0B300CB176D /* AppDelegate.swift */,
+				2FF1B7E61ECAE0B300CB176D /* TabBar.swift */,
+				2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		2F1E82BB1ECC383F00EA0FC6 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1B7E81ECAE0B300CB176D /* Main.storyboard */,
+				2FF1B7ED1ECAE0B300CB176D /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		2F1E82BC1ECC38A500EA0FC6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1B8121ECAEDC700CB176D /* MainHomeViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		2F1E82BD1ECC38AB00EA0FC6 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1B8141ECAEEE100CB176D /* NewsViewController.swift */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		2F1E82BE1ECC38B000EA0FC6 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1B8161ECAEEF100CB176D /* StreamViewController.swift */,
+			);
+			name = Stream;
+			sourceTree = "<group>";
+		};
+		2F1E82BF1ECC38B500EA0FC6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1B8181ECAEF0000CB176D /* CategoryViewController.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		2F1E82C01ECC38CF00EA0FC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F1E82C11ECC395B00EA0FC6 /* Movie.swift */,
+				2F1E82C31ECC3DF600EA0FC6 /* Music.swift */,
+				2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */,
+				2F1E82C91ECCD11A00EA0FC6 /* Image.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2F1E82CE1ECCE05700EA0FC6 /* Assest */ = {
+			isa = PBXGroup;
+			children = (
+				2FF1B7EB1ECAE0B300CB176D /* Assets.xcassets */,
+				2FF1B7F01ECAE0B300CB176D /* Info.plist */,
+			);
+			name = Assest;
+			sourceTree = "<group>";
+		};
 		2FF1B7D81ECAE0B300CB176D = {
 			isa = PBXGroup;
 			children = (
@@ -122,16 +215,10 @@
 		2FF1B7E31ECAE0B300CB176D /* SanaMedia */ = {
 			isa = PBXGroup;
 			children = (
-				2FF1B7E41ECAE0B300CB176D /* AppDelegate.swift */,
-				2FF1B7E61ECAE0B300CB176D /* TabBar.swift */,
-				2FF1B8121ECAEDC700CB176D /* MainHomeViewController.swift */,
-				2FF1B8141ECAEEE100CB176D /* NewsViewController.swift */,
-				2FF1B8161ECAEEF100CB176D /* StreamViewController.swift */,
-				2FF1B8181ECAEF0000CB176D /* CategoryViewController.swift */,
-				2FF1B7E81ECAE0B300CB176D /* Main.storyboard */,
-				2FF1B7EB1ECAE0B300CB176D /* Assets.xcassets */,
-				2FF1B7ED1ECAE0B300CB176D /* LaunchScreen.storyboard */,
-				2FF1B7F01ECAE0B300CB176D /* Info.plist */,
+				2F1E82C01ECC38CF00EA0FC6 /* Models */,
+				2F1E82B91ECC37F600EA0FC6 /* Tabs */,
+				2F1E82BA1ECC380B00EA0FC6 /* Main */,
+				2F1E82CE1ECCE05700EA0FC6 /* Assest */,
 			);
 			path = SanaMedia;
 			sourceTree = "<group>";
@@ -461,12 +548,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1E82C21ECC395B00EA0FC6 /* Movie.swift in Sources */,
 				2FF1B8171ECAEEF100CB176D /* StreamViewController.swift in Sources */,
 				2FF1B7E71ECAE0B300CB176D /* TabBar.swift in Sources */,
 				2FF1B8131ECAEDC700CB176D /* MainHomeViewController.swift in Sources */,
 				2FF1B7E51ECAE0B300CB176D /* AppDelegate.swift in Sources */,
 				2FF1B8191ECAEF0000CB176D /* CategoryViewController.swift in Sources */,
+				2F1E82CC1ECCD92500EA0FC6 /* Singleton.swift in Sources */,
 				2FF1B8151ECAEEE100CB176D /* NewsViewController.swift in Sources */,
+				2F1E82C41ECC3DF600EA0FC6 /* Music.swift in Sources */,
+				2F1E82C81ECCD10C00EA0FC6 /* EBook.swift in Sources */,
+				2F1E82CA1ECCD11A00EA0FC6 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

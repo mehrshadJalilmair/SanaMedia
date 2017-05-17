@@ -1,0 +1,82 @@
+//
+//  Singleton.swift
+//  SanaMedia
+//
+//  Created by Mehrshad JM on 5/17/17.
+//  Copyright © 2017 Crux Tech Ltd. All rights reserved.
+//
+
+import UIKit
+import Alamofire
+
+final class Singleton {
+    
+    //: uniqueSingleton
+    private static var uniqueSingleton:Singleton!
+    
+    //: related to requests from any page
+    enum RequestType {
+        case get
+        case post
+    }
+    
+    //: api addressess
+    private let url_static_part = "http://88.99.172.130:8000/"
+    let URLS:[String:String] =
+    [
+        "newest_movies":"newest_movies/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_musics":"newest_musics/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_images":"newest_images/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_ebooks":"newest_ebooks/?pagesize=%@&pageindex=%@&querytype=%@",
+    ]
+    
+    //: Singleton implementation
+    private init(){}
+    static func getInstance()->Singleton
+    {
+        if uniqueSingleton == nil
+        {
+            uniqueSingleton = Singleton()
+            return uniqueSingleton
+            
+        }
+        return uniqueSingleton
+    }
+    
+    //: handles requests to server
+    func requestToServer(requestType:RequestType , requesterData:[String:String] , body:Parameters)
+    {
+        let url_dynamic_part = requesterData["url_dynamic_part"]!
+        let url = url_static_part + url_dynamic_part
+        let class_:String = requesterData["class"]!
+        let function:String = requesterData["func"]!
+        
+        if requestType == .get
+        {
+            Alamofire.request(url).validate().responseJSON { response in
+                switch response.result {
+                case .success:
+                    
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function])
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+        else if requestType == RequestType.post
+        {
+            Alamofire.request(url, method: .post, parameters: body, encoding: URLEncoding.httpBody).validate().responseJSON { (response) in
+                
+                switch response.result {
+                case .success:
+                    
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function])
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }
+}
