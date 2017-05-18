@@ -190,6 +190,13 @@
 			name = Assest;
 			sourceTree = "<group>";
 		};
+		2F7183B91ECDFF4700C369BB /* IDesignable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = IDesignable;
+			sourceTree = "<group>";
+		};
 		2FF1B7D81ECAE0B300CB176D = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +222,7 @@
 		2FF1B7E31ECAE0B300CB176D /* SanaMedia */ = {
 			isa = PBXGroup;
 			children = (
+				2F7183B91ECDFF4700C369BB /* IDesignable */,
 				2F1E82C01ECC38CF00EA0FC6 /* Models */,
 				2F1E82B91ECC37F600EA0FC6 /* Tabs */,
 				2F1E82BA1ECC380B00EA0FC6 /* Main */,

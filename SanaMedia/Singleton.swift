@@ -57,10 +57,12 @@ final class Singleton {
                 switch response.result {
                 case .success:
                     
-                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function])
+                    let error:String = "nil"
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
                     
                 case .failure(let error):
-                    print(error)
+                    
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
                 }
             }
         }
@@ -71,10 +73,11 @@ final class Singleton {
                 switch response.result {
                 case .success:
                     
-                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function])
+                    let error:String = "nil"
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
                     
                 case .failure(let error):
-                    print(error)
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
                 }
             }
         }

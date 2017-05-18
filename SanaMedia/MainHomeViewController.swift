@@ -12,9 +12,13 @@ class MainHomeViewController: UIViewController {
 
     //: Main tab vars
     var newestMovies:[Int:Movie] = [Int:Movie]()
+    var newestMoviesIDs:[Int] = [Int]()
     var newestMusics:[Int:Music] = [Int:Music]()
+    var newestMusicsIDs:[Int] = [Int]()
     var newestImages:[Int:Image] = [Int:Image]()
+    var newestImagesIDs:[Int] = [Int]()
     var newestEBooks:[Int:EBook] = [Int:EBook]()
+    var newestEBooksIDs:[Int] = [Int]()
     
     //: requestType : get|post
     var requestType:Singleton.RequestType!
@@ -32,7 +36,7 @@ class MainHomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
         //: getting init data
         self.getNewest(urlKey: "newest_movies" , function: "getNewestMovies" , pageSize: moviesPageSize , pageIndex:  moviesPageIndex)
         self.getNewest(urlKey: "newest_musics" , function: "getNewestMusics" , pageSize: musicsPageSize , pageIndex:  musicsPageIndex)
@@ -53,9 +57,6 @@ class MainHomeViewController: UIViewController {
         //: removing observer
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "MainHomeViewController"), object: nil)
     }
-}
-
-extension MainHomeViewController{
     
     //: handles requests for getting newest movies to server
     func getNewest(urlKey:String , function:String , pageSize:Int , pageIndex:Int)
@@ -68,9 +69,158 @@ extension MainHomeViewController{
     //: handles data when recieved from server
     func notificationReceived(_ notification: Notification)
     {
-        guard let data = notification.userInfo?["data"] else { return }
-        guard let function = notification.userInfo?["func"] as? String else { return }
-        print ("data: \(data)")
-        print ("function: \(function)")
+        
+        let error = notification.userInfo?["error"] as! String
+        let data = notification.userInfo?["data"] as! [String:AnyObject]
+        let function = notification.userInfo?["func"] as!String
+        
+        switch function {
+            
+        case "getNewestMovies":
+            if error == "nil" {
+                
+                DispatchQueue.global(qos: .userInteractive).async { //background thread
+                    
+                    self.getNewestMovies(data: data)
+                    DispatchQueue.main.async { //ui thread
+                        
+                    }
+                }
+            }
+            else
+            {
+                //show error
+            }
+            break
+            
+            
+        case "getNewestMusics":
+            if error == "nil" {
+                
+                DispatchQueue.global(qos: .userInteractive).async { //background thread
+                    
+                    self.getNewestMusics(data: data)
+                    DispatchQueue.main.async { //ui thread
+                        
+                    }
+                }
+            }
+            else
+            {
+                //show error
+            }
+            break
+            
+            
+        case "getNewestEBooks":
+            
+            if error == "nil" {
+                
+                DispatchQueue.global(qos: .userInteractive).async { //background thread
+                    
+                    self.getNewestEBooks(data: data)
+                    DispatchQueue.main.async { //ui thread
+                        
+                    }
+                }
+            }
+            else
+            {
+                //show error
+            }
+            break
+            
+            
+        case "getNewestImages":
+            
+            if error == "nil" {
+                
+                DispatchQueue.global(qos: .userInteractive).async { //background thread
+                    
+                    self.getNewestImages(data: data)
+                    DispatchQueue.main.async { //ui thread
+                        
+                    }
+                }
+            }
+            else
+            {
+                //show error
+            }
+            break
+            
+        default:
+            break
+        }
     }
+    
+    func getNewestMovies(data:[String:AnyObject])
+    {
+        let itemsCount:Int = data["itemsCount"] as! Int
+        let movies:[AnyObject] = data["movie"] as! [AnyObject]
+        
+        self.moviesPageSize = itemsCount/10 + 1
+        self.moviesPageIndex = 1
+        
+        for movie in movies {
+            
+            let newMovie = Movie(movie: movie)
+            self.newestMovies[newMovie.Id] = newMovie
+            self.newestMoviesIDs.append(newMovie.Id)
+        }
+    }
+    
+    func getNewestMusics(data:[String:AnyObject])
+    {
+        let itemsCount:Int = data["itemsCount"] as! Int
+        let musics:[AnyObject] = data["musics"] as! [AnyObject]
+        
+        self.musicsPageSize = itemsCount/10 + 1
+        self.musicsPageIndex = 1
+        
+        for music in musics {
+            
+            let newMusic = Music(music: music)
+            self.newestMusics[newMusic.Id] = newMusic
+            self.newestMusicsIDs.append(newMusic.Id)
+        }
+    }
+    
+    func getNewestEBooks(data:[String:AnyObject])
+    {
+        let itemsCount:Int = data["itemsCount"] as! Int
+        let ebooks:[AnyObject] = data["ebooks"] as! [AnyObject]
+        
+        self.musicsPageSize = itemsCount/10 + 1
+        self.musicsPageIndex = 1
+        
+        for ebook in ebooks {
+            
+            let newEbook = EBook(ebook: ebook)
+            self.newestEBooks[newEbook.Id] = newEbook
+            self.newestEBooksIDs.append(newEbook.Id)
+        }
+    }
+    
+    func getNewestImages(data:[String:AnyObject])
+    {
+        let itemsCount:Int = data["itemsCount"] as! Int
+        let Images:[AnyObject] = data["Images"] as! [AnyObject]
+        
+        self.imagesPageSize = itemsCount/10 + 1
+        self.imagesPageIndex = 1
+        
+        for image in Images {
+            
+            let newImage = Image(image: image)
+            self.newestImages[newImage.Id] = newImage
+            self.newestImagesIDs.append(newImage.Id)
+        }
+        
+    }
+}
+
+extension MainHomeViewController{
+    
+    
 }
