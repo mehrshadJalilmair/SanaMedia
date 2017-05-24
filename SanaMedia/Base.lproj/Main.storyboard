@@ -163,6 +163,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hen-c6-wIN" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="8" y="45" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.63137254899999995" green="0.45483711939449517" blue="0.6280617481846954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="پرمخاطب ترین ها">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpc-Kd-4mp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                 <subviews>
@@ -184,6 +200,19 @@
                                     <constraint firstAttribute="trailing" secondItem="C3A-tI-f8j" secondAttribute="trailing" constant="8" id="haR-eV-KeP"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7f-Sc-gAw" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="110" y="45" width="80" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.54757654646192888" green="0.42840963874574667" blue="0.53220990895935527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="تازه ترین ها">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -194,6 +223,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="صفحه اصلی" image="fluid_graph" id="xFK-G2-dw3"/>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="mostLikes" destination="hen-c6-wIN" id="hc5-bT-Yrr"/>
+                        <outlet property="navBar" destination="gpc-Kd-4mp" id="GAJ-5v-BfC"/>
+                        <outlet property="recentDate" destination="v7f-Sc-gAw" id="VBW-c3-VoW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2p-d1-aWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

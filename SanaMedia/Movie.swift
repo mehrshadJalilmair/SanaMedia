@@ -48,7 +48,7 @@ class Movie: NSObject {
             {
                 if Description is NSNull
                 {
-                    return ""
+                    return "-"
                 }
                 return Description as! String
             }
@@ -60,7 +60,7 @@ class Movie: NSObject {
             {
                 if Director is NSNull
                 {
-                    return ""
+                    return "-"
                 }
                 return Director as! String
             }
@@ -72,7 +72,7 @@ class Movie: NSObject {
             {
                 if Duration is NSNull
                 {
-                    return ""
+                    return "0:0:0"
                 }
                 return Duration as! String
             }
@@ -84,7 +84,7 @@ class Movie: NSObject {
             {
                 if Genre is NSNull
                 {
-                    return ""
+                    return "-"
                 }
                 return Genre as! String
             }
@@ -108,7 +108,7 @@ class Movie: NSObject {
             {
                 if Likes is NSNull
                 {
-                    return ""
+                    return "0"
                 }
                 return Likes as! String
             }
@@ -144,7 +144,7 @@ class Movie: NSObject {
             {
                 if Title is NSNull
                 {
-                    return ""
+                    return "-"
                 }
                 return Title as! String
             }
@@ -156,7 +156,7 @@ class Movie: NSObject {
             {
                 if production_date is NSNull
                 {
-                    return ""
+                    return "-"
                 }
                 return production_date as! String
             }
@@ -180,7 +180,7 @@ class Movie: NSObject {
             {
                 if Persian_Title is NSNull
                 {
-                    return ""
+                    return "-"
                 }
                 return Persian_Title as! String
             }

@@ -20,12 +20,12 @@ open class SwipeableTabBarController: UITabBarController {
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setup()
+        //setup()
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        setup()
+        //setup()
     }
 
     private func setup() {

@@ -8,8 +8,37 @@
 
 import UIKit
 
-class MainHomeViewController: UIViewController {
+class MainHomeViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
+    @IBOutlet weak var navBar: UIView!
+    @IBOutlet weak var mostLikes: DesignableButton!
+    @IBOutlet weak var recentDate: DesignableButton!
+    
+    //table view
+    let CellId0 = "VideosCellId"
+    let CellId1 = "ImagesCellId"
+    let CellId2 = "MusicsCellId"
+    let CellId3 = "EbooksCellId"
+    
+    lazy var tableView : UITableView! =
+    {
+        let tableView : UITableView = UITableView(frame: self.view.frame)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.register(VideosCell.self, forCellReuseIdentifier: self.CellId0)
+        tableView.register(MusicsCell.self, forCellReuseIdentifier: self.CellId2)
+        tableView.register(ImagesCell.self, forCellReuseIdentifier: self.CellId1)
+        tableView.register(EbooksCell.self, forCellReuseIdentifier: self.CellId3)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
+    let sectionHeaderSize = CGFloat(45.0)
+    let tableViewSectionsTitle:[String] = ["فیلم ها" , "تصاویر" , "موسیقی" , "کتاب"]
+    
+    
     //: Main tab vars
     var newestMovies:[Int:Movie] = [Int:Movie]()
     var newestMoviesIDs:[Int] = [Int]()
@@ -36,6 +65,9 @@ class MainHomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.bringSubview(toFront: navBar)
+        configTableView()
         
         //: getting init data
         self.getNewest(urlKey: "newest_movies" , function: "getNewestMovies" , pageSize: moviesPageSize , pageIndex:  moviesPageIndex)
@@ -69,7 +101,6 @@ class MainHomeViewController: UIViewController {
     //: handles data when recieved from server
     func notificationReceived(_ notification: Notification)
     {
-        
         let error = notification.userInfo?["error"] as! String
         let data = notification.userInfo?["data"] as! [String:AnyObject]
         let function = notification.userInfo?["func"] as!String
@@ -84,6 +115,7 @@ class MainHomeViewController: UIViewController {
                     self.getNewestMovies(data: data)
                     DispatchQueue.main.async { //ui thread
                         
+                        self.tableView.reloadData()
                     }
                 }
             }
@@ -102,6 +134,7 @@ class MainHomeViewController: UIViewController {
                     self.getNewestMusics(data: data)
                     DispatchQueue.main.async { //ui thread
                         
+                        self.tableView.reloadData()
                     }
                 }
             }
@@ -121,6 +154,7 @@ class MainHomeViewController: UIViewController {
                     self.getNewestEBooks(data: data)
                     DispatchQueue.main.async { //ui thread
                         
+                        self.tableView.reloadData()
                     }
                 }
             }
@@ -140,6 +174,7 @@ class MainHomeViewController: UIViewController {
                     self.getNewestImages(data: data)
                     DispatchQueue.main.async { //ui thread
                         
+                        self.tableView.reloadData()
                     }
                 }
             }
@@ -223,4 +258,139 @@ class MainHomeViewController: UIViewController {
 extension MainHomeViewController{
     
     
+    func configTableView()
+    {
+        view.addSubview(tableView)
+        
+        //x
+        let horizontalConstraint = NSLayoutConstraint(item: tableView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
+        //y
+        let verticalConstraint = NSLayoutConstraint(item: tableView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: mostLikes, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
+        //w
+        let widthConstraint = NSLayoutConstraint(item: tableView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: view, attribute: NSLayoutAttribute.width, multiplier: 1, constant: 0)
+        //h
+        let heightConstraint = NSLayoutConstraint(item: tableView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: SCREEN_SIZE.height - (self.tabBarController?.tabBar.frame.size.height)! - navBar.frame.size.height - mostLikes.frame.size.height)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 4
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return 45
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let headerView:UIView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: tableView.frame.size.width, height: sectionHeaderSize))
+        let label = UILabel()
+        let line = UIView()
+        label.backgroundColor = UIColor.white
+        line.backgroundColor = UIColor.orange
+        line.translatesAutoresizingMaskIntoConstraints = false
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        headerView.addSubview(line)
+        headerView.addSubview(label)
+        
+        //x
+        var horizontalConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: headerView, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: 0)
+        //y
+        var verticalConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: headerView, attribute: NSLayoutAttribute.top, multiplier: 1, constant: 0)
+        //w
+        var heightConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: sectionHeaderSize-2)
+        //h
+        var widthConstraint = NSLayoutConstraint(item: label, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: headerView, attribute: NSLayoutAttribute.width, multiplier: 1, constant: -4)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+        
+        //x
+        horizontalConstraint = NSLayoutConstraint(item: line, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: headerView, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: 0)
+        //y
+        verticalConstraint = NSLayoutConstraint(item: line, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: label, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
+        //w
+        heightConstraint = NSLayoutConstraint(item: line, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 2)
+        //h
+        widthConstraint = NSLayoutConstraint(item: line, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: headerView, attribute: NSLayoutAttribute.width, multiplier: 1, constant: 0)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+    
+        label.textColor = UIColor.black
+        label.textAlignment = .right
+        label.font = UIFont(name: "American Typewriter" , size: 18)
+        label.text = "\(tableViewSectionsTitle[section])"
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return tableViewSectionsTitle[section]
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 1
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        switch indexPath.section {
+        case 0:
+            return SCREEN_SIZE.width - SCREEN_SIZE.width/4
+            
+            
+        case 1:
+            return SCREEN_SIZE.width/2 + SCREEN_SIZE.width/4
+            
+            
+        case 2:
+            return SCREEN_SIZE.width/2 + SCREEN_SIZE.width/4
+            
+            
+        case 3:
+            return SCREEN_SIZE.width/2 + SCREEN_SIZE.width/4
+            
+        default:
+            break
+        }
+        
+        return SCREEN_SIZE.width - SCREEN_SIZE.width/4
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.section {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CellId0, for: indexPath) as! VideosCell
+            cell.newestMovies = self.newestMovies
+            cell.newestMoviesIDs = self.newestMoviesIDs
+            return cell
+            
+            
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CellId1, for: indexPath) as! ImagesCell
+            cell.newestImages = self.newestImages
+            cell.newestImagesIDs = self.newestImagesIDs
+            return cell
+            
+            
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CellId2, for: indexPath) as! MusicsCell
+            cell.newestMusics = self.newestMusics
+            cell.newestMusicsIDs = self.newestMusicsIDs
+            return cell
+            
+            
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CellId3, for: indexPath) as! EbooksCell
+            cell.newestEBooks = self.newestEBooks
+            cell.newestEBooksIDs = self.newestMusicsIDs
+            return cell
+            
+        default:
+            break
+        }
+        
+        return UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }

@@ -21,7 +21,7 @@ final class Singleton {
     }
     
     //: api addressess
-    private let url_static_part = "http://88.99.172.130:8000/"
+    public let url_static_part = "http://88.99.172.130:8000/"
     let URLS:[String:String] =
     [
         "newest_movies":"newest_movies/?pagesize=%@&pageindex=%@&querytype=%@",
