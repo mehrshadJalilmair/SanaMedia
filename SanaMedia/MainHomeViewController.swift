@@ -19,6 +19,8 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
     let CellId1 = "ImagesCellId"
     let CellId2 = "MusicsCellId"
     let CellId3 = "EbooksCellId"
+    let CellId4 = "MusicAlbumsCellId"
+    let CellId5 = "MovieSerialsCellId"
     
     lazy var tableView : UITableView! =
     {
@@ -32,11 +34,13 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         tableView.register(MusicsCell.self, forCellReuseIdentifier: self.CellId2)
         tableView.register(ImagesCell.self, forCellReuseIdentifier: self.CellId1)
         tableView.register(EbooksCell.self, forCellReuseIdentifier: self.CellId3)
+        tableView.register(MusicsAlbumsCell.self, forCellReuseIdentifier: self.CellId4)
+        tableView.register(MovieSerialsCell.self, forCellReuseIdentifier: self.CellId5)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     let sectionHeaderSize = CGFloat(45.0)
-    let tableViewSectionsTitle:[String] = ["فیلم ها" , "تصاویر" , "موسیقی" , "کتاب"]
+    let tableViewSectionsTitle:[String] = ["فیلم ها" , "تصاویر" , "موسیقی" , "کتاب" , "آلبوم موسیقی" , "سریال"]
     
     
     //: Main tab vars
@@ -48,6 +52,10 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
     var newestImagesIDs:[Int] = [Int]()
     var newestEBooks:[Int:EBook] = [Int:EBook]()
     var newestEBooksIDs:[Int] = [Int]()
+    var newestMusicAlbums:[Int:Music] = [Int:Music]()
+    var newestMusicAlbumsIDs:[Int] = [Int]()
+    var newestMovieSerials:[Int:MovieSerial] = [Int:MovieSerial]()
+    var newestMovieSerialsIDs:[Int] = [Int]()
     
     //: requestType : get|post
     var requestType:Singleton.RequestType!
@@ -62,6 +70,10 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
     var imagesPageIndex:Int = 1
     var ebooksPageSize:Int = 10
     var ebooksPageIndex:Int = 1
+    var musicAlbumsPageSize:Int = 10
+    var musicAlbumsPageIndex:Int = 1
+    var movieSerialsPageSize:Int = 10
+    var movieSerialsPageIndex:Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +86,8 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         self.getNewest(urlKey: "newest_musics" , function: "getNewestMusics" , pageSize: musicsPageSize , pageIndex:  musicsPageIndex)
         self.getNewest(urlKey: "newest_ebooks" , function: "getNewestEBooks" , pageSize: ebooksPageSize , pageIndex:  ebooksPageIndex)
         self.getNewest(urlKey: "newest_images" , function: "getNewestImages" , pageSize: imagesPageSize , pageIndex:  imagesPageIndex)
+        self.getNewest(urlKey: "newest_music_album" , function: "getNewestMusicAlbums" , pageSize: musicAlbumsPageSize , pageIndex:  musicAlbumsPageIndex)
+        self.getNewest(urlKey: "newest_moive_serials" , function: "getNewestMovieSerials" , pageSize: musicAlbumsPageSize , pageIndex:  musicAlbumsPageIndex)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -184,6 +198,42 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
             }
             break
             
+        case "getNewestMusicAlbums":
+            if error == "nil" {
+                
+                DispatchQueue.global(qos: .userInteractive).async { //background thread
+                    
+                    self.getNewestMusicAlbums(data: data)
+                    DispatchQueue.main.async { //ui thread
+                        
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+            else
+            {
+                //show error
+            }
+            break
+            
+        case "getNewestMovieSerials":
+            if error == "nil" {
+                
+                DispatchQueue.global(qos: .userInteractive).async { //background thread
+                    
+                    self.getNewestMovieSerials(data: data)
+                    DispatchQueue.main.async { //ui thread
+                        
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+            else
+            {
+                //show error
+            }
+            break
+            
         default:
             break
         }
@@ -253,6 +303,38 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         }
         
     }
+    
+    func getNewestMusicAlbums(data:[String:AnyObject])
+    {
+        let itemsCount:Int = data["itemsCount"] as! Int
+        let musics:[AnyObject] = data["musics_album"] as! [AnyObject]
+        
+        self.musicAlbumsPageSize = itemsCount/10 + 1
+        self.musicAlbumsPageIndex = 1
+        
+        for music in musics {
+            
+            let newMusic = Music(music: music)
+            self.newestMusicAlbums[newMusic.Id] = newMusic
+            self.newestMusicAlbumsIDs.append(newMusic.Id)
+        }
+    }
+    
+    func getNewestMovieSerials(data:[String:AnyObject])
+    {
+        let itemsCount:Int = data["itemsCount"] as! Int
+        let movies:[AnyObject] = data["movie_serials"] as! [AnyObject]
+        
+        self.moviesPageSize = itemsCount/10 + 1
+        self.moviesPageIndex = 1
+        
+        for movie in movies {
+            
+            let newMovie = MovieSerial(movie: movie)
+            self.newestMovieSerials[newMovie.Id] = newMovie
+            self.newestMovieSerialsIDs.append(newMovie.Id)
+        }
+    }
 }
 
 extension MainHomeViewController{
@@ -275,7 +357,7 @@ extension MainHomeViewController{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        return 4
+        return 6
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
@@ -348,6 +430,12 @@ extension MainHomeViewController{
         case 3:
             return SCREEN_SIZE.width/2 + SCREEN_SIZE.width/4
             
+        case 4:
+            return SCREEN_SIZE.width/2 + SCREEN_SIZE.width/4
+            
+        case 5:
+            return SCREEN_SIZE.width/2 + SCREEN_SIZE.width/4
+            
         default:
             break
         }
@@ -381,7 +469,22 @@ extension MainHomeViewController{
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: CellId3, for: indexPath) as! EbooksCell
             cell.newestEBooks = self.newestEBooks
-            cell.newestEBooksIDs = self.newestMusicsIDs
+            cell.newestEBooksIDs = self.newestEBooksIDs
+            
+            return cell
+            
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CellId4, for: indexPath) as! MusicsAlbumsCell
+            cell.newestMusics = self.newestMusicAlbums
+            cell.newestMusicsIDs = self.newestMusicAlbumsIDs
+            
+            return cell
+            
+        case 5:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CellId5, for: indexPath) as! MovieSerialsCell
+            cell.newestMovieSerials = self.newestMovieSerials
+            cell.newestMovieSerialsIDs = self.newestMovieSerialsIDs
+            
             return cell
             
         default:

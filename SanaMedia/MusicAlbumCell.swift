@@ -1,5 +1,5 @@
 //
-//  VideoCell.swift
+//  MusicCell.swift
 //  SanaMedia
 //
 //  Created by Mehrshad JM on 5/25/17.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class VideoCell: UICollectionViewCell {
- 
+class MusicAlbumCell: UICollectionViewCell {
+    
     let container : UIView! =
     {
         var container = UIView()
@@ -22,22 +22,9 @@ class VideoCell: UICollectionViewCell {
         var trialer = UIImageView()
         trialer.translatesAutoresizingMaskIntoConstraints = false
         trialer.contentMode = .scaleToFill
-        trialer.backgroundColor = UIColor.lightGray
-        //trialer.image = UIImage(named: "fluid_graph")
         return trialer
     }()
-    
-    let time : UILabel! =
-    {
-        var time = UILabel()
-        time.translatesAutoresizingMaskIntoConstraints = false
-        time.text = "0:0:0"
-        time.textAlignment = .center
-        time.backgroundColor = UIColor.black.withAlphaComponent(0.7)
-        time.textColor = UIColor.white
-        return time
-    }()
-    
+
     let Description : UILabel! =
     {
         var Description = UILabel()
@@ -53,15 +40,6 @@ class VideoCell: UICollectionViewCell {
         line.translatesAutoresizingMaskIntoConstraints = false
         line.backgroundColor = UIColor.purple
         return line
-    }()
-    
-    let playImage : UIImageView! =
-    {
-        var playImage = UIImageView()
-        playImage.translatesAutoresizingMaskIntoConstraints = false
-        playImage.contentMode = .scaleToFill
-        playImage.image = UIImage(named: "fluid_graph")
-        return playImage
     }()
     
     let like : UIButton! =
@@ -95,7 +73,6 @@ class VideoCell: UICollectionViewCell {
         //h
         var heightConstraint = NSLayoutConstraint(item: container, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.height, multiplier: 1, constant: -2)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
-        
         contentView.layer.shadowOpacity = 0.5
         contentView.layer.shadowOffset = CGSize(width: 1, height: 1)
         contentView.layer.shadowRadius = 3.0
@@ -103,7 +80,6 @@ class VideoCell: UICollectionViewCell {
         container.layer.cornerRadius = 2
         container.layer.masksToBounds = true
         container.backgroundColor = UIColor.white
-        
         
         container.addSubview(trailer)
         //x
@@ -115,28 +91,7 @@ class VideoCell: UICollectionViewCell {
         //h
         heightConstraint = NSLayoutConstraint(item: trailer, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.height, multiplier: 1/2, constant: 0)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
-        
-        container.addSubview(playImage)
-        //x
-        horizontalConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
-        //y
-        verticalConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0)
-        //w
-        widthConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.width, multiplier: 1/3, constant: 0)
-        //h
-        heightConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
-        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
-        
-        container.addSubview(time)
-        //x
-        horizontalConstraint = NSLayoutConstraint(item: time, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.trailing, multiplier: 1, constant: 0)
-        //y
-        verticalConstraint = NSLayoutConstraint(item: time, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
-        //w
-        //widthConstraint = NSLayoutConstraint(item: time, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.width, multiplier: 1/3, constant: 0)
-        //h
-        heightConstraint = NSLayoutConstraint(item: time, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 20)
-        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, heightConstraint])
+
         
         container.addSubview(Description)
         //x

@@ -76,6 +76,15 @@ extension ImagesCell
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ImageCell
         
+        let index = newestImagesIDs[indexPath.row]
+        let image = newestImages[index]
+ 
+        cell.likeCount.text = image?.Likes
+        if (image?.URL.contains("/"))!
+        {
+            cell.trialer.loadImageWithCasheWithUrl((image?.URL)!)
+        }
+        
         return cell
     }
 }

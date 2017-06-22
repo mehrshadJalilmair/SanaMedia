@@ -21,13 +21,15 @@ final class Singleton {
     }
     
     //: api addressess
-    public let url_static_part = "http://88.99.172.130:8000/"
+    public let url_static_part = "http://88.99.172.130:8000"
     let URLS:[String:String] =
     [
-        "newest_movies":"newest_movies/?pagesize=%@&pageindex=%@&querytype=%@",
-        "newest_musics":"newest_musics/?pagesize=%@&pageindex=%@&querytype=%@",
-        "newest_images":"newest_images/?pagesize=%@&pageindex=%@&querytype=%@",
-        "newest_ebooks":"newest_ebooks/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_movies":"/newest_movies/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_musics":"/newest_musics/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_images":"/newest_images/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_ebooks":"/newest_ebooks/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_music_album":"/newest_music_album/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_moive_serials":"/newest_moive_serials/?pagesize=%@&pageindex=%@&querytype=%@",
     ]
     
     //: Singleton implementation

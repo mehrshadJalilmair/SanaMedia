@@ -1,18 +1,18 @@
 //
-//  FileCell.swift
+//  MovieSerialsCell.swift
 //  SanaMedia
 //
-//  Created by Mehrshad JM on 5/25/17.
+//  Created by Mehrshad JM on 6/23/17.
 //  Copyright © 2017 Crux Tech Ltd. All rights reserved.
 //
 
 import UIKit
 
-class EbooksCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+class MovieSerialsCell:UITableViewCell , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
     let cellId = "Item"
-    var newestEBooks:[Int:EBook] = [Int:EBook]()
-    var newestEBooksIDs:[Int]!
+    var newestMovieSerials:[Int:MovieSerial] = [Int:MovieSerial]()
+    var newestMovieSerialsIDs:[Int]!
     {
         didSet
         {
@@ -36,8 +36,8 @@ class EbooksCell: UITableViewCell  , UICollectionViewDataSource, UICollectionVie
             let collectionView : UICollectionView = UICollectionView(frame: self.contentView.frame, collectionViewLayout: layout)
             collectionView.dataSource = self
             collectionView.delegate = self
-            collectionView.register(EbookCell.self, forCellWithReuseIdentifier: self.cellId)
-            collectionView.backgroundColor = UIColor.lightGray
+            collectionView.register(VideoCell.self, forCellWithReuseIdentifier: self.cellId)
+            collectionView.backgroundColor = UIColor.white
             collectionView.translatesAutoresizingMaskIntoConstraints = false
             return collectionView
     }()
@@ -65,27 +65,28 @@ class EbooksCell: UITableViewCell  , UICollectionViewDataSource, UICollectionVie
     }
 }
 
-extension EbooksCell
+
+extension MovieSerialsCell
 {
     //collView funcs
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         
-        return self.newestEBooks.count
+        return self.newestMovieSerials.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! EbookCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MovieSerialCell
         
-        let index = newestEBooksIDs[indexPath.row]
-        let ebook = newestEBooks[index]
+        let index = newestMovieSerialsIDs[indexPath.row]
+        let movie = newestMovieSerials[index]
         
-        cell.likeCount.text = ebook?.Likes
-        cell.Description.text = ebook?.Title
-        if (ebook?.Picture_Url.contains("/"))!
-        {
-            cell.trailer.loadImageWithCasheWithUrl((ebook?.Picture_Url)!)
-        }
-        
+        //cell.time.text = movie?.Duration
+        //cell.Description.text = movie?.Description
+        //cell.likeCount.text = movie?.Likes
+        //if (movie?.Picture_URLS[1])!.contains("/")
+        //{
+            //cell.trailer.loadImageWithCasheWithUrl((movie?.Picture_URLS[1])!)
+        //}
         return cell
     }
 }

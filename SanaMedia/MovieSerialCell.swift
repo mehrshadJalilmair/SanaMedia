@@ -1,15 +1,15 @@
 //
-//  VideoCell.swift
+//  MovieSerialCell.swift
 //  SanaMedia
 //
-//  Created by Mehrshad JM on 5/25/17.
+//  Created by Mehrshad JM on 6/23/17.
 //  Copyright © 2017 Crux Tech Ltd. All rights reserved.
 //
 
 import UIKit
 
-class VideoCell: UICollectionViewCell {
- 
+class MovieSerialCell: UICollectionViewCell {
+    
     let container : UIView! =
     {
         var container = UIView()

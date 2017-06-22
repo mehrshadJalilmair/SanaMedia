@@ -93,9 +93,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0440A8AEBB965E64034EC090B990D5B1 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableTabBarController.framework; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0440A8AEBB965E64034EC090B990D5B1 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECAC1079E309C22CE521739C7C0E51 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		060DD5EC4E7739B8A4DEF1B128BEC666 /* ExpandableTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ExpandableTableViewController.framework; path = ExpandableTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		060DD5EC4E7739B8A4DEF1B128BEC666 /* ExpandableTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExpandableTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		067726428428B3AD4A80977E477BAD79 /* EasyToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-prefix.pch"; sourceTree = "<group>"; };
 		0B99CBAE9CA967F2CFD15F62837698D1 /* EasyToastConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyToastConfiguration.swift; path = EasyToast/Classes/EasyToastConfiguration.swift; sourceTree = "<group>"; };
 		0E2BD23F0DC95E1C7802F1ECF8CB92B6 /* SwipeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimation.swift; path = SwipeableTabBarController/Classes/SwipeAnimation.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		171D175A6AFEF9B9E844FFBC253AE3D3 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		1837770D8E2FEFE34F374A60940D950C /* Pods-SanaMediaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMediaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1857F6BC009AB5A4F772FCD26C68FD69 /* Pods-SanaMediaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		1DA21A8C9F01E6DB8C350EB56CA6688B /* Pods_SanaMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaTests.framework; path = "Pods-SanaMediaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA21A8C9F01E6DB8C350EB56CA6688B /* Pods_SanaMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaMediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE1E72C7093DA5DBDCC9EF267B7068C /* Pods-SanaMediaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMediaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2356A51A767FFE9D53FC90334E9D7EA9 /* Pods-SanaMediaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMediaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		254E895DF643A1BCE7E250EA7A467E99 /* ToastContainerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastContainerVC.swift; path = EasyToast/Classes/ToastContainerVC.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		2C2C3251B88FAF35ABB8FBC90A2C9C6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5E388F05086896A7E575ADE8429D61 /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = EasyToast/Classes/ToastWindow.swift; sourceTree = "<group>"; };
 		3789EAF1B4A42A9B31947DA2C3803A9A /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
-		37F1A7D3AA92FEC7D935CC53512B6A54 /* EasyToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyToast.modulemap; sourceTree = "<group>"; };
+		37F1A7D3AA92FEC7D935CC53512B6A54 /* EasyToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyToast.modulemap; sourceTree = "<group>"; };
 		40360C439BC052F61B0FED400A971C5C /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		43C078DD25EF32ED26143DAF09BA8B18 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		46439E1ED2B706D879D9E336A4E867D2 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		57ED4C758526D5F9F6D20B4366DF4DC3 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		5AD9BB4F869FF704E693680CA472F2AF /* Pods-SanaMediaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SanaMediaTests-umbrella.h"; sourceTree = "<group>"; };
 		5AF1FB9C50E78D956035EA5999E72678 /* EasyToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-umbrella.h"; sourceTree = "<group>"; };
-		5BF76223E10B7C2FE83881AF1DE1D779 /* Pods-SanaMediaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMediaTests.modulemap"; sourceTree = "<group>"; };
+		5BF76223E10B7C2FE83881AF1DE1D779 /* Pods-SanaMediaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SanaMediaTests.modulemap"; sourceTree = "<group>"; };
 		612DEC9507988414F213840818A1B82B /* Pods-SanaMediaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SanaMediaUITests-umbrella.h"; sourceTree = "<group>"; };
 		639ED339BECFDED79F0A15C9A9500DE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A7F7873440A695C151C01675321B618 /* Pods-SanaMedia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMedia-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -133,15 +133,15 @@
 		6FF4A42F384A696B7044204D30255EBA /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
 		7215F823B9E12C04C06B9D0C783A4705 /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
 		7394FD8CC26C91BD93CE1DB43ED89007 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		7A51A9E18DF4376B4AA761540D9A4078 /* Pods_SanaMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMedia.framework; path = "Pods-SanaMedia.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A51A9E18DF4376B4AA761540D9A4078 /* Pods_SanaMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC25DA163EB72F3C97B70C2FA77F033 /* Pods-SanaMedia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMedia-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7F1E6399A0ABB5027AB076F3BD4BAAD4 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		8297EFA5ECF9223F27C6041A44ED03C5 /* EasyToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyToast.xcconfig; sourceTree = "<group>"; };
 		8638A8277C373BD02C8045A2BF325F16 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = ExpandableTableViewController/Classes/ArrayExtension.swift; sourceTree = "<group>"; };
 		878CEE15CE5694E279DC83A91C2F86D6 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		8DD3C6B9733223FA6163466FDAAF8BB8 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		8DD3C6B9733223FA6163466FDAAF8BB8 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		8FDF246AAEBF6EC430AEC6D698A07767 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94493F3CB9D4B93411908D2A028D2F4A /* Pods-SanaMediaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaTests-frameworks.sh"; sourceTree = "<group>"; };
 		94BA4449D8A2FD58B8C43F62A167A31E /* Pods-SanaMedia-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMedia-frameworks.sh"; sourceTree = "<group>"; };
 		A1F978B76AB026C11CDD9B47B5185EF8 /* Pods-SanaMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMedia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		AE57EE6D01C2D6F6D1A86F3588DAB98D /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewController.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		BAF631EDBFF06BB4509392A1317431D4 /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
 		BDA959531CA5ED3C0ACC418C819CA4F6 /* Pods-SanaMedia-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMedia-resources.sh"; sourceTree = "<group>"; };
-		BEBC5A0834EE96FAFDCD80F32A0BDD0A /* EasyToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyToast.framework; path = EasyToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBC5A0834EE96FAFDCD80F32A0BDD0A /* EasyToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF06F7C5F20D71B0E96234921C4FBBD2 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		BF5EDEA2008DBF308F9BD14C869B8CCA /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		C1295FA1D684C0976163AD175E7903EA /* Pods-SanaMediaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMediaTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -161,17 +161,17 @@
 		CA1B666779B2A1C329257F067E8F3530 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CC05E0EACA245D21D57A470FD10826B6 /* Pods-SanaMediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CDE82FB100F25C3310A93AB23513C407 /* Pods-SanaMediaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMediaUITests.modulemap"; sourceTree = "<group>"; };
+		CDE82FB100F25C3310A93AB23513C407 /* Pods-SanaMediaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SanaMediaUITests.modulemap"; sourceTree = "<group>"; };
 		CE844C71BD6EEB919CE06B0F6A3158D8 /* ExpandableTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-prefix.pch"; sourceTree = "<group>"; };
 		CF14AE67EDE015A3781E58BAE702F178 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AEC80332A0AE9ED3D55A263E248181 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D47A41DB38DE48A2023244E1DC547D96 /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
+		D47A41DB38DE48A2023244E1DC547D96 /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
 		D4C29E6FC86B518CB890B12C2864A2D6 /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
 		D87623A7F69162C44D997B090DA41946 /* UIView+Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Toast.swift"; path = "EasyToast/Classes/UIView+Toast.swift"; sourceTree = "<group>"; };
 		D92718B4322C23952C02B338AFCD88B8 /* Pods-SanaMediaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SanaMediaUITests-dummy.m"; sourceTree = "<group>"; };
-		DEB9714E0A9D4B48CE69580D0AC588DD /* Pods-SanaMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMedia.modulemap"; sourceTree = "<group>"; };
+		DEB9714E0A9D4B48CE69580D0AC588DD /* Pods-SanaMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SanaMedia.modulemap"; sourceTree = "<group>"; };
 		E36248F7D527AA5D0437FA76F3752A67 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		E5900715A7BCA8FA1FA68CA5C64E9892 /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaUITests.framework; path = "Pods-SanaMediaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5900715A7BCA8FA1FA68CA5C64E9892 /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaMediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62D157BFB5CC66A55E226BE2103BCEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E76960DE77ED13B2D5DB9BC2E2FC2B02 /* Pods-SanaMediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9410AC914417E3E7BA1016F97912066 /* Pods-SanaMediaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaUITests-resources.sh"; sourceTree = "<group>"; };
@@ -181,12 +181,12 @@
 		EF37F54BECD7F239632B2573BFF1F460 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		F20147443458A2BB5CA9AD6C062DC32E /* Pods-SanaMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMedia.release.xcconfig"; sourceTree = "<group>"; };
 		F3E78316D8C852B6DD675BE0B4213EBA /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
-		F4E27809389F39DE3F22D0A07F7B9A8C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E27809389F39DE3F22D0A07F7B9A8C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53EB88D8F24BAE6D058671C0D2B5B4E /* Pods-SanaMediaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaTests-resources.sh"; sourceTree = "<group>"; };
 		F621D78405C28E205453CD3E1150EF3C /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		F79BEB0E1291FDD7537919F9CF05E3E7 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		FAAF12FD2245FFB718082EEAF3EA94A1 /* ExpandableTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-umbrella.h"; sourceTree = "<group>"; };
-		FDF458B3EB4735913DDB4F25F85957A4 /* ExpandableTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ExpandableTableViewController.modulemap; sourceTree = "<group>"; };
+		FDF458B3EB4735913DDB4F25F85957A4 /* ExpandableTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ExpandableTableViewController.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,7 +314,6 @@
 				878CEE15CE5694E279DC83A91C2F86D6 /* Validation.swift */,
 				BC97173BA3731267B66E63693A8758C6 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -360,7 +359,6 @@
 				D87623A7F69162C44D997B090DA41946 /* UIView+Toast.swift */,
 				406EC54C12F619CCF057ECE4B95E5B4A /* Support Files */,
 			);
-			name = EasyToast;
 			path = EasyToast;
 			sourceTree = "<group>";
 		};
@@ -383,7 +381,6 @@
 				171D175A6AFEF9B9E844FFBC253AE3D3 /* UIKit+Extensions.swift */,
 				BA3EBFDB7039CF91DBC93167A30979C9 /* Support Files */,
 			);
-			name = SwipeableTabBarController;
 			path = SwipeableTabBarController;
 			sourceTree = "<group>";
 		};
@@ -470,7 +467,6 @@
 				147E8B20226145BAFD74B2F30E6F223D /* ExpandableTableViewDelegate.swift */,
 				E9EF24D718896757C1F40230180D3D86 /* Support Files */,
 			);
-			name = ExpandableTableViewController;
 			path = ExpandableTableViewController;
 			sourceTree = "<group>";
 		};
@@ -680,7 +676,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -896,19 +892,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -922,6 +928,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1310,20 +1317,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",

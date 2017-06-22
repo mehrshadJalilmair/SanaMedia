@@ -9,7 +9,7 @@
 import UIKit
 
 class MusicsCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
-
+    
     let cellId = "Item"
     var newestMusics:[Int:Music] = [Int:Music]()
     var newestMusicsIDs:[Int]!
@@ -31,6 +31,7 @@ class MusicsCell: UITableViewCell  , UICollectionViewDataSource, UICollectionVie
             layout.sectionInset = UIEdgeInsets(top: 0, left: 2, bottom: 0, right: 2)
             let width = ((SCREEN_SIZE.width) / 2) - 20
             let height = SCREEN_SIZE.width - SCREEN_SIZE.width/4
+            
             layout.itemSize = CGSize(width: width, height: height)
             
             let collectionView : UICollectionView = UICollectionView(frame: self.contentView.frame, collectionViewLayout: layout)
@@ -75,6 +76,16 @@ extension MusicsCell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MusicCell
+        
+        let index = newestMusicsIDs[indexPath.row]
+        let music = newestMusics[index]
+        
+        cell.likeCount.text = music?.Likes
+        cell.Description.text = music?.Title
+        if (music?.Picture_URLS[0].contains("/"))!
+        {
+            cell.trailer.loadImageWithCasheWithUrl((music?.Picture_URLS[0])!)
+        }
         
         return cell
     }

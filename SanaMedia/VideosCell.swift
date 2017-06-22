@@ -83,7 +83,7 @@ extension VideosCell
         cell.time.text = movie?.Duration
         cell.Description.text = movie?.Description
         cell.likeCount.text = movie?.Likes
-        if (movie?.Picture_URLS[1])! != ""
+        if (movie?.Picture_URLS[1])!.contains("/")
         {
             cell.trailer.loadImageWithCasheWithUrl((movie?.Picture_URLS[1])!)
         }

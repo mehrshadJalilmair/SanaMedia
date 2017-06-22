@@ -23,13 +23,15 @@ extension UIImageView{
         }
         
         let url = URL(string: singleton.url_static_part + url_)
+        //print(singleton.url_static_part + url_)
+        
         URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
             
             if error != nil{
                 
                 return
             }
-            
+        
             DispatchQueue.main.async(execute: {
                 
                 if let downloadedImage = UIImage(data : data!){
