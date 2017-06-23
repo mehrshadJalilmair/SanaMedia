@@ -79,11 +79,16 @@ extension EbooksCell
         let index = newestEBooksIDs[indexPath.row]
         let ebook = newestEBooks[index]
         
-        cell.likeCount.text = ebook?.Likes
+        cell.like.setTitle(ebook?.Likes, for: UIControlState.normal)
         cell.Description.text = ebook?.Title
         if (ebook?.Picture_Url.contains("/"))!
         {
             cell.trailer.loadImageWithCasheWithUrl((ebook?.Picture_Url)!)
+        }
+        
+        if indexPath.row + 1 == self.newestEBooks.count {
+            
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil, userInfo: [ "tableViewCellIndex" : 3])
         }
         
         return cell

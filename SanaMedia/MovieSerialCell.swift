@@ -26,16 +26,14 @@ class MovieSerialCell: UICollectionViewCell {
         //trialer.image = UIImage(named: "fluid_graph")
         return trialer
     }()
-    
-    let time : UILabel! =
+
+    let playImage : UIImageView! =
     {
-        var time = UILabel()
-        time.translatesAutoresizingMaskIntoConstraints = false
-        time.text = "0:0:0"
-        time.textAlignment = .center
-        time.backgroundColor = UIColor.black.withAlphaComponent(0.7)
-        time.textColor = UIColor.white
-        return time
+        var playImage = UIImageView()
+        playImage.translatesAutoresizingMaskIntoConstraints = false
+        playImage.contentMode = .scaleToFill
+        playImage.image = UIImage(named: "fluid_graph")
+        return playImage
     }()
     
     let Description : UILabel! =
@@ -55,25 +53,7 @@ class MovieSerialCell: UICollectionViewCell {
         return line
     }()
     
-    let playImage : UIImageView! =
-    {
-        var playImage = UIImageView()
-        playImage.translatesAutoresizingMaskIntoConstraints = false
-        playImage.contentMode = .scaleToFill
-        playImage.image = UIImage(named: "fluid_graph")
-        return playImage
-    }()
-    
-    let like : UIButton! =
-    {
-        var like = UIButton()
-        like.translatesAutoresizingMaskIntoConstraints = false
-        //like.setImage(UIImage(named:"fluid_graph"), for: .normal)
-        like.backgroundColor = UIColor.red
-        return like
-    }()
-    
-    let likeCount : UILabel! =
+    let episodes : UILabel! =
     {
         var like = UILabel()
         like.translatesAutoresizingMaskIntoConstraints = false
@@ -127,17 +107,6 @@ class MovieSerialCell: UICollectionViewCell {
         heightConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
         
-        container.addSubview(time)
-        //x
-        horizontalConstraint = NSLayoutConstraint(item: time, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.trailing, multiplier: 1, constant: 0)
-        //y
-        verticalConstraint = NSLayoutConstraint(item: time, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
-        //w
-        //widthConstraint = NSLayoutConstraint(item: time, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.width, multiplier: 1/3, constant: 0)
-        //h
-        heightConstraint = NSLayoutConstraint(item: time, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 20)
-        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, heightConstraint])
-        
         container.addSubview(Description)
         //x
         horizontalConstraint = NSLayoutConstraint(item: Description, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
@@ -160,26 +129,16 @@ class MovieSerialCell: UICollectionViewCell {
         heightConstraint = NSLayoutConstraint(item: line, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 1)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
         
-        container.addSubview(like)
+        container.addSubview(episodes)
         //x
-        horizontalConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: line, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 2)
+        horizontalConstraint = NSLayoutConstraint(item: episodes, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: line, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 2)
         //y
-        verticalConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: -10)
+        verticalConstraint = NSLayoutConstraint(item: episodes, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
         //w
-        widthConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 25)
+        widthConstraint = NSLayoutConstraint(item: episodes, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.width, multiplier: 1, constant: 0)
         //h
-        heightConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 25)
+        heightConstraint = NSLayoutConstraint(item: episodes, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 25)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
-        
-        container.addSubview(likeCount)
-        //x
-        horizontalConstraint = NSLayoutConstraint(item: likeCount, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: like, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0)
-        
-        //y
-        verticalConstraint = NSLayoutConstraint(item: likeCount, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 10)
-        //h
-        heightConstraint = NSLayoutConstraint(item: likeCount, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 20)
-        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, heightConstraint])
     }
     
     required init?(coder aDecoder: NSCoder) {

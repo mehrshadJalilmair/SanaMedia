@@ -63,17 +63,18 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
     //: uses in ip dynamic part for page indexing
     var queryType:String = "date"
     var moviesPageSize:Int = 10
-    var moviesPageIndex:Int = 1
+    var moviesPageIndex:Int = 0
     var musicsPageSize:Int = 10
-    var musicsPageIndex:Int = 1
+    var musicsPageIndex:Int = 0
     var imagesPageSize:Int = 10
-    var imagesPageIndex:Int = 1
+    var imagesPageIndex:Int = 0
     var ebooksPageSize:Int = 10
-    var ebooksPageIndex:Int = 1
+    var ebooksPageIndex:Int = 0
     var musicAlbumsPageSize:Int = 10
-    var musicAlbumsPageIndex:Int = 1
+    var musicAlbumsPageIndex:Int = 0
     var movieSerialsPageSize:Int = 10
-    var movieSerialsPageIndex:Int = 1
+    var movieSerialsPageIndex:Int = 0
+    let pageSize:Int = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,34 +82,41 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         self.view.bringSubview(toFront: navBar)
         configTableView()
         
-        //: getting init data
-        self.getNewest(urlKey: "newest_movies" , function: "getNewestMovies" , pageSize: moviesPageSize , pageIndex:  moviesPageIndex)
-        self.getNewest(urlKey: "newest_musics" , function: "getNewestMusics" , pageSize: musicsPageSize , pageIndex:  musicsPageIndex)
-        self.getNewest(urlKey: "newest_ebooks" , function: "getNewestEBooks" , pageSize: ebooksPageSize , pageIndex:  ebooksPageIndex)
-        self.getNewest(urlKey: "newest_images" , function: "getNewestImages" , pageSize: imagesPageSize , pageIndex:  imagesPageIndex)
-        self.getNewest(urlKey: "newest_music_album" , function: "getNewestMusicAlbums" , pageSize: musicAlbumsPageSize , pageIndex:  musicAlbumsPageIndex)
-        self.getNewest(urlKey: "newest_moive_serials" , function: "getNewestMovieSerials" , pageSize: musicAlbumsPageSize , pageIndex:  musicAlbumsPageIndex)
+        getInitData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
-        //: adding observer
+        //: adding observers
         NotificationCenter.default.addObserver(self, selector: #selector(self.notificationReceived(_:)), name: NSNotification.Name(rawValue: "MainHomeViewController"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.loadMoreItem(_:)), name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil) // for scrolling more
     }
     
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        //: removing observer
+        //: removing observers
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "MainHomeViewController"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil) // for scrolling more
+    }
+    
+    func getInitData()
+    {
+        //: getting init data
+        self.getNewest(urlKey: "newest_movies" , function: "getNewestMovies" , pageSize: pageSize , pageIndex:  moviesPageIndex)
+        self.getNewest(urlKey: "newest_musics" , function: "getNewestMusics" , pageSize: pageSize , pageIndex:  musicsPageIndex)
+        self.getNewest(urlKey: "newest_ebooks" , function: "getNewestEBooks" , pageSize: pageSize , pageIndex:  ebooksPageIndex)
+        self.getNewest(urlKey: "newest_images" , function: "getNewestImages" , pageSize: pageSize , pageIndex:  imagesPageIndex)
+        self.getNewest(urlKey: "newest_music_album" , function: "getNewestMusicAlbums" , pageSize: pageSize , pageIndex:  musicAlbumsPageIndex)
+        self.getNewest(urlKey: "newest_moive_serials" , function: "getNewestMovieSerials" , pageSize: pageSize , pageIndex:  musicAlbumsPageIndex)
     }
     
     //: handles requests for getting newest movies to server
     func getNewest(urlKey:String , function:String , pageSize:Int , pageIndex:Int)
     {
         requestType = .get
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS[urlKey]!, "\(pageSize)" , "\(pageIndex)" , queryType)
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS[urlKey]!, "\(pageSize)" , "\(pageIndex+1)" , queryType)
         singleton.requestToServer(requestType: requestType, requesterData: ["url_dynamic_part":url_dynamic_part , "func":function , "class":"MainHomeViewController"], body: [:])
     }
     
@@ -244,8 +252,8 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let itemsCount:Int = data["itemsCount"] as! Int
         let movies:[AnyObject] = data["movie"] as! [AnyObject]
         
+        self.moviesPageIndex += 1
         self.moviesPageSize = itemsCount/10 + 1
-        self.moviesPageIndex = 1
         
         for movie in movies {
             
@@ -261,7 +269,7 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let musics:[AnyObject] = data["musics"] as! [AnyObject]
         
         self.musicsPageSize = itemsCount/10 + 1
-        self.musicsPageIndex = 1
+        self.musicsPageIndex += 1
         
         for music in musics {
             
@@ -277,7 +285,7 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let ebooks:[AnyObject] = data["ebooks"] as! [AnyObject]
         
         self.musicsPageSize = itemsCount/10 + 1
-        self.musicsPageIndex = 1
+        self.musicsPageIndex += 1
         
         for ebook in ebooks {
             
@@ -293,7 +301,7 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let Images:[AnyObject] = data["Images"] as! [AnyObject]
         
         self.imagesPageSize = itemsCount/10 + 1
-        self.imagesPageIndex = 1
+        self.imagesPageIndex += 1
         
         for image in Images {
             
@@ -310,7 +318,7 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let musics:[AnyObject] = data["musics_album"] as! [AnyObject]
         
         self.musicAlbumsPageSize = itemsCount/10 + 1
-        self.musicAlbumsPageIndex = 1
+        self.musicAlbumsPageIndex += 1
         
         for music in musics {
             
@@ -326,13 +334,126 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let movies:[AnyObject] = data["movie_serials"] as! [AnyObject]
         
         self.moviesPageSize = itemsCount/10 + 1
-        self.moviesPageIndex = 1
+        self.moviesPageIndex += 1
         
         for movie in movies {
             
             let newMovie = MovieSerial(movie: movie)
             self.newestMovieSerials[newMovie.Id] = newMovie
             self.newestMovieSerialsIDs.append(newMovie.Id)
+        }
+    }
+    
+    @IBAction func sortInDateOrder(_ sender: Any) {
+        
+        if queryType == "date"
+        {
+            return
+        }
+        initArrays()
+        queryType = "date"
+        recentDate.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
+        mostLikes.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        getInitData()
+    }
+ 
+    @IBAction func sortInLikeOrder(_ sender: Any) {
+        
+        if queryType == "like"
+        {
+            return
+        }
+        initArrays()
+        queryType = "like"
+        mostLikes.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
+        recentDate.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        getInitData()
+    }
+    
+    func initArrays()
+    {
+        moviesPageSize = 10
+        moviesPageIndex = 0
+        musicsPageSize = 10
+        musicsPageIndex = 0
+        imagesPageSize = 10
+        imagesPageIndex = 0
+        ebooksPageSize = 10
+        ebooksPageIndex = 0
+        musicAlbumsPageSize = 10
+        musicAlbumsPageIndex = 0
+        movieSerialsPageSize = 10
+        movieSerialsPageIndex = 0
+        
+        newestMovies = [Int:Movie]()
+        newestMoviesIDs = [Int]()
+        newestMusics = [Int:Music]()
+        newestMusicsIDs = [Int]()
+        newestEBooks = [Int:EBook]()
+        newestEBooksIDs = [Int]()
+        newestImages = [Int:Image]()
+        newestImagesIDs = [Int]()
+        newestMusicAlbums = [Int:Music]()
+        newestMusicAlbumsIDs = [Int]()
+        newestMovieSerials = [Int:MovieSerial]()
+        newestMovieSerialsIDs = [Int]()
+    }
+    
+    func loadMoreItem(_ notification: Notification)
+    {
+        let tableViewCellIndex = notification.userInfo?["tableViewCellIndex"] as! Int
+        switch tableViewCellIndex {
+            
+        case 0:
+            if moviesPageSize < moviesPageIndex
+            {
+                return
+            }
+            self.getNewest(urlKey: "newest_movies" , function: "getNewestMovies" , pageSize: pageSize , pageIndex:  moviesPageIndex)
+            break
+            
+        case 2:
+            if musicsPageSize < musicsPageIndex
+            {
+                return
+            }
+            self.getNewest(urlKey: "newest_musics" , function: "getNewestMusics" , pageSize: pageSize , pageIndex:  musicsPageIndex)
+            break
+            
+        case 3:
+            if ebooksPageSize < ebooksPageIndex
+            {
+                return
+            }
+            self.getNewest(urlKey: "newest_ebooks" , function: "getNewestEBooks" , pageSize: pageSize , pageIndex:  ebooksPageIndex)
+            break
+            
+        case 1:
+            if imagesPageSize < imagesPageIndex
+            {
+                return
+            }
+            self.getNewest(urlKey: "newest_images" , function: "getNewestImages" , pageSize: pageSize , pageIndex:  imagesPageIndex)
+            break
+            
+        case 4:
+            if musicAlbumsPageSize < musicAlbumsPageSize
+            {
+                return
+            }
+            self.getNewest(urlKey: "newest_music_album" , function: "getNewestMusicAlbums" , pageSize: pageSize , pageIndex:  musicAlbumsPageIndex)
+            break
+            
+        case 5:
+            if musicAlbumsPageSize < musicAlbumsPageIndex
+            {
+                return
+            }
+            self.getNewest(urlKey: "newest_moive_serials" , function: "getNewestMovieSerials" , pageSize: pageSize , pageIndex:  musicAlbumsPageIndex)
+            break
+
+        default:
+            break
         }
     }
 }

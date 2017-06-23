@@ -82,12 +82,23 @@ extension VideosCell
         
         cell.time.text = movie?.Duration
         cell.Description.text = movie?.Description
-        cell.likeCount.text = movie?.Likes
+        cell.like.setTitle(movie?.Likes, for: UIControlState.normal)
         if (movie?.Picture_URLS[1])!.contains("/")
         {
             cell.trailer.loadImageWithCasheWithUrl((movie?.Picture_URLS[1])!)
         }
+        
+        if indexPath.row + 1 == self.newestMovies.count {
+            
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil, userInfo: [ "tableViewCellIndex" : 0])
+        }
+        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        
     }
 }
 

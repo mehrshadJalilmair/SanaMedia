@@ -80,11 +80,16 @@ extension MusicsCell
         let index = newestMusicsIDs[indexPath.row]
         let music = newestMusics[index]
         
-        cell.likeCount.text = music?.Likes
+        cell.like.setTitle(music?.Likes, for: UIControlState.normal)
         cell.Description.text = music?.Title
         if (music?.Picture_URLS[0].contains("/"))!
         {
             cell.trailer.loadImageWithCasheWithUrl((music?.Picture_URLS[0])!)
+        }
+        
+        if indexPath.row + 1 == self.newestMusics.count {
+            
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil, userInfo: [ "tableViewCellIndex" : 2])
         }
         
         return cell

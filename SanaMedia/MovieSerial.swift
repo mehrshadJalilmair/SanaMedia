@@ -22,10 +22,9 @@ class MovieSerial: NSObject {
     var Main_URL:String!
     var production_date:String!
     var Rate:String!
-    var Duration:String!
     var Id:Int!
     var Likes:String!
-    var Episodes:Int!
+    var Episodes:Int?
     var Type_:String!
     
     init(movie:AnyObject) {
@@ -67,18 +66,7 @@ class MovieSerial: NSObject {
             }
             return "-"
         }()
-        Duration = {
-            
-            if let Duration = movie["Duration"]
-            {
-                if Duration is NSNull
-                {
-                    return "0:0:0"
-                }
-                return Duration as! String
-            }
-            return "-"
-        }()
+
         Genre = {
             
             if let Genre = movie["Genre"]
@@ -165,7 +153,7 @@ class MovieSerial: NSObject {
         }()
         Main_URL = {
             
-            if let Main_URL = movie["Main URL"]
+            if let Main_URL = movie["Main_Url"]
             {
                 if Main_URL is NSNull
                 {
@@ -244,7 +232,7 @@ class MovieSerial: NSObject {
                 {
                     return 0
                 }
-                return Episodes as! Int
+                return Episodes as? Int
             }
             return 0
         }()

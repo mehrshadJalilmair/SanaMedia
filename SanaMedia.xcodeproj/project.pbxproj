@@ -20,6 +20,10 @@
 		2F9105FE1EFC7BE100202B36 /* MovieSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9105FD1EFC7BE100202B36 /* MovieSerial.swift */; };
 		2F9106021EFC7E3900202B36 /* MovieSerialsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9106011EFC7E3900202B36 /* MovieSerialsCell.swift */; };
 		2F9106041EFC7E5400202B36 /* MovieSerialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9106031EFC7E5400202B36 /* MovieSerialCell.swift */; };
+		2F9106061EFD2A3400202B36 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9106051EFD2A3400202B36 /* News.swift */; };
+		2F9106081EFD307900202B36 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9106071EFD307900202B36 /* NewsCell.swift */; };
+		2F91060A1EFD59E300202B36 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9106091EFD59E300202B36 /* TV.swift */; };
+		2F91060E1EFD606000202B36 /* TVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91060D1EFD606000202B36 /* TVCell.swift */; };
 		2F921FF21ED63EF10093932B /* VideosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F921FF11ED63EF10093932B /* VideosCell.swift */; };
 		2F921FF61ED63F0D0093932B /* ImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F921FF51ED63F0D0093932B /* ImagesCell.swift */; };
 		2F921FF81ED63F190093932B /* EbooksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F921FF71ED63F190093932B /* EbooksCell.swift */; };
@@ -76,6 +80,10 @@
 		2F9105FD1EFC7BE100202B36 /* MovieSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSerial.swift; sourceTree = "<group>"; };
 		2F9106011EFC7E3900202B36 /* MovieSerialsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSerialsCell.swift; sourceTree = "<group>"; };
 		2F9106031EFC7E5400202B36 /* MovieSerialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSerialCell.swift; sourceTree = "<group>"; };
+		2F9106051EFD2A3400202B36 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		2F9106071EFD307900202B36 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		2F9106091EFD59E300202B36 /* TV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
+		2F91060D1EFD606000202B36 /* TVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCell.swift; sourceTree = "<group>"; };
 		2F921FF11ED63EF10093932B /* VideosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosCell.swift; sourceTree = "<group>"; };
 		2F921FF51ED63F0D0093932B /* ImagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesCell.swift; sourceTree = "<group>"; };
 		2F921FF71ED63F190093932B /* EbooksCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EbooksCell.swift; sourceTree = "<group>"; };
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2FF1B8141ECAEEE100CB176D /* NewsViewController.swift */,
+				2F9106071EFD307900202B36 /* NewsCell.swift */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -197,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				2FF1B8161ECAEEF100CB176D /* StreamViewController.swift */,
+				2F91060D1EFD606000202B36 /* TVCell.swift */,
 			);
 			name = Stream;
 			sourceTree = "<group>";
@@ -218,6 +228,8 @@
 				2F1E82C91ECCD11A00EA0FC6 /* Image.swift */,
 				2F9105EC1EFC759600202B36 /* MusicAlbum.swift */,
 				2F9105FD1EFC7BE100202B36 /* MovieSerial.swift */,
+				2F9106051EFD2A3400202B36 /* News.swift */,
+				2F9106091EFD59E300202B36 /* TV.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -242,8 +254,8 @@
 		2F9105F01EFC769100202B36 /* MusicAlbums */ = {
 			isa = PBXGroup;
 			children = (
-				2F9105F11EFC76DD00202B36 /* MusicAlbumCell.swift */,
 				2F9105F21EFC76DD00202B36 /* MusicAlbumsCell.swift */,
+				2F9105F11EFC76DD00202B36 /* MusicAlbumCell.swift */,
 			);
 			name = MusicAlbums;
 			sourceTree = "<group>";
@@ -269,8 +281,8 @@
 		2F9220021ED646080093932B /* Musics */ = {
 			isa = PBXGroup;
 			children = (
-				2F9105F91EFC788500202B36 /* MusicCell.swift */,
 				2F9105FA1EFC788500202B36 /* MusicsCell.swift */,
+				2F9105F91EFC788500202B36 /* MusicCell.swift */,
 			);
 			name = Musics;
 			sourceTree = "<group>";
@@ -656,8 +668,10 @@
 				2F9105F31EFC76DD00202B36 /* MusicAlbumCell.swift in Sources */,
 				2F9106041EFC7E5400202B36 /* MovieSerialCell.swift in Sources */,
 				2F1E82C21ECC395B00EA0FC6 /* Movie.swift in Sources */,
+				2F9106081EFD307900202B36 /* NewsCell.swift in Sources */,
 				2F921FF81ED63F190093932B /* EbooksCell.swift in Sources */,
 				2F921FF21ED63EF10093932B /* VideosCell.swift in Sources */,
+				2F91060E1EFD606000202B36 /* TVCell.swift in Sources */,
 				2F921FFF1ED645C80093932B /* ImageCell.swift in Sources */,
 				2FF1B8171ECAEEF100CB176D /* StreamViewController.swift in Sources */,
 				2FF1B7E71ECAE0B300CB176D /* TabBar.swift in Sources */,
@@ -670,9 +684,11 @@
 				2F921FFA1ED642740093932B /* VideoCell.swift in Sources */,
 				2FF1B8191ECAEF0000CB176D /* CategoryViewController.swift in Sources */,
 				2F1E82CC1ECCD92500EA0FC6 /* Singleton.swift in Sources */,
+				2F9106061EFD2A3400202B36 /* News.swift in Sources */,
 				2F9105FC1EFC788500202B36 /* MusicsCell.swift in Sources */,
 				2F9105F41EFC76DD00202B36 /* MusicAlbumsCell.swift in Sources */,
 				2FF1B8151ECAEEE100CB176D /* NewsViewController.swift in Sources */,
+				2F91060A1EFD59E300202B36 /* TV.swift in Sources */,
 				2F1E82C41ECC3DF600EA0FC6 /* Music.swift in Sources */,
 				2F1E82C81ECCD10C00EA0FC6 /* EBook.swift in Sources */,
 				2FF9919C1ED6339C003A248A /* extensions.swift in Sources */,

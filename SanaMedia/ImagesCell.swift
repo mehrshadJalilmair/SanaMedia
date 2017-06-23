@@ -79,10 +79,15 @@ extension ImagesCell
         let index = newestImagesIDs[indexPath.row]
         let image = newestImages[index]
  
-        cell.likeCount.text = image?.Likes
+        cell.like.setTitle(image?.Likes, for: UIControlState.normal)
         if (image?.URL.contains("/"))!
         {
             cell.trialer.loadImageWithCasheWithUrl((image?.URL)!)
+        }
+        
+        if indexPath.row + 1 == self.newestImages.count {
+            
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil, userInfo: [ "tableViewCellIndex" : 1])
         }
         
         return cell

@@ -64,21 +64,15 @@ class VideoCell: UICollectionViewCell {
         return playImage
     }()
     
-    let like : UIButton! =
+    let like : DesignableButton! =
     {
-        var like = UIButton()
+        var like = DesignableButton()
         like.translatesAutoresizingMaskIntoConstraints = false
+        like.setImage(UIImage(named:"fluid_graph"), for: UIControlState.normal)
+        like.tintColor = UIColor.lightGray
         //like.setImage(UIImage(named:"fluid_graph"), for: .normal)
-        like.backgroundColor = UIColor.red
-        return like
-    }()
-    
-    let likeCount : UILabel! =
-    {
-        var like = UILabel()
-        like.translatesAutoresizingMaskIntoConstraints = false
-        like.textAlignment = .center
-        like.text = "0"
+        //like.backgroundColor = UIColor.red
+        like.setTitleColor(UIColor.lightGray, for: UIControlState.normal)
         return like
     }()
     
@@ -162,24 +156,14 @@ class VideoCell: UICollectionViewCell {
         
         container.addSubview(like)
         //x
-        horizontalConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: line, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 2)
+        horizontalConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: line, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 1)
         //y
-        verticalConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: -10)
+        verticalConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
         //w
-        widthConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 25)
+        widthConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.bottom, multiplier: 1, constant: 0)
         //h
-        heightConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 25)
-        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
-        
-        container.addSubview(likeCount)
-        //x
-        horizontalConstraint = NSLayoutConstraint(item: likeCount, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: like, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0)
-        
-        //y
-        verticalConstraint = NSLayoutConstraint(item: likeCount, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: container, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 10)
-        //h
-        heightConstraint = NSLayoutConstraint(item: likeCount, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 20)
-        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, heightConstraint])
+        heightConstraint = NSLayoutConstraint(item: like, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 5)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint , heightConstraint, widthConstraint])
     }
     
     required init?(coder aDecoder: NSCoder) {

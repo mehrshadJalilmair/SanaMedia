@@ -30,6 +30,8 @@ final class Singleton {
         "newest_ebooks":"/newest_ebooks/?pagesize=%@&pageindex=%@&querytype=%@",
         "newest_music_album":"/newest_music_album/?pagesize=%@&pageindex=%@&querytype=%@",
         "newest_moive_serials":"/newest_moive_serials/?pagesize=%@&pageindex=%@&querytype=%@",
+        "newest_news":"/newest_news/?pagesize=%@&pageindex=%@&querytype=%@",
+        "live_shows":"/live_shows/?channel=%@",
     ]
     
     //: Singleton implementation

@@ -36,7 +36,7 @@ class MovieSerialsCell:UITableViewCell , UICollectionViewDataSource, UICollectio
             let collectionView : UICollectionView = UICollectionView(frame: self.contentView.frame, collectionViewLayout: layout)
             collectionView.dataSource = self
             collectionView.delegate = self
-            collectionView.register(VideoCell.self, forCellWithReuseIdentifier: self.cellId)
+            collectionView.register(MovieSerialCell.self, forCellWithReuseIdentifier: self.cellId)
             collectionView.backgroundColor = UIColor.white
             collectionView.translatesAutoresizingMaskIntoConstraints = false
             return collectionView
@@ -80,13 +80,19 @@ extension MovieSerialsCell
         let index = newestMovieSerialsIDs[indexPath.row]
         let movie = newestMovieSerials[index]
         
-        //cell.time.text = movie?.Duration
-        //cell.Description.text = movie?.Description
-        //cell.likeCount.text = movie?.Likes
-        //if (movie?.Picture_URLS[1])!.contains("/")
-        //{
-            //cell.trailer.loadImageWithCasheWithUrl((movie?.Picture_URLS[1])!)
-        //}
+        let episods = movie?.Episodes!
+        cell.Description.text = movie?.Description
+        cell.episodes.text = "\(String(describing: episods!))" + "قسمت "
+        if (movie?.Picture_URLS[0])!.contains("/")
+        {
+            cell.trailer.loadImageWithCasheWithUrl((movie?.Picture_URLS[0])!)
+        }
+        
+        if indexPath.row + 1 == self.newestMovieSerials.count {
+            
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil, userInfo: [ "tableViewCellIndex" : 5])
+        }
+        
         return cell
     }
 }
