@@ -117,7 +117,7 @@ class StreamViewController: UIViewController , UITableViewDelegate , UITableView
         }
         queryType = "tv"
         tvsBtn.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
-        tvsBtn.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        radiosBtn.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
         getInitData()
         TVs = [Int:TV]()
         TVsIDs = [Int]()
@@ -131,8 +131,8 @@ class StreamViewController: UIViewController , UITableViewDelegate , UITableView
         }
         queryType = "radio"
         radiosBtn.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
-        radiosBtn.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
-        getInitData()
+        tvsBtn.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        //getInitData()
     }
 }
 

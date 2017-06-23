@@ -42,7 +42,7 @@ class TVCell: UITableViewCell {
         contentView.layer.shadowColor = UIColor.darkGray.cgColor
         container.layer.cornerRadius = 5
         container.layer.masksToBounds = true
-        container.backgroundColor = UIColor.white
+        //container.backgroundColor = UIColor.white
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
