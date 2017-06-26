@@ -31,7 +31,6 @@ class NewsViewController: UIViewController , UITableViewDelegate , UITableViewDa
     var newsPageIndex:Int = 0
     var pageSize:Int = 10
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -186,8 +185,17 @@ extension NewsViewController
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let selectedCell:UITableViewCell = tableView.cellForRow(at: indexPath)!
-        //selectedCell.contentView.backgroundColor = UIColor.clear
         selectedCell.selectionStyle = .none
-        print(indexPath.row)
+        performSegue(withIdentifier: "showFullNews", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "showFullNews" , let nextScene =  segue.destination as? FullNews , let indexPath = self.tableView.indexPathForSelectedRow {
+            
+            let index = newestNewsesIDs[indexPath.row]
+            let news = newestNewses[index]
+            nextScene.news = news
+        }
     }
 }

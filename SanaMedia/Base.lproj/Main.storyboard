@@ -13,7 +13,7 @@
         <!--Tab 2-->
         <scene sceneID="kRs-Tr-cLk">
             <objects>
-                <viewController title="Tab 2" id="h8s-tq-v4L" customClass="NewsViewController" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Tab 2" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="h8s-tq-v4L" customClass="NewsViewController" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3qz-GL-8c8"/>
                         <viewControllerLayoutGuide type="bottom" id="qie-g3-s3d"/>
@@ -90,10 +90,10 @@
                                                                 <constraint firstAttribute="height" constant="112" id="CGc-cp-GWs"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuW-1W-Lyn">
-                                                            <rect key="frame" x="8" y="32" width="248" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuW-1W-Lyn">
+                                                            <rect key="frame" x="8" y="32" width="248" height="44"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -102,6 +102,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="n3w-rg-v4I" secondAttribute="bottom" constant="6" id="4t5-Jv-bdo"/>
                                                         <constraint firstItem="n3w-rg-v4I" firstAttribute="leading" secondItem="ML8-74-Lc5" secondAttribute="trailing" constant="8" id="7eu-YP-3NN"/>
                                                         <constraint firstItem="phm-52-lUA" firstAttribute="top" secondItem="8wh-WC-7Ga" secondAttribute="top" constant="10" id="Ayy-rm-D8a"/>
+                                                        <constraint firstItem="ML8-74-Lc5" firstAttribute="top" secondItem="SuW-1W-Lyn" secondAttribute="bottom" constant="8" id="Dlv-w7-R9l"/>
                                                         <constraint firstItem="xFE-v0-KFV" firstAttribute="top" secondItem="8wh-WC-7Ga" secondAttribute="top" id="ESP-Yo-UEd"/>
                                                         <constraint firstAttribute="trailing" secondItem="xFE-v0-KFV" secondAttribute="trailing" id="JdB-PB-qAJ"/>
                                                         <constraint firstAttribute="bottom" secondItem="ML8-74-Lc5" secondAttribute="bottom" constant="6" id="KS1-mK-ZZ9"/>
@@ -221,11 +222,63 @@
                         <outlet property="navBar" destination="R5i-zZ-Uql" id="vnp-75-olF"/>
                         <outlet property="recentDate" destination="bIZ-RP-p3H" id="YCF-Qq-bSt"/>
                         <outlet property="tableView" destination="sx1-2G-oYa" id="zrb-29-455"/>
+                        <segue destination="F8i-Ha-2ie" kind="presentation" identifier="showFullNews" modalTransitionStyle="crossDissolve" id="3XQ-fb-pqn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xoO-6y-3BI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760.79999999999995" y="64.31784107946028"/>
+        </scene>
+        <!--Full News-->
+        <scene sceneID="qTK-6t-AVO">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="F8i-Ha-2ie" customClass="FullNews" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vCC-zs-M7A"/>
+                        <viewControllerLayoutGuide type="bottom" id="nbX-jH-D53"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xmk-He-UTC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMj-ov-jny">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZP-Ac-Nlh" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="339" y="16" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BI3-Z1-Efh"/>
+                                    <constraint firstAttribute="width" constant="30" id="ypG-29-YzO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closePopUp:" destination="F8i-Ha-2ie" eventType="touchUpInside" id="Nna-Kl-uRs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jMj-ov-jny" firstAttribute="top" secondItem="vCC-zs-M7A" secondAttribute="bottom" constant="8" id="VCG-Ze-F6H"/>
+                            <constraint firstItem="nbX-jH-D53" firstAttribute="top" secondItem="jMj-ov-jny" secondAttribute="bottom" constant="20" id="Wby-0M-k4l"/>
+                            <constraint firstItem="jZP-Ac-Nlh" firstAttribute="top" secondItem="vCC-zs-M7A" secondAttribute="bottom" constant="-4" id="bTh-9E-iGk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jMj-ov-jny" secondAttribute="leading" id="qni-Bo-ist"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jMj-ov-jny" secondAttribute="trailing" id="xVr-ju-tM8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jZP-Ac-Nlh" secondAttribute="trailing" constant="-10" id="yTU-HB-jgV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollVew" destination="jMj-ov-jny" id="YXn-5B-adT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ogz-5u-zfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="63.418290854572717"/>
         </scene>
         <!--Tab 3-->
         <scene sceneID="SwA-ZK-rSW">
@@ -459,6 +512,7 @@
                                 <rect key="frame" x="8" y="45" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="پرمخاطب ترین ها">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
