@@ -32,5 +32,20 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+
+	<key>NSAppTransportSecurity</key>
+	<dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>http://www.streambox.fr</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

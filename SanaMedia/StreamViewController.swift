@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class StreamViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
 
@@ -116,8 +118,8 @@ class StreamViewController: UIViewController , UITableViewDelegate , UITableView
             return
         }
         queryType = "tv"
-        tvsBtn.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
-        radiosBtn.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        tvsBtn.backgroundColor = UIColor(red: 226/255, green: 64/255, blue: 129/255, alpha: 1)
+        radiosBtn.backgroundColor = UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1)
         getInitData()
         TVs = [Int:TV]()
         TVsIDs = [Int]()
@@ -130,8 +132,8 @@ class StreamViewController: UIViewController , UITableViewDelegate , UITableView
             return
         }
         queryType = "radio"
-        radiosBtn.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
-        tvsBtn.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        radiosBtn.backgroundColor = UIColor(red: 226/255, green: 64/255, blue: 129/255, alpha: 1)
+        tvsBtn.backgroundColor = UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1)
         //getInitData()
     }
 }
@@ -155,6 +157,25 @@ extension StreamViewController
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let tv = TVs[TVsIDs[indexPath.row]]
         
+        DispatchQueue.main.async {
+            
+            print((tv?.Stream)!)
+            
+            if let url = URL(string: "http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8"){
+                
+                let player = AVPlayer(url: url)
+                let controller=AVPlayerViewController()
+                controller.player=player
+                //controller.view.frame = self.view.frame
+                //self.view.addSubview(controller.view)
+                //self.addChildViewController(controller)
+                //player.play()
+                self.present(controller, animated: true) {
+                    player.play()
+                }
+            }
+        }
     }
 }

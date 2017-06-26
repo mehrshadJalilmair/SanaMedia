@@ -36,6 +36,7 @@ class NewsViewController: UIViewController , UITableViewDelegate , UITableViewDa
         super.viewDidLoad()
         
         self.tableView.separatorStyle = .none
+        
         getInitData()
     }
     
@@ -123,8 +124,8 @@ class NewsViewController: UIViewController , UITableViewDelegate , UITableViewDa
         }
         initArrays()
         queryType = "date"
-        recentDate.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
-        mostLikes.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        recentDate.backgroundColor = UIColor(red: 226/255, green: 64/255, blue: 129/255, alpha: 1)
+        mostLikes.backgroundColor = UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1)
         getInitData()
     }
     
@@ -136,8 +137,8 @@ class NewsViewController: UIViewController , UITableViewDelegate , UITableViewDa
         }
         initArrays()
         queryType = "likes"
-        mostLikes.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
-        recentDate.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        mostLikes.backgroundColor = UIColor(red: 226/255, green: 64/255, blue: 129/255, alpha: 1)
+        recentDate.backgroundColor = UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1)
         getInitData()
     }
     
@@ -184,6 +185,9 @@ extension NewsViewController
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
+        let selectedCell:UITableViewCell = tableView.cellForRow(at: indexPath)!
+        //selectedCell.contentView.backgroundColor = UIColor.clear
+        selectedCell.selectionStyle = .none
+        print(indexPath.row)
     }
 }

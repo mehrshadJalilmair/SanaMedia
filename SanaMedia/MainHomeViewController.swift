@@ -352,8 +352,8 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         }
         initArrays()
         queryType = "date"
-        recentDate.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
-        mostLikes.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        recentDate.backgroundColor = UIColor(red: 226/255, green: 64/255, blue: 129/255, alpha: 1)
+        mostLikes.backgroundColor = UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1)
         getInitData()
     }
  
@@ -365,8 +365,8 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         }
         initArrays()
         queryType = "like"
-        mostLikes.backgroundColor = UIColor(red: 140/255, green: 109/255, blue: 136/255, alpha: 1)
-        recentDate.backgroundColor = UIColor(red: 161/255, green: 116/255, blue: 160/255, alpha: 1)
+        mostLikes.backgroundColor = UIColor(red: 226/255, green: 64/255, blue: 129/255, alpha: 1)
+        recentDate.backgroundColor = UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1)
         getInitData()
     }
     

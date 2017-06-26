@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sx1-2G-oYa">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sx1-2G-oYa">
                                 <rect key="frame" x="0.0" y="103" width="375" height="515"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,14 +45,14 @@
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oie-Jy-e5I">
                                                             <rect key="frame" x="8" y="32" width="248" height="1"/>
-                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="za5-RI-QF4"/>
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML8-74-Lc5" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
                                                             <rect key="frame" x="8" y="84" width="85" height="22"/>
-                                                            <color key="backgroundColor" red="0.63137254899999995" green="0.45483711939999999" blue="0.62806174820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="22" id="7NN-zb-DNG"/>
                                                             </constraints>
@@ -70,24 +70,24 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3w-rg-v4I" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
-                                                            <rect key="frame" x="101" y="84" width="47" height="22"/>
-                                                            <color key="backgroundColor" red="0.63137254899999995" green="0.45483711939999999" blue="0.62806174820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <rect key="frame" x="101" y="84" width="37" height="22"/>
+                                                            <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="22" id="OZZ-CU-RIH"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                            <state key="normal" title="100" image="fluid_graph"/>
+                                                            <state key="normal" title="100" image="heart-outline (1)"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="3"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xFE-v0-KFV">
-                                                            <rect key="frame" x="264" y="6" width="100" height="100"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="continent" translatesAutoresizingMaskIntoConstraints="NO" id="xFE-v0-KFV">
+                                                            <rect key="frame" x="264" y="0.0" width="100" height="112"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="9tj-Ru-E4U"/>
-                                                                <constraint firstAttribute="height" constant="100" id="CGc-cp-GWs"/>
+                                                                <constraint firstAttribute="height" constant="112" id="CGc-cp-GWs"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuW-1W-Lyn">
@@ -102,7 +102,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="n3w-rg-v4I" secondAttribute="bottom" constant="6" id="4t5-Jv-bdo"/>
                                                         <constraint firstItem="n3w-rg-v4I" firstAttribute="leading" secondItem="ML8-74-Lc5" secondAttribute="trailing" constant="8" id="7eu-YP-3NN"/>
                                                         <constraint firstItem="phm-52-lUA" firstAttribute="top" secondItem="8wh-WC-7Ga" secondAttribute="top" constant="10" id="Ayy-rm-D8a"/>
-                                                        <constraint firstItem="xFE-v0-KFV" firstAttribute="top" secondItem="8wh-WC-7Ga" secondAttribute="top" constant="6" id="ESP-Yo-UEd"/>
+                                                        <constraint firstItem="xFE-v0-KFV" firstAttribute="top" secondItem="8wh-WC-7Ga" secondAttribute="top" id="ESP-Yo-UEd"/>
                                                         <constraint firstAttribute="trailing" secondItem="xFE-v0-KFV" secondAttribute="trailing" id="JdB-PB-qAJ"/>
                                                         <constraint firstAttribute="bottom" secondItem="ML8-74-Lc5" secondAttribute="bottom" constant="6" id="KS1-mK-ZZ9"/>
                                                         <constraint firstItem="phm-52-lUA" firstAttribute="leading" secondItem="8wh-WC-7Ga" secondAttribute="leading" constant="8" id="Men-oc-m67"/>
@@ -140,12 +140,13 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIZ-RP-p3H" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
-                                <rect key="frame" x="110" y="45" width="80" height="50"/>
-                                <color key="backgroundColor" red="0.54757654649999998" green="0.42840963869999998" blue="0.53220990899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="109" y="45" width="80" height="50"/>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.25098039215686274" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dVM-rf-W7q"/>
                                     <constraint firstAttribute="width" constant="80" id="n53-Qd-G39"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="تازه ترین ها">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -160,11 +161,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgf-94-TPb" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
                                 <rect key="frame" x="8" y="45" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.63137254899999995" green="0.45483711939999999" blue="0.62806174820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Fnl-Hf-fOo"/>
                                     <constraint firstAttribute="width" constant="100" id="c5V-nb-ffl"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="پرمخاطب ترین ها">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -194,7 +196,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="FbO-Iy-DqD" secondAttribute="trailing" constant="8" id="39b-9z-Ncx"/>
                                     <constraint firstItem="FbO-Iy-DqD" firstAttribute="top" secondItem="R5i-zZ-Uql" secondAttribute="top" constant="19" id="7kK-bd-8bC"/>
@@ -204,7 +206,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bIZ-RP-p3H" firstAttribute="leading" secondItem="qgf-94-TPb" secondAttribute="trailing" constant="2" id="AoE-FM-y2m"/>
+                            <constraint firstItem="bIZ-RP-p3H" firstAttribute="leading" secondItem="qgf-94-TPb" secondAttribute="trailing" constant="1" id="AoE-FM-y2m"/>
                             <constraint firstItem="R5i-zZ-Uql" firstAttribute="top" secondItem="3qz-GL-8c8" secondAttribute="bottom" constant="-20" id="ITt-t2-RGM"/>
                             <constraint firstItem="bIZ-RP-p3H" firstAttribute="top" secondItem="R5i-zZ-Uql" secondAttribute="bottom" constant="-10" id="Zwe-t1-j0g"/>
                             <constraint firstItem="qgf-94-TPb" firstAttribute="top" secondItem="R5i-zZ-Uql" secondAttribute="bottom" constant="-10" id="eEs-aO-OZa"/>
@@ -251,7 +253,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="koF-bj-9tz" firstAttribute="top" secondItem="Unv-32-Aap" secondAttribute="top" constant="19" id="BvW-HI-pFU"/>
                                     <constraint firstAttribute="height" constant="55" id="Pti-4Q-Xrt"/>
@@ -260,7 +262,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tv1-wI-w9U">
                                 <rect key="frame" x="0.0" y="55" width="187.5" height="40"/>
-                                <color key="backgroundColor" red="0.63137254899999995" green="0.45483711939999999" blue="0.62806174820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="VwH-6h-fsO"/>
                                 </constraints>
@@ -272,8 +274,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIO-h4-D4d">
-                                <rect key="frame" x="187" y="55" width="187.5" height="40"/>
-                                <color key="backgroundColor" red="0.54757654649999998" green="0.42840963869999998" blue="0.53220990899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="187" y="55" width="195" height="40"/>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="SS5-IZ-Phn"/>
                                 </constraints>
@@ -318,7 +320,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4vI-eX-gW2">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="continent" translatesAutoresizingMaskIntoConstraints="NO" id="4vI-eX-gW2">
                                                             <rect key="frame" x="104" y="35" width="150" height="162"/>
                                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
@@ -371,9 +373,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Unv-32-Aap" secondAttribute="trailing" constant="-16" id="TU2-cr-yZo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ba8-Rp-Mo4" secondAttribute="trailing" constant="-16" id="az9-KF-dK7"/>
                             <constraint firstItem="ba8-Rp-Mo4" firstAttribute="top" secondItem="tv1-wI-w9U" secondAttribute="bottom" id="b3v-Ys-0gW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dIO-h4-D4d" secondAttribute="trailing" constant="-15.5" id="dJ0-jM-CX7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dIO-h4-D4d" secondAttribute="trailing" constant="-23" id="dJ0-jM-CX7"/>
                             <constraint firstItem="dIO-h4-D4d" firstAttribute="leading" secondItem="tv1-wI-w9U" secondAttribute="trailing" constant="-0.5" id="hc6-De-JEN"/>
-                            <constraint firstItem="tv1-wI-w9U" firstAttribute="width" secondItem="dIO-h4-D4d" secondAttribute="width" id="ihn-6w-sb8"/>
+                            <constraint firstItem="tv1-wI-w9U" firstAttribute="width" secondItem="dIO-h4-D4d" secondAttribute="width" constant="-7.5" id="ihn-6w-sb8"/>
                             <constraint firstItem="Unv-32-Aap" firstAttribute="top" secondItem="pQ6-I5-0uF" secondAttribute="bottom" constant="-20" id="og8-bS-C2F"/>
                             <constraint firstItem="tv1-wI-w9U" firstAttribute="leading" secondItem="aBV-Pg-ZM0" secondAttribute="leadingMargin" constant="-16" id="okR-g3-Z8p"/>
                             <constraint firstItem="dIO-h4-D4d" firstAttribute="top" secondItem="Unv-32-Aap" secondAttribute="bottom" id="ypJ-8R-Hch"/>
@@ -417,7 +419,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="TPY-eN-8Yf"/>
                                     <constraint firstAttribute="trailing" secondItem="QDN-QN-FJl" secondAttribute="trailing" constant="8" id="bWt-lR-dax"/>
@@ -456,7 +458,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hen-c6-wIN" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
                                 <rect key="frame" x="8" y="45" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.63137254899999995" green="0.45483711939449517" blue="0.6280617481846954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="پرمخاطب ترین ها">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -473,9 +475,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7f-Sc-gAw" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
-                                <rect key="frame" x="110" y="45" width="80" height="50"/>
+                                <rect key="frame" x="109" y="45" width="80" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.54757654646192888" green="0.42840963874574667" blue="0.53220990895935527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.88755967882222231" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="تازه ترین ها">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -502,7 +505,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="2wV-eA-Jcw"/>
                                     <constraint firstItem="C3A-tI-f8j" firstAttribute="top" secondItem="gpc-Kd-4mp" secondAttribute="top" constant="19" id="6aT-RK-yEn"/>
@@ -537,9 +540,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.25098039215686274" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.25098039215686274" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="537-pv-WSg" kind="relationship" relationship="viewControllers" id="VSH-Po-GNZ"/>
@@ -554,7 +557,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="continent" width="225" height="225"/>
         <image name="fluid_graph" width="26" height="12"/>
+        <image name="heart-outline (1)" width="16" height="16"/>
         <image name="line_graph" width="18" height="19"/>
         <image name="piechart" width="23" height="23"/>
     </resources>
