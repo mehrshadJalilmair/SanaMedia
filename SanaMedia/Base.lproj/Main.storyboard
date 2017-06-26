@@ -292,7 +292,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="257"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vuo-UL-BbF" id="QhO-fA-7rT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="256.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="257"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IU-LW-sAF">
@@ -433,10 +433,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="دسته بندی" image="fluid_graph" id="DIN-ia-hVE"/>
+                    <connections>
+                        <outlet property="topView" destination="5id-rd-jnq" id="Y2f-Zz-Glx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1b-n1-Nl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="1368"/>
+            <point key="canvasLocation" x="760.79999999999995" y="1367.7661169415294"/>
         </scene>
         <!--Tab 1-->
         <scene sceneID="EZ2-Fw-tf8">

@@ -8,11 +8,10 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController {
-
+class CategoryViewController: UIViewController{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
 }
