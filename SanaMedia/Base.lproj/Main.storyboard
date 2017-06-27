@@ -187,12 +187,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbO-Iy-DqD">
-                                        <rect key="frame" x="331" y="19" width="36" height="36"/>
+                                        <rect key="frame" x="343" y="31" width="24" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="LbO-O1-7jx"/>
-                                            <constraint firstAttribute="width" constant="36" id="p1g-Yr-qWB"/>
+                                            <constraint firstAttribute="height" constant="24" id="LbO-O1-7jx"/>
+                                            <constraint firstAttribute="width" constant="24" id="p1g-Yr-qWB"/>
                                         </constraints>
-                                        <state key="normal" image="line_graph">
+                                        <state key="normal" image="user">
                                             <color key="titleColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
@@ -200,7 +200,7 @@
                                 <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="FbO-Iy-DqD" secondAttribute="trailing" constant="8" id="39b-9z-Ncx"/>
-                                    <constraint firstItem="FbO-Iy-DqD" firstAttribute="top" secondItem="R5i-zZ-Uql" secondAttribute="top" constant="19" id="7kK-bd-8bC"/>
+                                    <constraint firstItem="FbO-Iy-DqD" firstAttribute="top" secondItem="R5i-zZ-Uql" secondAttribute="top" constant="31" id="7kK-bd-8bC"/>
                                     <constraint firstAttribute="height" constant="55" id="DNE-lT-jCc"/>
                                 </constraints>
                             </view>
@@ -297,19 +297,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koF-bj-9tz">
-                                        <rect key="frame" x="331" y="19" width="36" height="36"/>
+                                        <rect key="frame" x="343" y="31" width="24" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="36" id="E83-Xt-gJ5"/>
-                                            <constraint firstAttribute="height" constant="36" id="hYL-KS-hH3"/>
+                                            <constraint firstAttribute="width" constant="24" id="E83-Xt-gJ5"/>
+                                            <constraint firstAttribute="height" constant="24" id="hYL-KS-hH3"/>
                                         </constraints>
-                                        <state key="normal" image="line_graph">
+                                        <state key="normal" image="user">
                                             <color key="titleColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="koF-bj-9tz" firstAttribute="top" secondItem="Unv-32-Aap" secondAttribute="top" constant="19" id="BvW-HI-pFU"/>
+                                    <constraint firstItem="koF-bj-9tz" firstAttribute="top" secondItem="Unv-32-Aap" secondAttribute="top" constant="31" id="BvW-HI-pFU"/>
                                     <constraint firstAttribute="height" constant="55" id="Pti-4Q-Xrt"/>
                                     <constraint firstAttribute="trailing" secondItem="koF-bj-9tz" secondAttribute="trailing" constant="8" id="gDT-wr-uMp"/>
                                 </constraints>
@@ -463,12 +463,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-QN-FJl">
-                                        <rect key="frame" x="331" y="19" width="36" height="36"/>
+                                        <rect key="frame" x="343" y="31" width="24" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="H7U-hH-au9"/>
-                                            <constraint firstAttribute="width" constant="36" id="ynC-6x-GOF"/>
+                                            <constraint firstAttribute="height" constant="24" id="H7U-hH-au9"/>
+                                            <constraint firstAttribute="width" constant="24" id="ynC-6x-GOF"/>
                                         </constraints>
-                                        <state key="normal" image="line_graph">
+                                        <state key="normal" image="user">
                                             <color key="titleColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
@@ -477,7 +477,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="TPY-eN-8Yf"/>
                                     <constraint firstAttribute="trailing" secondItem="QDN-QN-FJl" secondAttribute="trailing" constant="8" id="bWt-lR-dax"/>
-                                    <constraint firstItem="QDN-QN-FJl" firstAttribute="top" secondItem="5id-rd-jnq" secondAttribute="top" constant="19" id="cQu-1l-Jwp"/>
+                                    <constraint firstItem="QDN-QN-FJl" firstAttribute="top" secondItem="5id-rd-jnq" secondAttribute="top" constant="31" id="cQu-1l-Jwp"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -550,12 +550,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3A-tI-f8j">
-                                        <rect key="frame" x="331" y="19" width="36" height="36"/>
+                                        <rect key="frame" x="343" y="31" width="24" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="JUz-Aw-fHt"/>
-                                            <constraint firstAttribute="width" constant="36" id="bo5-cu-haR"/>
+                                            <constraint firstAttribute="height" constant="24" id="JUz-Aw-fHt"/>
+                                            <constraint firstAttribute="width" constant="24" id="bo5-cu-haR"/>
                                         </constraints>
-                                        <state key="normal" image="line_graph">
+                                        <state key="normal" image="user">
                                             <color key="titleColor" red="1" green="0.4689908471" blue="0.24206230919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
@@ -563,7 +563,7 @@
                                 <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="2wV-eA-Jcw"/>
-                                    <constraint firstItem="C3A-tI-f8j" firstAttribute="top" secondItem="gpc-Kd-4mp" secondAttribute="top" constant="19" id="6aT-RK-yEn"/>
+                                    <constraint firstItem="C3A-tI-f8j" firstAttribute="top" secondItem="gpc-Kd-4mp" secondAttribute="top" constant="31" id="6aT-RK-yEn"/>
                                     <constraint firstAttribute="trailing" secondItem="C3A-tI-f8j" secondAttribute="trailing" constant="8" id="haR-eV-KeP"/>
                                 </constraints>
                             </view>
@@ -618,5 +618,6 @@
         <image name="heart-outline (1)" width="16" height="16"/>
         <image name="line_graph" width="18" height="19"/>
         <image name="piechart" width="23" height="23"/>
+        <image name="user" width="32" height="32"/>
     </resources>
 </document>

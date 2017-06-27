@@ -23,6 +23,7 @@ extension UIImageView{
         }
         
         let url = URL(string: singleton.url_static_part + url_)
+        print(url!)
         //print(singleton.url_static_part + url_)
         
         URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
@@ -41,7 +42,6 @@ extension UIImageView{
                 }
                 else
                 {
-                    //self.image = UIImage(named: "")
                 }
             })
         }).resume()

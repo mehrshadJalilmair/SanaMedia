@@ -83,9 +83,10 @@ extension VideosCell
         cell.time.text = movie?.Duration
         cell.Description.text = movie?.Description
         cell.like.setTitle(movie?.Likes, for: UIControlState.normal)
-        if (movie?.Picture_URLS[1])!.contains("/")
+        
+        if (movie?.Picture_URLS[0])!.contains("/")
         {
-            cell.trailer.loadImageWithCasheWithUrl((movie?.Picture_URLS[1])!)
+            cell.trailer.loadImageWithCasheWithUrl((movie?.Picture_URLS[0])!)
         }
         
         if indexPath.row + 1 == self.newestMovies.count {

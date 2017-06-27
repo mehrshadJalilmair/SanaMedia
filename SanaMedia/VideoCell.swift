@@ -44,6 +44,7 @@ class VideoCell: UICollectionViewCell {
         Description.translatesAutoresizingMaskIntoConstraints = false
         Description.text = "no description"
         Description.textAlignment = .center
+        Description.numberOfLines = 5
         return Description
     }()
     
@@ -60,7 +61,7 @@ class VideoCell: UICollectionViewCell {
         var playImage = UIImageView()
         playImage.translatesAutoresizingMaskIntoConstraints = false
         playImage.contentMode = .scaleToFill
-        playImage.image = UIImage(named: "fluid_graph")
+        playImage.image = UIImage(named: "play")
         return playImage
     }()
     
@@ -118,7 +119,7 @@ class VideoCell: UICollectionViewCell {
         //y
         verticalConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0)
         //w
-        widthConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: trailer, attribute: NSLayoutAttribute.width, multiplier: 1/3, constant: 0)
+        widthConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
         //h
         heightConstraint = NSLayoutConstraint(item: playImage, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])

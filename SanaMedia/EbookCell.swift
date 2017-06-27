@@ -22,6 +22,7 @@ class EbookCell: UICollectionViewCell {
         var trialer = UIImageView()
         trialer.translatesAutoresizingMaskIntoConstraints = false
         trialer.contentMode = .scaleToFill
+        trialer.image = UIImage(named: "ic_ebook")
         return trialer
     }()
     
