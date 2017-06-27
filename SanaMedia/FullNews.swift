@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyToast
 
 class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
@@ -51,7 +52,7 @@ class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
     var leaveComment:UIButton! =
     {
         var btn = UIButton(type: UIButtonType.system)
-        btn.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+        btn.setImage(UIImage(named:"comment"), for: UIControlState.normal)
         btn.addTarget(self, action: #selector(leavingComment), for: UIControlEvents.touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.tintColor = UIColor.gray
@@ -129,6 +130,7 @@ class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
         self.scrollVew.contentSize = CGSize(width: self.scrollVew.frame.width, height:
             newsImage.frame.height + newsTitle.frame.height + newsContent.frame.height +
                 like.frame.height + tableView.frame.height + 10)
+        getComments()
     }
     
     func initView()
@@ -220,7 +222,7 @@ class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
     }
     func configTableView()
     {
-        view.addSubview(tableView)
+        scrollVew.addSubview(tableView)
         //x
         let horizontalConstraint = NSLayoutConstraint(item: tableView, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: scrollVew, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: 0)
         //y
@@ -228,7 +230,7 @@ class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
         //w
         let widthConstraint = NSLayoutConstraint(item: tableView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: scrollVew, attribute: NSLayoutAttribute.width, multiplier: 1, constant: 0)
         //h
-        let heightConstraint = NSLayoutConstraint(item: tableView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 100.0)
+        let heightConstraint = NSLayoutConstraint(item: tableView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 320.0)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
         
         self.tableView.estimatedRowHeight = 100.0
@@ -320,7 +322,6 @@ extension FullNews
                 }
             }
             else
-                
             {
                 //show error
             }
@@ -334,7 +335,7 @@ extension FullNews
     func getCommentsData(data:[String:AnyObject])
     {
         let itemsCount:Int = data["itemsCount"] as! Int
-        let _Comments:[AnyObject] = data["Comments"] as! [AnyObject]
+        let _Comments = data["Comments"] as! [AnyObject]
         
         self.commentsPageIndex += 1
         self.commentsPageSize = itemsCount/10 + 1
@@ -343,6 +344,14 @@ extension FullNews
             
             let newNews = Comment(comment: item)
             self.comments.append(newNews)
+        }
+        
+        if itemsCount == 0
+        {
+            DispatchQueue.main.async {
+                
+                self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+            }
         }
     }
 }

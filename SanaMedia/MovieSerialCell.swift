@@ -49,7 +49,7 @@ class MovieSerialCell: UICollectionViewCell {
     {
         var line = UIView()
         line.translatesAutoresizingMaskIntoConstraints = false
-        line.backgroundColor = UIColor.purple
+        line.backgroundColor = UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1)
         return line
     }()
     
