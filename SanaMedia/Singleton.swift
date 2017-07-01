@@ -32,7 +32,13 @@ final class Singleton {
         "newest_moive_serials":"/newest_moive_serials/?pagesize=%@&pageindex=%@&querytype=%@",
         "newest_news":"/newest_news/?pagesize=%@&pageindex=%@&querytype=%@",
         "live_shows":"/live_shows/?channel=%@",
-        "get_comments":"/get_comments/?type=%@&id=%@&pageindex=%@&pagesize=%@"
+        "get_comments":"/get_comments/?type=%@&id=%@&pageindex=%@&pagesize=%@",
+        "authenticate": "/users/authenticate/",
+        "Registration": "/users/Registration/",
+        "logout":"/users/logout/",
+        "update_profile":"/users/update_profile/",
+        "survay":"/users/survay/",
+        "newest_messages":"/newest_messages/?pagesize=%@&pageindex=%@&token=%@"
     ]
     
     //: Singleton implementation

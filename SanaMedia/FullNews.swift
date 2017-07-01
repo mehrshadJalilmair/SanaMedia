@@ -246,11 +246,11 @@ extension FullNews
             
         }
     }
-    func leavingComment()
+    @objc func leavingComment()
     {
         print("leavingComment")
     }
-    func Like()
+    @objc func Like()
     {
         print("Like")
     }
@@ -285,6 +285,10 @@ extension FullNews
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+    public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return UITableViewAutomaticDimension
+    }
     
     func getComments()
     {
@@ -301,7 +305,7 @@ extension FullNews
     }
     
     //: handles data when recieved from server
-    func notificationReceived(_ notification: Notification)
+    @objc func notificationReceived(_ notification: Notification)
     {
         let error = notification.userInfo?["error"] as! String
         let data = notification.userInfo?["data"] as! [String:AnyObject]
@@ -334,6 +338,8 @@ extension FullNews
     
     func getCommentsData(data:[String:AnyObject])
     {
+        print(data["Comments"] as! [AnyObject])
+        print(self.news.Id)
         let itemsCount:Int = data["itemsCount"] as! Int
         let _Comments = data["Comments"] as! [AnyObject]
         

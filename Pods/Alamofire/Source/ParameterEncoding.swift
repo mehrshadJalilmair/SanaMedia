@@ -244,7 +244,7 @@ public struct URLEncoding: ParameterEncoding {
     #if swift(>=4.0)
         return components.map { "\($0.0)=\($0.1)" }.joined(separator: "&")
     #else
-        return components.map { "\($0)=\($1)" }.joined(separator: "&")
+        return components.map { "\($0.0)=\($0.1)" }.joined(separator: "&")
     #endif
     }
 

@@ -7,194 +7,265 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679CF54256BB8E73748F567391550916 /* CosmosSettings.swift */; };
 		05DE1EC90D94C616210EA4D530BF9E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		06C0BABACABDCDD498CCCB0EDC479A4E /* UIView+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87623A7F69162C44D997B090DA41946 /* UIView+Toast.swift */; };
-		073CF97A8F946DAB9FAAF683EB644E35 /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215F823B9E12C04C06B9D0C783A4705 /* SwipeAnimationType.swift */; };
-		0F340DF040D6B903CB11B3A2A9255F3A /* ExpandableTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAF12FD2245FFB718082EEAF3EA94A1 /* ExpandableTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40360C439BC052F61B0FED400A971C5C /* Timeline.swift */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7394FD8CC26C91BD93CE1DB43ED89007 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F6002627ADC94D205E452EB6CB06A87 /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F42C41E8E9B1F0A270663253E38AA /* SwipeTransitioningProtocol.swift */; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECAC1079E309C22CE521739C7C0E51 /* TaskDelegate.swift */; };
+		06C0BABACABDCDD498CCCB0EDC479A4E /* UIView+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B0ED59A6F654ADC121B09ACF32B4E /* UIView+Toast.swift */; };
+		0E72E78E27E4EE1F077C3DE5A66241A5 /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59219DE8EB76B3AF04C5BA16FD3470AF /* SwipeAnimationType.swift */; };
+		0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2571CD98B1ED4F738292B476B5A9D /* CosmosLocalizedRating.swift */; };
+		0F340DF040D6B903CB11B3A2A9255F3A /* ExpandableTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8460165418F50E7D830F50D9609FAE7 /* ExpandableTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED5E786DE427FC598D330D78012A66D /* Timeline.swift */; };
+		165FC7EBF5802665E517EA3A19262F02 /* Pods-SanaMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E96EDA15FF4774ABE935CF1109C752FE /* Pods-SanaMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		197232BD85D47E20988761AF4CEACC25 /* Pods-SanaMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C80A48EAE0BF1D976C938E9BEDED6A /* Pods-SanaMedia-dummy.m */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66DFE8896DFF97C2FDE7DB71AE516C7D /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CE43B2E9A92ED27D3AE1594B0E0101 /* SwipeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79861760E4A1C232959E0E5DA7BCC6DB /* SwipeAnimation.swift */; };
+		25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C4BF768F00B25CD5C4617C66CCE66 /* CosmosSize.swift */; };
+		314D3373A500049CB07BA259C07BB748 /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809F7F65123FE7A534F348B59300CFB0 /* SwipeableTabBarController.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4EECF37CFE73FB7FE8A81D3F176AB /* TaskDelegate.swift */; };
+		371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224516CF6E0A214605040CC4FD87D4CF /* CosmosDefaultSettings.swift */; };
+		3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A63E7F9D7C5A5D89C8170E9260E0E5 /* Cosmos-dummy.m */; };
+		3F8A707AEA8A262B41027E4EBC6ED48B /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288622A722A012198A02C0AD9FAE4276 /* SwipeInteractor.swift */; };
+		424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41133550619DF00DCB27400B543865F0 /* CosmosText.swift */; };
+		45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAD997C05D4830299D7D80B95495D6D /* CosmosView.swift */; };
 		467F78D35EF4F18C68BBA07BF17480A6 /* Pods-SanaMediaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 612DEC9507988414F213840818A1B82B /* Pods-SanaMediaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D7C26B6CE6F415D5E3C4FD4BCE25362 /* Pods-SanaMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E96EDA15FF4774ABE935CF1109C752FE /* Pods-SanaMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		534626138592F0645AD92EB06B14202B /* EasyToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33CE872E03B0E321C77B394A853571 /* EasyToast-dummy.m */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A1A0AA34B9CC5859186F2F9C9A05DF /* Request.swift */; };
-		54016F2AB981D6FEF55C46299B60B839 /* ExpandableTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147E8B20226145BAFD74B2F30E6F223D /* ExpandableTableViewDelegate.swift */; };
+		4ECA3C91308D1774CC23FB4EFBD6679E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F826D6A7FD511E5F8BA6C472D937AB37 /* CosmosTouch.swift */; };
+		534626138592F0645AD92EB06B14202B /* EasyToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CB2691A0E427AACF75C29582192D4 /* EasyToast-dummy.m */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C0DDE3A3AD04A45BAE3EC4CE6EEA2 /* Request.swift */; };
+		54016F2AB981D6FEF55C46299B60B839 /* ExpandableTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EEDF5288D940315712F3CEF2A3791 /* ExpandableTableViewDelegate.swift */; };
 		54E4CFE4DFC75233B7DD79700E2287B7 /* Pods-SanaMediaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D92718B4322C23952C02B338AFCD88B8 /* Pods-SanaMediaUITests-dummy.m */; };
-		5AA4CC0B8BBC940473EDDEA74E9CAD2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		60AB8B6839AA4D3957E706023FD1E1A1 /* QueueToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27195BF56932E897D7E6F390C6E52A9A /* QueueToast.swift */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B666779B2A1C329257F067E8F3530 /* DispatchQueue+Alamofire.swift */; };
-		6286DD45E605B3461674E907391AEF19 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C29E6FC86B518CB890B12C2864A2D6 /* SwipeableTabBarController-dummy.m */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C517FF3D15F28F7DF810633AE1F8ACCA /* ServerTrustPolicy.swift */; };
-		6AB06EE1B15D7CC54D0ABA09FAE8E375 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8638A8277C373BD02C8045A2BF325F16 /* ArrayExtension.swift */; };
-		6BBD21D798A1090EB63138413CD0743A /* EasyToastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B99CBAE9CA967F2CFD15F62837698D1 /* EasyToastConfiguration.swift */; };
+		584142763F55FC67201EBE9B94EE7E7F /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED34474221B06964E39DDB401442A2B /* SwipeTransitioningProtocol.swift */; };
+		60AB8B6839AA4D3957E706023FD1E1A1 /* QueueToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE09E66A000DD7A5AD7AFC697BAEF7B /* QueueToast.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D304D80071A91F21E58038279039D /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B63BD28F6FC405CCB4B30FB8D9C53C4 /* ServerTrustPolicy.swift */; };
+		6AB06EE1B15D7CC54D0ABA09FAE8E375 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00E3DB2052DD4A4E8B60E418B9995BA /* ArrayExtension.swift */; };
+		6BBD21D798A1090EB63138413CD0743A /* EasyToastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A870FF61FA6CAEB4ABA34E38E86FD83 /* EasyToastConfiguration.swift */; };
 		6C460065AA92FE7508375CBFBF2EDA4F /* Pods-SanaMediaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD9BB4F869FF704E693680CA472F2AF /* Pods-SanaMediaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71C76D755AADC7FC5C4A4CC21C8CEF00 /* ExpandableTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C12E16A86DCF109BB1D328439EC2E2FA /* ExpandableTableViewController-dummy.m */; };
+		6CDFEEA2845949123F63A23C8AEA21B2 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52BA2F96951DD9FFAA40B95F827B75B /* UIKit+Extensions.swift */; };
+		71C76D755AADC7FC5C4A4CC21C8CEF00 /* ExpandableTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BF1818B3E4B788472E062FD5B36C73 /* ExpandableTableViewController-dummy.m */; };
 		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7422DB7C92D830D3B4BB04481E92582C /* SwipeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BD23F0DC95E1C7802F1ECF8CB92B6 /* SwipeAnimation.swift */; };
-		74F556E4F9CB853881AE2029D40FF246 /* ToastContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E895DF643A1BCE7E250EA7A467E99 /* ToastContainerVC.swift */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EDEA2008DBF308F9BD14C869B8CCA /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED4C758526D5F9F6D20B4366DF4DC3 /* Result.swift */; };
+		74F556E4F9CB853881AE2029D40FF246 /* ToastContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB550C2C595F0D161EB2420E4F27ABB /* ToastContainerVC.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D60AD56ECDA11A8AA6BAC6C15D469A3 /* SessionDelegate.swift */; };
+		7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C072916311233B3084635AED2AE72441 /* CosmosAccessibility.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C97BC756B5F4167858E2102F3FE40 /* Result.swift */; };
 		7E3778D4124CB3096E2238A74FA9E741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8E8E15D7075EB0DAC9FD44054BAB4E0C /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E388F05086896A7E575ADE8429D61 /* ToastWindow.swift */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B35B3D16A2C00ABE4E1D8EC448278 /* AFError.swift */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36248F7D527AA5D0437FA76F3752A67 /* NetworkReachabilityManager.swift */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C078DD25EF32ED26143DAF09BA8B18 /* Alamofire-dummy.m */; };
-		AA34DA309B4C76B5B88F717441928074 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171D175A6AFEF9B9E844FFBC253AE3D3 /* UIKit+Extensions.swift */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39C8CE16A70AA2FFCCE1022614EEA3D /* SessionManager.swift */; };
-		AF7809A3F3371A61D235787EEDAA40F4 /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E78316D8C852B6DD675BE0B4213EBA /* SwipeInteractor.swift */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621D78405C28E205453CD3E1150EF3C /* MultipartFormData.swift */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CEE15CE5694E279DC83A91C2F86D6 /* Validation.swift */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BEB0E1291FDD7537919F9CF05E3E7 /* ParameterEncoding.swift */; };
-		C131FB4E17DC6BEFA7E4FA0A451BFF65 /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5063B365833A51F6F09357B11F07E68F /* SwipeableTabBarController.swift */; };
+		88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5510CB934E8CAA55F1C6199F6EFED3 /* StarFillMode.swift */; };
+		8E8E15D7075EB0DAC9FD44054BAB4E0C /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA6B1F190A4DE0741EC542EABED8F9 /* ToastWindow.swift */; };
+		99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8DCDC173FE10588E01BACCE83B4F2 /* CosmosRating.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5205FB1663CCF10D941A6C78A11D5D1 /* AFError.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2533B08EE5F66744CA3216E306176A62 /* NetworkReachabilityManager.swift */; };
+		A8D0F1C3405DD1451822DBEDCB4925BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDFB26C27710B13F1EC80E1B232937B /* Alamofire-dummy.m */; };
+		AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A61913BFDD5CB51C3725C576A0FAB4 /* CosmosLayers.swift */; };
+		ADC161AC4998915AA79AEF065873B820 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4B45DC70EF6575824FC7C61D659368 /* SwipeableTabBarController-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEEFEAB6A9252BA99727CA80F09AAE /* SessionManager.swift */; };
+		AE4C41B21D09448C9CB86A1FB0F64C28 /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D43EFBA1C466C2929C5C00B4BDE9F2C3 /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE66E4502E5949E11105E5D45DABE305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFCF51EA508D5B66DB9B06A3097875B /* MultipartFormData.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21E7E603BF57E06656872C59B51F4D /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FE1B5BC3AC9A222024DBFA87FF235 /* ParameterEncoding.swift */; };
 		C4DA3D914016D72F635C633B6F9C1978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C6DACD041A9C7BDD08E1A6BF35D6959A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF246AAEBF6EC430AEC6D698A07767 /* Response.swift */; };
-		DE86A94CDE560363D1AD2022518992C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E69660E5EF4A6A9A910AF28C26F9203C /* Pods-SanaMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C80A48EAE0BF1D976C938E9BEDED6A /* Pods-SanaMedia-dummy.m */; };
-		EE1AB9F4A02F47BF02401735620FB75B /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF4A42F384A696B7044204D30255EBA /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439E1ED2B706D879D9E336A4E867D2 /* Notifications.swift */; };
-		F4F8E720F69212996C6E388AD86059E2 /* EasyToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF1FB9C50E78D956035EA5999E72678 /* EasyToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E6399A0ABB5027AB076F3BD4BAAD4 /* ResponseSerialization.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF37F54BECD7F239632B2573BFF1F460 /* Alamofire.swift */; };
-		FA9BC38CCE677FEF3954D044305D5F6F /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE57EE6D01C2D6F6D1A86F3588DAB98D /* ExpandableTableViewController.swift */; };
+		C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6820F86C62831C35750523D40B6D40A /* RightToLeft.swift */; };
+		C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758E269DDC582DABD59D6D28418DA36 /* StarLayer.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43091BEFF77CAD3F2D7F3BEC761BF475 /* Response.swift */; };
+		DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9025A24BBDF9BC579124F3C9699985 /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B74A822867928A3225CD77A97100C /* CosmosTouchTarget.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62A5F9A529822EDEFDDF2572DFBCB65 /* Notifications.swift */; };
+		F4F8E720F69212996C6E388AD86059E2 /* EasyToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6AC8692C69532F7FA4EE1E6262A852 /* EasyToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A226550ADDD4014B4E6520D146971EF0 /* CosmosLayerHelper.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EB7AC23323BA493E9681C0E366C625 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA102D52A8EA8A908AFA53DF2301FE /* Alamofire.swift */; };
+		FA9BC38CCE677FEF3954D044305D5F6F /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E08F1D7372222AFD2D3C750612E03F /* ExpandableTableViewController.swift */; };
 		FC9E79B66D2732FF99EE6CE38E2031AB /* Pods-SanaMediaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 126F47CC4AA849EEFCAD72DBA1877852 /* Pods-SanaMediaTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		06FC144AD3853CBD56093495ECA8B230 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C8456FF24E9C7E2EBF0ED83E89F64470;
-			remoteInfo = SwipeableTabBarController;
-		};
-		45D826F083FB1C410B677A6F31F8EEE0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C7A27CEE1A5A58B01166DDC8469E0871;
-			remoteInfo = EasyToast;
-		};
-		617B587C182238D62F2E1483C3E76E12 /* PBXContainerItemProxy */ = {
+		1F813D1FBC4FDA191B65D2F07A306038 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96AFA871D25A87F6FCCFED071D32EBC8;
 			remoteInfo = ExpandableTableViewController;
 		};
-		9884547228B6F773CB9BAB9E0DE1D97E /* PBXContainerItemProxy */ = {
+		3C9710D7FB167D4C3EC76E5F0DD49332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57C616FFCFF1C1357588E2255088E63B;
+			remoteInfo = SwipeableTabBarController;
+		};
+		52C690A99314DBFA4C32C9BE4920605B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
+		6593E4A9EDEABD114896320F56CF510D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7A27CEE1A5A58B01166DDC8469E0871;
+			remoteInfo = EasyToast;
+		};
+		FFCC3A9BACF32F47D0627CB297823995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDC533A4360A68ABDCE852F04B30927;
+			remoteInfo = Cosmos;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0440A8AEBB965E64034EC090B990D5B1 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableTabBarController.framework; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		04ECAC1079E309C22CE521739C7C0E51 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		060DD5EC4E7739B8A4DEF1B128BEC666 /* ExpandableTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ExpandableTableViewController.framework; path = ExpandableTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		067726428428B3AD4A80977E477BAD79 /* EasyToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-prefix.pch"; sourceTree = "<group>"; };
-		0B99CBAE9CA967F2CFD15F62837698D1 /* EasyToastConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyToastConfiguration.swift; path = EasyToast/Classes/EasyToastConfiguration.swift; sourceTree = "<group>"; };
-		0E2BD23F0DC95E1C7802F1ECF8CB92B6 /* SwipeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimation.swift; path = SwipeableTabBarController/Classes/SwipeAnimation.swift; sourceTree = "<group>"; };
+		0062A5F412F2F7D93ABC9B63A5B4FC56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE2571CD98B1ED4F738292B476B5A9D /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		0C81FCC9408DF5AF941F692EBA155AC6 /* Pods_SanaMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMedia.framework; path = "Pods-SanaMedia.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126F47CC4AA849EEFCAD72DBA1877852 /* Pods-SanaMediaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SanaMediaTests-dummy.m"; sourceTree = "<group>"; };
-		147E8B20226145BAFD74B2F30E6F223D /* ExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewDelegate.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
-		171D175A6AFEF9B9E844FFBC253AE3D3 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		1837770D8E2FEFE34F374A60940D950C /* Pods-SanaMediaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMediaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1857F6BC009AB5A4F772FCD26C68FD69 /* Pods-SanaMediaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		1DA21A8C9F01E6DB8C350EB56CA6688B /* Pods_SanaMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaTests.framework; path = "Pods-SanaMediaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB4EECF37CFE73FB7FE8A81D3F176AB /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		1E9C4BF768F00B25CD5C4617C66CCE66 /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
 		1EE1E72C7093DA5DBDCC9EF267B7068C /* Pods-SanaMediaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMediaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F6AC8692C69532F7FA4EE1E6262A852 /* EasyToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-umbrella.h"; sourceTree = "<group>"; };
+		224516CF6E0A214605040CC4FD87D4CF /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
 		2356A51A767FFE9D53FC90334E9D7EA9 /* Pods-SanaMediaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMediaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		254E895DF643A1BCE7E250EA7A467E99 /* ToastContainerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastContainerVC.swift; path = EasyToast/Classes/ToastContainerVC.swift; sourceTree = "<group>"; };
-		27195BF56932E897D7E6F390C6E52A9A /* QueueToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueueToast.swift; path = EasyToast/Classes/QueueToast.swift; sourceTree = "<group>"; };
-		27A1A0AA34B9CC5859186F2F9C9A05DF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		2B8B35B3D16A2C00ABE4E1D8EC448278 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		2533B08EE5F66744CA3216E306176A62 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		288622A722A012198A02C0AD9FAE4276 /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
+		2A870FF61FA6CAEB4ABA34E38E86FD83 /* EasyToastConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyToastConfiguration.swift; path = EasyToast/Classes/EasyToastConfiguration.swift; sourceTree = "<group>"; };
+		2AD090C66AFB430CF5FA61266A99B294 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C2C3251B88FAF35ABB8FBC90A2C9C6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E5E388F05086896A7E575ADE8429D61 /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = EasyToast/Classes/ToastWindow.swift; sourceTree = "<group>"; };
-		3789EAF1B4A42A9B31947DA2C3803A9A /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
-		37F1A7D3AA92FEC7D935CC53512B6A54 /* EasyToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyToast.modulemap; sourceTree = "<group>"; };
-		40360C439BC052F61B0FED400A971C5C /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		43C078DD25EF32ED26143DAF09BA8B18 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		46439E1ED2B706D879D9E336A4E867D2 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		2D3B0ED59A6F654ADC121B09ACF32B4E /* UIView+Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Toast.swift"; path = "EasyToast/Classes/UIView+Toast.swift"; sourceTree = "<group>"; };
+		2E5D56F45DA3BBCED18985E052AB3517 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36007AEF7C5E50B04EE02AD469167657 /* ExpandableTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExpandableTableViewController.xcconfig; sourceTree = "<group>"; };
+		3655E3E974B2B896C3A2D54A96D9719C /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
+		37D8DCDC173FE10588E01BACCE83B4F2 /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		41133550619DF00DCB27400B543865F0 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		43091BEFF77CAD3F2D7F3BEC761BF475 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		43EC5D47B69E641DCE56F94D8B8BFBF3 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		443C0DDE3A3AD04A45BAE3EC4CE6EEA2 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		48C0191A1869AFB744B57412F9CE631B /* Pods-SanaMediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		48C80A48EAE0BF1D976C938E9BEDED6A /* Pods-SanaMedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SanaMedia-dummy.m"; sourceTree = "<group>"; };
-		5063B365833A51F6F09357B11F07E68F /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
-		57ED4C758526D5F9F6D20B4366DF4DC3 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		53B19AF3F5957618D86DA63E9AC05EE4 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		53FA6B1F190A4DE0741EC542EABED8F9 /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = EasyToast/Classes/ToastWindow.swift; sourceTree = "<group>"; };
+		576FE1B5BC3AC9A222024DBFA87FF235 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		587DC1ADA65A7C85E8A27CB53D553C73 /* ExpandableTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ExpandableTableViewController.modulemap; sourceTree = "<group>"; };
+		58BF1818B3E4B788472E062FD5B36C73 /* ExpandableTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExpandableTableViewController-dummy.m"; sourceTree = "<group>"; };
+		59219DE8EB76B3AF04C5BA16FD3470AF /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
 		5AD9BB4F869FF704E693680CA472F2AF /* Pods-SanaMediaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SanaMediaTests-umbrella.h"; sourceTree = "<group>"; };
-		5AF1FB9C50E78D956035EA5999E72678 /* EasyToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-umbrella.h"; sourceTree = "<group>"; };
 		5BF76223E10B7C2FE83881AF1DE1D779 /* Pods-SanaMediaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMediaTests.modulemap"; sourceTree = "<group>"; };
+		5DFCF51EA508D5B66DB9B06A3097875B /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		612DEC9507988414F213840818A1B82B /* Pods-SanaMediaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SanaMediaUITests-umbrella.h"; sourceTree = "<group>"; };
-		639ED339BECFDED79F0A15C9A9500DE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620A0E9F56B8E071BD93715F2C1FBD68 /* EasyToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyToast.framework; path = EasyToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66DFE8896DFF97C2FDE7DB71AE516C7D /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		679CF54256BB8E73748F567391550916 /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
 		6A7F7873440A695C151C01675321B618 /* Pods-SanaMedia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMedia-acknowledgements.plist"; sourceTree = "<group>"; };
-		6AB883E73E318B023BA7241C7985FFF1 /* ExpandableTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExpandableTableViewController.xcconfig; sourceTree = "<group>"; };
+		6A9025A24BBDF9BC579124F3C9699985 /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		6D4EEDF5288D940315712F3CEF2A3791 /* ExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewDelegate.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
+		6D60AD56ECDA11A8AA6BAC6C15D469A3 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		6DEB802252DD1A1168891A8AD6E55303 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cosmos.modulemap; sourceTree = "<group>"; };
 		6EB76B843E6E16AD39C1C92CCF7EA66A /* Pods-SanaMediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6FF4A42F384A696B7044204D30255EBA /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
-		7215F823B9E12C04C06B9D0C783A4705 /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
-		7394FD8CC26C91BD93CE1DB43ED89007 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		7A51A9E18DF4376B4AA761540D9A4078 /* Pods_SanaMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMedia.framework; path = "Pods-SanaMedia.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A61913BFDD5CB51C3725C576A0FAB4 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		794E5C1AABFF80E10D76ED65D38EF686 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79861760E4A1C232959E0E5DA7BCC6DB /* SwipeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimation.swift; path = SwipeableTabBarController/Classes/SwipeAnimation.swift; sourceTree = "<group>"; };
 		7AC25DA163EB72F3C97B70C2FA77F033 /* Pods-SanaMedia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMedia-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7F1E6399A0ABB5027AB076F3BD4BAAD4 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		8297EFA5ECF9223F27C6041A44ED03C5 /* EasyToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyToast.xcconfig; sourceTree = "<group>"; };
-		8638A8277C373BD02C8045A2BF325F16 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = ExpandableTableViewController/Classes/ArrayExtension.swift; sourceTree = "<group>"; };
-		878CEE15CE5694E279DC83A91C2F86D6 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		8DD3C6B9733223FA6163466FDAAF8BB8 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		8FDF246AAEBF6EC430AEC6D698A07767 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		7C21E7E603BF57E06656872C59B51F4D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		7D86784AA0ACC2EB2F68803AD375FE40 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableTabBarController.framework; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED34474221B06964E39DDB401442A2B /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
+		7ED5E786DE427FC598D330D78012A66D /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		809F7F65123FE7A534F348B59300CFB0 /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
+		844D304D80071A91F21E58038279039D /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		8FAF967C361DD51692EADC6C7427A5C1 /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaUITests.framework; path = "Pods-SanaMediaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		901941FB33FCBC6E13C5B2EAB09098F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90FA102D52A8EA8A908AFA53DF2301FE /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		92E08F1D7372222AFD2D3C750612E03F /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewController.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		940827F4B272F60CBFFAB189B0A04586 /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
 		94493F3CB9D4B93411908D2A028D2F4A /* Pods-SanaMediaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaTests-frameworks.sh"; sourceTree = "<group>"; };
 		94BA4449D8A2FD58B8C43F62A167A31E /* Pods-SanaMedia-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMedia-frameworks.sh"; sourceTree = "<group>"; };
+		98AEEFEAB6A9252BA99727CA80F09AAE /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		9B63BD28F6FC405CCB4B30FB8D9C53C4 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		9E9B74A822867928A3225CD77A97100C /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
 		A1F978B76AB026C11CDD9B47B5185EF8 /* Pods-SanaMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMedia.debug.xcconfig"; sourceTree = "<group>"; };
-		A2F746BC10657B6E02008FEC3112D41E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A39C8CE16A70AA2FFCCE1022614EEA3D /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		AE57EE6D01C2D6F6D1A86F3588DAB98D /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewController.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewController.swift; sourceTree = "<group>"; };
-		BAF631EDBFF06BB4509392A1317431D4 /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		A226550ADDD4014B4E6520D146971EF0 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		A6820F86C62831C35750523D40B6D40A /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
+		AEAD997C05D4830299D7D80B95495D6D /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
+		B00E3DB2052DD4A4E8B60E418B9995BA /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = ExpandableTableViewController/Classes/ArrayExtension.swift; sourceTree = "<group>"; };
+		B5205FB1663CCF10D941A6C78A11D5D1 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		B52BA2F96951DD9FFAA40B95F827B75B /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		B63C97BC756B5F4167858E2102F3FE40 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		B8460165418F50E7D830F50D9609FAE7 /* ExpandableTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-umbrella.h"; sourceTree = "<group>"; };
+		BB5510CB934E8CAA55F1C6199F6EFED3 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		BD4B45DC70EF6575824FC7C61D659368 /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
 		BDA959531CA5ED3C0ACC418C819CA4F6 /* Pods-SanaMedia-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMedia-resources.sh"; sourceTree = "<group>"; };
-		BEBC5A0834EE96FAFDCD80F32A0BDD0A /* EasyToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyToast.framework; path = EasyToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF06F7C5F20D71B0E96234921C4FBBD2 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		BF5EDEA2008DBF308F9BD14C869B8CCA /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		BF47D6B5FB63217F4E5AFCD689732342 /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
+		BF8CE9AFD75030EB3ACDD2F07C8BBD7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C072916311233B3084635AED2AE72441 /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
 		C1295FA1D684C0976163AD175E7903EA /* Pods-SanaMediaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMediaTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C12E16A86DCF109BB1D328439EC2E2FA /* ExpandableTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExpandableTableViewController-dummy.m"; sourceTree = "<group>"; };
-		C3E6BBEEFF48702CF62BB8BE35591483 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		C517FF3D15F28F7DF810633AE1F8ACCA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		C32CB2691A0E427AACF75C29582192D4 /* EasyToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyToast-dummy.m"; sourceTree = "<group>"; };
+		C4EB7AC23323BA493E9681C0E366C625 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		C548FDE640DFC1E53E03ADD1AE841802 /* ExpandableTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-prefix.pch"; sourceTree = "<group>"; };
+		C62A5F9A529822EDEFDDF2572DFBCB65 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		C901209D55B410B2210DC1F3C9EA8DA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA1B666779B2A1C329257F067E8F3530 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		CC05E0EACA245D21D57A470FD10826B6 /* Pods-SanaMediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDE82FB100F25C3310A93AB23513C407 /* Pods-SanaMediaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMediaUITests.modulemap"; sourceTree = "<group>"; };
-		CE844C71BD6EEB919CE06B0F6A3158D8 /* ExpandableTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-prefix.pch"; sourceTree = "<group>"; };
-		CF14AE67EDE015A3781E58BAE702F178 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2AEC80332A0AE9ED3D55A263E248181 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D47A41DB38DE48A2023244E1DC547D96 /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
-		D4C29E6FC86B518CB890B12C2864A2D6 /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
-		D87623A7F69162C44D997B090DA41946 /* UIView+Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Toast.swift"; path = "EasyToast/Classes/UIView+Toast.swift"; sourceTree = "<group>"; };
+		CEB550C2C595F0D161EB2420E4F27ABB /* ToastContainerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastContainerVC.swift; path = EasyToast/Classes/ToastContainerVC.swift; sourceTree = "<group>"; };
+		CFDFB26C27710B13F1EC80E1B232937B /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		D378CF6D3C4AA79C186BAA43414BDB45 /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		D43EFBA1C466C2929C5C00B4BDE9F2C3 /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		D758E269DDC582DABD59D6D28418DA36 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
 		D92718B4322C23952C02B338AFCD88B8 /* Pods-SanaMediaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SanaMediaUITests-dummy.m"; sourceTree = "<group>"; };
+		DBA791E4AB350C0F0C9F535AB2A44CB4 /* EasyToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyToast.xcconfig; sourceTree = "<group>"; };
+		DCE09E66A000DD7A5AD7AFC697BAEF7B /* QueueToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueueToast.swift; path = EasyToast/Classes/QueueToast.swift; sourceTree = "<group>"; };
 		DEB9714E0A9D4B48CE69580D0AC588DD /* Pods-SanaMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMedia.modulemap"; sourceTree = "<group>"; };
-		E36248F7D527AA5D0437FA76F3752A67 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		E5900715A7BCA8FA1FA68CA5C64E9892 /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaUITests.framework; path = "Pods-SanaMediaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44346FF5823BC213649413CB6ED3258 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E50814F9FB3CF40CECF3AD8BA4C4EE91 /* ExpandableTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ExpandableTableViewController.framework; path = ExpandableTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A63E7F9D7C5A5D89C8170E9260E0E5 /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
 		E62D157BFB5CC66A55E226BE2103BCEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E74CFE143E9444E4AD7B097CA1A83118 /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
 		E76960DE77ED13B2D5DB9BC2E2FC2B02 /* Pods-SanaMediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8E984989BF2B4903CC4F69F5AC72053 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		E93811600AA4A306F49D60FF5BFAF5B4 /* EasyToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-prefix.pch"; sourceTree = "<group>"; };
 		E9410AC914417E3E7BA1016F97912066 /* Pods-SanaMediaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaUITests-resources.sh"; sourceTree = "<group>"; };
 		E96EDA15FF4774ABE935CF1109C752FE /* Pods-SanaMedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SanaMedia-umbrella.h"; sourceTree = "<group>"; };
-		ED33CE872E03B0E321C77B394A853571 /* EasyToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyToast-dummy.m"; sourceTree = "<group>"; };
-		ED3F42C41E8E9B1F0A270663253E38AA /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
-		EF37F54BECD7F239632B2573BFF1F460 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		EAC7CA57D6ED3E490B3D6AA0B807B48F /* Pods_SanaMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaTests.framework; path = "Pods-SanaMediaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20147443458A2BB5CA9AD6C062DC32E /* Pods-SanaMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMedia.release.xcconfig"; sourceTree = "<group>"; };
-		F3E78316D8C852B6DD675BE0B4213EBA /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
-		F4E27809389F39DE3F22D0A07F7B9A8C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53EB88D8F24BAE6D058671C0D2B5B4E /* Pods-SanaMediaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaTests-resources.sh"; sourceTree = "<group>"; };
-		F621D78405C28E205453CD3E1150EF3C /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		F79BEB0E1291FDD7537919F9CF05E3E7 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		FAAF12FD2245FFB718082EEAF3EA94A1 /* ExpandableTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-umbrella.h"; sourceTree = "<group>"; };
-		FDF458B3EB4735913DDB4F25F85957A4 /* ExpandableTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ExpandableTableViewController.modulemap; sourceTree = "<group>"; };
+		F826D6A7FD511E5F8BA6C472D937AB37 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		FD5E3ED6B24FF4443068498611D62069 /* EasyToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyToast.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D0F1C3405DD1451822DBEDCB4925BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28445CCCEBA4565C390C737B8FD7D70A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C6DACD041A9C7BDD08E1A6BF35D6959A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48054467F9BDA5CB13E36B84B97B481A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE66E4502E5949E11105E5D45DABE305 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6077D6B028D50060D5E06E9C9F8AD25D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECA3C91308D1774CC23FB4EFBD6679E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,22 +301,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F366822C3F90C3778C3F7B4363E41EFB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE86A94CDE560363D1AD2022518992C8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4AC7B01E7FD3E407F9370C9046C7A30 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AA4CC0B8BBC940473EDDEA74E9CAD2C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -267,69 +322,45 @@
 			path = "Target Support Files/Pods-SanaMediaTests";
 			sourceTree = "<group>";
 		};
-		1F3AB90F75778647A0536B0D8B50E7A2 /* Pods */ = {
+		0E9B059E13546E2EE6ECFC6B46A650E6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				29AF2E608549D1E16E17B9DCA83DE4F3 /* Alamofire */,
-				6CEAF6B025223710DE519DBA1AC10641 /* EasyToast */,
-				D616AEC5E60F9F05DCFE988881D0A634 /* ExpandableTableViewController */,
-				7C98BA22A5D149D4BBB8299F8B4676C1 /* SwipeableTabBarController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		1F8A0BC46043B113AA4D243044C919EC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F4E27809389F39DE3F22D0A07F7B9A8C /* Alamofire.framework */,
-				BEBC5A0834EE96FAFDCD80F32A0BDD0A /* EasyToast.framework */,
-				060DD5EC4E7739B8A4DEF1B128BEC666 /* ExpandableTableViewController.framework */,
-				7A51A9E18DF4376B4AA761540D9A4078 /* Pods_SanaMedia.framework */,
-				1DA21A8C9F01E6DB8C350EB56CA6688B /* Pods_SanaMediaTests.framework */,
-				E5900715A7BCA8FA1FA68CA5C64E9892 /* Pods_SanaMediaUITests.framework */,
-				0440A8AEBB965E64034EC090B990D5B1 /* SwipeableTabBarController.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		29AF2E608549D1E16E17B9DCA83DE4F3 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				2B8B35B3D16A2C00ABE4E1D8EC448278 /* AFError.swift */,
-				EF37F54BECD7F239632B2573BFF1F460 /* Alamofire.swift */,
-				CA1B666779B2A1C329257F067E8F3530 /* DispatchQueue+Alamofire.swift */,
-				F621D78405C28E205453CD3E1150EF3C /* MultipartFormData.swift */,
-				E36248F7D527AA5D0437FA76F3752A67 /* NetworkReachabilityManager.swift */,
-				46439E1ED2B706D879D9E336A4E867D2 /* Notifications.swift */,
-				F79BEB0E1291FDD7537919F9CF05E3E7 /* ParameterEncoding.swift */,
-				27A1A0AA34B9CC5859186F2F9C9A05DF /* Request.swift */,
-				8FDF246AAEBF6EC430AEC6D698A07767 /* Response.swift */,
-				7F1E6399A0ABB5027AB076F3BD4BAAD4 /* ResponseSerialization.swift */,
-				57ED4C758526D5F9F6D20B4366DF4DC3 /* Result.swift */,
-				C517FF3D15F28F7DF810633AE1F8ACCA /* ServerTrustPolicy.swift */,
-				BF5EDEA2008DBF308F9BD14C869B8CCA /* SessionDelegate.swift */,
-				A39C8CE16A70AA2FFCCE1022614EEA3D /* SessionManager.swift */,
-				04ECAC1079E309C22CE521739C7C0E51 /* TaskDelegate.swift */,
-				40360C439BC052F61B0FED400A971C5C /* Timeline.swift */,
-				878CEE15CE5694E279DC83A91C2F86D6 /* Validation.swift */,
-				BC97173BA3731267B66E63693A8758C6 /* Support Files */,
-			);
-			name = Alamofire;
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		406EC54C12F619CCF057ECE4B95E5B4A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				37F1A7D3AA92FEC7D935CC53512B6A54 /* EasyToast.modulemap */,
-				8297EFA5ECF9223F27C6041A44ED03C5 /* EasyToast.xcconfig */,
-				ED33CE872E03B0E321C77B394A853571 /* EasyToast-dummy.m */,
-				067726428428B3AD4A80977E477BAD79 /* EasyToast-prefix.pch */,
-				5AF1FB9C50E78D956035EA5999E72678 /* EasyToast-umbrella.h */,
-				CF14AE67EDE015A3781E58BAE702F178 /* Info.plist */,
+				0062A5F412F2F7D93ABC9B63A5B4FC56 /* Info.plist */,
+				3655E3E974B2B896C3A2D54A96D9719C /* SwipeableTabBarController.modulemap */,
+				BF47D6B5FB63217F4E5AFCD689732342 /* SwipeableTabBarController.xcconfig */,
+				BD4B45DC70EF6575824FC7C61D659368 /* SwipeableTabBarController-dummy.m */,
+				D378CF6D3C4AA79C186BAA43414BDB45 /* SwipeableTabBarController-prefix.pch */,
+				D43EFBA1C466C2929C5C00B4BDE9F2C3 /* SwipeableTabBarController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/EasyToast";
+			path = "../Target Support Files/SwipeableTabBarController";
+			sourceTree = "<group>";
+		};
+		1F09D5D399DCEB990B978D72FD6128EA /* SwipeableTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				809F7F65123FE7A534F348B59300CFB0 /* SwipeableTabBarController.swift */,
+				79861760E4A1C232959E0E5DA7BCC6DB /* SwipeAnimation.swift */,
+				59219DE8EB76B3AF04C5BA16FD3470AF /* SwipeAnimationType.swift */,
+				288622A722A012198A02C0AD9FAE4276 /* SwipeInteractor.swift */,
+				7ED34474221B06964E39DDB401442A2B /* SwipeTransitioningProtocol.swift */,
+				B52BA2F96951DD9FFAA40B95F827B75B /* UIKit+Extensions.swift */,
+				0E9B059E13546E2EE6ECFC6B46A650E6 /* Support Files */,
+			);
+			name = SwipeableTabBarController;
+			path = SwipeableTabBarController;
+			sourceTree = "<group>";
+		};
+		3180D1FEB6B0F5C727EF15B976B69B95 /* ExpandableTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B00E3DB2052DD4A4E8B60E418B9995BA /* ArrayExtension.swift */,
+				92E08F1D7372222AFD2D3C750612E03F /* ExpandableTableViewController.swift */,
+				6D4EEDF5288D940315712F3CEF2A3791 /* ExpandableTableViewDelegate.swift */,
+				897099A06D94451430DA26BC78C94203 /* Support Files */,
+			);
+			name = ExpandableTableViewController;
+			path = ExpandableTableViewController;
 			sourceTree = "<group>";
 		};
 		48688F1563F5DB5EA8934F6D239B58AA /* Pods-SanaMediaUITests */ = {
@@ -350,33 +381,32 @@
 			path = "Target Support Files/Pods-SanaMediaUITests";
 			sourceTree = "<group>";
 		};
-		6CEAF6B025223710DE519DBA1AC10641 /* EasyToast */ = {
+		4AD0CE70D51878DC504B0E5EAAD78A12 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0B99CBAE9CA967F2CFD15F62837698D1 /* EasyToastConfiguration.swift */,
-				27195BF56932E897D7E6F390C6E52A9A /* QueueToast.swift */,
-				254E895DF643A1BCE7E250EA7A467E99 /* ToastContainerVC.swift */,
-				2E5E388F05086896A7E575ADE8429D61 /* ToastWindow.swift */,
-				D87623A7F69162C44D997B090DA41946 /* UIView+Toast.swift */,
-				406EC54C12F619CCF057ECE4B95E5B4A /* Support Files */,
+				FD5E3ED6B24FF4443068498611D62069 /* EasyToast.modulemap */,
+				DBA791E4AB350C0F0C9F535AB2A44CB4 /* EasyToast.xcconfig */,
+				C32CB2691A0E427AACF75C29582192D4 /* EasyToast-dummy.m */,
+				E93811600AA4A306F49D60FF5BFAF5B4 /* EasyToast-prefix.pch */,
+				1F6AC8692C69532F7FA4EE1E6262A852 /* EasyToast-umbrella.h */,
+				E44346FF5823BC213649413CB6ED3258 /* Info.plist */,
 			);
-			name = EasyToast;
-			path = EasyToast;
+			name = "Support Files";
+			path = "../Target Support Files/EasyToast";
 			sourceTree = "<group>";
 		};
-		7C98BA22A5D149D4BBB8299F8B4676C1 /* SwipeableTabBarController */ = {
+		55AE13DD11BE5FF5E72D39F15E7AEFCA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5063B365833A51F6F09357B11F07E68F /* SwipeableTabBarController.swift */,
-				0E2BD23F0DC95E1C7802F1ECF8CB92B6 /* SwipeAnimation.swift */,
-				7215F823B9E12C04C06B9D0C783A4705 /* SwipeAnimationType.swift */,
-				F3E78316D8C852B6DD675BE0B4213EBA /* SwipeInteractor.swift */,
-				ED3F42C41E8E9B1F0A270663253E38AA /* SwipeTransitioningProtocol.swift */,
-				171D175A6AFEF9B9E844FFBC253AE3D3 /* UIKit+Extensions.swift */,
-				BA3EBFDB7039CF91DBC93167A30979C9 /* Support Files */,
+				43EC5D47B69E641DCE56F94D8B8BFBF3 /* Alamofire.modulemap */,
+				53B19AF3F5957618D86DA63E9AC05EE4 /* Alamofire.xcconfig */,
+				CFDFB26C27710B13F1EC80E1B232937B /* Alamofire-dummy.m */,
+				E8E984989BF2B4903CC4F69F5AC72053 /* Alamofire-prefix.pch */,
+				66DFE8896DFF97C2FDE7DB71AE516C7D /* Alamofire-umbrella.h */,
+				901941FB33FCBC6E13C5B2EAB09098F4 /* Info.plist */,
 			);
-			name = SwipeableTabBarController;
-			path = SwipeableTabBarController;
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -384,10 +414,34 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1F3AB90F75778647A0536B0D8B50E7A2 /* Pods */,
-				1F8A0BC46043B113AA4D243044C919EC /* Products */,
+				B6D082E682EF5CB4438DCA4F39D19E78 /* Pods */,
+				9D03BDF7A3471940178934F06E702182 /* Products */,
 				83E62AAE22E1BCD9CECB45A6336A2EF3 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7ED1D6E54BD7834B9FE2F15ED85D418C /* Cosmos */ = {
+			isa = PBXGroup;
+			children = (
+				C072916311233B3084635AED2AE72441 /* CosmosAccessibility.swift */,
+				224516CF6E0A214605040CC4FD87D4CF /* CosmosDefaultSettings.swift */,
+				A226550ADDD4014B4E6520D146971EF0 /* CosmosLayerHelper.swift */,
+				75A61913BFDD5CB51C3725C576A0FAB4 /* CosmosLayers.swift */,
+				0BE2571CD98B1ED4F738292B476B5A9D /* CosmosLocalizedRating.swift */,
+				37D8DCDC173FE10588E01BACCE83B4F2 /* CosmosRating.swift */,
+				679CF54256BB8E73748F567391550916 /* CosmosSettings.swift */,
+				1E9C4BF768F00B25CD5C4617C66CCE66 /* CosmosSize.swift */,
+				41133550619DF00DCB27400B543865F0 /* CosmosText.swift */,
+				F826D6A7FD511E5F8BA6C472D937AB37 /* CosmosTouch.swift */,
+				9E9B74A822867928A3225CD77A97100C /* CosmosTouchTarget.swift */,
+				AEAD997C05D4830299D7D80B95495D6D /* CosmosView.swift */,
+				A6820F86C62831C35750523D40B6D40A /* RightToLeft.swift */,
+				BB5510CB934E8CAA55F1C6199F6EFED3 /* StarFillMode.swift */,
+				D758E269DDC582DABD59D6D28418DA36 /* StarLayer.swift */,
+				9EDB52977EBFE0C7BC7F45E5CB9B10BB /* Support Files */,
+			);
+			name = Cosmos;
+			path = Cosmos;
 			sourceTree = "<group>";
 		};
 		83E62AAE22E1BCD9CECB45A6336A2EF3 /* Targets Support Files */ = {
@@ -400,18 +454,99 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BA3EBFDB7039CF91DBC93167A30979C9 /* Support Files */ = {
+		897099A06D94451430DA26BC78C94203 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D2AEC80332A0AE9ED3D55A263E248181 /* Info.plist */,
-				D47A41DB38DE48A2023244E1DC547D96 /* SwipeableTabBarController.modulemap */,
-				3789EAF1B4A42A9B31947DA2C3803A9A /* SwipeableTabBarController.xcconfig */,
-				D4C29E6FC86B518CB890B12C2864A2D6 /* SwipeableTabBarController-dummy.m */,
-				BAF631EDBFF06BB4509392A1317431D4 /* SwipeableTabBarController-prefix.pch */,
-				6FF4A42F384A696B7044204D30255EBA /* SwipeableTabBarController-umbrella.h */,
+				587DC1ADA65A7C85E8A27CB53D553C73 /* ExpandableTableViewController.modulemap */,
+				36007AEF7C5E50B04EE02AD469167657 /* ExpandableTableViewController.xcconfig */,
+				58BF1818B3E4B788472E062FD5B36C73 /* ExpandableTableViewController-dummy.m */,
+				C548FDE640DFC1E53E03ADD1AE841802 /* ExpandableTableViewController-prefix.pch */,
+				B8460165418F50E7D830F50D9609FAE7 /* ExpandableTableViewController-umbrella.h */,
+				BF8CE9AFD75030EB3ACDD2F07C8BBD7C /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwipeableTabBarController";
+			path = "../Target Support Files/ExpandableTableViewController";
+			sourceTree = "<group>";
+		};
+		9D03BDF7A3471940178934F06E702182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				794E5C1AABFF80E10D76ED65D38EF686 /* Alamofire.framework */,
+				2E5D56F45DA3BBCED18985E052AB3517 /* Cosmos.framework */,
+				620A0E9F56B8E071BD93715F2C1FBD68 /* EasyToast.framework */,
+				E50814F9FB3CF40CECF3AD8BA4C4EE91 /* ExpandableTableViewController.framework */,
+				0C81FCC9408DF5AF941F692EBA155AC6 /* Pods_SanaMedia.framework */,
+				EAC7CA57D6ED3E490B3D6AA0B807B48F /* Pods_SanaMediaTests.framework */,
+				8FAF967C361DD51692EADC6C7427A5C1 /* Pods_SanaMediaUITests.framework */,
+				7D86784AA0ACC2EB2F68803AD375FE40 /* SwipeableTabBarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EDB52977EBFE0C7BC7F45E5CB9B10BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DEB802252DD1A1168891A8AD6E55303 /* Cosmos.modulemap */,
+				940827F4B272F60CBFFAB189B0A04586 /* Cosmos.xcconfig */,
+				E5A63E7F9D7C5A5D89C8170E9260E0E5 /* Cosmos-dummy.m */,
+				E74CFE143E9444E4AD7B097CA1A83118 /* Cosmos-prefix.pch */,
+				6A9025A24BBDF9BC579124F3C9699985 /* Cosmos-umbrella.h */,
+				2AD090C66AFB430CF5FA61266A99B294 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
+			sourceTree = "<group>";
+		};
+		A6374944C5179AE5060D69E0D935CA7B /* EasyToast */ = {
+			isa = PBXGroup;
+			children = (
+				2A870FF61FA6CAEB4ABA34E38E86FD83 /* EasyToastConfiguration.swift */,
+				DCE09E66A000DD7A5AD7AFC697BAEF7B /* QueueToast.swift */,
+				CEB550C2C595F0D161EB2420E4F27ABB /* ToastContainerVC.swift */,
+				53FA6B1F190A4DE0741EC542EABED8F9 /* ToastWindow.swift */,
+				2D3B0ED59A6F654ADC121B09ACF32B4E /* UIView+Toast.swift */,
+				4AD0CE70D51878DC504B0E5EAAD78A12 /* Support Files */,
+			);
+			name = EasyToast;
+			path = EasyToast;
+			sourceTree = "<group>";
+		};
+		B331C8EBBF0EB7E02902C86A5BB008A1 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				B5205FB1663CCF10D941A6C78A11D5D1 /* AFError.swift */,
+				90FA102D52A8EA8A908AFA53DF2301FE /* Alamofire.swift */,
+				844D304D80071A91F21E58038279039D /* DispatchQueue+Alamofire.swift */,
+				5DFCF51EA508D5B66DB9B06A3097875B /* MultipartFormData.swift */,
+				2533B08EE5F66744CA3216E306176A62 /* NetworkReachabilityManager.swift */,
+				C62A5F9A529822EDEFDDF2572DFBCB65 /* Notifications.swift */,
+				576FE1B5BC3AC9A222024DBFA87FF235 /* ParameterEncoding.swift */,
+				443C0DDE3A3AD04A45BAE3EC4CE6EEA2 /* Request.swift */,
+				43091BEFF77CAD3F2D7F3BEC761BF475 /* Response.swift */,
+				C4EB7AC23323BA493E9681C0E366C625 /* ResponseSerialization.swift */,
+				B63C97BC756B5F4167858E2102F3FE40 /* Result.swift */,
+				9B63BD28F6FC405CCB4B30FB8D9C53C4 /* ServerTrustPolicy.swift */,
+				6D60AD56ECDA11A8AA6BAC6C15D469A3 /* SessionDelegate.swift */,
+				98AEEFEAB6A9252BA99727CA80F09AAE /* SessionManager.swift */,
+				1CB4EECF37CFE73FB7FE8A81D3F176AB /* TaskDelegate.swift */,
+				7ED5E786DE427FC598D330D78012A66D /* Timeline.swift */,
+				7C21E7E603BF57E06656872C59B51F4D /* Validation.swift */,
+				55AE13DD11BE5FF5E72D39F15E7AEFCA /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		B6D082E682EF5CB4438DCA4F39D19E78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B331C8EBBF0EB7E02902C86A5BB008A1 /* Alamofire */,
+				7ED1D6E54BD7834B9FE2F15ED85D418C /* Cosmos */,
+				A6374944C5179AE5060D69E0D935CA7B /* EasyToast */,
+				3180D1FEB6B0F5C727EF15B976B69B95 /* ExpandableTableViewController */,
+				1F09D5D399DCEB990B978D72FD6128EA /* SwipeableTabBarController */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -420,20 +555,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC97173BA3731267B66E63693A8758C6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8DD3C6B9733223FA6163466FDAAF8BB8 /* Alamofire.modulemap */,
-				C3E6BBEEFF48702CF62BB8BE35591483 /* Alamofire.xcconfig */,
-				43C078DD25EF32ED26143DAF09BA8B18 /* Alamofire-dummy.m */,
-				BF06F7C5F20D71B0E96234921C4FBBD2 /* Alamofire-prefix.pch */,
-				7394FD8CC26C91BD93CE1DB43ED89007 /* Alamofire-umbrella.h */,
-				A2F746BC10657B6E02008FEC3112D41E /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 		CCDD42B53D28137621335281F7787381 /* Pods-SanaMedia */ = {
@@ -462,40 +583,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D616AEC5E60F9F05DCFE988881D0A634 /* ExpandableTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8638A8277C373BD02C8045A2BF325F16 /* ArrayExtension.swift */,
-				AE57EE6D01C2D6F6D1A86F3588DAB98D /* ExpandableTableViewController.swift */,
-				147E8B20226145BAFD74B2F30E6F223D /* ExpandableTableViewDelegate.swift */,
-				E9EF24D718896757C1F40230180D3D86 /* Support Files */,
-			);
-			name = ExpandableTableViewController;
-			path = ExpandableTableViewController;
-			sourceTree = "<group>";
-		};
-		E9EF24D718896757C1F40230180D3D86 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FDF458B3EB4735913DDB4F25F85957A4 /* ExpandableTableViewController.modulemap */,
-				6AB883E73E318B023BA7241C7985FFF1 /* ExpandableTableViewController.xcconfig */,
-				C12E16A86DCF109BB1D328439EC2E2FA /* ExpandableTableViewController-dummy.m */,
-				CE844C71BD6EEB919CE06B0F6A3158D8 /* ExpandableTableViewController-prefix.pch */,
-				FAAF12FD2245FFB718082EEAF3EA94A1 /* ExpandableTableViewController-umbrella.h */,
-				639ED339BECFDED79F0A15C9A9500DE8 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ExpandableTableViewController";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2F731E158CAB66BB4DDE3CBFAB29EDAB /* Headers */ = {
+		0F773BFDE5630CA7028231867F8294B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE1AB9F4A02F47BF02401735620FB75B /* SwipeableTabBarController-umbrella.h in Headers */,
+				165FC7EBF5802665E517EA3A19262F02 /* Pods-SanaMedia-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C54837496632A820C7E514CCBFE5FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4C41B21D09448C9CB86A1FB0F64C28 /* SwipeableTabBarController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,11 +634,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C30FE891174B1FF45D4F6A496463BF78 /* Headers */ = {
+		B7F72A88918035AFA923560A84B87C61 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7C26B6CE6F415D5E3C4FD4BCE25362 /* Pods-SanaMedia-umbrella.h in Headers */,
+				DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,25 +653,38 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		67E2B747F3A3F423D13BCF06C6664535 /* Pods-SanaMedia */ = {
+		4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6BF53BC63D2A06B184A608FC9BBBEB6 /* Build configuration list for PBXNativeTarget "Pods-SanaMedia" */;
+			buildConfigurationList = 38CA41A3E689F135BAEECE91B63D9EA0 /* Build configuration list for PBXNativeTarget "Cosmos" */;
 			buildPhases = (
-				65C89542D80C4691A052F21993EE9F98 /* Sources */,
-				F4AC7B01E7FD3E407F9370C9046C7A30 /* Frameworks */,
-				C30FE891174B1FF45D4F6A496463BF78 /* Headers */,
+				64A8AA816E108F31E7CEE1A683E42839 /* Sources */,
+				23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */,
+				B7F72A88918035AFA923560A84B87C61 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				692A2B3B054FF05FB40B834DEE61DB9D /* PBXTargetDependency */,
-				663DD19C9F85C2095A261C17AA8543B3 /* PBXTargetDependency */,
-				4C68EAC31CE7E9E756948795C450A5FF /* PBXTargetDependency */,
-				7D306CE1565063AA6AB5EB0C54256229 /* PBXTargetDependency */,
 			);
-			name = "Pods-SanaMedia";
-			productName = "Pods-SanaMedia";
-			productReference = 7A51A9E18DF4376B4AA761540D9A4078 /* Pods_SanaMedia.framework */;
+			name = Cosmos;
+			productName = Cosmos;
+			productReference = 2E5D56F45DA3BBCED18985E052AB3517 /* Cosmos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		57C616FFCFF1C1357588E2255088E63B /* SwipeableTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79F6D7DC673FA739CD310AAF489E6037 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */;
+			buildPhases = (
+				59AAE517D85051AF2A3DFCDC3E17D40D /* Sources */,
+				6077D6B028D50060D5E06E9C9F8AD25D /* Frameworks */,
+				70C54837496632A820C7E514CCBFE5FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeableTabBarController;
+			productName = SwipeableTabBarController;
+			productReference = 7D86784AA0ACC2EB2F68803AD375FE40 /* SwipeableTabBarController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		73FFCD63602671A7D254727BB2A22DB1 /* Pods-SanaMediaTests */ = {
@@ -585,7 +701,7 @@
 			);
 			name = "Pods-SanaMediaTests";
 			productName = "Pods-SanaMediaTests";
-			productReference = 1DA21A8C9F01E6DB8C350EB56CA6688B /* Pods_SanaMediaTests.framework */;
+			productReference = EAC7CA57D6ED3E490B3D6AA0B807B48F /* Pods_SanaMediaTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -602,7 +718,29 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = F4E27809389F39DE3F22D0A07F7B9A8C /* Alamofire.framework */;
+			productReference = 794E5C1AABFF80E10D76ED65D38EF686 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C4208A977B7328D9EE3FC1E0B4A149B /* Pods-SanaMedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F875658DC5A12FDE68F75087C8CFD4 /* Build configuration list for PBXNativeTarget "Pods-SanaMedia" */;
+			buildPhases = (
+				C7A7727C342477A960689EB2A560BC95 /* Sources */,
+				48054467F9BDA5CB13E36B84B97B481A /* Frameworks */,
+				0F773BFDE5630CA7028231867F8294B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6202524B6D5B3E5D53311694A32FBC3 /* PBXTargetDependency */,
+				95EBA7A5384BAED1CF10680339327819 /* PBXTargetDependency */,
+				64C9C278AC07C5D1EDF08608848E9812 /* PBXTargetDependency */,
+				F82533D7546E0458D6EA6F4746124562 /* PBXTargetDependency */,
+				9470FB4F181A0B94D081F9A632A287F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-SanaMedia";
+			productName = "Pods-SanaMedia";
+			productReference = 0C81FCC9408DF5AF941F692EBA155AC6 /* Pods_SanaMedia.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		96AFA871D25A87F6FCCFED071D32EBC8 /* ExpandableTableViewController */ = {
@@ -619,7 +757,7 @@
 			);
 			name = ExpandableTableViewController;
 			productName = ExpandableTableViewController;
-			productReference = 060DD5EC4E7739B8A4DEF1B128BEC666 /* ExpandableTableViewController.framework */;
+			productReference = E50814F9FB3CF40CECF3AD8BA4C4EE91 /* ExpandableTableViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BBFB14FEC2F020426E66CAD3C6979DA0 /* Pods-SanaMediaUITests */ = {
@@ -636,7 +774,7 @@
 			);
 			name = "Pods-SanaMediaUITests";
 			productName = "Pods-SanaMediaUITests";
-			productReference = E5900715A7BCA8FA1FA68CA5C64E9892 /* Pods_SanaMediaUITests.framework */;
+			productReference = 8FAF967C361DD51692EADC6C7427A5C1 /* Pods_SanaMediaUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C7A27CEE1A5A58B01166DDC8469E0871 /* EasyToast */ = {
@@ -653,24 +791,7 @@
 			);
 			name = EasyToast;
 			productName = EasyToast;
-			productReference = BEBC5A0834EE96FAFDCD80F32A0BDD0A /* EasyToast.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C8456FF24E9C7E2EBF0ED83E89F64470 /* SwipeableTabBarController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 564EEC3C7EB59BD1A7F31CC88C71721C /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */;
-			buildPhases = (
-				6137AD76E9C9E22DD3142E63B8AEC310 /* Sources */,
-				F366822C3F90C3778C3F7B4363E41EFB /* Frameworks */,
-				2F731E158CAB66BB4DDE3CBFAB29EDAB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwipeableTabBarController;
-			productName = SwipeableTabBarController;
-			productReference = 0440A8AEBB965E64034EC090B990D5B1 /* SwipeableTabBarController.framework */;
+			productReference = 620A0E9F56B8E071BD93715F2C1FBD68 /* EasyToast.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -690,17 +811,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1F8A0BC46043B113AA4D243044C919EC /* Products */;
+			productRefGroup = 9D03BDF7A3471940178934F06E702182 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */,
 				C7A27CEE1A5A58B01166DDC8469E0871 /* EasyToast */,
 				96AFA871D25A87F6FCCFED071D32EBC8 /* ExpandableTableViewController */,
-				67E2B747F3A3F423D13BCF06C6664535 /* Pods-SanaMedia */,
+				8C4208A977B7328D9EE3FC1E0B4A149B /* Pods-SanaMedia */,
 				73FFCD63602671A7D254727BB2A22DB1 /* Pods-SanaMediaTests */,
 				BBFB14FEC2F020426E66CAD3C6979DA0 /* Pods-SanaMediaUITests */,
-				C8456FF24E9C7E2EBF0ED83E89F64470 /* SwipeableTabBarController */,
+				57C616FFCFF1C1357588E2255088E63B /* SwipeableTabBarController */,
 			);
 		};
 /* End PBXProject section */
@@ -750,25 +872,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6137AD76E9C9E22DD3142E63B8AEC310 /* Sources */ = {
+		59AAE517D85051AF2A3DFCDC3E17D40D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6286DD45E605B3461674E907391AEF19 /* SwipeableTabBarController-dummy.m in Sources */,
-				C131FB4E17DC6BEFA7E4FA0A451BFF65 /* SwipeableTabBarController.swift in Sources */,
-				7422DB7C92D830D3B4BB04481E92582C /* SwipeAnimation.swift in Sources */,
-				073CF97A8F946DAB9FAAF683EB644E35 /* SwipeAnimationType.swift in Sources */,
-				AF7809A3F3371A61D235787EEDAA40F4 /* SwipeInteractor.swift in Sources */,
-				2F6002627ADC94D205E452EB6CB06A87 /* SwipeTransitioningProtocol.swift in Sources */,
-				AA34DA309B4C76B5B88F717441928074 /* UIKit+Extensions.swift in Sources */,
+				ADC161AC4998915AA79AEF065873B820 /* SwipeableTabBarController-dummy.m in Sources */,
+				314D3373A500049CB07BA259C07BB748 /* SwipeableTabBarController.swift in Sources */,
+				20CE43B2E9A92ED27D3AE1594B0E0101 /* SwipeAnimation.swift in Sources */,
+				0E72E78E27E4EE1F077C3DE5A66241A5 /* SwipeAnimationType.swift in Sources */,
+				3F8A707AEA8A262B41027E4EBC6ED48B /* SwipeInteractor.swift in Sources */,
+				584142763F55FC67201EBE9B94EE7E7F /* SwipeTransitioningProtocol.swift in Sources */,
+				6CDFEEA2845949123F63A23C8AEA21B2 /* UIKit+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65C89542D80C4691A052F21993EE9F98 /* Sources */ = {
+		64A8AA816E108F31E7CEE1A683E42839 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69660E5EF4A6A9A910AF28C26F9203C /* Pods-SanaMedia-dummy.m in Sources */,
+				3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */,
+				7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */,
+				371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */,
+				F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */,
+				AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */,
+				0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */,
+				99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */,
+				015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */,
+				25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */,
+				424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */,
+				4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */,
+				E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */,
+				45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */,
+				C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */,
+				88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */,
+				C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,39 +930,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7A7727C342477A960689EB2A560BC95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197232BD85D47E20988761AF4CEACC25 /* Pods-SanaMedia-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C68EAC31CE7E9E756948795C450A5FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ExpandableTableViewController;
-			target = 96AFA871D25A87F6FCCFED071D32EBC8 /* ExpandableTableViewController */;
-			targetProxy = 617B587C182238D62F2E1483C3E76E12 /* PBXContainerItemProxy */;
-		};
-		663DD19C9F85C2095A261C17AA8543B3 /* PBXTargetDependency */ = {
+		64C9C278AC07C5D1EDF08608848E9812 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyToast;
 			target = C7A27CEE1A5A58B01166DDC8469E0871 /* EasyToast */;
-			targetProxy = 45D826F083FB1C410B677A6F31F8EEE0 /* PBXContainerItemProxy */;
+			targetProxy = 6593E4A9EDEABD114896320F56CF510D /* PBXContainerItemProxy */;
 		};
-		692A2B3B054FF05FB40B834DEE61DB9D /* PBXTargetDependency */ = {
+		9470FB4F181A0B94D081F9A632A287F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeableTabBarController;
+			target = 57C616FFCFF1C1357588E2255088E63B /* SwipeableTabBarController */;
+			targetProxy = 3C9710D7FB167D4C3EC76E5F0DD49332 /* PBXContainerItemProxy */;
+		};
+		95EBA7A5384BAED1CF10680339327819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */;
+			targetProxy = FFCC3A9BACF32F47D0627CB297823995 /* PBXContainerItemProxy */;
+		};
+		F6202524B6D5B3E5D53311694A32FBC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 9884547228B6F773CB9BAB9E0DE1D97E /* PBXContainerItemProxy */;
+			targetProxy = 52C690A99314DBFA4C32C9BE4920605B /* PBXContainerItemProxy */;
 		};
-		7D306CE1565063AA6AB5EB0C54256229 /* PBXTargetDependency */ = {
+		F82533D7546E0458D6EA6F4746124562 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwipeableTabBarController;
-			target = C8456FF24E9C7E2EBF0ED83E89F64470 /* SwipeableTabBarController */;
-			targetProxy = 06FC144AD3853CBD56093495ECA8B230 /* PBXContainerItemProxy */;
+			name = ExpandableTableViewController;
+			target = 96AFA871D25A87F6FCCFED071D32EBC8 /* ExpandableTableViewController */;
+			targetProxy = 1F813D1FBC4FDA191B65D2F07A306038 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		077C4BB7DBEAA715DED46C057DC8051C /* Release */ = {
+		186BF7E850D5323722739CB07EB44E79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3E6BBEEFF48702CF62BB8BE35591483 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 36007AEF7C5E50B04EE02AD469167657 /* ExpandableTableViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -839,59 +990,24 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExpandableTableViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
+				PRODUCT_NAME = ExpandableTableViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		133ECDC3C7190485A407FD286A6F791E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8297EFA5ECF9223F27C6041A44ED03C5 /* EasyToast.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EasyToast/EasyToast-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyToast/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EasyToast/EasyToast.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = EasyToast;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -942,6 +1058,80 @@
 			};
 			name = Debug;
 		};
+		2ED35E6BD524A6684F0390464EB9C15D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 940827F4B272F60CBFFAB189B0A04586 /* Cosmos.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3019B827F03B7065CC53732EDD969EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F978B76AB026C11CDD9B47B5185EF8 /* Pods-SanaMedia.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SanaMedia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SanaMedia/Pods-SanaMedia.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SanaMedia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -983,6 +1173,76 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		441300C5FC4B5A08DA02C97A98A9AC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B19AF3F5957618D86DA63E9AC05EE4 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4911C6AF4B0E8923759914682D6520D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA791E4AB350C0F0C9F535AB2A44CB4 /* EasyToast.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyToast/EasyToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyToast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyToast/EasyToast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1058,44 +1318,9 @@
 			};
 			name = Debug;
 		};
-		59CF6C464C6DD9E39D588AE9185E82DA /* Release */ = {
+		79CDE617D8B3C548D1E585EE8ED3E8B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3789EAF1B4A42A9B31947DA2C3803A9A /* SwipeableTabBarController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwipeableTabBarController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		61B43C96569F891EF4EFF6AE126D620A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1F978B76AB026C11CDD9B47B5185EF8 /* Pods-SanaMedia.debug.xcconfig */;
+			baseConfigurationReference = 36007AEF7C5E50B04EE02AD469167657 /* ExpandableTableViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1109,30 +1334,26 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SanaMedia/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExpandableTableViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SanaMedia/Pods-SanaMedia.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SanaMedia;
+				PRODUCT_NAME = ExpandableTableViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8F54477F3877F813C7EB51D6B0D8507E /* Release */ = {
+		7CC644BFC564AE2CBAE0F4584A969B62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F20147443458A2BB5CA9AD6C062DC32E /* Pods-SanaMedia.release.xcconfig */;
 			buildSettings = {
@@ -1170,9 +1391,9 @@
 			};
 			name = Release;
 		};
-		A3678CF68735526FFC852A66517DEFDD /* Release */ = {
+		84FCAF4C2801E1F200C76BEC183BEBAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8297EFA5ECF9223F27C6041A44ED03C5 /* EasyToast.xcconfig */;
+			baseConfigurationReference = BF47D6B5FB63217F4E5AFCD689732342 /* SwipeableTabBarController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1186,28 +1407,28 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EasyToast/EasyToast-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyToast/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EasyToast/EasyToast.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = EasyToast;
+				PRODUCT_NAME = SwipeableTabBarController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A4E305D8F9FEC54C190E28EF7BD9392B /* Debug */ = {
+		923874E7A8F0454EDC11F834C8B487F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3789EAF1B4A42A9B31947DA2C3803A9A /* SwipeableTabBarController.xcconfig */;
+			baseConfigurationReference = BF47D6B5FB63217F4E5AFCD689732342 /* SwipeableTabBarController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1233,86 +1454,16 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A6B72661517C16735A19A681329F1543 /* Release */ = {
+		A516FB1A3CF0C0E38E6E12023BE62772 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AB883E73E318B023BA7241C7985FFF1 /* ExpandableTableViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ExpandableTableViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ExpandableTableViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A6C8079416A1D98D845AE3CBDD2E2D17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AB883E73E318B023BA7241C7985FFF1 /* ExpandableTableViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ExpandableTableViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ExpandableTableViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D60F8C4DE6B0D221A33959774DA3DAFF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3E6BBEEFF48702CF62BB8BE35591483 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 53B19AF3F5957618D86DA63E9AC05EE4 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1338,12 +1489,47 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		CE2F58C30A84A0A91F2A31FDA6DBDB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 940827F4B272F60CBFFAB189B0A04586 /* Cosmos.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		EE417261640383BE8C8DC2397B32A644 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1417,14 +1603,49 @@
 			};
 			name = Release;
 		};
+		F604F9C7A2F02D63A8EBBEDF3B4ADA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA791E4AB350C0F0C9F535AB2A44CB4 /* EasyToast.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyToast/EasyToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyToast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyToast/EasyToast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		00E21423372BB0FB91C82EE1C1C60B08 /* Build configuration list for PBXNativeTarget "ExpandableTableViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6C8079416A1D98D845AE3CBDD2E2D17 /* Debug */,
-				A6B72661517C16735A19A681329F1543 /* Release */,
+				79CDE617D8B3C548D1E585EE8ED3E8B5 /* Debug */,
+				186BF7E850D5323722739CB07EB44E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1438,20 +1659,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		38CA41A3E689F135BAEECE91B63D9EA0 /* Build configuration list for PBXNativeTarget "Cosmos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D60F8C4DE6B0D221A33959774DA3DAFF /* Debug */,
-				077C4BB7DBEAA715DED46C057DC8051C /* Release */,
+				2ED35E6BD524A6684F0390464EB9C15D /* Debug */,
+				CE2F58C30A84A0A91F2A31FDA6DBDB3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		564EEC3C7EB59BD1A7F31CC88C71721C /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */ = {
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4E305D8F9FEC54C190E28EF7BD9392B /* Debug */,
-				59CF6C464C6DD9E39D588AE9185E82DA /* Release */,
+				A516FB1A3CF0C0E38E6E12023BE62772 /* Debug */,
+				441300C5FC4B5A08DA02C97A98A9AC30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1465,6 +1686,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		79F6D7DC673FA739CD310AAF489E6037 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923874E7A8F0454EDC11F834C8B487F4 /* Debug */,
+				84FCAF4C2801E1F200C76BEC183BEBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7C3B8749268494FBFC9E7D1262358106 /* Build configuration list for PBXNativeTarget "Pods-SanaMediaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1474,20 +1704,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AAA5B5FAAB99468D3B9AD24158F16DB /* Build configuration list for PBXNativeTarget "EasyToast" */ = {
+		87F875658DC5A12FDE68F75087C8CFD4 /* Build configuration list for PBXNativeTarget "Pods-SanaMedia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				133ECDC3C7190485A407FD286A6F791E /* Debug */,
-				A3678CF68735526FFC852A66517DEFDD /* Release */,
+				3019B827F03B7065CC53732EDD969EA9 /* Debug */,
+				7CC644BFC564AE2CBAE0F4584A969B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6BF53BC63D2A06B184A608FC9BBBEB6 /* Build configuration list for PBXNativeTarget "Pods-SanaMedia" */ = {
+		9AAA5B5FAAB99468D3B9AD24158F16DB /* Build configuration list for PBXNativeTarget "EasyToast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61B43C96569F891EF4EFF6AE126D620A /* Debug */,
-				8F54477F3877F813C7EB51D6B0D8507E /* Release */,
+				F604F9C7A2F02D63A8EBBEDF3B4ADA08 /* Debug */,
+				4911C6AF4B0E8923759914682D6520D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

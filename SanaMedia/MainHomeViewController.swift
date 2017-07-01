@@ -121,7 +121,7 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
     }
     
     //: handles data when recieved from server
-    func notificationReceived(_ notification: Notification)
+    @objc func notificationReceived(_ notification: Notification)
     {
         let error = notification.userInfo?["error"] as! String
         let data = notification.userInfo?["data"] as! [String:AnyObject]
@@ -399,7 +399,7 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         newestMovieSerialsIDs = [Int]()
     }
     
-    func loadMoreItem(_ notification: Notification)
+    @objc func loadMoreItem(_ notification: Notification)
     {
         let tableViewCellIndex = notification.userInfo?["tableViewCellIndex"] as! Int
         switch tableViewCellIndex {
@@ -454,6 +454,22 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
 
         default:
             break
+        }
+    }
+    
+    @IBAction func profileClicked(_ sender: Any) {
+     
+        if User.getInstance().isLogin()
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
+            self.present(controller, animated: true, completion: nil)
+        }
+        else
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "RegisterLoginViewController")
+            self.present(controller, animated: true, completion: nil)
         }
     }
 }

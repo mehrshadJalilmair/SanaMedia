@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1A87CE1F07171700065DF8 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */; };
+		2F1A87D01F07180500065DF8 /* UserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87CF1F07180500065DF8 /* UserMessage.swift */; };
+		2F1A87D21F07189000065DF8 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87D11F07189000065DF8 /* MessageCell.swift */; };
 		2F1E82C21ECC395B00EA0FC6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C11ECC395B00EA0FC6 /* Movie.swift */; };
 		2F1E82C41ECC3DF600EA0FC6 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C31ECC3DF600EA0FC6 /* Music.swift */; };
 		2F1E82C81ECCD10C00EA0FC6 /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */; };
 		2F1E82CA1ECCD11A00EA0FC6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C91ECCD11A00EA0FC6 /* Image.swift */; };
 		2F1E82CC1ECCD92500EA0FC6 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */; };
 		2F45886C1F006DDC00C0A233 /* TopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45886B1F006DDC00C0A233 /* TopTabBar.swift */; };
+		2F84FBF51F02FBF400EF3A8C /* RegisterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF41F02FBF400EF3A8C /* RegisterLoginViewController.swift */; };
+		2F84FBF71F02FE1B00EF3A8C /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF61F02FE1B00EF3A8C /* FloatLabelTextField.swift */; };
+		2F84FBF91F03054A00EF3A8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF81F03054A00EF3A8C /* User.swift */; };
+		2F84FBFB1F032EF800EF3A8C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBFA1F032EF800EF3A8C /* Profile.swift */; };
 		2F9105ED1EFC759600202B36 /* MusicAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9105EC1EFC759600202B36 /* MusicAlbum.swift */; };
 		2F9105F31EFC76DD00202B36 /* MusicAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9105F11EFC76DD00202B36 /* MusicAlbumCell.swift */; };
 		2F9105F41EFC76DD00202B36 /* MusicAlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9105F21EFC76DD00202B36 /* MusicAlbumsCell.swift */; };
@@ -71,12 +78,19 @@
 
 /* Begin PBXFileReference section */
 		17D6BC9B183B53348A193ECA /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaMediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		2F1A87CF1F07180500065DF8 /* UserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessage.swift; sourceTree = "<group>"; };
+		2F1A87D11F07189000065DF8 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		2F1E82C11ECC395B00EA0FC6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2F1E82C31ECC3DF600EA0FC6 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
 		2F1E82C91ECCD11A00EA0FC6 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		2F45886B1F006DDC00C0A233 /* TopTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabBar.swift; sourceTree = "<group>"; };
+		2F84FBF41F02FBF400EF3A8C /* RegisterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterLoginViewController.swift; sourceTree = "<group>"; };
+		2F84FBF61F02FE1B00EF3A8C /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		2F84FBF81F03054A00EF3A8C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2F84FBFA1F032EF800EF3A8C /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		2F9105EC1EFC759600202B36 /* MusicAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicAlbum.swift; sourceTree = "<group>"; };
 		2F9105F11EFC76DD00202B36 /* MusicAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicAlbumCell.swift; sourceTree = "<group>"; };
 		2F9105F21EFC76DD00202B36 /* MusicAlbumsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicAlbumsCell.swift; sourceTree = "<group>"; };
@@ -158,7 +172,6 @@
 		2F1E82B91ECC37F600EA0FC6 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				2FE246C11F01C03500881D92 /* ShareClasses */,
 				2F1E82BF1ECC38B500EA0FC6 /* Category */,
 				2F1E82BE1ECC38B000EA0FC6 /* Stream */,
 				2F1E82BD1ECC38AB00EA0FC6 /* News */,
@@ -174,6 +187,7 @@
 				2FF1B7E41ECAE0B300CB176D /* AppDelegate.swift */,
 				2FF1B7E61ECAE0B300CB176D /* TabBar.swift */,
 				2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */,
+				2F84FBF81F03054A00EF3A8C /* User.swift */,
 				2FF9919B1ED6339C003A248A /* extensions.swift */,
 			);
 			name = Main;
@@ -242,6 +256,7 @@
 				2F9106051EFD2A3400202B36 /* News.swift */,
 				2F9106091EFD59E300202B36 /* TV.swift */,
 				2FE246C21F01C05B00881D92 /* Comment.swift */,
+				2F1A87CF1F07180500065DF8 /* UserMessage.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -258,7 +273,9 @@
 		2F7183B91ECDFF4700C369BB /* IBDesignable */ = {
 			isa = PBXGroup;
 			children = (
+				2F84FBF61F02FE1B00EF3A8C /* FloatLabelTextField.swift */,
 				2FEDC1DB1ECE5BD1004EE0D2 /* DesignableButton.swift */,
+				2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */,
 			);
 			name = IBDesignable;
 			sourceTree = "<group>";
@@ -321,6 +338,9 @@
 			isa = PBXGroup;
 			children = (
 				2FE246BF1F01C02F00881D92 /* CommentCell.swift */,
+				2F84FBF41F02FBF400EF3A8C /* RegisterLoginViewController.swift */,
+				2F84FBFA1F032EF800EF3A8C /* Profile.swift */,
+				2F1A87D11F07189000065DF8 /* MessageCell.swift */,
 			);
 			name = ShareClasses;
 			sourceTree = "<group>";
@@ -352,6 +372,7 @@
 			children = (
 				2F7183B91ECDFF4700C369BB /* IBDesignable */,
 				2F1E82C01ECC38CF00EA0FC6 /* Models */,
+				2FE246C11F01C03500881D92 /* ShareClasses */,
 				2F1E82B91ECC37F600EA0FC6 /* Tabs */,
 				2F1E82BA1ECC380B00EA0FC6 /* Main */,
 				2F1E82CE1ECCE05700EA0FC6 /* Assest */,
@@ -478,17 +499,20 @@
 					2FF1B7E01ECAE0B300CB176D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = BJ9VCS422A;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					2FF1B7F41ECAE0B300CB176D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = BJ9VCS422A;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2FF1B7E01ECAE0B300CB176D;
 					};
 					2FF1B7FF1ECAE0B300CB176D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = BJ9VCS422A;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2FF1B7E01ECAE0B300CB176D;
 					};
@@ -565,6 +589,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SanaMedia/Pods-SanaMedia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyToast/EasyToast.framework",
 				"${BUILT_PRODUCTS_DIR}/ExpandableTableViewController/ExpandableTableViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
@@ -572,6 +597,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyToast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableTableViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
@@ -718,16 +744,22 @@
 				2FF1B7E71ECAE0B300CB176D /* TabBar.swift in Sources */,
 				2F9220011ED645E20093932B /* EbookCell.swift in Sources */,
 				2F9105ED1EFC759600202B36 /* MusicAlbum.swift in Sources */,
+				2F1A87D01F07180500065DF8 /* UserMessage.swift in Sources */,
+				2F84FBFB1F032EF800EF3A8C /* Profile.swift in Sources */,
 				2F9106021EFC7E3900202B36 /* MovieSerialsCell.swift in Sources */,
 				2FF1B8131ECAEDC700CB176D /* MainHomeViewController.swift in Sources */,
+				2F84FBF91F03054A00EF3A8C /* User.swift in Sources */,
 				2FF1B7E51ECAE0B300CB176D /* AppDelegate.swift in Sources */,
+				2F84FBF51F02FBF400EF3A8C /* RegisterLoginViewController.swift in Sources */,
 				2F9105FE1EFC7BE100202B36 /* MovieSerial.swift in Sources */,
 				2F921FFA1ED642740093932B /* VideoCell.swift in Sources */,
 				2FF1B8191ECAEF0000CB176D /* CategoryViewController.swift in Sources */,
+				2F84FBF71F02FE1B00EF3A8C /* FloatLabelTextField.swift in Sources */,
 				2F1E82CC1ECCD92500EA0FC6 /* Singleton.swift in Sources */,
 				2F9106061EFD2A3400202B36 /* News.swift in Sources */,
 				2F9105FC1EFC788500202B36 /* MusicsCell.swift in Sources */,
 				2F9105F41EFC76DD00202B36 /* MusicAlbumsCell.swift in Sources */,
+				2F1A87CE1F07171700065DF8 /* DesignableLabel.swift in Sources */,
 				2FF1B8151ECAEEE100CB176D /* NewsViewController.swift in Sources */,
 				2F91060A1EFD59E300202B36 /* TV.swift in Sources */,
 				2FE246BE1F01951700881D92 /* FullNews.swift in Sources */,
@@ -737,6 +769,7 @@
 				2F1E82CA1ECCD11A00EA0FC6 /* Image.swift in Sources */,
 				2F921FF61ED63F0D0093932B /* ImagesCell.swift in Sources */,
 				2FEDC1DC1ECE5BD1004EE0D2 /* DesignableButton.swift in Sources */,
+				2F1A87D21F07189000065DF8 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,7 +940,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CruxTechLtd.SanaMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -922,7 +956,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CruxTechLtd.SanaMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -937,7 +972,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CruxTechLtd.SanaMediaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanaMedia.app/SanaMedia";
 			};
 			name = Debug;
@@ -953,7 +989,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CruxTechLtd.SanaMediaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanaMedia.app/SanaMedia";
 			};
 			name = Release;
@@ -968,7 +1005,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CruxTechLtd.SanaMediaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = SanaMedia;
 			};
 			name = Debug;
@@ -983,7 +1021,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CruxTechLtd.SanaMediaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = SanaMedia;
 			};
 			name = Release;

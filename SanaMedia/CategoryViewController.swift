@@ -14,4 +14,20 @@ class CategoryViewController: UIViewController{
         super.viewDidLoad()
         
     }
+    
+    @IBAction func profileClicked(_ sender: Any) {
+        
+        if User.getInstance().isLogin()
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
+            self.present(controller, animated: true, completion: nil)
+        }
+        else
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "RegisterLoginViewController")
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
 }

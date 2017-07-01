@@ -146,7 +146,7 @@ public class TopTabBar: UIView {
     
     // MARK: Actions
     
-    public func didTap(_ tap: UITapGestureRecognizer) {
+    @objc public func didTap(_ tap: UITapGestureRecognizer) {
         self.sliderDelegate?.slidingContainerSliderViewDidPressed(self, atIndex: tap.view!.tag - 1)
     }
     

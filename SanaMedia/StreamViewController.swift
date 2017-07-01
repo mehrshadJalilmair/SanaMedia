@@ -67,7 +67,7 @@ class StreamViewController: UIViewController , UITableViewDelegate , UITableView
     }
     
     //: handles data when recieved from server
-    func notificationReceived(_ notification: Notification)
+    @objc func notificationReceived(_ notification: Notification)
     {
         let error = notification.userInfo?["error"] as! String
         let data = notification.userInfo?["data"] as! [String:AnyObject]
@@ -135,6 +135,22 @@ class StreamViewController: UIViewController , UITableViewDelegate , UITableView
         radiosBtn.backgroundColor = UIColor(red: 226/255, green: 64/255, blue: 129/255, alpha: 1)
         tvsBtn.backgroundColor = UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1)
         //getInitData()
+    }
+    
+    @IBAction func profileClicked(_ sender: Any) {
+        
+        if User.getInstance().isLogin()
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
+            self.present(controller, animated: true, completion: nil)
+        }
+        else
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "RegisterLoginViewController")
+            self.present(controller, animated: true, completion: nil)
+        }
     }
 }
 
