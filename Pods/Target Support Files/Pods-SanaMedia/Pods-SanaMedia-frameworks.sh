@@ -102,6 +102,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EasyToast/EasyToast.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ExpandableTableViewController/ExpandableTableViewController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LIHImageSlider/LIHImageSlider.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -109,6 +110,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EasyToast/EasyToast.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ExpandableTableViewController/ExpandableTableViewController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LIHImageSlider/LIHImageSlider.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

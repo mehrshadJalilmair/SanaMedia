@@ -32,7 +32,7 @@ extension UIImageView{
                 
                 return
             }
-        
+            
             DispatchQueue.main.async(execute: {
                 
                 if let downloadedImage = UIImage(data : data!){

@@ -10,6 +10,7 @@ target 'SanaMedia' do
   pod "ExpandableTableViewController"
   pod 'Alamofire', '~> 4.4'
   pod "EasyToast"
+  pod 'LIHImageSlider'
   pod 'Cosmos', :git => 'https://github.com/marketplacer/Cosmos.git', :branch => 'swift-4.0'
 
   target 'SanaMediaTests' do

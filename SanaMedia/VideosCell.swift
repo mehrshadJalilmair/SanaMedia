@@ -99,7 +99,12 @@ extension VideosCell
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
-        
+        DispatchQueue.main.async {
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "moviePopup") as! moviePopup
+            UIApplication.shared.keyWindow?.rootViewController?.present(controller, animated: true, completion: nil)
+        }
     }
 }
 

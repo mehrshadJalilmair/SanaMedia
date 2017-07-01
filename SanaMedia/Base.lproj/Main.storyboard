@@ -230,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xoO-6y-3BI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="64.31784107946028"/>
+            <point key="canvasLocation" x="761" y="82"/>
         </scene>
         <!--Full News-->
         <scene sceneID="qTK-6t-AVO">
@@ -282,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ogz-5u-zfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="63.418290854572717"/>
+            <point key="canvasLocation" x="1430" y="81"/>
         </scene>
         <!--Tab 3-->
         <scene sceneID="SwA-ZK-rSW">
@@ -451,7 +451,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v54-MQ-Czp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="707.49625187406298"/>
+            <point key="canvasLocation" x="761" y="805"/>
         </scene>
         <!--Tab 4-->
         <scene sceneID="APb-OX-pQb">
@@ -504,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1b-n1-Nl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="1367.7661169415294"/>
+            <point key="canvasLocation" x="761" y="1531"/>
         </scene>
         <!--Register Login View Controller-->
         <scene sceneID="eOW-mb-Vml">
@@ -824,7 +824,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYu-yI-Hto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="-1263.4182908545729"/>
+            <point key="canvasLocation" x="761" y="-1382"/>
         </scene>
         <!--Profile-->
         <scene sceneID="FBS-nb-h5e">
@@ -1401,7 +1401,7 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1412" y="-1263.4182908545729"/>
+            <point key="canvasLocation" x="1430" y="-1382"/>
         </scene>
         <!--Tab 1-->
         <scene sceneID="EZ2-Fw-tf8">
@@ -1494,7 +1494,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2p-d1-aWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="-583.3583208395803"/>
+            <point key="canvasLocation" x="761" y="-655"/>
         </scene>
         <!--Tab Bar-->
         <scene sceneID="klp-fQ-hK8">
@@ -1518,6 +1518,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXz-j5-R1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-169" y="391"/>
+        </scene>
+        <!--Movie Popup-->
+        <scene sceneID="TjW-wX-yF4">
+            <objects>
+                <viewController restorationIdentifier="moviePopup" storyboardIdentifier="moviePopup" modalPresentationStyle="overCurrentContext" id="RHk-Bk-lfI" customClass="moviePopup" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gsL-tQ-jox"/>
+                        <viewControllerLayoutGuide type="bottom" id="hmS-IF-Cpb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDe-J1-K5m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHQ-gy-D8g">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgb-FR-zEF" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="339" y="16" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="BzY-o5-AVt"/>
+                                    <constraint firstAttribute="height" constant="30" id="ewZ-t3-RV2"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="close:" destination="RHk-Bk-lfI" eventType="touchUpInside" id="TYe-bV-154"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="gHQ-gy-D8g" secondAttribute="leading" id="FWx-v1-QzJ"/>
+                            <constraint firstItem="hmS-IF-Cpb" firstAttribute="top" secondItem="gHQ-gy-D8g" secondAttribute="bottom" constant="20" id="NOK-06-Fyv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rgb-FR-zEF" secondAttribute="trailing" constant="-10" id="Upj-6x-oHM"/>
+                            <constraint firstItem="gHQ-gy-D8g" firstAttribute="top" secondItem="gsL-tQ-jox" secondAttribute="bottom" constant="8" id="XjJ-Iq-wTc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gHQ-gy-D8g" secondAttribute="trailing" id="a77-vU-i2Y"/>
+                            <constraint firstItem="rgb-FR-zEF" firstAttribute="top" secondItem="gsL-tQ-jox" secondAttribute="bottom" constant="-4" id="tJP-7l-UZz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollVew" destination="gHQ-gy-D8g" id="vSl-13-AX1"/>
+                        <outlet property="scrollView" destination="gHQ-gy-D8g" id="96Z-cw-2Jz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdE-ev-lKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="-655"/>
         </scene>
     </scenes>
     <resources>

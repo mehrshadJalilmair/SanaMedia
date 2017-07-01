@@ -10,6 +10,7 @@
 		2F1A87CE1F07171700065DF8 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */; };
 		2F1A87D01F07180500065DF8 /* UserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87CF1F07180500065DF8 /* UserMessage.swift */; };
 		2F1A87D21F07189000065DF8 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87D11F07189000065DF8 /* MessageCell.swift */; };
+		2F1A87D41F07363900065DF8 /* moviePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87D31F07363900065DF8 /* moviePopup.swift */; };
 		2F1E82C21ECC395B00EA0FC6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C11ECC395B00EA0FC6 /* Movie.swift */; };
 		2F1E82C41ECC3DF600EA0FC6 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C31ECC3DF600EA0FC6 /* Music.swift */; };
 		2F1E82C81ECCD10C00EA0FC6 /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */; };
@@ -81,6 +82,7 @@
 		2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
 		2F1A87CF1F07180500065DF8 /* UserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessage.swift; sourceTree = "<group>"; };
 		2F1A87D11F07189000065DF8 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		2F1A87D31F07363900065DF8 /* moviePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviePopup.swift; sourceTree = "<group>"; };
 		2F1E82C11ECC395B00EA0FC6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2F1E82C31ECC3DF600EA0FC6 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				2F84FBF41F02FBF400EF3A8C /* RegisterLoginViewController.swift */,
 				2F84FBFA1F032EF800EF3A8C /* Profile.swift */,
 				2F1A87D11F07189000065DF8 /* MessageCell.swift */,
+				2F1A87D31F07363900065DF8 /* moviePopup.swift */,
 			);
 			name = ShareClasses;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyToast/EasyToast.framework",
 				"${BUILT_PRODUCTS_DIR}/ExpandableTableViewController/ExpandableTableViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/LIHImageSlider/LIHImageSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -600,6 +604,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyToast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableTableViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LIHImageSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,6 +751,7 @@
 				2F9105ED1EFC759600202B36 /* MusicAlbum.swift in Sources */,
 				2F1A87D01F07180500065DF8 /* UserMessage.swift in Sources */,
 				2F84FBFB1F032EF800EF3A8C /* Profile.swift in Sources */,
+				2F1A87D41F07363900065DF8 /* moviePopup.swift in Sources */,
 				2F9106021EFC7E3900202B36 /* MovieSerialsCell.swift in Sources */,
 				2FF1B8131ECAEDC700CB176D /* MainHomeViewController.swift in Sources */,
 				2F84FBF91F03054A00EF3A8C /* User.swift in Sources */,
