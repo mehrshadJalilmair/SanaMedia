@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F147C4B1F0A86BB0035D446 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F147C4A1F0A86BB0035D446 /* Search.swift */; };
 		2F1A87CE1F07171700065DF8 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */; };
 		2F1A87D01F07180500065DF8 /* UserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87CF1F07180500065DF8 /* UserMessage.swift */; };
 		2F1A87D21F07189000065DF8 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87D11F07189000065DF8 /* MessageCell.swift */; };
@@ -16,7 +17,6 @@
 		2F1E82C81ECCD10C00EA0FC6 /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */; };
 		2F1E82CA1ECCD11A00EA0FC6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C91ECCD11A00EA0FC6 /* Image.swift */; };
 		2F1E82CC1ECCD92500EA0FC6 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */; };
-		2F45886C1F006DDC00C0A233 /* TopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45886B1F006DDC00C0A233 /* TopTabBar.swift */; };
 		2F84FBF51F02FBF400EF3A8C /* RegisterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF41F02FBF400EF3A8C /* RegisterLoginViewController.swift */; };
 		2F84FBF71F02FE1B00EF3A8C /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF61F02FE1B00EF3A8C /* FloatLabelTextField.swift */; };
 		2F84FBF91F03054A00EF3A8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF81F03054A00EF3A8C /* User.swift */; };
@@ -84,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		17D6BC9B183B53348A193ECA /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaMediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F147C4A1F0A86BB0035D446 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
 		2F1A87CF1F07180500065DF8 /* UserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessage.swift; sourceTree = "<group>"; };
 		2F1A87D11F07189000065DF8 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
 		2F1E82C91ECCD11A00EA0FC6 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		2F45886B1F006DDC00C0A233 /* TopTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabBar.swift; sourceTree = "<group>"; };
 		2F84FBF41F02FBF400EF3A8C /* RegisterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterLoginViewController.swift; sourceTree = "<group>"; };
 		2F84FBF61F02FE1B00EF3A8C /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		2F84FBF81F03054A00EF3A8C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -250,8 +250,8 @@
 		2F1E82BF1ECC38B500EA0FC6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				2F45886B1F006DDC00C0A233 /* TopTabBar.swift */,
 				2FF1B8181ECAEF0000CB176D /* CategoryViewController.swift */,
+				2F147C4A1F0A86BB0035D446 /* Search.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -607,6 +607,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SanaMedia/Pods-SanaMedia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CarbonKit/CarbonKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyToast/EasyToast.framework",
 				"${BUILT_PRODUCTS_DIR}/ExpandableTableViewController/ExpandableTableViewController.framework",
@@ -616,6 +617,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CarbonKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyToast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableTableViewController.framework",
@@ -762,7 +764,6 @@
 				2FE246C01F01C02F00881D92 /* CommentCell.swift in Sources */,
 				2FE246C31F01C05B00881D92 /* Comment.swift in Sources */,
 				2FCD15401F0A3CD60038107B /* imagePopup.swift in Sources */,
-				2F45886C1F006DDC00C0A233 /* TopTabBar.swift in Sources */,
 				2FF1B8171ECAEEF100CB176D /* StreamViewController.swift in Sources */,
 				2FCD15421F0A3CF70038107B /* ebookPopup.swift in Sources */,
 				2FF1B7E71ECAE0B300CB176D /* TabBar.swift in Sources */,
@@ -794,6 +795,7 @@
 				2FF9919C1ED6339C003A248A /* extensions.swift in Sources */,
 				2F1E82CA1ECCD11A00EA0FC6 /* Image.swift in Sources */,
 				2F921FF61ED63F0D0093932B /* ImagesCell.swift in Sources */,
+				2F147C4B1F0A86BB0035D446 /* Search.swift in Sources */,
 				2FEDC1DC1ECE5BD1004EE0D2 /* DesignableButton.swift in Sources */,
 				2F1A87D21F07189000065DF8 /* MessageCell.swift in Sources */,
 			);

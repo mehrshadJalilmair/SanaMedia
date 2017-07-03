@@ -7,259 +7,305 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E948E3407FE59E3B21ABFDA8E242AC3 /* CosmosSettings.swift */; };
-		05DE1EC90D94C616210EA4D530BF9E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		06C0BABACABDCDD498CCCB0EDC479A4E /* UIView+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A89F1D55557776F41D195596C7727E /* UIView+Toast.swift */; };
-		0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDF0CCACDCCF1E40F8FD6F31ED1FE3 /* CosmosLocalizedRating.swift */; };
-		0F340DF040D6B903CB11B3A2A9255F3A /* ExpandableTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 697052FF9EF6450007EC23158E818BCF /* ExpandableTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B491814D6B5D40EEDE8DC71D07C4B690 /* Timeline.swift */; };
-		176127A4857051BD179F565E2BB0B76C /* LIHSliderItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E63FA88A488C0C72CDAF1B99E83CE7 /* LIHSliderItemViewController.swift */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C8F79204FC83649DACE359B61A7639 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23F59296980949C3C3CB639C90D9C681 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE7700C2BE73531A4F60EA9AD243754 /* SwipeableTabBarController-dummy.m */; };
-		257591DD430A99371C1C0B9217465F91 /* LIHSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C3B67466B74A62EE810ECC26478A8C /* LIHSliderViewController.swift */; };
-		25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45990152A3D98750799ACF0FD74561EC /* CosmosSize.swift */; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E9141C31505606A66255F4F99B47E /* TaskDelegate.swift */; };
-		371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50EB3F2115A7363B3DC6054A9D65AA5 /* CosmosDefaultSettings.swift */; };
-		3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F83C398BE17972A27E413C6850AEA4A /* Cosmos-dummy.m */; };
-		424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76925FE4C6628903A4890F800E8E94C8 /* CosmosText.swift */; };
-		45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D2032A35763F27FBCB22E52FDD2B4 /* CosmosView.swift */; };
+		015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A00BDA5D3E72BAA1A18DAA37838AFB /* CosmosSettings.swift */; };
+		045F3C1888DDE2D28D0266DC81E37196 /* CarbonSwipeRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D71E29344A24C21B7D237836C04A0F6 /* CarbonSwipeRefresh.m */; };
+		05DE1EC90D94C616210EA4D530BF9E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		06C0BABACABDCDD498CCCB0EDC479A4E /* UIView+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAEEE5451D6870278FF1CD270023E4 /* UIView+Toast.swift */; };
+		0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D20904058E18494255CEBB115F4D7F /* CosmosLocalizedRating.swift */; };
+		0EF83262CD766C3C0B8B3727481F5DF8 /* CarbonKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F2B06D5BABB3DE29A0D262BB0B0747 /* CarbonKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F340DF040D6B903CB11B3A2A9255F3A /* ExpandableTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E79F8A2805FCF72A6D8B4F05CA9932AE /* ExpandableTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6924B7488631D93B1D471B4F89491 /* Timeline.swift */; };
+		139A92730AC27EF97569EEFCF1B3D615 /* SwipeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF42402799A251F9FBAE8B991DED033A /* SwipeAnimation.swift */; };
+		176127A4857051BD179F565E2BB0B76C /* LIHSliderItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874AD8159A1F345FF4B42B7E8FC12703 /* LIHSliderItemViewController.swift */; };
+		1B0D4DCF1788FCECCBB333F3A1A49394 /* CarbonTabSwipeNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9F346A0A0E6770C78F670AE6E5EE43 /* CarbonTabSwipeNavigation.m */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 848D83E9655311A715E8ACD28D1C2476 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EADF9806A88919744E66993C412505E /* CarbonTabSwipeSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A45D24D014F19E7F6ADC81A8F5DB524 /* CarbonTabSwipeSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2149E6DACDAB795FFC5F8A32CE43D092 /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1107F6986EDD4F6C7A8DABC753B0AF87 /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		257591DD430A99371C1C0B9217465F91 /* LIHSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A377C29D08EC4B582D72D149625A7F /* LIHSliderViewController.swift */; };
+		25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C75697BEEAB2E9C5AA87993214D145C /* CosmosSize.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50604DB64494ED8D6E4DC7241B4A3F3 /* TaskDelegate.swift */; };
+		371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9585B0289A36D5A176F289DD5AB4E49E /* CosmosDefaultSettings.swift */; };
+		3C18F92FFAAA9CAC8A8AF2F89E286F66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7710AEC0300070A506E77527C2D9DD /* Cosmos-dummy.m */; };
+		424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484F5723176F1DA28B01C476FFB15 /* CosmosText.swift */; };
+		45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186468C8213CDEC7BB299A7038DCBB7 /* CosmosView.swift */; };
 		467F78D35EF4F18C68BBA07BF17480A6 /* Pods-SanaMediaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 612DEC9507988414F213840818A1B82B /* Pods-SanaMediaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47FECB1492E19C4637007F9DEBED153C /* LIHImageSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F6C4EC8BD0BAA54225A579861EE434 /* LIHImageSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BF545E187D666AEB22F8B99B633570B /* LIHImageSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB247D5A687839ED65B8E3CE10AAEAB /* LIHImageSlider-dummy.m */; };
-		4E1414275B5089D7528006424F7E90A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4795494D6AE00BC448F3EB530A5BC81B /* CosmosTouch.swift */; };
-		534626138592F0645AD92EB06B14202B /* EasyToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A60BAF5C465B6A9B549159DA588BF3 /* EasyToast-dummy.m */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77463C1C0565AD97CBD793D5DCE91D6C /* Request.swift */; };
-		54016F2AB981D6FEF55C46299B60B839 /* ExpandableTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CE0B8A2FE5040D3CF6FD376F37A5A6 /* ExpandableTableViewDelegate.swift */; };
+		47FECB1492E19C4637007F9DEBED153C /* LIHImageSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 480306812DC47309A124C2742471AFCE /* LIHImageSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B7E393BCDF58367F5F94620B1E34C0D /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840C57B77A76B0CA7AB6AE84C2D3A02 /* SwipeTransitioningProtocol.swift */; };
+		4BF545E187D666AEB22F8B99B633570B /* LIHImageSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE677AA1B3258FCBF6CDA5797D76598 /* LIHImageSlider-dummy.m */; };
+		4E1414275B5089D7528006424F7E90A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83C018C3965105695415610C452544 /* CosmosTouch.swift */; };
+		534626138592F0645AD92EB06B14202B /* EasyToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B24AB0F29307AF156010D7FD35367 /* EasyToast-dummy.m */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83323B2DE4182633C570631546F769 /* Request.swift */; };
+		54016F2AB981D6FEF55C46299B60B839 /* ExpandableTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170FCD514FD88D7A688309D18057E3EE /* ExpandableTableViewDelegate.swift */; };
 		54E4CFE4DFC75233B7DD79700E2287B7 /* Pods-SanaMediaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D92718B4322C23952C02B338AFCD88B8 /* Pods-SanaMediaUITests-dummy.m */; };
-		56E40C5125A7ED46E8854EFC2F31838E /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB857F95F7A541AF6F0F7D5405136A8F /* SwipeInteractor.swift */; };
-		60AB8B6839AA4D3957E706023FD1E1A1 /* QueueToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF1C0382C5BA9681E2F7E94662EBFB /* QueueToast.swift */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E26F00C4A11851893D6148C1848AF /* DispatchQueue+Alamofire.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3783AF3CC919CCEF1CC8C29238EE02D8 /* ServerTrustPolicy.swift */; };
-		65AF6A72CEFB5A48143AE0A1B9DB8695 /* SwipeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BC382F017E407E92538F11774667B3 /* SwipeAnimation.swift */; };
-		6AB06EE1B15D7CC54D0ABA09FAE8E375 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8587D037031703BB9C9F8FE70AB216 /* ArrayExtension.swift */; };
-		6AFAE55D0EF08A7F8EA6EFD4F57FED0D /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF53F42F0D11F121C56454D74D2C731 /* SwipeableTabBarController.swift */; };
-		6BBD21D798A1090EB63138413CD0743A /* EasyToastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8199AB196FE2E2D12D8F1783E57FCA45 /* EasyToastConfiguration.swift */; };
+		5CFE136A1CE6F600769EFA298F74137E /* CarbonKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6866627612BE29BD8153371FABB47CB4 /* CarbonKit-dummy.m */; };
+		60AB8B6839AA4D3957E706023FD1E1A1 /* QueueToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682ADC3F1038881045B5FB16FE6A8319 /* QueueToast.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944598F0086B6FA9074D460FE3B4E047 /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA930E7A30D87BC30FDF156D0090DC43 /* ServerTrustPolicy.swift */; };
+		64955BEA22805328D5805CB9F4E801F5 /* CarbonTabSwipeNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CC27EA49DE1402378DE9D09BAB93FFD /* CarbonTabSwipeNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		681B7152B818383AF525068EAE98BA91 /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293BBF23A228A27DB0281B4B579C66E3 /* SwipeInteractor.swift */; };
+		6AB06EE1B15D7CC54D0ABA09FAE8E375 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBAE8BA7800C1BA6EBD4601764793 /* ArrayExtension.swift */; };
+		6BBD21D798A1090EB63138413CD0743A /* EasyToastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598BF7F981D69F2E19C8C299990FFF09 /* EasyToastConfiguration.swift */; };
 		6C460065AA92FE7508375CBFBF2EDA4F /* Pods-SanaMediaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD9BB4F869FF704E693680CA472F2AF /* Pods-SanaMediaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71C76D755AADC7FC5C4A4CC21C8CEF00 /* ExpandableTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 701936F5E0947175B1A718025907CBA9 /* ExpandableTableViewController-dummy.m */; };
-		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		74F556E4F9CB853881AE2029D40FF246 /* ToastContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E601475F5B850F739B4D9B732B435B9 /* ToastContainerVC.swift */; };
-		79E7B1C618162FE30EA6FD017BD5EEFA /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BBA1D5701FAA99FDDA718776FDB693 /* SwipeTransitioningProtocol.swift */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020EA85985D270303CDA805D09B0E9F /* SessionDelegate.swift */; };
-		7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDFDD28FDD05B0A55E44459274C2188 /* CosmosAccessibility.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CAE7838A03BC29AA594E3E47370C1B /* Result.swift */; };
-		7E3778D4124CB3096E2238A74FA9E741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A0CEEC604126C3B20C1A6B0D438C3 /* StarFillMode.swift */; };
-		8E8E15D7075EB0DAC9FD44054BAB4E0C /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30517EE16E246C92C8D71972B5501BC /* ToastWindow.swift */; };
-		91C9A6480FD1D74422A1CB1DA8DBE330 /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1706571E0D15CD6F403B6CE3389E08DF /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		931A43989484E0511E502A0DE1F36AE1 /* Pods-SanaMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E96EDA15FF4774ABE935CF1109C752FE /* Pods-SanaMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82F3BD4A468B7228588B12F9F5120D /* CosmosRating.swift */; };
-		9A5AD1F9628F6F0BBC60D7D307E103A8 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF95A458AF15FCD8FA6D9E6D2A1495B2 /* UIKit+Extensions.swift */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A97F7D183B76D03CFFE05F1F5711118 /* AFError.swift */; };
-		A0DC9100ECAC4B0BE3823AC3618BFF76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD19EFD0F6C31B82BD86F31AFB0987A /* NetworkReachabilityManager.swift */; };
-		A3DC1F13F930383CB76C8FE880A892B2 /* LIHSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21CD3F1DA923F2F2C3520D353A3D498 /* LIHSlider.swift */; };
-		A8D0F1C3405DD1451822DBEDCB4925BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F281E0E6E84EA1FA7B54D985770ECAB /* Alamofire-dummy.m */; };
-		AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33784ED79359571677F0AAC429572F44 /* CosmosLayers.swift */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A918B980EF244E6EA64355DAA49CA70 /* SessionManager.swift */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7AF251D75CAAADEBDDC90B85168414 /* MultipartFormData.swift */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16110F7AE2A5F24D20C7E3216269D8FA /* Validation.swift */; };
-		BCC35A3E317BDC8DA3ACDFB2D4F57CE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9923D57E432C763354592FC1B0FB462 /* ParameterEncoding.swift */; };
-		C4DA3D914016D72F635C633B6F9C1978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C6DACD041A9C7BDD08E1A6BF35D6959A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160FB3A8E209725A45DDC06E793F823 /* RightToLeft.swift */; };
-		C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764386059FF60EA1013169CF90231180 /* StarLayer.swift */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A346B18BC6EE36C2DB46E1413E2AA /* Response.swift */; };
-		D77EE008B5DFE5F26A3CD18C9EE3131A /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8C33648ED2879246E17ED2A7B97AD /* SwipeAnimationType.swift */; };
-		DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D7C148BB01989C4036A9DBDC5AC75E7 /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E39F8E9952BA15C383898D1EB2DDD8 /* CosmosTouchTarget.swift */; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81042492D6269FC47DD72E1AADC451 /* Notifications.swift */; };
-		F4F8E720F69212996C6E388AD86059E2 /* EasyToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9AF957BD751CF72AA63470C88600433 /* EasyToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758393EF3E115E490F337F6E264ACD7 /* CosmosLayerHelper.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8606AC73D846F33AECE7BDEEF671DB1A /* ResponseSerialization.swift */; };
-		F7514CC85D8A5DFA40ABA78F5529BC09 /* Pods-SanaMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C80A48EAE0BF1D976C938E9BEDED6A /* Pods-SanaMedia-dummy.m */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01313819C12679EE065016F062B9A4E3 /* Alamofire.swift */; };
-		FA9BC38CCE677FEF3954D044305D5F6F /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B5DE9108A4FE0E5D728D83EC42604 /* ExpandableTableViewController.swift */; };
+		71C76D755AADC7FC5C4A4CC21C8CEF00 /* ExpandableTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D83230B211E8E443A4F5F10C68C8B1B8 /* ExpandableTableViewController-dummy.m */; };
+		728513B6DBE60EE22CD70289E4A9A505 /* Pods-SanaMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E96EDA15FF4774ABE935CF1109C752FE /* Pods-SanaMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		74F556E4F9CB853881AE2029D40FF246 /* ToastContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360C98470F6F46CB416B6E0D0939F81B /* ToastContainerVC.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC94A03EC4A93419E7C41ACEC789515D /* SessionDelegate.swift */; };
+		7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A0D6CC014CD103A9B18CAD5BC87D6 /* CosmosAccessibility.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66320D8AC3F2B5EC1B3A27265CBF1DE7 /* Result.swift */; };
+		7E3778D4124CB3096E2238A74FA9E741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		81C6B4DC56812B3C2F0567C3F2C6173E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA57D58B8079CEABE9D88B3C065C3 /* StarFillMode.swift */; };
+		8E8E15D7075EB0DAC9FD44054BAB4E0C /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335851C655C44BFB75F189561DBDDE3 /* ToastWindow.swift */; };
+		8EF27A6607DECE442C98B3EA7CE727C9 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62AE4773F4C4C00697219EC2ABAC8FD /* UIKit+Extensions.swift */; };
+		90B345DCF8100924B08336889D170039 /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B0CE22CF3518D4C46D4107A5279D9 /* SwipeableTabBarController.swift */; };
+		96E5CEF80F8F3544F72F20C9D3237B30 /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56E9DE58F41DDDD1115399EDE0E12E /* SwipeAnimationType.swift */; };
+		99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DE7389ADE462E2C04FD5B0E0E1F24 /* CosmosRating.swift */; };
+		99FBDAD19C67129DCCF4B819CF852C8E /* CarbonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A445A1C5C54882FF5FFC08C5C59DEFF3 /* CarbonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AD7BF9532A231CA2E5188B0D4CFBB9 /* AFError.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E7E434395BAEF97EEED97059BD6C8 /* NetworkReachabilityManager.swift */; };
+		A3DC1F13F930383CB76C8FE880A892B2 /* LIHSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49E0DF29743C4964C981B38457715B /* LIHSlider.swift */; };
+		A6C6B18067BA3BFC3595109DF582F167 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1AAA2356BF0F325ECCC9C56C168220 /* SwipeableTabBarController-dummy.m */; };
+		A8D0F1C3405DD1451822DBEDCB4925BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D55DBBFAE34694986DF78E41893C860 /* Alamofire-dummy.m */; };
+		AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C7007D58CE09B35F51E4B9B730AF4 /* CosmosLayers.swift */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5B18C271688A1773680BBEABBB5A9 /* SessionManager.swift */; };
+		B324B5ADE7BC072BF9827418BDA5D58D /* CarbonTabSwipeScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = A85D7DE43E4D4CBC8BCB53563A2B61F2 /* CarbonTabSwipeScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537738DD4943401EB3663E990EE8B6B /* MultipartFormData.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443108A7802B2699D7C7A2F6F54746EA /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F46A369814A0E276E4F252D4FFBD469 /* ParameterEncoding.swift */; };
+		BF70996ACA0BA0DF2110B1F91B29C00A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C035141BE361CC778F7A8A12AC141E56 /* CarbonSwipeRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E88903DBBB2E72F8101321E63D0819 /* CarbonSwipeRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4DA3D914016D72F635C633B6F9C1978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C58ADC57962868077B8C38AF5E67A82F /* CarbonTabSwipeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 254CFDC20CC7E8B9F8D40441980B8F11 /* CarbonTabSwipeSegmentedControl.m */; };
+		C6DACD041A9C7BDD08E1A6BF35D6959A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED0D4E0958A747E78DB91D1A4A1A27 /* RightToLeft.swift */; };
+		C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549B7ADFE6717778A31D973FCE7204A /* StarLayer.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D445FEB14AA403F9C5A3ED1563C9ECF /* Response.swift */; };
+		DA8CE2125946FBAD87EB5576CD0C1FDA /* CarbonTabSwipeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E60CD2301362B6646B6DD59DDAF2AC /* CarbonTabSwipeScrollView.m */; };
+		DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D0A965AE898C36797F30943D93EB13 /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B024561363B6AE2C13F4109826C0DAB2 /* CosmosTouchTarget.swift */; };
+		E5A53FC04B84A3785B847810EB423BBA /* Pods-SanaMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C80A48EAE0BF1D976C938E9BEDED6A /* Pods-SanaMedia-dummy.m */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0226DDC107972CA39ED322145ED5B6 /* Notifications.swift */; };
+		F4F8E720F69212996C6E388AD86059E2 /* EasyToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0EEB4630D3159DFD4E1CAEA3E92FBE1 /* EasyToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DE181CDA356636B9F38D4741E50510 /* CosmosLayerHelper.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF758AA2EC0424AA1D50C30C8FE6301 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0E35B1287B7F829CB473CBB830446 /* Alamofire.swift */; };
+		FA9BC38CCE677FEF3954D044305D5F6F /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FDEB9F158A25E03D02E8D99C709454 /* ExpandableTableViewController.swift */; };
+		FAEA377A884370F31075CAC2A80EBCC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		FC9E79B66D2732FF99EE6CE38E2031AB /* Pods-SanaMediaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 126F47CC4AA849EEFCAD72DBA1877852 /* Pods-SanaMediaTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		391C4FED8F8CCEEF3193952668EDFC42 /* PBXContainerItemProxy */ = {
+		263A92365483D5ACD12AAFC4B1E712CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 352F3CCD20CDBC5C9822654BDACCE6D0;
+			remoteInfo = CarbonKit;
+		};
+		2F3625808010FFAD5A25FED3CB5C9D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7D106CA45D5F935BC3CE65A390F92E4;
+			remoteInfo = SwipeableTabBarController;
+		};
+		365DBC398265A967144BB99A5E012971 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C7A27CEE1A5A58B01166DDC8469E0871;
 			remoteInfo = EasyToast;
 		};
-		3AF4B4531DCECFAEC9C5BB7F26614625 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 207656909A49887CE8C71E756AB7770A;
-			remoteInfo = LIHImageSlider;
-		};
-		4713DAFE465AD9E87B730589F0D2E5C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4FDC533A4360A68ABDCE852F04B30927;
-			remoteInfo = Cosmos;
-		};
-		892DBE040149F95D96E364682E4D673A /* PBXContainerItemProxy */ = {
+		782758C0CD6436AAC045C94842FC6D73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96AFA871D25A87F6FCCFED071D32EBC8;
 			remoteInfo = ExpandableTableViewController;
 		};
-		8E045D9E7DFCD9ECCE7A1C58062955C4 /* PBXContainerItemProxy */ = {
+		9553AD3F2F8A19674A93FFC174B02B91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
-		A645786A811EBC4E4426825978E1DC49 /* PBXContainerItemProxy */ = {
+		C49BB02A2B2720F3C0C00D1BC5E48890 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 87B5AF93942505183609A84851EA96AA;
-			remoteInfo = SwipeableTabBarController;
+			remoteGlobalIDString = 4FDC533A4360A68ABDCE852F04B30927;
+			remoteInfo = Cosmos;
+		};
+		DFF4F8E267C9C806CE43AFC6E6D74ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 207656909A49887CE8C71E756AB7770A;
+			remoteInfo = LIHImageSlider;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01313819C12679EE065016F062B9A4E3 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		0927172A9A694B4BCF3FF7F546F45C12 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		094055AA71BA93E4C037D09905999049 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		119E26F00C4A11851893D6148C1848AF /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		00E7CD51073FA1D7E87E42DF8B17EC53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035DC3ED94DD4AB57D1898373C5DF018 /* LIHImageSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LIHImageSlider.framework; path = LIHImageSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CCD24EC5BF396EC2517C9023AFDADF /* LIHImageSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LIHImageSlider.xcconfig; sourceTree = "<group>"; };
+		07F1519B3905EE693BD55D9E493580D8 /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
+		0D71E29344A24C21B7D237836C04A0F6 /* CarbonSwipeRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonSwipeRefresh.m; path = CarbonKit/CarbonSwipeRefresh.m; sourceTree = "<group>"; };
+		0F46A369814A0E276E4F252D4FFBD469 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		1107F6986EDD4F6C7A8DABC753B0AF87 /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		11354A77E5EEBD3BF01BE989484D0997 /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
+		11FA3997C6CC17643BD54F2F5F18184D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126F47CC4AA849EEFCAD72DBA1877852 /* Pods-SanaMediaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SanaMediaTests-dummy.m"; sourceTree = "<group>"; };
-		16110F7AE2A5F24D20C7E3216269D8FA /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		16BE0EAA9D27F630F8D0BB686477BE5F /* ExpandableTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ExpandableTableViewController.framework; path = ExpandableTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1706571E0D15CD6F403B6CE3389E08DF /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		170FCD514FD88D7A688309D18057E3EE /* ExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewDelegate.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
+		17D557313877A6355D78FA75CF5D98B9 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		1837770D8E2FEFE34F374A60940D950C /* Pods-SanaMediaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMediaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1857F6BC009AB5A4F772FCD26C68FD69 /* Pods-SanaMediaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		1E7FEAB49D2C714C6131EF9FB0EBC1E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EB247D5A687839ED65B8E3CE10AAEAB /* LIHImageSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LIHImageSlider-dummy.m"; sourceTree = "<group>"; };
+		1C577E3406EBFE886BEF008F1DE406BA /* LIHImageSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LIHImageSlider.modulemap; sourceTree = "<group>"; };
+		1CE5B18C271688A1773680BBEABBB5A9 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		1CF758AA2EC0424AA1D50C30C8FE6301 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		1EE1E72C7093DA5DBDCC9EF267B7068C /* Pods-SanaMediaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMediaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1EF53F42F0D11F121C56454D74D2C731 /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
-		1F0C974F2F93F30DD1A578BC56356EEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20CAE7838A03BC29AA594E3E47370C1B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		2160FB3A8E209725A45DDC06E793F823 /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
 		2356A51A767FFE9D53FC90334E9D7EA9 /* Pods-SanaMediaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMediaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		28C3B67466B74A62EE810ECC26478A8C /* LIHSliderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSliderViewController.swift; path = LIHImageSlider/Classes/LIHSliderViewController.swift; sourceTree = "<group>"; };
+		23D0A965AE898C36797F30943D93EB13 /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		2500B9C9AEE052727FB997CE1B1C6281 /* LIHImageSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIHImageSlider-prefix.pch"; sourceTree = "<group>"; };
+		254CFDC20CC7E8B9F8D40441980B8F11 /* CarbonTabSwipeSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeSegmentedControl.m; path = CarbonKit/CarbonTabSwipeSegmentedControl.m; sourceTree = "<group>"; };
+		25D0E35B1287B7F829CB473CBB830446 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		28C67804EC8F77B5A704892C6B2C37A9 /* CarbonKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CarbonKit-prefix.pch"; sourceTree = "<group>"; };
+		293BBF23A228A27DB0281B4B579C66E3 /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
+		29D20904058E18494255CEBB115F4D7F /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		2B4CEF02EDBEF39194D0FAB76A857897 /* Pods_SanaMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMedia.framework; path = "Pods-SanaMedia.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BBDA57D58B8079CEABE9D88B3C065C3 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
 		2C2C3251B88FAF35ABB8FBC90A2C9C6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D7C148BB01989C4036A9DBDC5AC75E7 /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
-		2F5A346B18BC6EE36C2DB46E1413E2AA /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		32B53C702831D2D9007A3A7D01705BE8 /* ExpandableTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-prefix.pch"; sourceTree = "<group>"; };
-		32E63FA88A488C0C72CDAF1B99E83CE7 /* LIHSliderItemViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSliderItemViewController.swift; path = LIHImageSlider/Classes/LIHSliderItemViewController.swift; sourceTree = "<group>"; };
-		3323AE1F0C586704FD49F53FD3A8476D /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
-		33784ED79359571677F0AAC429572F44 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
-		337D2032A35763F27FBCB22E52FDD2B4 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
-		3783AF3CC919CCEF1CC8C29238EE02D8 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		37A60BAF5C465B6A9B549159DA588BF3 /* EasyToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyToast-dummy.m"; sourceTree = "<group>"; };
-		4281FCB16C2FD6888344D89B5F55BBD3 /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
-		45990152A3D98750799ACF0FD74561EC /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
-		45BAF908EBD85237A4A85B83986E313C /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
-		45CE0B8A2FE5040D3CF6FD376F37A5A6 /* ExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewDelegate.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
-		4795494D6AE00BC448F3EB530A5BC81B /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		2CC27EA49DE1402378DE9D09BAB93FFD /* CarbonTabSwipeNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeNavigation.h; path = CarbonKit/CarbonTabSwipeNavigation.h; sourceTree = "<group>"; };
+		360C98470F6F46CB416B6E0D0939F81B /* ToastContainerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastContainerVC.swift; path = EasyToast/Classes/ToastContainerVC.swift; sourceTree = "<group>"; };
+		3840C57B77A76B0CA7AB6AE84C2D3A02 /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
+		3C11D2A37AFABA70977F412210843B1B /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		3C56E9DE58F41DDDD1115399EDE0E12E /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
+		3C75697BEEAB2E9C5AA87993214D145C /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		41A00BDA5D3E72BAA1A18DAA37838AFB /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
+		443108A7802B2699D7C7A2F6F54746EA /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		44E6924B7488631D93B1D471B4F89491 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		480306812DC47309A124C2742471AFCE /* LIHImageSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIHImageSlider-umbrella.h"; sourceTree = "<group>"; };
 		48C0191A1869AFB744B57412F9CE631B /* Pods-SanaMediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		48C80A48EAE0BF1D976C938E9BEDED6A /* Pods-SanaMedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SanaMedia-dummy.m"; sourceTree = "<group>"; };
-		4A918B980EF244E6EA64355DAA49CA70 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		4C7AF251D75CAAADEBDDC90B85168414 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		50A89F1D55557776F41D195596C7727E /* UIView+Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Toast.swift"; path = "EasyToast/Classes/UIView+Toast.swift"; sourceTree = "<group>"; };
-		57BBA1D5701FAA99FDDA718776FDB693 /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
-		5A97F7D183B76D03CFFE05F1F5711118 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		4A49E0DF29743C4964C981B38457715B /* LIHSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSlider.swift; path = LIHImageSlider/Classes/LIHSlider.swift; sourceTree = "<group>"; };
+		4F503D81F9A2A51CFFBBF97ADA3D001E /* ExpandableTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExpandableTableViewController.xcconfig; sourceTree = "<group>"; };
+		548DFFF5606FEF511C1983936FC2A00D /* ExpandableTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ExpandableTableViewController.framework; path = ExpandableTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B6625AD54E63FFEADB591AF943F9CF /* EasyToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyToast.framework; path = EasyToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DE181CDA356636B9F38D4741E50510 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		598BF7F981D69F2E19C8C299990FFF09 /* EasyToastConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyToastConfiguration.swift; path = EasyToast/Classes/EasyToastConfiguration.swift; sourceTree = "<group>"; };
 		5AD9BB4F869FF704E693680CA472F2AF /* Pods-SanaMediaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SanaMediaTests-umbrella.h"; sourceTree = "<group>"; };
+		5B44C45CFE8004035C7EC6CCBC8EC1F9 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF76223E10B7C2FE83881AF1DE1D779 /* Pods-SanaMediaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMediaTests.modulemap"; sourceTree = "<group>"; };
-		5F83C398BE17972A27E413C6850AEA4A /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
 		612DEC9507988414F213840818A1B82B /* Pods-SanaMediaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SanaMediaUITests-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		697052FF9EF6450007EC23158E818BCF /* ExpandableTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-umbrella.h"; sourceTree = "<group>"; };
+		63E60CD2301362B6646B6DD59DDAF2AC /* CarbonTabSwipeScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeScrollView.m; path = CarbonKit/CarbonTabSwipeScrollView.m; sourceTree = "<group>"; };
+		66320D8AC3F2B5EC1B3A27265CBF1DE7 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		682ADC3F1038881045B5FB16FE6A8319 /* QueueToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueueToast.swift; path = EasyToast/Classes/QueueToast.swift; sourceTree = "<group>"; };
+		6866627612BE29BD8153371FABB47CB4 /* CarbonKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CarbonKit-dummy.m"; sourceTree = "<group>"; };
 		6A7F7873440A695C151C01675321B618 /* Pods-SanaMedia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMedia-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D55DBBFAE34694986DF78E41893C860 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		6EB76B843E6E16AD39C1C92CCF7EA66A /* Pods-SanaMediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		701936F5E0947175B1A718025907CBA9 /* ExpandableTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExpandableTableViewController-dummy.m"; sourceTree = "<group>"; };
-		7131554D835A9A12336ABF1A63766CDE /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cosmos.modulemap; sourceTree = "<group>"; };
-		764386059FF60EA1013169CF90231180 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
-		76925FE4C6628903A4890F800E8E94C8 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
-		77463C1C0565AD97CBD793D5DCE91D6C /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		7AB002F0028629068D6F625B9F7CEBC0 /* LIHImageSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIHImageSlider-prefix.pch"; sourceTree = "<group>"; };
-		7AB8C33648ED2879246E17ED2A7B97AD /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
+		6FE677AA1B3258FCBF6CDA5797D76598 /* LIHImageSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LIHImageSlider-dummy.m"; sourceTree = "<group>"; };
+		7A45D24D014F19E7F6ADC81A8F5DB524 /* CarbonTabSwipeSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeSegmentedControl.h; path = CarbonKit/CarbonTabSwipeSegmentedControl.h; sourceTree = "<group>"; };
 		7AC25DA163EB72F3C97B70C2FA77F033 /* Pods-SanaMedia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SanaMedia-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8143F3620843A768C50D5A34571CEEEE /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaUITests.framework; path = "Pods-SanaMediaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8199AB196FE2E2D12D8F1783E57FCA45 /* EasyToastConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyToastConfiguration.swift; path = EasyToast/Classes/EasyToastConfiguration.swift; sourceTree = "<group>"; };
-		8353A959B836095EE7D907B8754F2341 /* LIHImageSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LIHImageSlider.xcconfig; sourceTree = "<group>"; };
-		8537148F6581068E4095A8AC3C916C4C /* Pods_SanaMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMedia.framework; path = "Pods-SanaMedia.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8606AC73D846F33AECE7BDEEF671DB1A /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		8BCDF0CCACDCCF1E40F8FD6F31ED1FE3 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
-		8E948E3407FE59E3B21ABFDA8E242AC3 /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
-		8EF699E0C57A37AACD8C5F097EED9F95 /* EasyToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyToast.xcconfig; sourceTree = "<group>"; };
-		8F281E0E6E84EA1FA7B54D985770ECAB /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		903B5DE9108A4FE0E5D728D83EC42604 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewController.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewController.swift; sourceTree = "<group>"; };
-		93993461CF5361C27F5F4FE7BBC379FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7EBAE8BA7800C1BA6EBD4601764793 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = ExpandableTableViewController/Classes/ArrayExtension.swift; sourceTree = "<group>"; };
+		7E53BB17315C98BE787A827E586944DB /* CarbonKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarbonKit.xcconfig; sourceTree = "<group>"; };
+		829F19A637F41C3AE44723A4DB8EE02D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82A377C29D08EC4B582D72D149625A7F /* LIHSliderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSliderViewController.swift; path = LIHImageSlider/Classes/LIHSliderViewController.swift; sourceTree = "<group>"; };
+		848D83E9655311A715E8ACD28D1C2476 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		8549B7ADFE6717778A31D973FCE7204A /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		874AD8159A1F345FF4B42B7E8FC12703 /* LIHSliderItemViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSliderItemViewController.swift; path = LIHImageSlider/Classes/LIHSliderItemViewController.swift; sourceTree = "<group>"; };
+		8BC7BC65737D5DE6952DFA4C17E761BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4E7E434395BAEF97EEED97059BD6C8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		8E83323B2DE4182633C570631546F769 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		921DE7389ADE462E2C04FD5B0E0E1F24 /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		92321517DA2D2FD258D72218A6BD5D37 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		937A0DE376D7FC15DAAA98C3B5894EAB /* EasyToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E6D1CCD7B3CE699DC97A8D00CB9938 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		943DCE4FE4D22F30B2BA088DB13B11B9 /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
+		944598F0086B6FA9074D460FE3B4E047 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		94493F3CB9D4B93411908D2A028D2F4A /* Pods-SanaMediaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaTests-frameworks.sh"; sourceTree = "<group>"; };
 		94BA4449D8A2FD58B8C43F62A167A31E /* Pods-SanaMedia-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMedia-frameworks.sh"; sourceTree = "<group>"; };
-		98F6C4EC8BD0BAA54225A579861EE434 /* LIHImageSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIHImageSlider-umbrella.h"; sourceTree = "<group>"; };
-		9C5E9141C31505606A66255F4F99B47E /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		9E601475F5B850F739B4D9B732B435B9 /* ToastContainerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastContainerVC.swift; path = EasyToast/Classes/ToastContainerVC.swift; sourceTree = "<group>"; };
-		A187A1F025A4D3BF27CF88090FFF5B73 /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
+		9537738DD4943401EB3663E990EE8B6B /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		9585B0289A36D5A176F289DD5AB4E49E /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		95AD7BF9532A231CA2E5188B0D4CFBB9 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		9C388F50977EC85E1CC759972601ECB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D445FEB14AA403F9C5A3ED1563C9ECF /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		9E7C2B17C441149A24C307A32EB946AE /* EasyToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyToast.xcconfig; sourceTree = "<group>"; };
+		A0C86AFADC954AEB412C7FC629C62DA0 /* ExpandableTableViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-prefix.pch"; sourceTree = "<group>"; };
 		A1F978B76AB026C11CDD9B47B5185EF8 /* Pods-SanaMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMedia.debug.xcconfig"; sourceTree = "<group>"; };
-		A758393EF3E115E490F337F6E264ACD7 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
-		AA6C5DBCAA21DA8ADC390394C3C66A41 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC6FFC8930E8735A07CAB2E673E14C1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACD19EFD0F6C31B82BD86F31AFB0987A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		AD3D4DEE82127C0726BD839A20830C73 /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
-		AF3A026E64B22B4D542A1669F87F03B8 /* EasyToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyToast.modulemap; sourceTree = "<group>"; };
-		B020EA85985D270303CDA805D09B0E9F /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		B2E39F8E9952BA15C383898D1EB2DDD8 /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
-		B491814D6B5D40EEDE8DC71D07C4B690 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		B8EF1C0382C5BA9681E2F7E94662EBFB /* QueueToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueueToast.swift; path = EasyToast/Classes/QueueToast.swift; sourceTree = "<group>"; };
-		B9AF957BD751CF72AA63470C88600433 /* EasyToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-umbrella.h"; sourceTree = "<group>"; };
-		BC82F3BD4A468B7228588B12F9F5120D /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		A3F7C4179F29E3A455B24609C00DA436 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A445A1C5C54882FF5FFC08C5C59DEFF3 /* CarbonKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonKit.h; path = CarbonKit/CarbonKit.h; sourceTree = "<group>"; };
+		A62AE4773F4C4C00697219EC2ABAC8FD /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		A64B0CE22CF3518D4C46D4107A5279D9 /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
+		A68B8E9FCA36671961B1217954A012D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F2B06D5BABB3DE29A0D262BB0B0747 /* CarbonKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CarbonKit-umbrella.h"; sourceTree = "<group>"; };
+		A85D7DE43E4D4CBC8BCB53563A2B61F2 /* CarbonTabSwipeScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonTabSwipeScrollView.h; path = CarbonKit/CarbonTabSwipeScrollView.h; sourceTree = "<group>"; };
+		A9E88903DBBB2E72F8101321E63D0819 /* CarbonSwipeRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarbonSwipeRefresh.h; path = CarbonKit/CarbonSwipeRefresh.h; sourceTree = "<group>"; };
+		AA25879667723525DFB820A6F100B490 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		AA7710AEC0300070A506E77527C2D9DD /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		B024561363B6AE2C13F4109826C0DAB2 /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		B0EEB4630D3159DFD4E1CAEA3E92FBE1 /* EasyToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-umbrella.h"; sourceTree = "<group>"; };
+		B36C710DD3F4794F40C50D4AA5D1E81B /* Pods_SanaMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaTests.framework; path = "Pods-SanaMediaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FDEB9F158A25E03D02E8D99C709454 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpandableTableViewController.swift; path = ExpandableTableViewController/Classes/ExpandableTableViewController.swift; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BA930E7A30D87BC30FDF156D0090DC43 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		BDA959531CA5ED3C0ACC418C819CA4F6 /* Pods-SanaMedia-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMedia-resources.sh"; sourceTree = "<group>"; };
-		BF0F105ACAA97C19369B58E9E247ED2B /* ExpandableTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ExpandableTableViewController.modulemap; sourceTree = "<group>"; };
+		C0ED0D4E0958A747E78DB91D1A4A1A27 /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
 		C1295FA1D684C0976163AD175E7903EA /* Pods-SanaMediaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SanaMediaTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C1BC382F017E407E92538F11774667B3 /* SwipeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimation.swift; path = SwipeableTabBarController/Classes/SwipeAnimation.swift; sourceTree = "<group>"; };
-		C24E10BE108875073ABCA31D9D4CE4A5 /* EasyToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyToast.framework; path = EasyToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30517EE16E246C92C8D71972B5501BC /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = EasyToast/Classes/ToastWindow.swift; sourceTree = "<group>"; };
-		C50EB3F2115A7363B3DC6054A9D65AA5 /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		C2FAEEE5451D6870278FF1CD270023E4 /* UIView+Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Toast.swift"; path = "EasyToast/Classes/UIView+Toast.swift"; sourceTree = "<group>"; };
+		C46DB56122D1EC4300B73328F89419F8 /* CarbonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CarbonKit.framework; path = CarbonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7084CFCA103E1D331E061A8107173D8 /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
 		C901209D55B410B2210DC1F3C9EA8DA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C947D75C6194A0E978132299AB177F6B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C94F25D42E2B7D74B837E386A241BF2E /* EasyToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyToast-prefix.pch"; sourceTree = "<group>"; };
+		CA0226DDC107972CA39ED322145ED5B6 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		CC05E0EACA245D21D57A470FD10826B6 /* Pods-SanaMediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDE82FB100F25C3310A93AB23513C407 /* Pods-SanaMediaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMediaUITests.modulemap"; sourceTree = "<group>"; };
-		D1A9F0C9D2B065A0333F672E0F9D3458 /* ExpandableTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExpandableTableViewController.xcconfig; sourceTree = "<group>"; };
-		D21CD3F1DA923F2F2C3520D353A3D498 /* LIHSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LIHSlider.swift; path = LIHImageSlider/Classes/LIHSlider.swift; sourceTree = "<group>"; };
-		D224AFEBF0D86E92F4029A81A6405318 /* LIHImageSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LIHImageSlider.modulemap; sourceTree = "<group>"; };
-		D7C8F79204FC83649DACE359B61A7639 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		D0613BB848924551F932046223B96B19 /* CarbonKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CarbonKit.modulemap; sourceTree = "<group>"; };
+		D0A7FFE544677F4B11E8518CB5C61A6F /* EasyToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyToast.modulemap; sourceTree = "<group>"; };
+		D18A0D6CC014CD103A9B18CAD5BC87D6 /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
+		D22C7007D58CE09B35F51E4B9B730AF4 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		D335851C655C44BFB75F189561DBDDE3 /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = EasyToast/Classes/ToastWindow.swift; sourceTree = "<group>"; };
+		D50604DB64494ED8D6E4DC7241B4A3F3 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		D605228A42687942397BBB328A1CE2F5 /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableTabBarController.framework; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83230B211E8E443A4F5F10C68C8B1B8 /* ExpandableTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExpandableTableViewController-dummy.m"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D92718B4322C23952C02B338AFCD88B8 /* Pods-SanaMediaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SanaMediaUITests-dummy.m"; sourceTree = "<group>"; };
-		D9923D57E432C763354592FC1B0FB462 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		DE8587D037031703BB9C9F8FE70AB216 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = ExpandableTableViewController/Classes/ArrayExtension.swift; sourceTree = "<group>"; };
+		DC4B24AB0F29307AF156010D7FD35367 /* EasyToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyToast-dummy.m"; sourceTree = "<group>"; };
 		DEB9714E0A9D4B48CE69580D0AC588DD /* Pods-SanaMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SanaMedia.modulemap"; sourceTree = "<group>"; };
-		DF95A458AF15FCD8FA6D9E6D2A1495B2 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
-		E19334D082004FAFDB99D17CF1491800 /* LIHImageSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LIHImageSlider.framework; path = LIHImageSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3DA1F382D4B178253196998F4DFB43A /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableTabBarController.framework; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5788143576D4998243865D2C40FB527 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		DF42402799A251F9FBAE8B991DED033A /* SwipeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimation.swift; path = SwipeableTabBarController/Classes/SwipeAnimation.swift; sourceTree = "<group>"; };
+		E186468C8213CDEC7BB299A7038DCBB7 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
 		E62D157BFB5CC66A55E226BE2103BCEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E76960DE77ED13B2D5DB9BC2E2FC2B02 /* Pods-SanaMediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E79F8A2805FCF72A6D8B4F05CA9932AE /* ExpandableTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-umbrella.h"; sourceTree = "<group>"; };
 		E9410AC914417E3E7BA1016F97912066 /* Pods-SanaMediaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaUITests-resources.sh"; sourceTree = "<group>"; };
-		E945A452B616A7487C810F5ACB39F97A /* Pods_SanaMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaTests.framework; path = "Pods-SanaMediaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96EDA15FF4774ABE935CF1109C752FE /* Pods-SanaMedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SanaMedia-umbrella.h"; sourceTree = "<group>"; };
-		EB857F95F7A541AF6F0F7D5405136A8F /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
-		ECDFDD28FDD05B0A55E44459274C2188 /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
-		EE73E482B9D548A78F3A9E905D9F991A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F091ADD7B2D054F0C250028169CE25A5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		EC94A03EC4A93419E7C41ACEC789515D /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		F20147443458A2BB5CA9AD6C062DC32E /* Pods-SanaMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SanaMedia.release.xcconfig"; sourceTree = "<group>"; };
+		F34484F5723176F1DA28B01C476FFB15 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
 		F53EB88D8F24BAE6D058671C0D2B5B4E /* Pods-SanaMediaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SanaMediaTests-resources.sh"; sourceTree = "<group>"; };
-		FAE7700C2BE73531A4F60EA9AD243754 /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
-		FD2A0CEEC604126C3B20C1A6B0D438C3 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
-		FD81042492D6269FC47DD72E1AADC451 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		F6241F8FAB463FFF8447A3002C6CC887 /* ExpandableTableViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ExpandableTableViewController.modulemap; sourceTree = "<group>"; };
+		F7FD49C98E1810E7D14184908AFB4806 /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SanaMediaUITests.framework; path = "Pods-SanaMediaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96E2FB7845BA2A5AB0A50D02960F54D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9F346A0A0E6770C78F670AE6E5EE43 /* CarbonTabSwipeNavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CarbonTabSwipeNavigation.m; path = CarbonKit/CarbonTabSwipeNavigation.m; sourceTree = "<group>"; };
+		FC1AAA2356BF0F325ECCC9C56C168220 /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
+		FD83C018C3965105695415610C452544 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1293C437ED60FB489669418BEB39B9E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF70996ACA0BA0DF2110B1F91B29C00A /* Foundation.framework in Frameworks */,
+				3C18F92FFAAA9CAC8A8AF2F89E286F66 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +322,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		590E43E832E59976BA15FFECCAB99733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA377A884370F31075CAC2A80EBCC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E08A1266C73A1A2D2B3D3CB0F3551F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E1414275B5089D7528006424F7E90A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B8975DAB4E01A77F4F962D0065B483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C6B4DC56812B3C2F0567C3F2C6173E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,25 +378,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D82B909D4C6FFE9887E21193BF149855 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCC35A3E317BDC8DA3ACDFB2D4F57CE3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D895E6DB549A17EE5EEF4382A45DF101 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0DC9100ECAC4B0BE3823AC3618BFF76 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00FF254CBC465177F91921766FD31DCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F96E2FB7845BA2A5AB0A50D02960F54D /* Alamofire.framework */,
+				C46DB56122D1EC4300B73328F89419F8 /* CarbonKit.framework */,
+				5B44C45CFE8004035C7EC6CCBC8EC1F9 /* Cosmos.framework */,
+				54B6625AD54E63FFEADB591AF943F9CF /* EasyToast.framework */,
+				548DFFF5606FEF511C1983936FC2A00D /* ExpandableTableViewController.framework */,
+				035DC3ED94DD4AB57D1898373C5DF018 /* LIHImageSlider.framework */,
+				2B4CEF02EDBEF39194D0FAB76A857897 /* Pods_SanaMedia.framework */,
+				B36C710DD3F4794F40C50D4AA5D1E81B /* Pods_SanaMediaTests.framework */,
+				F7FD49C98E1810E7D14184908AFB4806 /* Pods_SanaMediaUITests.framework */,
+				D605228A42687942397BBB328A1CE2F5 /* SwipeableTabBarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		040D94E49AFA6338D0FDAF92C2A477A2 /* Pods-SanaMediaTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,44 +416,53 @@
 			path = "Target Support Files/Pods-SanaMediaTests";
 			sourceTree = "<group>";
 		};
-		34AD9EC6F94BCB7B2AC7DDBC40EFD789 /* Support Files */ = {
+		24BF20E06A894323022AC06A5C15722A /* CarbonKit */ = {
 			isa = PBXGroup;
 			children = (
-				7131554D835A9A12336ABF1A63766CDE /* Cosmos.modulemap */,
-				45BAF908EBD85237A4A85B83986E313C /* Cosmos.xcconfig */,
-				5F83C398BE17972A27E413C6850AEA4A /* Cosmos-dummy.m */,
-				3323AE1F0C586704FD49F53FD3A8476D /* Cosmos-prefix.pch */,
-				2D7C148BB01989C4036A9DBDC5AC75E7 /* Cosmos-umbrella.h */,
-				AC6FFC8930E8735A07CAB2E673E14C1E /* Info.plist */,
+				A445A1C5C54882FF5FFC08C5C59DEFF3 /* CarbonKit.h */,
+				A9E88903DBBB2E72F8101321E63D0819 /* CarbonSwipeRefresh.h */,
+				0D71E29344A24C21B7D237836C04A0F6 /* CarbonSwipeRefresh.m */,
+				2CC27EA49DE1402378DE9D09BAB93FFD /* CarbonTabSwipeNavigation.h */,
+				FB9F346A0A0E6770C78F670AE6E5EE43 /* CarbonTabSwipeNavigation.m */,
+				A85D7DE43E4D4CBC8BCB53563A2B61F2 /* CarbonTabSwipeScrollView.h */,
+				63E60CD2301362B6646B6DD59DDAF2AC /* CarbonTabSwipeScrollView.m */,
+				7A45D24D014F19E7F6ADC81A8F5DB524 /* CarbonTabSwipeSegmentedControl.h */,
+				254CFDC20CC7E8B9F8D40441980B8F11 /* CarbonTabSwipeSegmentedControl.m */,
+				4FC594782ABB69BF17ACDDCF09648CFE /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Cosmos";
+			name = CarbonKit;
+			path = CarbonKit;
 			sourceTree = "<group>";
 		};
-		370CF3FBBFCA8EA29A0FA527972B6D39 /* Support Files */ = {
+		33872465040E536AF5F71773680D25F0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BF0F105ACAA97C19369B58E9E247ED2B /* ExpandableTableViewController.modulemap */,
-				D1A9F0C9D2B065A0333F672E0F9D3458 /* ExpandableTableViewController.xcconfig */,
-				701936F5E0947175B1A718025907CBA9 /* ExpandableTableViewController-dummy.m */,
-				32B53C702831D2D9007A3A7D01705BE8 /* ExpandableTableViewController-prefix.pch */,
-				697052FF9EF6450007EC23158E818BCF /* ExpandableTableViewController-umbrella.h */,
-				1F0C974F2F93F30DD1A578BC56356EEC /* Info.plist */,
+				A68B8E9FCA36671961B1217954A012D0 /* Info.plist */,
+				1C577E3406EBFE886BEF008F1DE406BA /* LIHImageSlider.modulemap */,
+				04CCD24EC5BF396EC2517C9023AFDADF /* LIHImageSlider.xcconfig */,
+				6FE677AA1B3258FCBF6CDA5797D76598 /* LIHImageSlider-dummy.m */,
+				2500B9C9AEE052727FB997CE1B1C6281 /* LIHImageSlider-prefix.pch */,
+				480306812DC47309A124C2742471AFCE /* LIHImageSlider-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ExpandableTableViewController";
+			path = "../Target Support Files/LIHImageSlider";
 			sourceTree = "<group>";
 		};
-		3C7B3C6CDA0D1E4FD41A7EE800503EAA /* LIHImageSlider */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D21CD3F1DA923F2F2C3520D353A3D498 /* LIHSlider.swift */,
-				32E63FA88A488C0C72CDAF1B99E83CE7 /* LIHSliderItemViewController.swift */,
-				28C3B67466B74A62EE810ECC26478A8C /* LIHSliderViewController.swift */,
-				F33ED841E3FB6EBDF4F0C305E530A764 /* Support Files */,
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
 			);
-			name = LIHImageSlider;
-			path = LIHImageSlider;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		48688F1563F5DB5EA8934F6D239B58AA /* Pods-SanaMediaUITests */ = {
@@ -411,41 +483,79 @@
 			path = "Target Support Files/Pods-SanaMediaUITests";
 			sourceTree = "<group>";
 		};
-		5693D9C8BFF4C02CA10754130956E1D6 /* Support Files */ = {
+		4FC594782ABB69BF17ACDDCF09648CFE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F091ADD7B2D054F0C250028169CE25A5 /* Alamofire.modulemap */,
-				0927172A9A694B4BCF3FF7F546F45C12 /* Alamofire.xcconfig */,
-				8F281E0E6E84EA1FA7B54D985770ECAB /* Alamofire-dummy.m */,
-				E5788143576D4998243865D2C40FB527 /* Alamofire-prefix.pch */,
-				D7C8F79204FC83649DACE359B61A7639 /* Alamofire-umbrella.h */,
-				1E7FEAB49D2C714C6131EF9FB0EBC1E5 /* Info.plist */,
+				D0613BB848924551F932046223B96B19 /* CarbonKit.modulemap */,
+				7E53BB17315C98BE787A827E586944DB /* CarbonKit.xcconfig */,
+				6866627612BE29BD8153371FABB47CB4 /* CarbonKit-dummy.m */,
+				28C67804EC8F77B5A704892C6B2C37A9 /* CarbonKit-prefix.pch */,
+				A6F2B06D5BABB3DE29A0D262BB0B0747 /* CarbonKit-umbrella.h */,
+				8BC7BC65737D5DE6952DFA4C17E761BD /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/CarbonKit";
+			sourceTree = "<group>";
+		};
+		53B853A512CCA49D2273C7D98F1F0AF6 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				95AD7BF9532A231CA2E5188B0D4CFBB9 /* AFError.swift */,
+				25D0E35B1287B7F829CB473CBB830446 /* Alamofire.swift */,
+				944598F0086B6FA9074D460FE3B4E047 /* DispatchQueue+Alamofire.swift */,
+				9537738DD4943401EB3663E990EE8B6B /* MultipartFormData.swift */,
+				8C4E7E434395BAEF97EEED97059BD6C8 /* NetworkReachabilityManager.swift */,
+				CA0226DDC107972CA39ED322145ED5B6 /* Notifications.swift */,
+				0F46A369814A0E276E4F252D4FFBD469 /* ParameterEncoding.swift */,
+				8E83323B2DE4182633C570631546F769 /* Request.swift */,
+				9D445FEB14AA403F9C5A3ED1563C9ECF /* Response.swift */,
+				1CF758AA2EC0424AA1D50C30C8FE6301 /* ResponseSerialization.swift */,
+				66320D8AC3F2B5EC1B3A27265CBF1DE7 /* Result.swift */,
+				BA930E7A30D87BC30FDF156D0090DC43 /* ServerTrustPolicy.swift */,
+				EC94A03EC4A93419E7C41ACEC789515D /* SessionDelegate.swift */,
+				1CE5B18C271688A1773680BBEABBB5A9 /* SessionManager.swift */,
+				D50604DB64494ED8D6E4DC7241B4A3F3 /* TaskDelegate.swift */,
+				44E6924B7488631D93B1D471B4F89491 /* Timeline.swift */,
+				443108A7802B2699D7C7A2F6F54746EA /* Validation.swift */,
+				C9B902D51B315DBC9431635E69BF9401 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		68E0D6612DA074188AD9E014972D0650 /* LIHImageSlider */ = {
+			isa = PBXGroup;
+			children = (
+				4A49E0DF29743C4964C981B38457715B /* LIHSlider.swift */,
+				874AD8159A1F345FF4B42B7E8FC12703 /* LIHSliderItemViewController.swift */,
+				82A377C29D08EC4B582D72D149625A7F /* LIHSliderViewController.swift */,
+				33872465040E536AF5F71773680D25F0 /* Support Files */,
+			);
+			name = LIHImageSlider;
+			path = LIHImageSlider;
+			sourceTree = "<group>";
+		};
+		7D0809A0389A73A793C060AB73CA0C3D /* ExpandableTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C7EBAE8BA7800C1BA6EBD4601764793 /* ArrayExtension.swift */,
+				B3FDEB9F158A25E03D02E8D99C709454 /* ExpandableTableViewController.swift */,
+				170FCD514FD88D7A688309D18057E3EE /* ExpandableTableViewDelegate.swift */,
+				8FB4469157479DC6AB970971EF877A21 /* Support Files */,
+			);
+			name = ExpandableTableViewController;
+			path = ExpandableTableViewController;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A7C6E8C9651897F6EFBA4C5D482369E3 /* Pods */,
-				F14FEA4EC9138E6BEF64E1BB7B77254E /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D2868E87A415C9BB72B47EF93D752EB7 /* Pods */,
+				00FF254CBC465177F91921766FD31DCA /* Products */,
 				83E62AAE22E1BCD9CECB45A6336A2EF3 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		804DC57F83372043224C51709B658060 /* ExpandableTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				DE8587D037031703BB9C9F8FE70AB216 /* ArrayExtension.swift */,
-				903B5DE9108A4FE0E5D728D83EC42604 /* ExpandableTableViewController.swift */,
-				45CE0B8A2FE5040D3CF6FD376F37A5A6 /* ExpandableTableViewDelegate.swift */,
-				370CF3FBBFCA8EA29A0FA527972B6D39 /* Support Files */,
-			);
-			name = ExpandableTableViewController;
-			path = ExpandableTableViewController;
 			sourceTree = "<group>";
 		};
 		83E62AAE22E1BCD9CECB45A6336A2EF3 /* Targets Support Files */ = {
@@ -458,91 +568,127 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9BCC7CC6BFFADB474E2456A2946BD066 /* Support Files */ = {
+		8904958B0D50C5738257A8F2F0551728 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE73E482B9D548A78F3A9E905D9F991A /* Info.plist */,
-				A187A1F025A4D3BF27CF88090FFF5B73 /* SwipeableTabBarController.modulemap */,
-				4281FCB16C2FD6888344D89B5F55BBD3 /* SwipeableTabBarController.xcconfig */,
-				FAE7700C2BE73531A4F60EA9AD243754 /* SwipeableTabBarController-dummy.m */,
-				AD3D4DEE82127C0726BD839A20830C73 /* SwipeableTabBarController-prefix.pch */,
-				1706571E0D15CD6F403B6CE3389E08DF /* SwipeableTabBarController-umbrella.h */,
+				9C388F50977EC85E1CC759972601ECB6 /* Info.plist */,
+				943DCE4FE4D22F30B2BA088DB13B11B9 /* SwipeableTabBarController.modulemap */,
+				07F1519B3905EE693BD55D9E493580D8 /* SwipeableTabBarController.xcconfig */,
+				FC1AAA2356BF0F325ECCC9C56C168220 /* SwipeableTabBarController-dummy.m */,
+				3C11D2A37AFABA70977F412210843B1B /* SwipeableTabBarController-prefix.pch */,
+				1107F6986EDD4F6C7A8DABC753B0AF87 /* SwipeableTabBarController-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwipeableTabBarController";
 			sourceTree = "<group>";
 		};
-		9F2DFCA0BA42BE8B6A0FCBC7DC0BE130 /* Cosmos */ = {
+		8D659C07A71042C1DC1B3E633ABCC6ED /* Cosmos */ = {
 			isa = PBXGroup;
 			children = (
-				ECDFDD28FDD05B0A55E44459274C2188 /* CosmosAccessibility.swift */,
-				C50EB3F2115A7363B3DC6054A9D65AA5 /* CosmosDefaultSettings.swift */,
-				A758393EF3E115E490F337F6E264ACD7 /* CosmosLayerHelper.swift */,
-				33784ED79359571677F0AAC429572F44 /* CosmosLayers.swift */,
-				8BCDF0CCACDCCF1E40F8FD6F31ED1FE3 /* CosmosLocalizedRating.swift */,
-				BC82F3BD4A468B7228588B12F9F5120D /* CosmosRating.swift */,
-				8E948E3407FE59E3B21ABFDA8E242AC3 /* CosmosSettings.swift */,
-				45990152A3D98750799ACF0FD74561EC /* CosmosSize.swift */,
-				76925FE4C6628903A4890F800E8E94C8 /* CosmosText.swift */,
-				4795494D6AE00BC448F3EB530A5BC81B /* CosmosTouch.swift */,
-				B2E39F8E9952BA15C383898D1EB2DDD8 /* CosmosTouchTarget.swift */,
-				337D2032A35763F27FBCB22E52FDD2B4 /* CosmosView.swift */,
-				2160FB3A8E209725A45DDC06E793F823 /* RightToLeft.swift */,
-				FD2A0CEEC604126C3B20C1A6B0D438C3 /* StarFillMode.swift */,
-				764386059FF60EA1013169CF90231180 /* StarLayer.swift */,
-				34AD9EC6F94BCB7B2AC7DDBC40EFD789 /* Support Files */,
+				D18A0D6CC014CD103A9B18CAD5BC87D6 /* CosmosAccessibility.swift */,
+				9585B0289A36D5A176F289DD5AB4E49E /* CosmosDefaultSettings.swift */,
+				57DE181CDA356636B9F38D4741E50510 /* CosmosLayerHelper.swift */,
+				D22C7007D58CE09B35F51E4B9B730AF4 /* CosmosLayers.swift */,
+				29D20904058E18494255CEBB115F4D7F /* CosmosLocalizedRating.swift */,
+				921DE7389ADE462E2C04FD5B0E0E1F24 /* CosmosRating.swift */,
+				41A00BDA5D3E72BAA1A18DAA37838AFB /* CosmosSettings.swift */,
+				3C75697BEEAB2E9C5AA87993214D145C /* CosmosSize.swift */,
+				F34484F5723176F1DA28B01C476FFB15 /* CosmosText.swift */,
+				FD83C018C3965105695415610C452544 /* CosmosTouch.swift */,
+				B024561363B6AE2C13F4109826C0DAB2 /* CosmosTouchTarget.swift */,
+				E186468C8213CDEC7BB299A7038DCBB7 /* CosmosView.swift */,
+				C0ED0D4E0958A747E78DB91D1A4A1A27 /* RightToLeft.swift */,
+				2BBDA57D58B8079CEABE9D88B3C065C3 /* StarFillMode.swift */,
+				8549B7ADFE6717778A31D973FCE7204A /* StarLayer.swift */,
+				C5C1A7DBBFB1FCC1E205C0DE161886AC /* Support Files */,
 			);
 			name = Cosmos;
 			path = Cosmos;
 			sourceTree = "<group>";
 		};
-		A7C6E8C9651897F6EFBA4C5D482369E3 /* Pods */ = {
+		8EBE367962569E3EDEB86CE8186997EF /* EasyToast */ = {
 			isa = PBXGroup;
 			children = (
-				ECA2AF21E6411B7AF2AE9D9A75D10E41 /* Alamofire */,
-				9F2DFCA0BA42BE8B6A0FCBC7DC0BE130 /* Cosmos */,
-				B4CF18062A0C29FF3D42D02DE8711217 /* EasyToast */,
-				804DC57F83372043224C51709B658060 /* ExpandableTableViewController */,
-				3C7B3C6CDA0D1E4FD41A7EE800503EAA /* LIHImageSlider */,
-				D471F26C6AC8344AD3E6FA14C277968F /* SwipeableTabBarController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B4CF18062A0C29FF3D42D02DE8711217 /* EasyToast */ = {
-			isa = PBXGroup;
-			children = (
-				8199AB196FE2E2D12D8F1783E57FCA45 /* EasyToastConfiguration.swift */,
-				B8EF1C0382C5BA9681E2F7E94662EBFB /* QueueToast.swift */,
-				9E601475F5B850F739B4D9B732B435B9 /* ToastContainerVC.swift */,
-				C30517EE16E246C92C8D71972B5501BC /* ToastWindow.swift */,
-				50A89F1D55557776F41D195596C7727E /* UIView+Toast.swift */,
-				BE504070F9137308A96710BF09E8D718 /* Support Files */,
+				598BF7F981D69F2E19C8C299990FFF09 /* EasyToastConfiguration.swift */,
+				682ADC3F1038881045B5FB16FE6A8319 /* QueueToast.swift */,
+				360C98470F6F46CB416B6E0D0939F81B /* ToastContainerVC.swift */,
+				D335851C655C44BFB75F189561DBDDE3 /* ToastWindow.swift */,
+				C2FAEEE5451D6870278FF1CD270023E4 /* UIView+Toast.swift */,
+				B1FBCFFB4149DF7FF5D1BE1EE79E17FF /* Support Files */,
 			);
 			name = EasyToast;
 			path = EasyToast;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8FB4469157479DC6AB970971EF877A21 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				F6241F8FAB463FFF8447A3002C6CC887 /* ExpandableTableViewController.modulemap */,
+				4F503D81F9A2A51CFFBBF97ADA3D001E /* ExpandableTableViewController.xcconfig */,
+				D83230B211E8E443A4F5F10C68C8B1B8 /* ExpandableTableViewController-dummy.m */,
+				A0C86AFADC954AEB412C7FC629C62DA0 /* ExpandableTableViewController-prefix.pch */,
+				E79F8A2805FCF72A6D8B4F05CA9932AE /* ExpandableTableViewController-umbrella.h */,
+				00E7CD51073FA1D7E87E42DF8B17EC53 /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/ExpandableTableViewController";
 			sourceTree = "<group>";
 		};
-		BE504070F9137308A96710BF09E8D718 /* Support Files */ = {
+		B1FBCFFB4149DF7FF5D1BE1EE79E17FF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AF3A026E64B22B4D542A1669F87F03B8 /* EasyToast.modulemap */,
-				8EF699E0C57A37AACD8C5F097EED9F95 /* EasyToast.xcconfig */,
-				37A60BAF5C465B6A9B549159DA588BF3 /* EasyToast-dummy.m */,
-				C94F25D42E2B7D74B837E386A241BF2E /* EasyToast-prefix.pch */,
-				B9AF957BD751CF72AA63470C88600433 /* EasyToast-umbrella.h */,
-				C947D75C6194A0E978132299AB177F6B /* Info.plist */,
+				D0A7FFE544677F4B11E8518CB5C61A6F /* EasyToast.modulemap */,
+				9E7C2B17C441149A24C307A32EB946AE /* EasyToast.xcconfig */,
+				DC4B24AB0F29307AF156010D7FD35367 /* EasyToast-dummy.m */,
+				937A0DE376D7FC15DAAA98C3B5894EAB /* EasyToast-prefix.pch */,
+				B0EEB4630D3159DFD4E1CAEA3E92FBE1 /* EasyToast-umbrella.h */,
+				11FA3997C6CC17643BD54F2F5F18184D /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/EasyToast";
+			sourceTree = "<group>";
+		};
+		B98F0195B285E425D790084ED8DF1E36 /* SwipeableTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A64B0CE22CF3518D4C46D4107A5279D9 /* SwipeableTabBarController.swift */,
+				DF42402799A251F9FBAE8B991DED033A /* SwipeAnimation.swift */,
+				3C56E9DE58F41DDDD1115399EDE0E12E /* SwipeAnimationType.swift */,
+				293BBF23A228A27DB0281B4B579C66E3 /* SwipeInteractor.swift */,
+				3840C57B77A76B0CA7AB6AE84C2D3A02 /* SwipeTransitioningProtocol.swift */,
+				A62AE4773F4C4C00697219EC2ABAC8FD /* UIKit+Extensions.swift */,
+				8904958B0D50C5738257A8F2F0551728 /* Support Files */,
+			);
+			name = SwipeableTabBarController;
+			path = SwipeableTabBarController;
+			sourceTree = "<group>";
+		};
+		C5C1A7DBBFB1FCC1E205C0DE161886AC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92321517DA2D2FD258D72218A6BD5D37 /* Cosmos.modulemap */,
+				C7084CFCA103E1D331E061A8107173D8 /* Cosmos.xcconfig */,
+				AA7710AEC0300070A506E77527C2D9DD /* Cosmos-dummy.m */,
+				11354A77E5EEBD3BF01BE989484D0997 /* Cosmos-prefix.pch */,
+				23D0A965AE898C36797F30943D93EB13 /* Cosmos-umbrella.h */,
+				A3F7C4179F29E3A455B24609C00DA436 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
+			sourceTree = "<group>";
+		};
+		C9B902D51B315DBC9431635E69BF9401 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17D557313877A6355D78FA75CF5D98B9 /* Alamofire.modulemap */,
+				93E6D1CCD7B3CE699DC97A8D00CB9938 /* Alamofire.xcconfig */,
+				6D55DBBFAE34694986DF78E41893C860 /* Alamofire-dummy.m */,
+				AA25879667723525DFB820A6F100B490 /* Alamofire-prefix.pch */,
+				848D83E9655311A715E8ACD28D1C2476 /* Alamofire-umbrella.h */,
+				829F19A637F41C3AE44723A4DB8EE02D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 		CCDD42B53D28137621335281F7787381 /* Pods-SanaMedia */ = {
@@ -563,96 +709,23 @@
 			path = "Target Support Files/Pods-SanaMedia";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		D2868E87A415C9BB72B47EF93D752EB7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				53B853A512CCA49D2273C7D98F1F0AF6 /* Alamofire */,
+				24BF20E06A894323022AC06A5C15722A /* CarbonKit */,
+				8D659C07A71042C1DC1B3E633ABCC6ED /* Cosmos */,
+				8EBE367962569E3EDEB86CE8186997EF /* EasyToast */,
+				7D0809A0389A73A793C060AB73CA0C3D /* ExpandableTableViewController */,
+				68E0D6612DA074188AD9E014972D0650 /* LIHImageSlider */,
+				B98F0195B285E425D790084ED8DF1E36 /* SwipeableTabBarController */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D471F26C6AC8344AD3E6FA14C277968F /* SwipeableTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				1EF53F42F0D11F121C56454D74D2C731 /* SwipeableTabBarController.swift */,
-				C1BC382F017E407E92538F11774667B3 /* SwipeAnimation.swift */,
-				7AB8C33648ED2879246E17ED2A7B97AD /* SwipeAnimationType.swift */,
-				EB857F95F7A541AF6F0F7D5405136A8F /* SwipeInteractor.swift */,
-				57BBA1D5701FAA99FDDA718776FDB693 /* SwipeTransitioningProtocol.swift */,
-				DF95A458AF15FCD8FA6D9E6D2A1495B2 /* UIKit+Extensions.swift */,
-				9BCC7CC6BFFADB474E2456A2946BD066 /* Support Files */,
-			);
-			name = SwipeableTabBarController;
-			path = SwipeableTabBarController;
-			sourceTree = "<group>";
-		};
-		ECA2AF21E6411B7AF2AE9D9A75D10E41 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				5A97F7D183B76D03CFFE05F1F5711118 /* AFError.swift */,
-				01313819C12679EE065016F062B9A4E3 /* Alamofire.swift */,
-				119E26F00C4A11851893D6148C1848AF /* DispatchQueue+Alamofire.swift */,
-				4C7AF251D75CAAADEBDDC90B85168414 /* MultipartFormData.swift */,
-				ACD19EFD0F6C31B82BD86F31AFB0987A /* NetworkReachabilityManager.swift */,
-				FD81042492D6269FC47DD72E1AADC451 /* Notifications.swift */,
-				D9923D57E432C763354592FC1B0FB462 /* ParameterEncoding.swift */,
-				77463C1C0565AD97CBD793D5DCE91D6C /* Request.swift */,
-				2F5A346B18BC6EE36C2DB46E1413E2AA /* Response.swift */,
-				8606AC73D846F33AECE7BDEEF671DB1A /* ResponseSerialization.swift */,
-				20CAE7838A03BC29AA594E3E47370C1B /* Result.swift */,
-				3783AF3CC919CCEF1CC8C29238EE02D8 /* ServerTrustPolicy.swift */,
-				B020EA85985D270303CDA805D09B0E9F /* SessionDelegate.swift */,
-				4A918B980EF244E6EA64355DAA49CA70 /* SessionManager.swift */,
-				9C5E9141C31505606A66255F4F99B47E /* TaskDelegate.swift */,
-				B491814D6B5D40EEDE8DC71D07C4B690 /* Timeline.swift */,
-				16110F7AE2A5F24D20C7E3216269D8FA /* Validation.swift */,
-				5693D9C8BFF4C02CA10754130956E1D6 /* Support Files */,
-			);
-			name = Alamofire;
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		F14FEA4EC9138E6BEF64E1BB7B77254E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AA6C5DBCAA21DA8ADC390394C3C66A41 /* Alamofire.framework */,
-				094055AA71BA93E4C037D09905999049 /* Cosmos.framework */,
-				C24E10BE108875073ABCA31D9D4CE4A5 /* EasyToast.framework */,
-				16BE0EAA9D27F630F8D0BB686477BE5F /* ExpandableTableViewController.framework */,
-				E19334D082004FAFDB99D17CF1491800 /* LIHImageSlider.framework */,
-				8537148F6581068E4095A8AC3C916C4C /* Pods_SanaMedia.framework */,
-				E945A452B616A7487C810F5ACB39F97A /* Pods_SanaMediaTests.framework */,
-				8143F3620843A768C50D5A34571CEEEE /* Pods_SanaMediaUITests.framework */,
-				E3DA1F382D4B178253196998F4DFB43A /* SwipeableTabBarController.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F33ED841E3FB6EBDF4F0C305E530A764 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				93993461CF5361C27F5F4FE7BBC379FD /* Info.plist */,
-				D224AFEBF0D86E92F4029A81A6405318 /* LIHImageSlider.modulemap */,
-				8353A959B836095EE7D907B8754F2341 /* LIHImageSlider.xcconfig */,
-				1EB247D5A687839ED65B8E3CE10AAEAB /* LIHImageSlider-dummy.m */,
-				7AB002F0028629068D6F625B9F7CEBC0 /* LIHImageSlider-prefix.pch */,
-				98F6C4EC8BD0BAA54225A579861EE434 /* LIHImageSlider-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LIHImageSlider";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		03A334FA9668A4FC245A5E3DDD1042FD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91C9A6480FD1D74422A1CB1DA8DBE330 /* SwipeableTabBarController-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		07FBF6A6840BE6E1749611A87A640BFC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -661,11 +734,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1306E16EB4BCE735452DFF8F244B0D68 /* Headers */ = {
+		3D174332E6168269F40B7F579DA714CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931A43989484E0511E502A0DE1F36AE1 /* Pods-SanaMedia-umbrella.h in Headers */,
+				2149E6DACDAB795FFC5F8A32CE43D092 /* SwipeableTabBarController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +782,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA184D5A11D52EFC2A2BC84878834BD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF83262CD766C3C0B8B3727481F5DF8 /* CarbonKit-umbrella.h in Headers */,
+				99FBDAD19C67129DCCF4B819CF852C8E /* CarbonKit.h in Headers */,
+				C035141BE361CC778F7A8A12AC141E56 /* CarbonSwipeRefresh.h in Headers */,
+				64955BEA22805328D5805CB9F4E801F5 /* CarbonTabSwipeNavigation.h in Headers */,
+				B324B5ADE7BC072BF9827418BDA5D58D /* CarbonTabSwipeScrollView.h in Headers */,
+				1EADF9806A88919744E66993C412505E /* CarbonTabSwipeSegmentedControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E36B5781D94F8B401F64EB093FD24E58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728513B6DBE60EE22CD70289E4A9A505 /* Pods-SanaMedia-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F177A3DA3D888D323EA200AFAEBD2FF0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -734,7 +828,24 @@
 			);
 			name = LIHImageSlider;
 			productName = LIHImageSlider;
-			productReference = E19334D082004FAFDB99D17CF1491800 /* LIHImageSlider.framework */;
+			productReference = 035DC3ED94DD4AB57D1898373C5DF018 /* LIHImageSlider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		352F3CCD20CDBC5C9822654BDACCE6D0 /* CarbonKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6491274AC13664A2C5DDC36A60D5176 /* Build configuration list for PBXNativeTarget "CarbonKit" */;
+			buildPhases = (
+				F31B217E071034C33FEAC0FB0AF263B9 /* Sources */,
+				1293C437ED60FB489669418BEB39B9E3 /* Frameworks */,
+				BA184D5A11D52EFC2A2BC84878834BD4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarbonKit;
+			productName = CarbonKit;
+			productReference = C46DB56122D1EC4300B73328F89419F8 /* CarbonKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */ = {
@@ -751,7 +862,7 @@
 			);
 			name = Cosmos;
 			productName = Cosmos;
-			productReference = 094055AA71BA93E4C037D09905999049 /* Cosmos.framework */;
+			productReference = 5B44C45CFE8004035C7EC6CCBC8EC1F9 /* Cosmos.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		73FFCD63602671A7D254727BB2A22DB1 /* Pods-SanaMediaTests */ = {
@@ -768,47 +879,7 @@
 			);
 			name = "Pods-SanaMediaTests";
 			productName = "Pods-SanaMediaTests";
-			productReference = E945A452B616A7487C810F5ACB39F97A /* Pods_SanaMediaTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7655CC9AC3955A5262DD6BB3DF653E13 /* Pods-SanaMedia */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C104708D88E8CE0CF95DBA4AE1508C95 /* Build configuration list for PBXNativeTarget "Pods-SanaMedia" */;
-			buildPhases = (
-				AF618E4BB5BE8C1231F42904A16E6C03 /* Sources */,
-				D82B909D4C6FFE9887E21193BF149855 /* Frameworks */,
-				1306E16EB4BCE735452DFF8F244B0D68 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50C42129CDCA25811AA1EF81759795EA /* PBXTargetDependency */,
-				EDF7318352B64ED09AED882D91073F2B /* PBXTargetDependency */,
-				E40BB511BCC44F9601B857FA6B0A28E1 /* PBXTargetDependency */,
-				7CAA37E7C82C0422E8F130798634489E /* PBXTargetDependency */,
-				9A64FE8022B6E6C1FE00FC437B6AFFD1 /* PBXTargetDependency */,
-				9009FE6042FF7EAAD75ECEC7703660B5 /* PBXTargetDependency */,
-			);
-			name = "Pods-SanaMedia";
-			productName = "Pods-SanaMedia";
-			productReference = 8537148F6581068E4095A8AC3C916C4C /* Pods_SanaMedia.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		87B5AF93942505183609A84851EA96AA /* SwipeableTabBarController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7DA1B5CE0758C85F0FFEA23739A0A85 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */;
-			buildPhases = (
-				A397FAAD01D7037EE7469E2813E1BE65 /* Sources */,
-				D895E6DB549A17EE5EEF4382A45DF101 /* Frameworks */,
-				03A334FA9668A4FC245A5E3DDD1042FD /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwipeableTabBarController;
-			productName = SwipeableTabBarController;
-			productReference = E3DA1F382D4B178253196998F4DFB43A /* SwipeableTabBarController.framework */;
+			productReference = B36C710DD3F4794F40C50D4AA5D1E81B /* Pods_SanaMediaTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -825,7 +896,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = AA6C5DBCAA21DA8ADC390394C3C66A41 /* Alamofire.framework */;
+			productReference = F96E2FB7845BA2A5AB0A50D02960F54D /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		96AFA871D25A87F6FCCFED071D32EBC8 /* ExpandableTableViewController */ = {
@@ -842,7 +913,24 @@
 			);
 			name = ExpandableTableViewController;
 			productName = ExpandableTableViewController;
-			productReference = 16BE0EAA9D27F630F8D0BB686477BE5F /* ExpandableTableViewController.framework */;
+			productReference = 548DFFF5606FEF511C1983936FC2A00D /* ExpandableTableViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7D106CA45D5F935BC3CE65A390F92E4 /* SwipeableTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51440818BE27AFFEC0FCE953FE26D4BA /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */;
+			buildPhases = (
+				E6ED5B01D78D4AA45A16C14902AE0B7E /* Sources */,
+				590E43E832E59976BA15FFECCAB99733 /* Frameworks */,
+				3D174332E6168269F40B7F579DA714CE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeableTabBarController;
+			productName = SwipeableTabBarController;
+			productReference = D605228A42687942397BBB328A1CE2F5 /* SwipeableTabBarController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BBFB14FEC2F020426E66CAD3C6979DA0 /* Pods-SanaMediaUITests */ = {
@@ -859,7 +947,7 @@
 			);
 			name = "Pods-SanaMediaUITests";
 			productName = "Pods-SanaMediaUITests";
-			productReference = 8143F3620843A768C50D5A34571CEEEE /* Pods_SanaMediaUITests.framework */;
+			productReference = F7FD49C98E1810E7D14184908AFB4806 /* Pods_SanaMediaUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C7A27CEE1A5A58B01166DDC8469E0871 /* EasyToast */ = {
@@ -876,7 +964,31 @@
 			);
 			name = EasyToast;
 			productName = EasyToast;
-			productReference = C24E10BE108875073ABCA31D9D4CE4A5 /* EasyToast.framework */;
+			productReference = 54B6625AD54E63FFEADB591AF943F9CF /* EasyToast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1CC9432FE66B5B288DCB484588F2670 /* Pods-SanaMedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82BBB635E1F5A9DC4184173B64D3C471 /* Build configuration list for PBXNativeTarget "Pods-SanaMedia" */;
+			buildPhases = (
+				FE0A97E06E90CC00B2B525B289A98B74 /* Sources */,
+				76B8975DAB4E01A77F4F962D0065B483 /* Frameworks */,
+				E36B5781D94F8B401F64EB093FD24E58 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6CEDE04B49BD9E64A5B62520D89FB4A /* PBXTargetDependency */,
+				DED2FE6A1A4C8E65CDD747ABB88F1A41 /* PBXTargetDependency */,
+				DCEA3AFC76DBFB62CDD45ED01C3B1986 /* PBXTargetDependency */,
+				EF7DD8E1B903027E67A2AF7AAA6CCCFA /* PBXTargetDependency */,
+				1F77B969663FBC8C10024798957F019D /* PBXTargetDependency */,
+				2A00AF9839287E1E95ADC34A2F96112E /* PBXTargetDependency */,
+				7387C28E1BBD820D06EB5431C3539A92 /* PBXTargetDependency */,
+			);
+			name = "Pods-SanaMedia";
+			productName = "Pods-SanaMedia";
+			productReference = 2B4CEF02EDBEF39194D0FAB76A857897 /* Pods_SanaMedia.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -896,19 +1008,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F14FEA4EC9138E6BEF64E1BB7B77254E /* Products */;
+			productRefGroup = 00FF254CBC465177F91921766FD31DCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				352F3CCD20CDBC5C9822654BDACCE6D0 /* CarbonKit */,
 				4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */,
 				C7A27CEE1A5A58B01166DDC8469E0871 /* EasyToast */,
 				96AFA871D25A87F6FCCFED071D32EBC8 /* ExpandableTableViewController */,
 				207656909A49887CE8C71E756AB7770A /* LIHImageSlider */,
-				7655CC9AC3955A5262DD6BB3DF653E13 /* Pods-SanaMedia */,
+				E1CC9432FE66B5B288DCB484588F2670 /* Pods-SanaMedia */,
 				73FFCD63602671A7D254727BB2A22DB1 /* Pods-SanaMediaTests */,
 				BBFB14FEC2F020426E66CAD3C6979DA0 /* Pods-SanaMediaUITests */,
-				87B5AF93942505183609A84851EA96AA /* SwipeableTabBarController */,
+				A7D106CA45D5F935BC3CE65A390F92E4 /* SwipeableTabBarController */,
 			);
 		};
 /* End PBXProject section */
@@ -1000,20 +1113,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A397FAAD01D7037EE7469E2813E1BE65 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23F59296980949C3C3CB639C90D9C681 /* SwipeableTabBarController-dummy.m in Sources */,
-				6AFAE55D0EF08A7F8EA6EFD4F57FED0D /* SwipeableTabBarController.swift in Sources */,
-				65AF6A72CEFB5A48143AE0A1B9DB8695 /* SwipeAnimation.swift in Sources */,
-				D77EE008B5DFE5F26A3CD18C9EE3131A /* SwipeAnimationType.swift in Sources */,
-				56E40C5125A7ED46E8854EFC2F31838E /* SwipeInteractor.swift in Sources */,
-				79E7B1C618162FE30EA6FD017BD5EEFA /* SwipeTransitioningProtocol.swift in Sources */,
-				9A5AD1F9628F6F0BBC60D7D307E103A8 /* UIKit+Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AA0FF8C53D224856A6D1B22DF2C42445 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1027,133 +1126,91 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF618E4BB5BE8C1231F42904A16E6C03 /* Sources */ = {
+		E6ED5B01D78D4AA45A16C14902AE0B7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7514CC85D8A5DFA40ABA78F5529BC09 /* Pods-SanaMedia-dummy.m in Sources */,
+				A6C6B18067BA3BFC3595109DF582F167 /* SwipeableTabBarController-dummy.m in Sources */,
+				90B345DCF8100924B08336889D170039 /* SwipeableTabBarController.swift in Sources */,
+				139A92730AC27EF97569EEFCF1B3D615 /* SwipeAnimation.swift in Sources */,
+				96E5CEF80F8F3544F72F20C9D3237B30 /* SwipeAnimationType.swift in Sources */,
+				681B7152B818383AF525068EAE98BA91 /* SwipeInteractor.swift in Sources */,
+				4B7E393BCDF58367F5F94620B1E34C0D /* SwipeTransitioningProtocol.swift in Sources */,
+				8EF27A6607DECE442C98B3EA7CE727C9 /* UIKit+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31B217E071034C33FEAC0FB0AF263B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CFE136A1CE6F600769EFA298F74137E /* CarbonKit-dummy.m in Sources */,
+				045F3C1888DDE2D28D0266DC81E37196 /* CarbonSwipeRefresh.m in Sources */,
+				1B0D4DCF1788FCECCBB333F3A1A49394 /* CarbonTabSwipeNavigation.m in Sources */,
+				DA8CE2125946FBAD87EB5576CD0C1FDA /* CarbonTabSwipeScrollView.m in Sources */,
+				C58ADC57962868077B8C38AF5E67A82F /* CarbonTabSwipeSegmentedControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0A97E06E90CC00B2B525B289A98B74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A53FC04B84A3785B847810EB423BBA /* Pods-SanaMedia-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		50C42129CDCA25811AA1EF81759795EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 8E045D9E7DFCD9ECCE7A1C58062955C4 /* PBXContainerItemProxy */;
-		};
-		7CAA37E7C82C0422E8F130798634489E /* PBXTargetDependency */ = {
+		1F77B969663FBC8C10024798957F019D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ExpandableTableViewController;
 			target = 96AFA871D25A87F6FCCFED071D32EBC8 /* ExpandableTableViewController */;
-			targetProxy = 892DBE040149F95D96E364682E4D673A /* PBXContainerItemProxy */;
+			targetProxy = 782758C0CD6436AAC045C94842FC6D73 /* PBXContainerItemProxy */;
 		};
-		9009FE6042FF7EAAD75ECEC7703660B5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwipeableTabBarController;
-			target = 87B5AF93942505183609A84851EA96AA /* SwipeableTabBarController */;
-			targetProxy = A645786A811EBC4E4426825978E1DC49 /* PBXContainerItemProxy */;
-		};
-		9A64FE8022B6E6C1FE00FC437B6AFFD1 /* PBXTargetDependency */ = {
+		2A00AF9839287E1E95ADC34A2F96112E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LIHImageSlider;
 			target = 207656909A49887CE8C71E756AB7770A /* LIHImageSlider */;
-			targetProxy = 3AF4B4531DCECFAEC9C5BB7F26614625 /* PBXContainerItemProxy */;
+			targetProxy = DFF4F8E267C9C806CE43AFC6E6D74ACD /* PBXContainerItemProxy */;
 		};
-		E40BB511BCC44F9601B857FA6B0A28E1 /* PBXTargetDependency */ = {
+		7387C28E1BBD820D06EB5431C3539A92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = EasyToast;
-			target = C7A27CEE1A5A58B01166DDC8469E0871 /* EasyToast */;
-			targetProxy = 391C4FED8F8CCEEF3193952668EDFC42 /* PBXContainerItemProxy */;
+			name = SwipeableTabBarController;
+			target = A7D106CA45D5F935BC3CE65A390F92E4 /* SwipeableTabBarController */;
+			targetProxy = 2F3625808010FFAD5A25FED3CB5C9D7F /* PBXContainerItemProxy */;
 		};
-		EDF7318352B64ED09AED882D91073F2B /* PBXTargetDependency */ = {
+		DCEA3AFC76DBFB62CDD45ED01C3B1986 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cosmos;
 			target = 4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */;
-			targetProxy = 4713DAFE465AD9E87B730589F0D2E5C1 /* PBXContainerItemProxy */;
+			targetProxy = C49BB02A2B2720F3C0C00D1BC5E48890 /* PBXContainerItemProxy */;
+		};
+		DED2FE6A1A4C8E65CDD747ABB88F1A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CarbonKit;
+			target = 352F3CCD20CDBC5C9822654BDACCE6D0 /* CarbonKit */;
+			targetProxy = 263A92365483D5ACD12AAFC4B1E712CA /* PBXContainerItemProxy */;
+		};
+		EF7DD8E1B903027E67A2AF7AAA6CCCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyToast;
+			target = C7A27CEE1A5A58B01166DDC8469E0871 /* EasyToast */;
+			targetProxy = 365DBC398265A967144BB99A5E012971 /* PBXContainerItemProxy */;
+		};
+		F6CEDE04B49BD9E64A5B62520D89FB4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 9553AD3F2F8A19674A93FFC174B02B91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		016B8F2C4A769D1F2D8D76C1EE28B742 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4281FCB16C2FD6888344D89B5F55BBD3 /* SwipeableTabBarController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwipeableTabBarController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0A051FD101E8ACC28E72FB1FAFE2C64C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1F978B76AB026C11CDD9B47B5185EF8 /* Pods-SanaMedia.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SanaMedia/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SanaMedia/Pods-SanaMedia.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SanaMedia;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		186BF7E850D5323722739CB07EB44E79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1A9F0C9D2B065A0333F672E0F9D3458 /* ExpandableTableViewController.xcconfig */;
+			baseConfigurationReference = 4F503D81F9A2A51CFFBBF97ADA3D001E /* ExpandableTableViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1235,9 +1292,47 @@
 			};
 			name = Debug;
 		};
+		1FFCDA14CE9EA4B87EE475F4F1987333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20147443458A2BB5CA9AD6C062DC32E /* Pods-SanaMedia.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SanaMedia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SanaMedia/Pods-SanaMedia.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SanaMedia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2ED35E6BD524A6684F0390464EB9C15D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45BAF908EBD85237A4A85B83986E313C /* Cosmos.xcconfig */;
+			baseConfigurationReference = C7084CFCA103E1D331E061A8107173D8 /* Cosmos.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1314,9 +1409,44 @@
 			};
 			name = Release;
 		};
+		40CE64FAA7F0DBEE5B59B5DB9ED118C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F1519B3905EE693BD55D9E493580D8 /* SwipeableTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwipeableTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		441300C5FC4B5A08DA02C97A98A9AC30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0927172A9A694B4BCF3FF7F546F45C12 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 93E6D1CCD7B3CE699DC97A8D00CB9938 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1351,7 +1481,7 @@
 		};
 		45F8296B4E53EB0D2B32E774D1EF77B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8353A959B836095EE7D907B8754F2341 /* LIHImageSlider.xcconfig */;
+			baseConfigurationReference = 04CCD24EC5BF396EC2517C9023AFDADF /* LIHImageSlider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1386,7 +1516,7 @@
 		};
 		4911C6AF4B0E8923759914682D6520D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EF699E0C57A37AACD8C5F097EED9F95 /* EasyToast.xcconfig */;
+			baseConfigurationReference = 9E7C2B17C441149A24C307A32EB946AE /* EasyToast.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1419,9 +1549,44 @@
 			};
 			name = Release;
 		};
+		4AFD66945A9468385B9A0CFB5E85A4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F1519B3905EE693BD55D9E493580D8 /* SwipeableTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwipeableTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4E32999C8992DFE20A8389B955004891 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8353A959B836095EE7D907B8754F2341 /* LIHImageSlider.xcconfig */;
+			baseConfigurationReference = 04CCD24EC5BF396EC2517C9023AFDADF /* LIHImageSlider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1526,9 +1691,82 @@
 			};
 			name = Debug;
 		};
+		5D106D7BE05475F9FA537F6929D5ADEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E53BB17315C98BE787A827E586944DB /* CarbonKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CarbonKit/CarbonKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CarbonKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CarbonKit/CarbonKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CarbonKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67321571B42886E30160FE49FC82E28F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1F978B76AB026C11CDD9B47B5185EF8 /* Pods-SanaMedia.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SanaMedia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SanaMedia/Pods-SanaMedia.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SanaMedia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		79CDE617D8B3C548D1E585EE8ED3E8B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1A9F0C9D2B065A0333F672E0F9D3458 /* ExpandableTableViewController.xcconfig */;
+			baseConfigurationReference = 4F503D81F9A2A51CFFBBF97ADA3D001E /* ExpandableTableViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1561,47 +1799,9 @@
 			};
 			name = Debug;
 		};
-		89DF0AA6EE2C1FA35264FACE769A62F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F20147443458A2BB5CA9AD6C062DC32E /* Pods-SanaMedia.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SanaMedia/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SanaMedia/Pods-SanaMedia.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SanaMedia;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A516FB1A3CF0C0E38E6E12023BE62772 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0927172A9A694B4BCF3FF7F546F45C12 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 93E6D1CCD7B3CE699DC97A8D00CB9938 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1634,9 +1834,43 @@
 			};
 			name = Debug;
 		};
+		CE17E744787706F0D25D2C42299E9EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E53BB17315C98BE787A827E586944DB /* CarbonKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CarbonKit/CarbonKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CarbonKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CarbonKit/CarbonKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CarbonKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		CE2F58C30A84A0A91F2A31FDA6DBDB3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45BAF908EBD85237A4A85B83986E313C /* Cosmos.xcconfig */;
+			baseConfigurationReference = C7084CFCA103E1D331E061A8107173D8 /* Cosmos.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1668,41 +1902,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		EA1EFF1E91BE0939D29E729FB071B90A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4281FCB16C2FD6888344D89B5F55BBD3 /* SwipeableTabBarController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwipeableTabBarController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		EE417261640383BE8C8DC2397B32A644 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1778,7 +1977,7 @@
 		};
 		F604F9C7A2F02D63A8EBBEDF3B4ADA08 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EF699E0C57A37AACD8C5F097EED9F95 /* EasyToast.xcconfig */;
+			baseConfigurationReference = 9E7C2B17C441149A24C307A32EB946AE /* EasyToast.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1850,6 +2049,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		51440818BE27AFFEC0FCE953FE26D4BA /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CE64FAA7F0DBEE5B59B5DB9ED118C7 /* Debug */,
+				4AFD66945A9468385B9A0CFB5E85A4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6E01611FD8E591CFEB0791002BD5CD3E /* Build configuration list for PBXNativeTarget "Pods-SanaMediaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1877,6 +2085,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		82BBB635E1F5A9DC4184173B64D3C471 /* Build configuration list for PBXNativeTarget "Pods-SanaMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67321571B42886E30160FE49FC82E28F /* Debug */,
+				1FFCDA14CE9EA4B87EE475F4F1987333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9AAA5B5FAAB99468D3B9AD24158F16DB /* Build configuration list for PBXNativeTarget "EasyToast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1886,20 +2103,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C104708D88E8CE0CF95DBA4AE1508C95 /* Build configuration list for PBXNativeTarget "Pods-SanaMedia" */ = {
+		A6491274AC13664A2C5DDC36A60D5176 /* Build configuration list for PBXNativeTarget "CarbonKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A051FD101E8ACC28E72FB1FAFE2C64C /* Debug */,
-				89DF0AA6EE2C1FA35264FACE769A62F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7DA1B5CE0758C85F0FFEA23739A0A85 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA1EFF1E91BE0939D29E729FB071B90A /* Debug */,
-				016B8F2C4A769D1F2D8D76C1EE28B742 /* Release */,
+				CE17E744787706F0D25D2C42299E9EFD /* Debug */,
+				5D106D7BE05475F9FA537F6929D5ADEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
