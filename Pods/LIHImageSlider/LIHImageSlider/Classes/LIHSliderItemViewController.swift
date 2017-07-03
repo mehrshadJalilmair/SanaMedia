@@ -126,6 +126,11 @@ extension UIImageView{
     
     func loadImageWithCasheWithUrl(_ url_ : String){
         
+        if url_.isEmpty || url_ == ""
+        {
+            return
+        }
+        
         self.image = nil
         
         if let imageCached = imageCache.object(forKey: "\(url_)" as AnyObject) as? UIImage{

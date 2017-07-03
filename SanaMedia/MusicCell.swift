@@ -10,6 +10,8 @@ import UIKit
 
 class MusicCell: UICollectionViewCell {
     
+    var music:Music?
+    
     let container : UIView! =
     {
         var container = UIView()

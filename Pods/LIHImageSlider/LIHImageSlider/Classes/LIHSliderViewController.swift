@@ -16,7 +16,7 @@ import UIKit
 open class LIHSliderViewController: UIViewController, LIHSliderItemDelegate {
 
     //@IBOutlet weak var pageControl: UIPageControl!
-    fileprivate var pageControl: UIPageControl!
+    public var pageControl: UIPageControl!
     fileprivate var pageController: UIPageViewController!
     fileprivate var currentIndex: Int = 0 {
         didSet {
@@ -25,7 +25,7 @@ open class LIHSliderViewController: UIViewController, LIHSliderItemDelegate {
     }
     fileprivate var pageTimer: Timer?
     
-    fileprivate var slider: LIHSlider!
+    public var slider: LIHSlider!
     
     public init(slider: LIHSlider) {
         super.init(nibName: nil, bundle: nil)

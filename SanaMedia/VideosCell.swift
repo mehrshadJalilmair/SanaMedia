@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol moviePopupShow {
+    
+    func showMoviePopup(movie : Movie)
+}
+
 class VideosCell: UITableViewCell , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    var delegate:moviePopupShow!
     
     let cellId = "Item"
     var newestMovies:[Int:Movie] = [Int:Movie]()
@@ -80,6 +87,8 @@ extension VideosCell
         let index = newestMoviesIDs[indexPath.row]
         let movie = newestMovies[index]
         
+        cell.movie = movie
+        
         cell.time.text = movie?.Duration
         cell.Description.text = movie?.Description
         cell.like.setTitle(movie?.Likes, for: UIControlState.normal)
@@ -93,18 +102,14 @@ extension VideosCell
             
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil, userInfo: [ "tableViewCellIndex" : 0])
         }
-        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
-        DispatchQueue.main.async {
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "moviePopup") as! moviePopup
-            UIApplication.shared.keyWindow?.rootViewController?.present(controller, animated: true, completion: nil)
-        }
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! VideoCell
+        self.delegate.showMoviePopup(movie: cell.movie!)
     }
 }
 

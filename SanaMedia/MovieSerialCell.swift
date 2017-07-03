@@ -10,6 +10,8 @@ import UIKit
 
 class MovieSerialCell: UICollectionViewCell {
     
+    var serial:MovieSerial!
+    
     let container : UIView! =
     {
         var container = UIView()

@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol musicPopupShow {
+    
+    func showMusicPopup(music: Music)
+}
+
 class MusicsCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    var delegate:musicPopupShow!
     
     let cellId = "Item"
     var newestMusics:[Int:Music] = [Int:Music]()
@@ -80,6 +87,8 @@ extension MusicsCell
         let index = newestMusicsIDs[indexPath.row]
         let music = newestMusics[index]
         
+        cell.music = music
+        
         cell.like.setTitle(music?.Likes, for: UIControlState.normal)
         cell.Description.text = music?.Title
         if (music?.Picture_URLS[0].contains("/"))!
@@ -93,5 +102,11 @@ extension MusicsCell
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! MusicCell
+        self.delegate.showMusicPopup(music: cell.music!)
     }
 }

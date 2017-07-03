@@ -39,6 +39,11 @@
 		2F921FFA1ED642740093932B /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F921FF91ED642740093932B /* VideoCell.swift */; };
 		2F921FFF1ED645C80093932B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F921FFE1ED645C80093932B /* ImageCell.swift */; };
 		2F9220011ED645E20093932B /* EbookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9220001ED645E20093932B /* EbookCell.swift */; };
+		2FCD153C1F0A3C890038107B /* serialPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD153B1F0A3C890038107B /* serialPopup.swift */; };
+		2FCD153E1F0A3CC50038107B /* musicPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD153D1F0A3CC50038107B /* musicPopup.swift */; };
+		2FCD15401F0A3CD60038107B /* imagePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD153F1F0A3CD50038107B /* imagePopup.swift */; };
+		2FCD15421F0A3CF70038107B /* ebookPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD15411F0A3CF70038107B /* ebookPopup.swift */; };
+		2FCD15441F0A3D0E0038107B /* albumPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD15431F0A3D0E0038107B /* albumPopup.swift */; };
 		2FE246BE1F01951700881D92 /* FullNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE246BD1F01951700881D92 /* FullNews.swift */; };
 		2FE246C01F01C02F00881D92 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE246BF1F01C02F00881D92 /* CommentCell.swift */; };
 		2FE246C31F01C05B00881D92 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE246C21F01C05B00881D92 /* Comment.swift */; };
@@ -111,6 +116,11 @@
 		2F921FF91ED642740093932B /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		2F921FFE1ED645C80093932B /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		2F9220001ED645E20093932B /* EbookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EbookCell.swift; sourceTree = "<group>"; };
+		2FCD153B1F0A3C890038107B /* serialPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serialPopup.swift; sourceTree = "<group>"; };
+		2FCD153D1F0A3CC50038107B /* musicPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicPopup.swift; sourceTree = "<group>"; };
+		2FCD153F1F0A3CD50038107B /* imagePopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imagePopup.swift; sourceTree = "<group>"; };
+		2FCD15411F0A3CF70038107B /* ebookPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ebookPopup.swift; sourceTree = "<group>"; };
+		2FCD15431F0A3D0E0038107B /* albumPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumPopup.swift; sourceTree = "<group>"; };
 		2FE246BD1F01951700881D92 /* FullNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullNews.swift; sourceTree = "<group>"; };
 		2FE246BF1F01C02F00881D92 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		2FE246C21F01C05B00881D92 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -344,6 +354,11 @@
 				2F84FBFA1F032EF800EF3A8C /* Profile.swift */,
 				2F1A87D11F07189000065DF8 /* MessageCell.swift */,
 				2F1A87D31F07363900065DF8 /* moviePopup.swift */,
+				2FCD153B1F0A3C890038107B /* serialPopup.swift */,
+				2FCD153F1F0A3CD50038107B /* imagePopup.swift */,
+				2FCD153D1F0A3CC50038107B /* musicPopup.swift */,
+				2FCD15411F0A3CF70038107B /* ebookPopup.swift */,
+				2FCD15431F0A3D0E0038107B /* albumPopup.swift */,
 			);
 			name = ShareClasses;
 			sourceTree = "<group>";
@@ -733,10 +748,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCD15441F0A3D0E0038107B /* albumPopup.swift in Sources */,
 				2F9105FB1EFC788500202B36 /* MusicCell.swift in Sources */,
 				2F9105F31EFC76DD00202B36 /* MusicAlbumCell.swift in Sources */,
 				2F9106041EFC7E5400202B36 /* MovieSerialCell.swift in Sources */,
 				2F1E82C21ECC395B00EA0FC6 /* Movie.swift in Sources */,
+				2FCD153C1F0A3C890038107B /* serialPopup.swift in Sources */,
 				2F9106081EFD307900202B36 /* NewsCell.swift in Sources */,
 				2F921FF81ED63F190093932B /* EbooksCell.swift in Sources */,
 				2F921FF21ED63EF10093932B /* VideosCell.swift in Sources */,
@@ -744,8 +761,10 @@
 				2F921FFF1ED645C80093932B /* ImageCell.swift in Sources */,
 				2FE246C01F01C02F00881D92 /* CommentCell.swift in Sources */,
 				2FE246C31F01C05B00881D92 /* Comment.swift in Sources */,
+				2FCD15401F0A3CD60038107B /* imagePopup.swift in Sources */,
 				2F45886C1F006DDC00C0A233 /* TopTabBar.swift in Sources */,
 				2FF1B8171ECAEEF100CB176D /* StreamViewController.swift in Sources */,
+				2FCD15421F0A3CF70038107B /* ebookPopup.swift in Sources */,
 				2FF1B7E71ECAE0B300CB176D /* TabBar.swift in Sources */,
 				2F9220011ED645E20093932B /* EbookCell.swift in Sources */,
 				2F9105ED1EFC759600202B36 /* MusicAlbum.swift in Sources */,
@@ -766,6 +785,7 @@
 				2F9105FC1EFC788500202B36 /* MusicsCell.swift in Sources */,
 				2F9105F41EFC76DD00202B36 /* MusicAlbumsCell.swift in Sources */,
 				2F1A87CE1F07171700065DF8 /* DesignableLabel.swift in Sources */,
+				2FCD153E1F0A3CC50038107B /* musicPopup.swift in Sources */,
 				2FF1B8151ECAEEE100CB176D /* NewsViewController.swift in Sources */,
 				2F91060A1EFD59E300202B36 /* TV.swift in Sources */,
 				2FE246BE1F01951700881D92 /* FullNews.swift in Sources */,

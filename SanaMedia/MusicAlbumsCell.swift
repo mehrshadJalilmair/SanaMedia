@@ -8,8 +8,15 @@
 
 import UIKit
 
-class MusicsAlbumsCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+protocol albumPopupShow {
+    
+    func showAlbumPopup(album: Music)
+}
 
+class MusicsAlbumsCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    var delegate:albumPopupShow!
+    
     let cellId = "Item"
     var newestMusics:[Int:Music] = [Int:Music]()
     var newestMusicsIDs:[Int]!
@@ -80,6 +87,8 @@ extension MusicsAlbumsCell
         let index = newestMusicsIDs[indexPath.row]
         let music = newestMusics[index]
         
+        cell.album = music
+        
         cell.like.setTitle(music?.Likes, for: UIControlState.normal)
         cell.Description.text = music?.Title
         if (music?.Picture_URLS[0].contains("/"))!
@@ -93,5 +102,11 @@ extension MusicsAlbumsCell
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! MusicAlbumCell
+        self.delegate.showAlbumPopup(album: cell.album!)
     }
 }

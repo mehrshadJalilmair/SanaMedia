@@ -9,7 +9,9 @@
 import UIKit
 
 class VideoCell: UICollectionViewCell {
- 
+    
+    var movie:Movie?
+    
     let container : UIView! =
     {
         var container = UIView()

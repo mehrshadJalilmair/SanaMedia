@@ -8,8 +8,15 @@
 
 import UIKit
 
-class EbooksCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+protocol ebookPopupShow {
+    
+    func showEbookPopup(ebook: EBook)
+}
 
+class EbooksCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    var delegate:ebookPopupShow!
+    
     let cellId = "Item"
     var newestEBooks:[Int:EBook] = [Int:EBook]()
     var newestEBooksIDs:[Int]!
@@ -79,6 +86,8 @@ extension EbooksCell
         let index = newestEBooksIDs[indexPath.row]
         let ebook = newestEBooks[index]
         
+        cell.ebook = ebook
+        
         cell.like.setTitle(ebook?.Likes, for: UIControlState.normal)
         cell.Description.text = ebook?.Title
         if (ebook?.Picture_Url.contains("/"))!
@@ -92,5 +101,11 @@ extension EbooksCell
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! EbookCell
+        self.delegate.showEbookPopup(ebook: cell.ebook!)
     }
 }

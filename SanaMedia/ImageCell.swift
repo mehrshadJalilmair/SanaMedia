@@ -10,6 +10,8 @@ import UIKit
 
 class ImageCell: UICollectionViewCell {
     
+    var image:Image?
+    
     let container : UIView! =
     {
         var container = UIView()

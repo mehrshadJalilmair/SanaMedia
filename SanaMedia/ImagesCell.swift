@@ -8,8 +8,15 @@
 
 import UIKit
 
-class ImagesCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+protocol imagePopupShow {
+    
+    func showImagePopup(image: Image)
+}
 
+class ImagesCell: UITableViewCell  , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    var delegate:imagePopupShow!
+    
     let cellId = "Item"
     var newestImages:[Int:Image] = [Int:Image]()
     var newestImagesIDs:[Int]!
@@ -78,6 +85,8 @@ extension ImagesCell
         
         let index = newestImagesIDs[indexPath.row]
         let image = newestImages[index]
+        
+        cell.image = image
  
         cell.like.setTitle(image?.Likes, for: UIControlState.normal)
         if (image?.URL.contains("/"))!
@@ -91,5 +100,11 @@ extension ImagesCell
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! ImageCell
+        self.delegate.showImagePopup(image: cell.image!)
     }
 }

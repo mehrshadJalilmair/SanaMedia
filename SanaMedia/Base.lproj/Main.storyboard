@@ -1490,6 +1490,12 @@
                         <outlet property="mostLikes" destination="hen-c6-wIN" id="hc5-bT-Yrr"/>
                         <outlet property="navBar" destination="gpc-Kd-4mp" id="GAJ-5v-BfC"/>
                         <outlet property="recentDate" destination="v7f-Sc-gAw" id="VBW-c3-VoW"/>
+                        <segue destination="RHk-Bk-lfI" kind="presentation" identifier="moviePopup" modalTransitionStyle="crossDissolve" id="vXT-Dr-qfN"/>
+                        <segue destination="wwj-Xy-3QJ" kind="presentation" identifier="serialPopup" modalTransitionStyle="crossDissolve" id="QMN-4y-Sjw"/>
+                        <segue destination="Wd9-KV-yc9" kind="presentation" identifier="imagePopup" modalTransitionStyle="crossDissolve" id="vZf-HV-gub"/>
+                        <segue destination="dYy-sC-ned" kind="presentation" identifier="musicPopup" modalTransitionStyle="crossDissolve" id="b8p-6J-eda"/>
+                        <segue destination="o0S-dk-c0q" kind="presentation" identifier="albumPopup" modalTransitionStyle="crossDissolve" id="CJn-Vd-KEB"/>
+                        <segue destination="Ktu-If-8xn" kind="presentation" identifier="ebookPopup" modalTransitionStyle="crossDissolve" id="Vtv-G7-m5X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2p-d1-aWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1555,22 +1561,272 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="gHQ-gy-D8g" secondAttribute="leading" id="FWx-v1-QzJ"/>
-                            <constraint firstItem="hmS-IF-Cpb" firstAttribute="top" secondItem="gHQ-gy-D8g" secondAttribute="bottom" constant="20" id="NOK-06-Fyv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rgb-FR-zEF" secondAttribute="trailing" constant="-10" id="Upj-6x-oHM"/>
-                            <constraint firstItem="gHQ-gy-D8g" firstAttribute="top" secondItem="gsL-tQ-jox" secondAttribute="bottom" constant="8" id="XjJ-Iq-wTc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gHQ-gy-D8g" secondAttribute="trailing" id="a77-vU-i2Y"/>
-                            <constraint firstItem="rgb-FR-zEF" firstAttribute="top" secondItem="gsL-tQ-jox" secondAttribute="bottom" constant="-4" id="tJP-7l-UZz"/>
+                            <constraint firstItem="rgb-FR-zEF" firstAttribute="leading" secondItem="gHQ-gy-D8g" secondAttribute="trailing" constant="-20" id="4Co-aM-qhb"/>
+                            <constraint firstItem="hmS-IF-Cpb" firstAttribute="top" secondItem="gHQ-gy-D8g" secondAttribute="bottom" constant="20" id="IXw-oh-dVi"/>
+                            <constraint firstItem="gHQ-gy-D8g" firstAttribute="leading" secondItem="gDe-J1-K5m" secondAttribute="leading" constant="16" id="UBv-dp-4P8"/>
+                            <constraint firstItem="rgb-FR-zEF" firstAttribute="top" secondItem="gsL-tQ-jox" secondAttribute="bottom" constant="-4" id="akA-Ul-C1P"/>
+                            <constraint firstAttribute="trailing" secondItem="rgb-FR-zEF" secondAttribute="trailing" constant="6" id="lD3-RY-8Ae"/>
+                            <constraint firstItem="gHQ-gy-D8g" firstAttribute="top" secondItem="gsL-tQ-jox" secondAttribute="bottom" constant="8" id="moh-AX-npV"/>
+                            <constraint firstAttribute="trailing" secondItem="gHQ-gy-D8g" secondAttribute="trailing" constant="16" id="zPY-9v-u0f"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="scrollVew" destination="gHQ-gy-D8g" id="vSl-13-AX1"/>
-                        <outlet property="scrollView" destination="gHQ-gy-D8g" id="96Z-cw-2Jz"/>
+                        <outlet property="scrollView" destination="gHQ-gy-D8g" id="giW-iw-TvP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TdE-ev-lKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1430" y="-655"/>
+        </scene>
+        <!--Serial Popup-->
+        <scene sceneID="d7c-cH-Ceu">
+            <objects>
+                <viewController restorationIdentifier="serialPopup" storyboardIdentifier="serialPopup" modalPresentationStyle="overCurrentContext" id="wwj-Xy-3QJ" customClass="serialPopup" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dgg-p5-dz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="TCc-cS-tkR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M9M-JD-acD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V31-Xu-uKT">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ew-r8-5J2" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="339" y="16" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7jp-Ox-LD9"/>
+                                    <constraint firstAttribute="width" constant="30" id="mxk-rl-rDg"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="close:" destination="wwj-Xy-3QJ" eventType="touchUpInside" id="oUX-4e-6pc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V31-Xu-uKT" secondAttribute="trailing" constant="16" id="3ot-q3-CnY"/>
+                            <constraint firstItem="TCc-cS-tkR" firstAttribute="top" secondItem="V31-Xu-uKT" secondAttribute="bottom" constant="20" id="9pv-QZ-B4s"/>
+                            <constraint firstItem="8ew-r8-5J2" firstAttribute="leading" secondItem="V31-Xu-uKT" secondAttribute="trailing" constant="-20" id="Fvx-Ng-jha"/>
+                            <constraint firstAttribute="trailing" secondItem="8ew-r8-5J2" secondAttribute="trailing" constant="6" id="G8S-Ct-ak9"/>
+                            <constraint firstItem="8ew-r8-5J2" firstAttribute="top" secondItem="dgg-p5-dz0" secondAttribute="bottom" constant="-4" id="Te3-PH-kgP"/>
+                            <constraint firstItem="V31-Xu-uKT" firstAttribute="top" secondItem="dgg-p5-dz0" secondAttribute="bottom" constant="8" id="f85-lY-NiT"/>
+                            <constraint firstItem="V31-Xu-uKT" firstAttribute="leading" secondItem="M9M-JD-acD" secondAttribute="leading" constant="16" id="pa5-lh-o03"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAS-Ft-ehU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2071" y="-727"/>
+        </scene>
+        <!--Image Popup-->
+        <scene sceneID="GFQ-83-gj0">
+            <objects>
+                <viewController restorationIdentifier="serialPopup" storyboardIdentifier="imagePopup" modalPresentationStyle="overCurrentContext" id="Wd9-KV-yc9" customClass="imagePopup" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N5g-Ur-8uk"/>
+                        <viewControllerLayoutGuide type="bottom" id="7QY-FQ-Xex"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhP-GQ-LaW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOL-cO-172">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bm-VH-Rb4" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="339" y="16" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="StN-Pd-kOt"/>
+                                    <constraint firstAttribute="width" constant="30" id="WkE-NQ-rkf"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="close:" destination="Wd9-KV-yc9" eventType="touchUpInside" id="QhB-vQ-tjw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fOL-cO-172" secondAttribute="trailing" constant="16" id="0wv-cV-sLn"/>
+                            <constraint firstItem="6bm-VH-Rb4" firstAttribute="top" secondItem="N5g-Ur-8uk" secondAttribute="bottom" constant="-4" id="Cnr-Zi-V7n"/>
+                            <constraint firstItem="6bm-VH-Rb4" firstAttribute="leading" secondItem="fOL-cO-172" secondAttribute="trailing" constant="-20" id="YUX-9U-DBt"/>
+                            <constraint firstItem="7QY-FQ-Xex" firstAttribute="top" secondItem="fOL-cO-172" secondAttribute="bottom" constant="20" id="lXL-OP-Jd8"/>
+                            <constraint firstItem="fOL-cO-172" firstAttribute="leading" secondItem="hhP-GQ-LaW" secondAttribute="leading" constant="16" id="rRu-fw-6lI"/>
+                            <constraint firstAttribute="trailing" secondItem="6bm-VH-Rb4" secondAttribute="trailing" constant="6" id="reO-tt-TBL"/>
+                            <constraint firstItem="fOL-cO-172" firstAttribute="top" secondItem="N5g-Ur-8uk" secondAttribute="bottom" constant="8" id="wYx-sZ-bZZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPS-wV-4Ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2710" y="-636"/>
+        </scene>
+        <!--Ebook Popup-->
+        <scene sceneID="TM6-Qe-ClG">
+            <objects>
+                <viewController restorationIdentifier="ebookPopup" storyboardIdentifier="ebookPopup" modalPresentationStyle="overCurrentContext" id="Ktu-If-8xn" customClass="ebookPopup" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fNf-Dm-OMF"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Jr-DY-Hxh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rKI-9V-SVo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HtI-RV-1ep">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jW-5j-0km" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="339" y="16" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="E6x-5O-8wa"/>
+                                    <constraint firstAttribute="height" constant="30" id="UYv-sL-fhu"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="close:" destination="Ktu-If-8xn" eventType="touchUpInside" id="vqc-AQ-49j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HtI-RV-1ep" secondAttribute="trailing" constant="16" id="Mdu-oE-4uz"/>
+                            <constraint firstItem="HtI-RV-1ep" firstAttribute="top" secondItem="fNf-Dm-OMF" secondAttribute="bottom" constant="8" id="TIs-7n-IoC"/>
+                            <constraint firstItem="1jW-5j-0km" firstAttribute="leading" secondItem="HtI-RV-1ep" secondAttribute="trailing" constant="-20" id="WlT-5G-XsH"/>
+                            <constraint firstItem="HtI-RV-1ep" firstAttribute="leading" secondItem="rKI-9V-SVo" secondAttribute="leading" constant="16" id="fKR-kb-R70"/>
+                            <constraint firstItem="1jW-5j-0km" firstAttribute="top" secondItem="fNf-Dm-OMF" secondAttribute="bottom" constant="-4" id="wiw-ml-SY8"/>
+                            <constraint firstAttribute="trailing" secondItem="1jW-5j-0km" secondAttribute="trailing" constant="6" id="z6H-hM-rwh"/>
+                            <constraint firstItem="0Jr-DY-Hxh" firstAttribute="top" secondItem="HtI-RV-1ep" secondAttribute="bottom" constant="20" id="zuj-pS-0Gd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQg-93-yvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4609" y="-727"/>
+        </scene>
+        <!--Album Popup-->
+        <scene sceneID="jom-eT-5i7">
+            <objects>
+                <viewController restorationIdentifier="albumPopup" storyboardIdentifier="albumPopup" modalPresentationStyle="overCurrentContext" id="o0S-dk-c0q" customClass="albumPopup" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LOP-Ax-Zfp"/>
+                        <viewControllerLayoutGuide type="bottom" id="sfp-9Z-MyM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ki6-ia-OdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNJ-vi-hbh">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yem-9Y-SAA" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="339" y="16" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="hKy-Or-HgD"/>
+                                    <constraint firstAttribute="height" constant="30" id="lk6-nT-riT"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="close:" destination="o0S-dk-c0q" eventType="touchUpInside" id="6A4-b3-FI4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yem-9Y-SAA" secondAttribute="trailing" constant="6" id="BNM-X6-6Id"/>
+                            <constraint firstItem="yem-9Y-SAA" firstAttribute="leading" secondItem="lNJ-vi-hbh" secondAttribute="trailing" constant="-20" id="Pbf-wn-t35"/>
+                            <constraint firstItem="lNJ-vi-hbh" firstAttribute="top" secondItem="LOP-Ax-Zfp" secondAttribute="bottom" constant="8" id="Px2-xQ-SXJ"/>
+                            <constraint firstItem="sfp-9Z-MyM" firstAttribute="top" secondItem="lNJ-vi-hbh" secondAttribute="bottom" constant="20" id="QqO-VS-R3U"/>
+                            <constraint firstItem="yem-9Y-SAA" firstAttribute="top" secondItem="LOP-Ax-Zfp" secondAttribute="bottom" constant="-4" id="boB-CX-jb4"/>
+                            <constraint firstAttribute="trailing" secondItem="lNJ-vi-hbh" secondAttribute="trailing" constant="16" id="prE-w1-yXm"/>
+                            <constraint firstItem="lNJ-vi-hbh" firstAttribute="leading" secondItem="ki6-ia-OdW" secondAttribute="leading" constant="16" id="tP1-Kj-zPD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJB-RV-4yI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3974" y="-636"/>
+        </scene>
+        <!--Music Popup-->
+        <scene sceneID="azR-hm-ogj">
+            <objects>
+                <viewController restorationIdentifier="musicPopup" storyboardIdentifier="musicPopup" modalPresentationStyle="overCurrentContext" id="dYy-sC-ned" customClass="musicPopup" customModule="SanaMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hKu-zK-fuI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wdc-Vx-gPe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xds-KM-yi6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-7M-icV">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ7-Bq-lAv" customClass="DesignableButton" customModule="SanaMedia" customModuleProvider="target">
+                                <rect key="frame" x="339" y="16" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LgN-h0-Riq"/>
+                                    <constraint firstAttribute="width" constant="30" id="UiW-Th-Vzl"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="close:" destination="dYy-sC-ned" eventType="touchUpInside" id="IuG-CX-lyv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mHy-7M-icV" firstAttribute="top" secondItem="hKu-zK-fuI" secondAttribute="bottom" constant="8" id="JZt-q5-uQ7"/>
+                            <constraint firstAttribute="trailing" secondItem="pJ7-Bq-lAv" secondAttribute="trailing" constant="6" id="K9c-Jl-g3y"/>
+                            <constraint firstItem="mHy-7M-icV" firstAttribute="leading" secondItem="xds-KM-yi6" secondAttribute="leading" constant="16" id="Lsa-V4-Qc4"/>
+                            <constraint firstItem="pJ7-Bq-lAv" firstAttribute="leading" secondItem="mHy-7M-icV" secondAttribute="trailing" constant="-20" id="Mkl-2b-hNd"/>
+                            <constraint firstItem="pJ7-Bq-lAv" firstAttribute="top" secondItem="hKu-zK-fuI" secondAttribute="bottom" constant="-4" id="O9K-4M-4eG"/>
+                            <constraint firstItem="Wdc-Vx-gPe" firstAttribute="top" secondItem="mHy-7M-icV" secondAttribute="bottom" constant="20" id="dlQ-cr-Vh6"/>
+                            <constraint firstAttribute="trailing" secondItem="mHy-7M-icV" secondAttribute="trailing" constant="16" id="jaa-L1-6cV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jog-fV-tHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3340" y="-727"/>
         </scene>
     </scenes>
     <resources>

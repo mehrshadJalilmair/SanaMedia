@@ -8,8 +8,16 @@
 
 import UIKit
 
-class MovieSerialsCell:UITableViewCell , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+protocol serialPopupShow {
+    
+    func showSerialPopup(serial: MovieSerial)
+}
 
+class MovieSerialsCell:UITableViewCell , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+    
+    
+    var delegate:serialPopupShow!
+    
     let cellId = "Item"
     var newestMovieSerials:[Int:MovieSerial] = [Int:MovieSerial]()
     var newestMovieSerialsIDs:[Int]!
@@ -80,6 +88,8 @@ extension MovieSerialsCell
         let index = newestMovieSerialsIDs[indexPath.row]
         let movie = newestMovieSerials[index]
         
+        cell.serial = movie
+        
         let episods = movie?.Episodes!
         cell.Description.text = movie?.Description
         cell.episodes.text = "\(String(describing: episods!))" + "قسمت "
@@ -94,5 +104,10 @@ extension MovieSerialsCell
         }
         
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! MovieSerialCell
+        self.delegate.showSerialPopup(serial: cell.serial!)
     }
 }

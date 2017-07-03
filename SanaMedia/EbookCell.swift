@@ -10,6 +10,9 @@ import UIKit
 
 class EbookCell: UICollectionViewCell {
     
+    
+    var ebook:EBook!
+    
     let container : UIView! =
     {
         var container = UIView()

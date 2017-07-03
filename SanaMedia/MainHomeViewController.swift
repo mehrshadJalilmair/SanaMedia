@@ -8,8 +8,94 @@
 
 import UIKit
 
-class MainHomeViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
-
+class MainHomeViewController: UIViewController , UITableViewDataSource , UITableViewDelegate , moviePopupShow , serialPopupShow , musicPopupShow , albumPopupShow , imagePopupShow , ebookPopupShow{
+    
+    //show dialogs when pressing items in sectios in home
+    var popupMovie:Movie!
+    var popupMusic:Music!
+    var popupImage:Image!
+    var popupAlbum:Music!
+    var popupSerial:MovieSerial!
+    var popupEBook:EBook!
+    
+    func showMoviePopup(movie: Movie) {
+        
+        DispatchQueue.main.async {
+            
+            self.popupMovie = movie
+            self.performSegue(withIdentifier: "moviePopup", sender: self)
+        }
+    }
+    func showSerialPopup(serial:MovieSerial) {
+        
+        DispatchQueue.main.async {
+            
+            self.popupSerial = serial
+            self.performSegue(withIdentifier: "serialPopup", sender: self)
+        }
+    }
+    func showImagePopup(image: Image) {
+        
+        DispatchQueue.main.async {
+            
+            self.popupImage = image
+            self.performSegue(withIdentifier: "imagePopup", sender: self)
+        }
+    }
+    func showEbookPopup(ebook: EBook) {
+        
+        DispatchQueue.main.async {
+            
+            self.popupEBook = ebook
+            self.performSegue(withIdentifier: "ebookPopup", sender: self)
+        }
+    }
+    func showAlbumPopup(album: Music) {
+        
+        DispatchQueue.main.async {
+            
+            self.popupAlbum = album
+            self.performSegue(withIdentifier: "albumPopup", sender: self)
+        }
+    }
+    func showMusicPopup(music: Music) {
+        
+        DispatchQueue.main.async {
+            
+            self.popupMusic = music
+            self.performSegue(withIdentifier: "musicPopup", sender: self)
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        switch segue.identifier!
+        {
+        case "moviePopup":
+            let nextScene =  segue.destination as? moviePopup
+            nextScene?.movie = popupMovie
+            break
+            
+        case "serialPopup":
+            break
+            
+        case "imagePopup":
+            break
+            
+        case "ebookPopup":
+            break
+            
+        case "albumPopup":
+            break
+            
+        case "musicPopup":
+            break
+        default:
+            break
+        }
+    }
+    
+    
+    // continue to coding
     @IBOutlet weak var navBar: UIView!
     @IBOutlet weak var mostLikes: DesignableButton!
     @IBOutlet weak var recentDate: DesignableButton!
@@ -573,6 +659,7 @@ extension MainHomeViewController{
             let cell = tableView.dequeueReusableCell(withIdentifier: CellId0, for: indexPath) as! VideosCell
             cell.newestMovies = self.newestMovies
             cell.newestMoviesIDs = self.newestMoviesIDs
+            cell.delegate = self
             return cell
             
             
@@ -580,6 +667,7 @@ extension MainHomeViewController{
             let cell = tableView.dequeueReusableCell(withIdentifier: CellId1, for: indexPath) as! ImagesCell
             cell.newestImages = self.newestImages
             cell.newestImagesIDs = self.newestImagesIDs
+            cell.delegate = self
             return cell
             
             
@@ -587,6 +675,7 @@ extension MainHomeViewController{
             let cell = tableView.dequeueReusableCell(withIdentifier: CellId2, for: indexPath) as! MusicsCell
             cell.newestMusics = self.newestMusics
             cell.newestMusicsIDs = self.newestMusicsIDs
+            cell.delegate = self
             return cell
             
             
@@ -594,6 +683,7 @@ extension MainHomeViewController{
             let cell = tableView.dequeueReusableCell(withIdentifier: CellId3, for: indexPath) as! EbooksCell
             cell.newestEBooks = self.newestEBooks
             cell.newestEBooksIDs = self.newestEBooksIDs
+            cell.delegate = self
             
             return cell
             
@@ -601,14 +691,14 @@ extension MainHomeViewController{
             let cell = tableView.dequeueReusableCell(withIdentifier: CellId4, for: indexPath) as! MusicsAlbumsCell
             cell.newestMusics = self.newestMusicAlbums
             cell.newestMusicsIDs = self.newestMusicAlbumsIDs
-            
+            cell.delegate = self
             return cell
             
         case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: CellId5, for: indexPath) as! MovieSerialsCell
             cell.newestMovieSerials = self.newestMovieSerials
             cell.newestMovieSerialsIDs = self.newestMovieSerialsIDs
-            
+            cell.delegate = self
             return cell
             
         default:
