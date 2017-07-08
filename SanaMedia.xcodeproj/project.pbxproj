@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1197341F105BC300A69D7B /* albumMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1197331F105BC300A69D7B /* albumMusicCell.swift */; };
+		2F1197361F106C1700A69D7B /* movieSerialCellInPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1197351F106C1700A69D7B /* movieSerialCellInPopup.swift */; };
 		2F147C4B1F0A86BB0035D446 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F147C4A1F0A86BB0035D446 /* Search.swift */; };
 		2F1A87CE1F07171700065DF8 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */; };
 		2F1A87D01F07180500065DF8 /* UserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A87CF1F07180500065DF8 /* UserMessage.swift */; };
@@ -84,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		17D6BC9B183B53348A193ECA /* Pods_SanaMediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanaMediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1197331F105BC300A69D7B /* albumMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumMusicCell.swift; sourceTree = "<group>"; };
+		2F1197351F106C1700A69D7B /* movieSerialCellInPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieSerialCellInPopup.swift; sourceTree = "<group>"; };
 		2F147C4A1F0A86BB0035D446 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		2F1A87CD1F07171700065DF8 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
 		2F1A87CF1F07180500065DF8 /* UserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessage.swift; sourceTree = "<group>"; };
@@ -354,11 +358,13 @@
 				2F84FBFA1F032EF800EF3A8C /* Profile.swift */,
 				2F1A87D11F07189000065DF8 /* MessageCell.swift */,
 				2F1A87D31F07363900065DF8 /* moviePopup.swift */,
-				2FCD153B1F0A3C890038107B /* serialPopup.swift */,
 				2FCD153F1F0A3CD50038107B /* imagePopup.swift */,
 				2FCD153D1F0A3CC50038107B /* musicPopup.swift */,
 				2FCD15411F0A3CF70038107B /* ebookPopup.swift */,
 				2FCD15431F0A3D0E0038107B /* albumPopup.swift */,
+				2F1197331F105BC300A69D7B /* albumMusicCell.swift */,
+				2FCD153B1F0A3C890038107B /* serialPopup.swift */,
+				2F1197351F106C1700A69D7B /* movieSerialCellInPopup.swift */,
 			);
 			name = ShareClasses;
 			sourceTree = "<group>";
@@ -770,6 +776,7 @@
 				2F9220011ED645E20093932B /* EbookCell.swift in Sources */,
 				2F9105ED1EFC759600202B36 /* MusicAlbum.swift in Sources */,
 				2F1A87D01F07180500065DF8 /* UserMessage.swift in Sources */,
+				2F1197361F106C1700A69D7B /* movieSerialCellInPopup.swift in Sources */,
 				2F84FBFB1F032EF800EF3A8C /* Profile.swift in Sources */,
 				2F1A87D41F07363900065DF8 /* moviePopup.swift in Sources */,
 				2F9106021EFC7E3900202B36 /* MovieSerialsCell.swift in Sources */,
@@ -777,6 +784,7 @@
 				2F84FBF91F03054A00EF3A8C /* User.swift in Sources */,
 				2FF1B7E51ECAE0B300CB176D /* AppDelegate.swift in Sources */,
 				2F84FBF51F02FBF400EF3A8C /* RegisterLoginViewController.swift in Sources */,
+				2F1197341F105BC300A69D7B /* albumMusicCell.swift in Sources */,
 				2F9105FE1EFC7BE100202B36 /* MovieSerial.swift in Sources */,
 				2F921FFA1ED642740093932B /* VideoCell.swift in Sources */,
 				2FF1B8191ECAEF0000CB176D /* CategoryViewController.swift in Sources */,

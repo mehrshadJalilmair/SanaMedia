@@ -76,18 +76,28 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
             break
             
         case "serialPopup":
+            let nextScene =  segue.destination as? serialPopup
+            nextScene?.serial = popupSerial
             break
             
         case "imagePopup":
+            let nextScene =  segue.destination as? imagePopup
+            nextScene?.image = popupImage
             break
             
         case "ebookPopup":
+            let nextScene =  segue.destination as? ebookPopup
+            nextScene?.ebook = popupEBook
             break
             
         case "albumPopup":
+            let nextScene =  segue.destination as? albumPopup
+            nextScene?.album = popupAlbum
             break
             
         case "musicPopup":
+            let nextScene =  segue.destination as? musicPopup
+            nextScene?.music = popupMusic
             break
         default:
             break

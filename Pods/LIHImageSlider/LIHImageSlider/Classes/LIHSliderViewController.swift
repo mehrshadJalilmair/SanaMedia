@@ -51,7 +51,7 @@ open class LIHSliderViewController: UIViewController, LIHSliderItemDelegate {
         
         
         self.initializePager()
-        self.pageController.view.backgroundColor = UIColor.blue
+        self.pageController.view.backgroundColor = UIColor.white
     }
     
     open override func viewDidLayoutSubviews() {

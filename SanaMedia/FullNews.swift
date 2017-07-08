@@ -83,7 +83,7 @@ class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
             tableView.separatorStyle = .none
             tableView.showsVerticalScrollIndicator = false
             tableView.showsHorizontalScrollIndicator = false
-            tableView.register(VideosCell.self, forCellReuseIdentifier: self.CellId)
+            tableView.register(CommentCell.self, forCellReuseIdentifier: self.CellId)
             tableView.translatesAutoresizingMaskIntoConstraints = false
             return tableView
     }()

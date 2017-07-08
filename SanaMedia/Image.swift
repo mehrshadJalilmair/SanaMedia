@@ -87,7 +87,7 @@ class Image: NSObject {
             {
                 if URL is NSNull
                 {
-                    return "-"
+                    return ""
                 }
                 return URL as! String
             }

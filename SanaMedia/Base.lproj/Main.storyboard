@@ -1731,6 +1731,9 @@
                             <constraint firstItem="V31-Xu-uKT" firstAttribute="leading" secondItem="M9M-JD-acD" secondAttribute="leading" constant="16" id="pa5-lh-o03"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="V31-Xu-uKT" id="wem-2p-6cm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAS-Ft-ehU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1781,6 +1784,9 @@
                             <constraint firstItem="fOL-cO-172" firstAttribute="top" secondItem="N5g-Ur-8uk" secondAttribute="bottom" constant="8" id="wYx-sZ-bZZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="fOL-cO-172" id="rju-LM-NmI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPS-wV-4Ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1831,6 +1837,9 @@
                             <constraint firstItem="0Jr-DY-Hxh" firstAttribute="top" secondItem="HtI-RV-1ep" secondAttribute="bottom" constant="20" id="zuj-pS-0Gd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="HtI-RV-1ep" id="eho-kl-nXy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQg-93-yvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1881,6 +1890,9 @@
                             <constraint firstItem="lNJ-vi-hbh" firstAttribute="leading" secondItem="ki6-ia-OdW" secondAttribute="leading" constant="16" id="tP1-Kj-zPD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="lNJ-vi-hbh" id="DBx-k3-R5b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJB-RV-4yI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1931,6 +1943,9 @@
                             <constraint firstAttribute="trailing" secondItem="mHy-7M-icV" secondAttribute="trailing" constant="16" id="jaa-L1-6cV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="mHy-7M-icV" id="XBf-hJ-FZA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jog-fV-tHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -38,7 +38,9 @@ final class Singleton {
         "logout":"/users/logout/",
         "update_profile":"/users/update_profile/",
         "survay":"/users/survay/",
-        "newest_messages":"/newest_messages/?pagesize=%@&pageindex=%@&token=%@"
+        "newest_messages":"/newest_messages/?pagesize=%@&pageindex=%@&token=%@",
+        "music_album_childs" : "/music_album_childs/?id=%@",
+        "movie_serial_childs" : "/movie_serial_childs/?id=%@"
     ]
     
     //: Singleton implementation
