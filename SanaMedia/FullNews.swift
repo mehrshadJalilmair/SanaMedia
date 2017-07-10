@@ -8,6 +8,7 @@
 
 import UIKit
 import EasyToast
+import Alamofire
 
 class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
@@ -99,17 +100,19 @@ class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
     var commentsPageIndex:Int = 0
     var pageSize:Int = 10
     var type = "news"
-    
+    var user_liked_this = false
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        like.isEnabled = false
         self.scrollVew.layer.cornerRadius = 5
         self.scrollVew.layer.masksToBounds = true
         initView()
         configTableView()
+        check_like()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -243,16 +246,119 @@ extension FullNews
     @IBAction func closePopUp(_ sender: Any) {
         
         self.dismiss(animated: true) {
-            
         }
     }
     @objc func leavingComment()
     {
         print("leavingComment")
     }
+    
+    func check_like()
+    {
+        let url_dynamic_part = singleton.URLS["check_like"]
+        let url = singleton.url_static_part + url_dynamic_part!
+        
+        let body = [
+            
+            "token":User.getInstance().token,
+            "type":"news",
+            "id":self.news.Id,
+            ] as [String : Any]
+        
+        print(body)
+        Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
+            
+            switch response.result {
+            case .success:
+                
+                let value = response.result.value as! [String:String]
+                
+                if value["liked"] == "true"
+                {
+                    self.user_liked_this = true
+                    self.like.setImage(UIImage(named:"shapes"), for: UIControlState.normal)
+                    
+                }
+                else
+                {
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                }
+                
+                break
+                
+            case .failure( _):
+                DispatchQueue.main.async {
+                    
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                break
+            }
+            self.like.isEnabled = true
+        }
+    }
+    
     @objc func Like()
     {
-        print("Like")
+        let url_dynamic_part = singleton.URLS["like"]
+        let url = singleton.url_static_part + url_dynamic_part!
+        
+        let body = [
+            
+            "token":User.getInstance().token,
+            "type":"news",
+            "id":self.news.Id,
+            "like":(user_liked_this ? -1 : 1)
+            ] as [String : Any]
+        
+        print(body)
+        Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
+            
+            switch response.result {
+            case .success:
+                
+                let value = response.result.value as! [String:String]
+                
+                if let status = value["data"]
+                {
+                    if status == "OK"
+                    {
+                        if !self.user_liked_this
+                        {
+                            self.news.Likes = "\(Int(self.news.Likes)! + 1)"
+                            self.user_liked_this = true
+                            self.like.setImage(UIImage(named:"shapes"), for: UIControlState.normal)
+                        }
+                        else
+                        {
+                            self.news.Likes = "\(Int(self.news.Likes)! - 1)"
+                            self.user_liked_this = false
+                            self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                        }
+                        
+                        self.likesCount.text = self.news.Likes
+                    }
+                    else
+                    {
+                        
+                    }
+                }
+                else
+                {
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                
+                break
+                
+            case .failure( _):
+                DispatchQueue.main.async {
+                    
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                break
+            }
+            self.like.isEnabled = true
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int

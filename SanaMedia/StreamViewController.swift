@@ -179,7 +179,7 @@ extension StreamViewController
             
             print((tv?.Stream)!)
             
-            if let url = URL(string: "http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8"){
+            if let url = URL(string: (tv?.Stream)!){
                 
                 let player = AVPlayer(url: url)
                 let controller=AVPlayerViewController()

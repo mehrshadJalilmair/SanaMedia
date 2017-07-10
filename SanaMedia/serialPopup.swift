@@ -14,6 +14,7 @@ class serialPopup: UIViewController , LIHSliderDelegate , UITableViewDataSource 
 
     //vars
     var serial:MovieSerial!
+    var user_liked_this = false
     
     //views
     //slider (container + LIHSliderViewController)
@@ -424,9 +425,111 @@ extension serialPopup
     {
         print("leavingComment")
     }
+    func check_like()
+    {
+        let url_dynamic_part = singleton.URLS["check_like"]
+        let url = singleton.url_static_part + url_dynamic_part!
+        
+        let body = [
+            
+            "token":User.getInstance().token,
+            "type":"movie_serial",
+            "id":self.serial.Id,
+            ] as [String : Any]
+        
+        print(body)
+        Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
+            
+            switch response.result {
+            case .success:
+                
+                let value = response.result.value as! [String:String]
+                
+                if value["liked"] == "true"
+                {
+                    self.user_liked_this = true
+                    self.like.setImage(UIImage(named:"shapes"), for: UIControlState.normal)
+                    
+                }
+                else
+                {
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                }
+                
+                break
+                
+            case .failure( _):
+                DispatchQueue.main.async {
+                    
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                break
+            }
+            self.like.isEnabled = true
+        }
+    }
+    
     @objc func Like()
     {
-        print("Like")
+        let url_dynamic_part = singleton.URLS["like"]
+        let url = singleton.url_static_part + url_dynamic_part!
+        
+        let body = [
+            
+            "token":User.getInstance().token,
+            "type":"movie_serial",
+            "id":self.serial.Id,
+            "like":(user_liked_this ? -1 : 1)
+            ] as [String : Any]
+        
+        print(body)
+        Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
+            
+            switch response.result {
+            case .success:
+                
+                let value = response.result.value as! [String:String]
+                
+                if let status = value["data"]
+                {
+                    if status == "OK"
+                    {
+                        if !self.user_liked_this
+                        {
+                            self.serial.Likes = "\(Int(self.serial.Likes)! + 1)"
+                            self.user_liked_this = true
+                            self.like.setImage(UIImage(named:"shapes"), for: UIControlState.normal)
+                        }
+                        else
+                        {
+                            self.serial.Likes = "\(Int(self.serial.Likes)! - 1)"
+                            self.user_liked_this = false
+                            self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                        }
+                        self.likesCount.text = self.serial.Likes
+                    }
+                    else
+                    {
+                        
+                    }
+                }
+                else
+                {
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                
+                break
+                
+            case .failure( _):
+                DispatchQueue.main.async {
+                    
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                break
+            }
+            self.like.isEnabled = true
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int

@@ -11,11 +11,14 @@
 import UIKit
 import LIHImageSlider
 import Alamofire
+import AVKit
+import AVFoundation
 
 class moviePopup: UIViewController , LIHSliderDelegate , UITableViewDataSource , UITableViewDelegate{
     
     //vars
     var movie:Movie!
+    var user_liked_this = false
     
     //views
     //slider (container + LIHSliderViewController)
@@ -414,16 +417,134 @@ extension moviePopup
     
     @objc func playVideo()
     {
-        
+        DispatchQueue.main.async {
+            
+            if let url = URL(string: self.movie.Main_URL){
+                
+                let player = AVPlayer(url: url)
+                let controller=AVPlayerViewController()
+                controller.player=player
+                //controller.view.frame = self.view.frame
+                //self.view.addSubview(controller.view)
+                //self.addChildViewController(controller)
+                //player.play()
+                self.present(controller, animated: true) {
+                    player.play()
+                }
+            }
+        }
     }
     
     @objc func leavingComment()
     {
         print("leavingComment")
     }
+    func check_like()
+    {
+        let url_dynamic_part = singleton.URLS["check_like"]
+        let url = singleton.url_static_part + url_dynamic_part!
+        
+        let body = [
+            
+            "token":User.getInstance().token,
+            "type":"movie",
+            "id":self.movie.Id,
+            ] as [String : Any]
+        
+        print(body)
+        Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
+            
+            switch response.result {
+            case .success:
+                
+                let value = response.result.value as! [String:String]
+                
+                if value["liked"] == "true"
+                {
+                    self.user_liked_this = true
+                    self.like.setImage(UIImage(named:"shapes"), for: UIControlState.normal)
+                    
+                }
+                else
+                {
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                }
+                
+                break
+                
+            case .failure( _):
+                DispatchQueue.main.async {
+                    
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                break
+            }
+            self.like.isEnabled = true
+        }
+    }
+    
     @objc func Like()
     {
-        print("Like")
+        let url_dynamic_part = singleton.URLS["like"]
+        let url = singleton.url_static_part + url_dynamic_part!
+        
+        let body = [
+            
+            "token":User.getInstance().token,
+            "type":"movie",
+            "id":self.movie.Id,
+            "like":(user_liked_this ? -1 : 1)
+            ] as [String : Any]
+        
+        print(body)
+        Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
+            
+            switch response.result {
+            case .success:
+                
+                let value = response.result.value as! [String:String]
+                
+                if let status = value["data"]
+                {
+                    if status == "OK"
+                    {
+                        if !self.user_liked_this
+                        {
+                            self.movie.Likes = "\(Int(self.movie.Likes)! + 1)"
+                            self.user_liked_this = true
+                            self.like.setImage(UIImage(named:"shapes"), for: UIControlState.normal)
+                        }
+                        else
+                        {
+                            self.movie.Likes = "\(Int(self.movie.Likes)! - 1)"
+                            self.user_liked_this = false
+                            self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                        }
+                        
+                        self.likesCount.text = self.movie.Likes
+                    }
+                    else
+                    {
+                        
+                    }
+                }
+                else
+                {
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                
+                break
+                
+            case .failure( _):
+                DispatchQueue.main.async {
+                    
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                break
+            }
+            self.like.isEnabled = true
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int

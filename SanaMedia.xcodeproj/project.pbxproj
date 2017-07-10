@@ -202,13 +202,14 @@
 		2F0F59281F12C91100EACF25 /* CategoryTabs */ = {
 			isa = PBXGroup;
 			children = (
+				2FF1B8181ECAEF0000CB176D /* CategoryViewController.swift */,
+				2F0F592B1F12D9F200EACF25 /* genreCellTableViewCell.swift */,
 				2F0F59291F12C94400EACF25 /* MovieFilter.swift */,
 				2F0F592D1F12F5B700EACF25 /* ImageFilter.swift */,
 				2F0F592F1F12FC5500EACF25 /* MusicFilter.swift */,
 				2F0F59311F12FF6C00EACF25 /* EbookFilter.swift */,
 				2F0F59331F1302DC00EACF25 /* SerialFilter.swift */,
 				2F0F59351F1302F100EACF25 /* AlbumFilter.swift */,
-				2F0F592B1F12D9F200EACF25 /* genreCellTableViewCell.swift */,
 			);
 			name = CategoryTabs;
 			sourceTree = "<group>";
@@ -283,7 +284,6 @@
 			isa = PBXGroup;
 			children = (
 				2F0F59281F12C91100EACF25 /* CategoryTabs */,
-				2FF1B8181ECAEF0000CB176D /* CategoryViewController.swift */,
 				2F147C4A1F0A86BB0035D446 /* Search.swift */,
 			);
 			name = Category;
