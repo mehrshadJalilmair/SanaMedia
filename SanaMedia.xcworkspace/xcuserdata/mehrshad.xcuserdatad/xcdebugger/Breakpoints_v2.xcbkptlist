@@ -2,4 +2,100 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanaMedia/SerialFilter.swift"
+            timestampString = "521341726.471083"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "GenresSelected()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SanaMedia.SerialFilter.selectedGenreIndex.getter : Swift.Int"
+                  moduleName = "SanaMedia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mehrshad/Desktop/Sana%20Nahad%20Project/SanaMedia/SanaMedia/SerialFilter.swift"
+                  timestampString = "521341727.127859"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SanaMedia.SerialFilter.selectedGenreIndex.setter : Swift.Int"
+                  moduleName = "SanaMedia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mehrshad/Desktop/Sana%20Nahad%20Project/SanaMedia/SanaMedia/SerialFilter.swift"
+                  timestampString = "521341727.130356"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SanaMedia.SerialFilter.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.Bundle&gt;) -&gt; SanaMedia.SerialFilter"
+                  moduleName = "SanaMedia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mehrshad/Desktop/Sana%20Nahad%20Project/SanaMedia/SanaMedia/SerialFilter.swift"
+                  timestampString = "521341727.132785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SanaMedia.SerialFilter.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SanaMedia.SerialFilter&gt;"
+                  moduleName = "SanaMedia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mehrshad/Desktop/Sana%20Nahad%20Project/SanaMedia/SanaMedia/SerialFilter.swift"
+                  timestampString = "521341727.135217"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SanaMedia/SerialFilter.swift"
+            timestampString = "521341726.471495"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "GenresSelected()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

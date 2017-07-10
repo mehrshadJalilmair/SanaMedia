@@ -40,7 +40,14 @@ final class Singleton {
         "survay":"/users/survay/",
         "newest_messages":"/newest_messages/?pagesize=%@&pageindex=%@&token=%@",
         "music_album_childs" : "/music_album_childs/?id=%@",
-        "movie_serial_childs" : "/movie_serial_childs/?id=%@"
+        "movie_serial_childs" : "/movie_serial_childs/?id=%@",
+        "genres": "/genres/?type=%@",
+        "movies_by_genre": "/movies_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
+        "images_by_category" : "/images_by_category/?pagesize=%@&pageindex=%@&category_title=%@",
+        "ebooks_by_category" : "/ebooks_by_category/?pagesize=%@&pageindex=%@&category_title=%@",
+        "musics_by_genre" : "/musics_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
+        "movies_serial_by_genre" : "/movies_serial_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
+        "music_album_by_genre" : "/music_album_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@"
     ]
     
     //: Singleton implementation

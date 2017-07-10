@@ -53,6 +53,28 @@ class CategoryViewController: UIViewController , CarbonTabSwipeNavigationDelegat
     
     func carbonTabSwipeNavigation(_ carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAt index: UInt) -> UIViewController {
         
+        switch index {
+        case 0:
+            return MovieFilter()
+            
+        case 1:
+            return ImageFilter()
+            
+        case 3:
+            return MusicFilter()
+            
+        case 2:
+            return EbookFilter()
+            
+        case 5:
+            return EbookFilter()
+            
+        case 4:
+            return AlbumFilter()
+            
+        default:
+            break
+        }
         return UIViewController()
     }
     
