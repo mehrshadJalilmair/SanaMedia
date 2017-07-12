@@ -271,15 +271,16 @@ extension FullNews
             switch response.result {
             case .success:
                 
-                let value = response.result.value as! [String:String]
+                let value = response.result.value as! [String:AnyObject]
+                let str = value["liked"] as! String
                 
-                if value["liked"] == "true"
+                if str == "true"
                 {
                     self.user_liked_this = true
                     self.like.setImage(UIImage(named:"shapes"), for: UIControlState.normal)
                     
                 }
-                else
+                else if str == "false" || str == "Empty"
                 {
                     self.user_liked_this = false
                     self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
@@ -312,6 +313,7 @@ extension FullNews
             ] as [String : Any]
         
         print(body)
+        
         Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
             
             switch response.result {

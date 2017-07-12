@@ -32,7 +32,6 @@ final class User {
         {
             uniqueSingleton = User()
             return uniqueSingleton
-            
         }
         return uniqueSingleton
     }

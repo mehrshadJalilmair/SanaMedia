@@ -199,6 +199,11 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
     
     func getInitData()
     {
+        if let token = UserDefaults.standard.value(forKey: "token")
+        {
+            User.getInstance().token = token as! String
+        }
+        
         //: getting init data
         self.getNewest(urlKey: "newest_movies" , function: "getNewestMovies" , pageSize: pageSize , pageIndex:  moviesPageIndex)
         self.getNewest(urlKey: "newest_musics" , function: "getNewestMusics" , pageSize: pageSize , pageIndex:  musicsPageIndex)

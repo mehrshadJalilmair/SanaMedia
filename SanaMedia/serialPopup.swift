@@ -184,6 +184,7 @@ class serialPopup: UIViewController , LIHSliderDelegate , UITableViewDataSource 
         self.scrollView.showsVerticalScrollIndicator = false
         self.scrollView.showsHorizontalScrollIndicator = false
         configTableView()
+        check_like()
     }
     
     func configTableView()
@@ -445,13 +446,15 @@ extension serialPopup
                 
                 let value = response.result.value as! [String:String]
                 
-                if value["liked"] == "true"
+                let str = value["liked"]
+                
+                if str == "true"
                 {
                     self.user_liked_this = true
                     self.like.setImage(UIImage(named:"shapes"), for: UIControlState.normal)
                     
                 }
-                else
+                else if str == "false" || str == "Empty"
                 {
                     self.user_liked_this = false
                     self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
