@@ -295,7 +295,17 @@ extension imagePopup
 {
     @objc func leavingComment()
     {
-        print("leavingComment")
+        self.performSegue(withIdentifier: "comment", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "comment"
+        {
+            let vc = segue.destination as! leaveComment
+            vc.type = "image"
+            vc.id = self.image.Id
+        }
     }
     func check_like()
     {
@@ -316,6 +326,14 @@ extension imagePopup
             case .success:
                 
                 let value = response.result.value as! [String:String]
+                
+                guard let _ = value["liked"] else
+                {
+                    self.like.isEnabled = true
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                    return
+                }
                 
                 let str = value["liked"]
                 
@@ -354,7 +372,7 @@ extension imagePopup
             "token":User.getInstance().token,
             "type":"image",
             "id":self.image.Id,
-            "like":(user_liked_this ? -1 : 1)
+            "like":(user_liked_this ? "-1" : "+1")
             ] as [String : Any]
         
         print(body)
@@ -422,7 +440,7 @@ extension imagePopup
         
         if indexPath.row + 1 == self.comments.count {
             
-            if commentsPageSize < commentsPageIndex
+            if commentsPageSize <= commentsPageIndex
             {
                 
             }
@@ -444,7 +462,7 @@ extension imagePopup
     
     func getComments()
     {
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.image.Id!)" ,  "\(self.pageSize)" , "\(self.commentsPageIndex+1)")
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.image.Id!)" ,  "\(self.commentsPageIndex+1)" , "\(self.pageSize)")
         requestToServer(url_dynamic_part: url_dynamic_part)
     }
     
@@ -476,7 +494,7 @@ extension imagePopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                 }
                 

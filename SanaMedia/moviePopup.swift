@@ -12,6 +12,7 @@ import UIKit
 import LIHImageSlider
 import Alamofire
 import AVKit
+import EasyToast
 import AVFoundation
 
 class moviePopup: UIViewController , LIHSliderDelegate , UITableViewDataSource , UITableViewDelegate{
@@ -19,6 +20,9 @@ class moviePopup: UIViewController , LIHSliderDelegate , UITableViewDataSource ,
     //vars
     var movie:Movie!
     var user_liked_this = false
+    
+    var player:AVPlayer!
+    var controller:AVPlayerViewController!
     
     //views
     //slider (container + LIHSliderViewController)
@@ -172,6 +176,8 @@ class moviePopup: UIViewController , LIHSliderDelegate , UITableViewDataSource ,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
         
         initView()
         self.scrollView.layer.cornerRadius = 5
@@ -389,7 +395,7 @@ class moviePopup: UIViewController , LIHSliderDelegate , UITableViewDataSource ,
         {
             if url.characters.count > 7
             {
-                images.append(singleton.url_static_part + url)
+                images.append(url)
             }
         }
         self.sliderVc1.slider.sliderImages = images
@@ -416,21 +422,55 @@ extension moviePopup
     //press image slider index
     func itemPressedAtIndex(index: Int) {}
     
+    @objc func playerItemDidReachEnd()
+    {
+        self.controller.dismiss(animated: true) {
+            
+            
+        }
+    }
+    
     @objc func playVideo()
     {
+        if !singleton.headphone()
+        {
+            self.view.showToast("هدفون را متصل کنید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
+//        DispatchQueue.main.async {
+//
+//            if let url = URL(string: adUrl){
+//
+//                self.player = AVPlayer(url: url)
+//                self.controller = AVPlayerViewController()
+//                self.controller.player=self.player
+//                //controller.view.frame = self.view.frame
+//                //self.view.addSubview(controller.view)
+//                //self.addChildViewController(controller)
+//                //player.play()
+//                self.present(self.controller, animated: true) {
+//                    self.player.play()
+//                }
+//            }
+//        }
+        
         DispatchQueue.main.async {
             
-            if let url = URL(string: self.movie.Main_URL){
+            if let url = URL(string: singleton.url_static_part + self.movie.Main_URL){
                 
-                let player = AVPlayer(url: url)
-                let controller=AVPlayerViewController()
-                controller.player=player
+                print(url)
+                var player1:AVPlayer!
+                var controller1:AVPlayerViewController!
+                player1 = AVPlayer(url: url)
+                controller1=AVPlayerViewController()
+                controller1.player=player1
                 //controller.view.frame = self.view.frame
                 //self.view.addSubview(controller.view)
                 //self.addChildViewController(controller)
                 //player.play()
-                self.present(controller, animated: true) {
-                    player.play()
+                self.present(controller1, animated: true) {
+                    player1.play()
+                    
                 }
             }
         }
@@ -438,7 +478,17 @@ extension moviePopup
     
     @objc func leavingComment()
     {
-        print("leavingComment")
+        self.performSegue(withIdentifier: "comment", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "comment"
+        {
+            let vc = segue.destination as! leaveComment
+            vc.type = "movie"
+            vc.id = self.movie.Id
+        }
     }
     func check_like()
     {
@@ -460,7 +510,17 @@ extension moviePopup
                 
                 let value = response.result.value as! [String:String]
                 
+                guard let _ = value["liked"] else
+                {
+                    self.like.isEnabled = true
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                    return
+                }
+                
                 let str = value["liked"]
+                
+                
                 
                 if str == "true"
                 {
@@ -496,7 +556,7 @@ extension moviePopup
             "token":User.getInstance().token,
             "type":"movie",
             "id":self.movie.Id,
-            "like":(user_liked_this ? -1 : 1)
+            "like":(user_liked_this ? "-1" : "+1")
             ] as [String : Any]
         
         print(body)
@@ -564,7 +624,7 @@ extension moviePopup
         
         if indexPath.row + 1 == self.comments.count {
             
-            if commentsPageSize < commentsPageIndex
+            if commentsPageSize <= commentsPageIndex
             {
                 
             }
@@ -572,13 +632,13 @@ extension moviePopup
             {
                 getComments()
             }
-            
         }
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+        
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return UITableViewAutomaticDimension
@@ -586,7 +646,7 @@ extension moviePopup
     
     func getComments()
     {
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.movie.Id!)" ,  "\(self.pageSize)" , "\(self.commentsPageIndex+1)")
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.movie.Id!)" ,  "\(self.commentsPageIndex+1)" , "\(self.pageSize)")
         requestToServer(url_dynamic_part: url_dynamic_part)
     }
     
@@ -618,7 +678,7 @@ extension moviePopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                 }
                 

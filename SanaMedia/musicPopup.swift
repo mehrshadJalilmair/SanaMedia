@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import AVKit
 import AVFoundation
+import EasyToast
 
 class musicPopup: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
@@ -342,7 +343,15 @@ extension musicPopup
     
     @objc func playMusic()
     {
-        let _url = URL(string: self.music.URL)
+        if !singleton.headphone()
+        {
+            self.view.showToast("هدفون را متصل کنید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
+        
+        print(self.music.URL)
+        let _url = URL(string: singleton.url_static_part + self.music.URL)
+        
         
         do {
             
@@ -361,7 +370,17 @@ extension musicPopup
     
     @objc func leavingComment()
     {
-        print("leavingComment")
+        self.performSegue(withIdentifier: "comment", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "comment"
+        {
+            let vc = segue.destination as! leaveComment
+            vc.type = "music"
+            vc.id = self.music.Id
+        }
     }
     func check_like()
     {
@@ -382,6 +401,14 @@ extension musicPopup
             case .success:
                 
                 let value = response.result.value as! [String:String]
+                
+                guard let _ = value["liked"] else
+                {
+                    self.like.isEnabled = true
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                    return
+                }
                 
                 let str = value["liked"]
                 
@@ -420,7 +447,7 @@ extension musicPopup
             "token":User.getInstance().token,
             "type":"music",
             "id":self.music.Id,
-            "like":(user_liked_this ? -1 : 1)
+            "like":(user_liked_this ? "-1" : "+1")
             ] as [String : Any]
         
         print(body)
@@ -488,7 +515,7 @@ extension musicPopup
         
         if indexPath.row + 1 == self.comments.count {
             
-            if commentsPageSize < commentsPageIndex
+            if commentsPageSize <= commentsPageIndex
             {
                 
             }
@@ -510,7 +537,7 @@ extension musicPopup
     
     func getComments()
     {
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.music.Id!)" ,  "\(self.pageSize)" , "\(self.commentsPageIndex+1)")
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.music.Id!)" ,  "\(self.commentsPageIndex+1)" , "\(self.pageSize)")
         requestToServer(url_dynamic_part: url_dynamic_part)
     }
     
@@ -542,7 +569,7 @@ extension musicPopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                 }
                 

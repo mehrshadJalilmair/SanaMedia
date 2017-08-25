@@ -22,9 +22,19 @@ extension UIImageView{
             return
         }
         
-        let url = URL(string: singleton.url_static_part + url_)
-        print(url!)
+        let urll:String = Singleton.getInstance().url_static_part + url_
+        
+        let escapedAddress = urll.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlFragmentAllowed)
+        //let urlpath = String(format: "\(String(describing: escapedAddress))")
+        
+        
+        let url = URL(string: escapedAddress!)
+        //print(url!)
         //print(singleton.url_static_part + url_)
+        if url == nil
+        {
+            return
+        }
         
         URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
             
@@ -42,6 +52,7 @@ extension UIImageView{
                 }
                 else
                 {
+                    self.image = nil
                 }
             })
         }).resume()

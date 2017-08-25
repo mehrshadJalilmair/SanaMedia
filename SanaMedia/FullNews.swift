@@ -148,10 +148,7 @@ class FullNews: UIViewController , UITableViewDataSource , UITableViewDelegate{
         //h
         var heightConstraint = NSLayoutConstraint(item: newsImage, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: scrollVew, attribute: NSLayoutAttribute.height, multiplier: 1/3, constant: 0)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
-        if self.news.Image_Url.contains("/")
-        {
-            newsImage.loadImageWithCasheWithUrl(self.news.Image_Url)
-        }
+        newsImage.loadImageWithCasheWithUrl(self.news.Image_Url)
         
         scrollVew.addSubview(date)
         //x
@@ -250,7 +247,17 @@ extension FullNews
     }
     @objc func leavingComment()
     {
-        print("leavingComment")
+        self.performSegue(withIdentifier: "comment", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "comment"
+        {
+            let vc = segue.destination as! leaveComment
+            vc.type = "news"
+            vc.id = self.news.Id
+        }
     }
     
     func check_like()
@@ -263,7 +270,7 @@ extension FullNews
             "token":User.getInstance().token,
             "type":"news",
             "id":self.news.Id,
-            ] as [String : Any]
+        ] as [String : Any]
         
         print(body)
         Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
@@ -272,6 +279,16 @@ extension FullNews
             case .success:
                 
                 let value = response.result.value as! [String:AnyObject]
+                print(value)
+                
+               guard let _ = value["liked"] else
+               {
+                    self.like.isEnabled = true
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                    return
+               }
+                
                 let str = value["liked"] as! String
                 
                 if str == "true"
@@ -309,7 +326,7 @@ extension FullNews
             "token":User.getInstance().token,
             "type":"news",
             "id":self.news.Id,
-            "like":(user_liked_this ? -1 : 1)
+            "like":(user_liked_this ? "-1" : "+1")
             ] as [String : Any]
         
         print(body)
@@ -378,7 +395,7 @@ extension FullNews
         
         if indexPath.row + 1 == self.comments.count {
             
-            if commentsPageSize < commentsPageIndex
+            if commentsPageSize <= commentsPageIndex
             {
                 
             }
@@ -391,6 +408,9 @@ extension FullNews
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.selectionStyle = .none
         
     }
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
@@ -408,7 +428,7 @@ extension FullNews
     func getData(urlKey:String , function:String , pageSize:Int , pageIndex:Int)
     {
         requestType = .get
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS[urlKey]!, self.type , "\(self.news.Id!)" ,  "\(pageSize)" , "\(pageIndex+1)")
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS[urlKey]!, self.type , "\(self.news.Id!)" ,  "\(pageIndex+1)" , "\(pageSize)")
         singleton.requestToServer(requestType: requestType, requesterData: ["url_dynamic_part":url_dynamic_part , "func":function , "class":"FullNewsViewController"], body: [:])
     }
     
@@ -446,8 +466,6 @@ extension FullNews
     
     func getCommentsData(data:[String:AnyObject])
     {
-        print(data["Comments"] as! [AnyObject])
-        print(self.news.Id)
         let itemsCount:Int = data["itemsCount"] as! Int
         let _Comments = data["Comments"] as! [AnyObject]
         
@@ -464,7 +482,7 @@ extension FullNews
         {
             DispatchQueue.main.async {
                 
-                self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                //self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
             }
         }
     }

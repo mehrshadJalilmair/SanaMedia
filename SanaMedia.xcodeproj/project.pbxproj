@@ -26,6 +26,8 @@
 		2F1E82C81ECCD10C00EA0FC6 /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */; };
 		2F1E82CA1ECCD11A00EA0FC6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82C91ECCD11A00EA0FC6 /* Image.swift */; };
 		2F1E82CC1ECCD92500EA0FC6 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */; };
+		2F436C0F1F3C794B00BDF8F3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F436C0E1F3C794A00BDF8F3 /* icon.png */; };
+		2F436C111F3C79C600BDF8F3 /* splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F436C101F3C79C600BDF8F3 /* splash.swift */; };
 		2F84FBF51F02FBF400EF3A8C /* RegisterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF41F02FBF400EF3A8C /* RegisterLoginViewController.swift */; };
 		2F84FBF71F02FE1B00EF3A8C /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF61F02FE1B00EF3A8C /* FloatLabelTextField.swift */; };
 		2F84FBF91F03054A00EF3A8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F84FBF81F03054A00EF3A8C /* User.swift */; };
@@ -57,6 +59,7 @@
 		2FE246C01F01C02F00881D92 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE246BF1F01C02F00881D92 /* CommentCell.swift */; };
 		2FE246C31F01C05B00881D92 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE246C21F01C05B00881D92 /* Comment.swift */; };
 		2FEDC1DC1ECE5BD1004EE0D2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDC1DB1ECE5BD1004EE0D2 /* DesignableButton.swift */; };
+		2FF0FB2B1F280C3000A3BA24 /* leaveComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0FB2A1F280C3000A3BA24 /* leaveComment.swift */; };
 		2FF1B7E51ECAE0B300CB176D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1B7E41ECAE0B300CB176D /* AppDelegate.swift */; };
 		2FF1B7E71ECAE0B300CB176D /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1B7E61ECAE0B300CB176D /* TabBar.swift */; };
 		2FF1B7EA1ECAE0B300CB176D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1B7E81ECAE0B300CB176D /* Main.storyboard */; };
@@ -112,6 +115,8 @@
 		2F1E82C71ECCD10C00EA0FC6 /* EBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
 		2F1E82C91ECCD11A00EA0FC6 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		2F1E82CB1ECCD92500EA0FC6 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		2F436C0E1F3C794A00BDF8F3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../../Downloads/Telegram Desktop/icon.png"; sourceTree = "<group>"; };
+		2F436C101F3C79C600BDF8F3 /* splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash.swift; sourceTree = "<group>"; };
 		2F84FBF41F02FBF400EF3A8C /* RegisterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterLoginViewController.swift; sourceTree = "<group>"; };
 		2F84FBF61F02FE1B00EF3A8C /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		2F84FBF81F03054A00EF3A8C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -143,6 +148,7 @@
 		2FE246BF1F01C02F00881D92 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		2FE246C21F01C05B00881D92 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2FEDC1DB1ECE5BD1004EE0D2 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		2FF0FB2A1F280C3000A3BA24 /* leaveComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaveComment.swift; sourceTree = "<group>"; };
 		2FF1B7E11ECAE0B300CB176D /* SanaMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanaMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF1B7E41ECAE0B300CB176D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FF1B7E61ECAE0B300CB176D /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -394,6 +400,8 @@
 				2F1197331F105BC300A69D7B /* albumMusicCell.swift */,
 				2FCD153B1F0A3C890038107B /* serialPopup.swift */,
 				2F1197351F106C1700A69D7B /* movieSerialCellInPopup.swift */,
+				2FF0FB2A1F280C3000A3BA24 /* leaveComment.swift */,
+				2F436C101F3C79C600BDF8F3 /* splash.swift */,
 			);
 			name = ShareClasses;
 			sourceTree = "<group>";
@@ -401,6 +409,7 @@
 		2FF1B7D81ECAE0B300CB176D = {
 			isa = PBXGroup;
 			children = (
+				2F436C0E1F3C794A00BDF8F3 /* icon.png */,
 				2FF1B7E31ECAE0B300CB176D /* SanaMedia */,
 				2FF1B7F81ECAE0B300CB176D /* SanaMediaTests */,
 				2FF1B8031ECAE0B300CB176D /* SanaMediaUITests */,
@@ -596,6 +605,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F436C0F1F3C794B00BDF8F3 /* icon.png in Resources */,
 				2FF1B7EF1ECAE0B300CB176D /* LaunchScreen.storyboard in Resources */,
 				2FF1B7EC1ECAE0B300CB176D /* Assets.xcassets in Resources */,
 				2FF1B7EA1ECAE0B300CB176D /* Main.storyboard in Resources */,
@@ -647,6 +657,7 @@
 				"${BUILT_PRODUCTS_DIR}/EasyToast/EasyToast.framework",
 				"${BUILT_PRODUCTS_DIR}/ExpandableTableViewController/ExpandableTableViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/LIHImageSlider/LIHImageSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/PDFReader/PDFReader.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -657,6 +668,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyToast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableTableViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LIHImageSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFReader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -801,6 +813,7 @@
 				2FE246C01F01C02F00881D92 /* CommentCell.swift in Sources */,
 				2FE246C31F01C05B00881D92 /* Comment.swift in Sources */,
 				2FCD15401F0A3CD60038107B /* imagePopup.swift in Sources */,
+				2F436C111F3C79C600BDF8F3 /* splash.swift in Sources */,
 				2FF1B8171ECAEEF100CB176D /* StreamViewController.swift in Sources */,
 				2FCD15421F0A3CF70038107B /* ebookPopup.swift in Sources */,
 				2FF1B7E71ECAE0B300CB176D /* TabBar.swift in Sources */,
@@ -830,6 +843,7 @@
 				2F1A87CE1F07171700065DF8 /* DesignableLabel.swift in Sources */,
 				2FCD153E1F0A3CC50038107B /* musicPopup.swift in Sources */,
 				2FF1B8151ECAEEE100CB176D /* NewsViewController.swift in Sources */,
+				2FF0FB2B1F280C3000A3BA24 /* leaveComment.swift in Sources */,
 				2F91060A1EFD59E300202B36 /* TV.swift in Sources */,
 				2FE246BE1F01951700881D92 /* FullNews.swift in Sources */,
 				2F1E82C41ECC3DF600EA0FC6 /* Music.swift in Sources */,

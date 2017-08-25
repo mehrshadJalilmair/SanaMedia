@@ -307,6 +307,11 @@ class Profile: UIViewController , UITabBarDelegate , UITableViewDataSource{
             }
         }
     }
+    
+    @IBAction func closeRating(_ sender: Any) {
+        
+        feedBackView.removeFromSuperview()
+    }
 }
 
 extension Profile

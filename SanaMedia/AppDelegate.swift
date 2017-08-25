@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         catch {
             print("Setting category to AVAudioSessionCategoryPlayback failed.")
         }
+        RunLoop.current.run(until: Date(timeIntervalSinceNow: 3))
         return true
     }
 

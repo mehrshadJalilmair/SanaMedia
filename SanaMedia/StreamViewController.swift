@@ -106,8 +106,15 @@ class StreamViewController: UIViewController , UITableViewDelegate , UITableView
         for Channel in Channels {
             
             let newChannel = TV(tv: Channel)
-            self.TVs[newChannel.Id] = newChannel
-            self.TVsIDs.append(newChannel.Id)
+            if newChannel.Stream != nil || newChannel.Stream != ""
+            {
+                if newChannel.Stream.contains("m3u8")
+                {
+                    self.TVs[newChannel.Id] = newChannel
+                    self.TVsIDs.append(newChannel.Id)
+                }
+            }
+            
         }
     }
     

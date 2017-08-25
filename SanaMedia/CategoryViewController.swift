@@ -55,21 +55,27 @@ class CategoryViewController: UIViewController , CarbonTabSwipeNavigationDelegat
         
         switch index {
         case 0:
+            searchType_ = .movie
             return MovieFilter()
             
         case 1:
+            searchType_ = .image
             return ImageFilter()
             
         case 3:
+            searchType_ = .music
             return MusicFilter()
             
         case 2:
+            searchType_ = .ebook
             return EbookFilter()
             
         case 5:
-            return EbookFilter()
+            searchType_ = .serial
+            return SerialFilter()
             
         case 4:
+            searchType_ = .album
             return AlbumFilter()
             
         default:

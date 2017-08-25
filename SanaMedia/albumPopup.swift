@@ -370,7 +370,17 @@ extension albumPopup
     
     @objc func leavingComment()
     {
-        print("leavingComment")
+        self.performSegue(withIdentifier: "comment", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "comment"
+        {
+            let vc = segue.destination as! leaveComment
+            vc.type = "music_album"
+            vc.id = self.album.Id
+        }
     }
     
     func check_like()
@@ -392,6 +402,14 @@ extension albumPopup
             case .success:
                 
                 let value = response.result.value as! [String:String]
+                
+                guard let _ = value["liked"] else
+                {
+                    self.like.isEnabled = true
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                    return
+                }
                 
                 let str = value["liked"]
                 
@@ -430,7 +448,7 @@ extension albumPopup
             "token":User.getInstance().token,
             "type":"music_album",
             "id":self.album.Id,
-            "like":(user_liked_this ? -1 : 1)
+            "like":(user_liked_this ? "-1" : "+1")
             ] as [String : Any]
         
         print(body)
@@ -508,7 +526,7 @@ extension albumPopup
         
         if indexPath.row + 1 == self.comments.count {
             
-            if commentsPageSize < commentsPageIndex
+            if commentsPageSize <= commentsPageIndex
             {
                 
             }
@@ -545,7 +563,7 @@ extension albumPopup
     
     func getComments()
     {
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.album.Id!)" ,  "\(self.pageSize)" , "\(self.commentsPageIndex+1)")
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.album.Id!)" ,  "\(self.commentsPageIndex+1)" , "\(self.pageSize)")
         requestToServer(url_dynamic_part: url_dynamic_part)
     }
     
@@ -577,7 +595,7 @@ extension albumPopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                 }
                 
@@ -612,7 +630,7 @@ extension albumPopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("آهنگی ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("آهنگی ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                     return
                 }
@@ -630,7 +648,7 @@ extension albumPopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("آهنگی ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("آهنگی ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                 }
                 self.tableViewMusics.reloadData()

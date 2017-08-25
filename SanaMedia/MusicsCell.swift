@@ -96,6 +96,8 @@ extension MusicsCell
             cell.trailer.loadImageWithCasheWithUrl((music?.Picture_URLS[0])!)
         }
         
+        print(indexPath.row)
+        print(self.newestMusics.count)
         if indexPath.row + 1 == self.newestMusics.count {
             
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MainHomeViewController1"), object: nil, userInfo: [ "tableViewCellIndex" : 2])

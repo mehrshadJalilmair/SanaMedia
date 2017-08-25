@@ -34,6 +34,14 @@ class ebookPopup: UIViewController , UITableViewDelegate , UITableViewDataSource
         button.addTarget(self , action: #selector(ebookPopup.playMusic), for: UIControlEvents.touchUpInside)
         return button
     }()
+    var downButton : DesignableButton! = {
+        
+        var button = DesignableButton()
+        button.setImage(UIImage(named:"cloud-computing"), for: UIControlState.normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self , action: #selector(ebookPopup.downMusic), for: UIControlEvents.touchUpInside)
+        return button
+    }()
     let container1 : UIView! = {
         
         let slider1Container = UIView()
@@ -203,6 +211,19 @@ class ebookPopup: UIViewController , UITableViewDelegate , UITableViewDataSource
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
         scrollView.bringSubview(toFront: playButton)
         
+        container1.addSubview(downButton)
+        //x
+        horizontalConstraint = NSLayoutConstraint(item: downButton, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: container1, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: +3)
+        //y
+        verticalConstraint = NSLayoutConstraint(item: downButton, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: container1, attribute: NSLayoutAttribute.top, multiplier: 1, constant: +3)
+        //w
+        widthConstraint = NSLayoutConstraint(item: downButton, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
+        //h
+        heightConstraint = NSLayoutConstraint(item: downButton, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 40)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+        downButton.cornerRadius = 20
+        downButton.backgroundColor = UIColor.white
+        
         container1.addSubview(title_)
         //x
         horizontalConstraint = NSLayoutConstraint(item: title_, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: container1, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: 0)
@@ -307,6 +328,8 @@ class ebookPopup: UIViewController , UITableViewDelegate , UITableViewDataSource
         dismiss(animated: true) {
         }
     }
+    
+    var webView:UIWebView!
 }
 
 extension ebookPopup
@@ -314,14 +337,86 @@ extension ebookPopup
     //press image slider index
     func itemPressedAtIndex(index: Int) {}
     
+    
+    @objc func downMusic()
+    {
+        if let url = URL(string: singleton.url_static_part + self.ebook.URL) {
+            
+            //UIApplication.shared.openURL(url)
+            
+            let data = try! Data(contentsOf: url)
+            //Get the local docs directory and append your local filename.
+            var docURL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last as URL?
+            docURL = docURL?.appendingPathComponent( "myFileName_\(Date().description).pdf")
+            
+            //Lastly, write your file to the disk.
+            do
+            {
+                try data.write(to: docURL! as URL)
+                self.view.showToast( "در پوشه document ذخیره شد!", position: .bottom, popTime: 2, dismissOnTap: false)
+            }
+            catch(_)
+            {
+                
+            }
+        }
+    }
+    
     @objc func playMusic()
     {
-        
+        if let url = URL(string : singleton.url_static_part + self.ebook.URL)
+        {
+            let data:Data!
+            
+            do{
+                data = try! Data(contentsOf: url)
+            }
+            catch(_)
+            {
+                return
+            }
+            
+            webView = UIWebView(frame: CGRect(x:self.view.center.x,y:self.view.center.y,width:view.frame.size.width-40, height:view.frame.size.height-60))
+            webView.center = self.view.center
+            webView.load(data, mimeType: "application/pdf", textEncodingName: "" , baseURL: url.deletingLastPathComponent())
+            
+            let button   = UIButton(type: .system) as UIButton
+            let image = UIImage(named: "close") as UIImage?
+            button.frame = CGRect(x: 5 , y: 0 , width: 35, height: 35)
+            button.setTitle("Test Button", for: .normal)
+            button.setImage(image, for: .normal)
+            button.tintColor = UIColor.black
+            button.addTarget(self, action: #selector(closeWebView), for: UIControlEvents.touchUpInside)
+            
+            webView.addSubview(button)
+            
+            view.addSubview(webView)
+            webView.bringSubview(toFront: button)
+        }
+        else
+        {
+            return
+        }
+    }
+    
+    @objc func closeWebView()
+    {
+        webView.removeFromSuperview()
     }
     
     @objc func leavingComment()
     {
-        print("leavingComment")
+        self.performSegue(withIdentifier: "comment", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "comment"
+        {
+            let vc = segue.destination as! leaveComment
+            vc.type = "ebook"
+            vc.id = self.ebook.Id
+        }
     }
     func check_like()
     {
@@ -342,6 +437,14 @@ extension ebookPopup
             case .success:
                 
                 let value = response.result.value as! [String:String]
+                
+                guard let _ = value["liked"] else
+                {
+                    self.like.isEnabled = true
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                    return
+                }
                 
                 let str = value["liked"]
                 
@@ -380,7 +483,7 @@ extension ebookPopup
             "token":User.getInstance().token,
             "type":"ebook",
             "id":self.ebook.Id,
-            "like":(user_liked_this ? -1 : 1)
+            "like":(user_liked_this ? "-1" : "+1")
             ] as [String : Any]
         
         print(body)
@@ -448,7 +551,7 @@ extension ebookPopup
         
         if indexPath.row + 1 == self.comments.count {
             
-            if commentsPageSize < commentsPageIndex
+            if commentsPageSize <= commentsPageIndex
             {
                 
             }
@@ -470,7 +573,7 @@ extension ebookPopup
     
     func getComments()
     {
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.ebook.Id!)" ,  "\(self.pageSize)" , "\(self.commentsPageIndex+1)")
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.ebook.Id!)" ,  "\(self.commentsPageIndex+1)" , "\(self.pageSize)")
         requestToServer(url_dynamic_part: url_dynamic_part)
     }
     
@@ -502,7 +605,7 @@ extension ebookPopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                 }
                 

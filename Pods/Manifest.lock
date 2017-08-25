@@ -5,6 +5,7 @@ PODS:
   - EasyToast (2.0.2)
   - ExpandableTableViewController (2.1)
   - LIHImageSlider (1.0.8)
+  - PDFReader (2.4.0)
   - SwipeableTabBarController (1.0.4)
 
 DEPENDENCIES:
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - EasyToast
   - ExpandableTableViewController
   - LIHImageSlider
+  - PDFReader
   - SwipeableTabBarController
 
 EXTERNAL SOURCES:
@@ -33,8 +35,9 @@ SPEC CHECKSUMS:
   EasyToast: 2844de2158fe8d2313c6de81b5a858a909d82532
   ExpandableTableViewController: 7a97b8cf60f044b588255a01176cafa5ce2b7438
   LIHImageSlider: ddf90c3a07e6f571b0e57629177a49eaf5bf15a3
+  PDFReader: 0bb6be11c8876c6cea2598f0a0ab9b6640a8a018
   SwipeableTabBarController: a52688ad47614ba98611df30a788202db90620fe
 
-PODFILE CHECKSUM: 96dcb2676303080c9d5c123928b745200a792544
+PODFILE CHECKSUM: 7c6fdc888ce8e0d7df44ae6355d4edce5912a65a
 
 COCOAPODS: 1.3.0.beta.2

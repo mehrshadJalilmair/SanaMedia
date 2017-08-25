@@ -7,8 +7,25 @@
 //
 
 import UIKit
+import Cosmos
+import PDFReader
+import Alamofire
+var adType:String!
+var adUrl:String!
+import AVFoundation
+import AVKit
 
-class MainHomeViewController: UIViewController , UITableViewDataSource , UITableViewDelegate , moviePopupShow , serialPopupShow , musicPopupShow , albumPopupShow , imagePopupShow , ebookPopupShow{
+class MainHomeViewController: UIViewController , UITableViewDataSource , UITableViewDelegate , moviePopupShow , serialPopupShow , musicPopupShow , albumPopupShow , imagePopupShow , ebookPopupShow , UIDocumentInteractionControllerDelegate{
+    
+    var container: UIView = UIView()
+    
+    @IBOutlet var feedBackView: UIView!
+    @IBOutlet var opinion: FloatLabelTextField!
+    @IBOutlet var rate5: CosmosView!
+    @IBOutlet var rate4: CosmosView!
+    @IBOutlet var rate3: CosmosView!
+    @IBOutlet var rate2: CosmosView!
+    @IBOutlet var rate1: CosmosView!
     
     //show dialogs when pressing items in sectios in home
     var popupMovie:Movie!
@@ -17,6 +34,111 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
     var popupAlbum:Music!
     var popupSerial:MovieSerial!
     var popupEBook:EBook!
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.view.endEditing(true)
+        //feedBackView.removeFromSuperview()
+    }
+    
+    
+    @IBAction func closeRating(_ sender: Any) {
+        
+        feedBackView.removeFromSuperview()
+    }
+    
+    func showActivityIndicatory(uiView: UIView) {
+        
+        container.frame = uiView.frame
+        container.center = uiView.center
+        container.backgroundColor = UIColor.black.withAlphaComponent(0.3)//UIColorFromHex(0xffffff, alpha: 0.3)
+        
+        let loadingView: UIView = UIView()
+        loadingView.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
+        loadingView.center = uiView.center
+        loadingView.backgroundColor = UIColor(red: 44/255, green: 44/255, blue: 44/255, alpha: 0.7)
+        loadingView.clipsToBounds = true
+        loadingView.layer.cornerRadius = 10
+        
+        let actInd: UIActivityIndicatorView = UIActivityIndicatorView()
+        actInd.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        actInd.activityIndicatorViewStyle =
+            UIActivityIndicatorViewStyle.whiteLarge
+        actInd.center = CGPoint(x: loadingView.frame.size.width / 2, y: loadingView.frame.size.height / 2)
+        loadingView.addSubview(actInd)
+        container.addSubview(loadingView)
+        uiView.addSubview(container)
+        actInd.startAnimating()
+    }
+    
+    func FeedBack()
+    {
+        self.view.addSubview(feedBackView)
+        feedBackView.center = self.view.center
+    }
+    
+    
+    @IBAction func sendFeedBack(_ sender: Any) {
+        
+        showActivityIndicatory(uiView: self.view)
+        let url_dynamic_part = singleton.URLS["survay"]
+        let url = singleton.url_static_part + url_dynamic_part!
+        
+        let body = [
+            
+            "token":User.getInstance().token!,
+            "question1":"کیفیت گرافیک سایت",
+            "question2":"کیفیت ویدئو",
+            "question3":"کیفیت موزیک",
+            "question4":"کیفیت عکس",
+            "question5":"کیفیت کتاب",
+            "answer1":rate1.rating,
+            "answer2":rate2.rating,
+            "answer3":rate3.rating,
+            "answer4":rate4.rating,
+            "answer5":rate5.rating,
+            "comment":opinion.text!
+            ] as [String : Any]
+        
+        Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
+            
+            switch response.result {
+            case .success:
+                
+                let value = response.result.value as! [String:String]
+                
+                if let status = value["Survay_Register"]
+                {
+                    if status == "true"
+                    {
+                        DispatchQueue.main.async {
+                            
+                            self.view.showToast("نظر شما ثبت شد.", position: .bottom, popTime: 2, dismissOnTap: false)
+                            self.feedBackView.removeFromSuperview()
+                        }
+                    }
+                    else
+                    {
+                        self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    }
+                }
+                else
+                {
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                
+                break
+                
+            case .failure( _):
+                DispatchQueue.main.async {
+                    
+                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                }
+                break
+            }
+            self.container.removeFromSuperview()
+        }
+    }
     
     func showMoviePopup(movie: Movie) {
         
@@ -177,8 +299,71 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         
         self.view.bringSubview(toFront: navBar)
         configTableView()
-        
         getInitData()
+        
+        checkInterview()
+        
+        
+        
+    }
+    
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+//        DispatchQueue.main.async {
+//
+//            if let url = URL(string: "http://192.168.123.100/hls/bunny.mp4/index.m3u8"){
+//
+//                print(url)
+//                var player1:AVPlayer!
+//                var controller1:AVPlayerViewController!
+//                player1 = AVPlayer(url: url)
+//                controller1=AVPlayerViewController()
+//                controller1.player=player1
+//                //controller.view.frame = self.view.frame
+//                //self.view.addSubview(controller.view)
+//                //self.addChildViewController(controller)
+//                //player.play()
+//                self.present(controller1, animated: true) {
+//                    player1.play()
+//
+//                }
+//            }
+//        }
+        
+//        if let url = URL(string: "http://omoor-daneshjooei.iut.ac.ir/sites/omoor-daneshjooei.iut.ac.ir/files/files/at.pdf") {
+//
+//            //UIApplication.shared.openURL(url)
+//
+//            let data = try! Data(contentsOf: url)
+//            //Get the local docs directory and append your local filename.
+//            var docURL = (FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask)).last as URL?
+//            docURL = (docURL?.appendingPathComponent( "myFileName_\(Date().description).pdf") as! URL)
+//
+//            //Lastly, write your file to the disk.
+//            do
+//            {
+//                try data.write(to: docURL! as URL)
+//            }
+//            catch(_)
+//            {
+//
+//            }
+//        }
+        
+        
+//        DispatchQueue.main.async {
+//            let remotePDFDocumentURLPath = "http://omoor-daneshjooei.iut.ac.ir/sites/omoor-daneshjooei.iut.ac.ir/files/files/at.pdf"
+//            let remotePDFDocumentURL = URL(string: remotePDFDocumentURLPath)!
+//            let document = PDFDocument(url: remotePDFDocumentURL)!
+//            let readerController = PDFViewController.createNew(with: document)
+//
+//            //self.navigationController?.pushViewController(readerController, animated: true)
+//
+//            let navigationController = UINavigationController(rootViewController: readerController)
+//            self.present(navigationController, animated: true, completion: nil)
+//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -353,6 +538,10 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let itemsCount:Int = data["itemsCount"] as! Int
         let movies:[AnyObject] = data["movie"] as! [AnyObject]
         
+        adType = data["advertisementtype"] as! String
+        adUrl = data["advertisementurl"] as! String
+        
+        
         self.moviesPageIndex += 1
         self.moviesPageSize = itemsCount/10 + 1
         
@@ -385,8 +574,8 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let itemsCount:Int = data["itemsCount"] as! Int
         let ebooks:[AnyObject] = data["ebooks"] as! [AnyObject]
         
-        self.musicsPageSize = itemsCount/10 + 1
-        self.musicsPageIndex += 1
+        self.ebooksPageSize = itemsCount/10 + 1
+        self.ebooksPageIndex += 1
         
         for ebook in ebooks {
             
@@ -434,8 +623,8 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         let itemsCount:Int = data["itemsCount"] as! Int
         let movies:[AnyObject] = data["movie_serials"] as! [AnyObject]
         
-        self.moviesPageSize = itemsCount/10 + 1
-        self.moviesPageIndex += 1
+        self.movieSerialsPageSize = itemsCount/10 + 1
+        self.movieSerialsPageIndex += 1
         
         for movie in movies {
             
@@ -725,4 +914,34 @@ extension MainHomeViewController{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+    
+    func checkInterview()
+    {
+        if let boool = UserDefaults.standard.value(forKey: "interviewed")
+        {
+            if boool as! Bool == true
+            {
+                
+            }
+            else
+            {
+                let count = UserDefaults.standard.value(forKey: "counter") as! Int
+                if count % 8 == 0 && count >= 8
+                {
+                    FeedBack()
+                    UserDefaults.standard.set(count + 1 , forKey: "counter")
+                }
+                else
+                {
+                    UserDefaults.standard.set(count + 1 , forKey: "counter")
+                }
+            }
+        }
+        else
+        {
+            UserDefaults.standard.set(false, forKey: "interviewed")
+            UserDefaults.standard.set(0 , forKey: "counter")
+        }
+    }
 }
+

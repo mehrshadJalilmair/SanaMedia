@@ -13,6 +13,7 @@ target 'SanaMedia' do
   pod 'LIHImageSlider'
   pod 'Cosmos', :git => 'https://github.com/marketplacer/Cosmos.git', :branch => 'swift-4.0'
   pod 'CarbonKit'
+  pod 'PDFReader'
 
   target 'SanaMediaTests' do
     inherit! :search_paths

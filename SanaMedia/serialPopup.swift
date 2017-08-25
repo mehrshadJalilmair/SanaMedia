@@ -389,7 +389,7 @@ class serialPopup: UIViewController , LIHSliderDelegate , UITableViewDataSource 
         {
             if url.characters.count > 7
             {
-                images.append(singleton.url_static_part + url)
+                images.append(url)
             }
         }
         self.sliderVc1.slider.sliderImages = images
@@ -424,7 +424,17 @@ extension serialPopup
     
     @objc func leavingComment()
     {
-        print("leavingComment")
+        self.performSegue(withIdentifier: "comment", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "comment"
+        {
+            let vc = segue.destination as! leaveComment
+            vc.type = "movie_serial"
+            vc.id = self.serial.Id
+        }
     }
     func check_like()
     {
@@ -445,6 +455,14 @@ extension serialPopup
             case .success:
                 
                 let value = response.result.value as! [String:String]
+                
+                guard let _ = value["liked"] else
+                {
+                    self.like.isEnabled = true
+                    self.user_liked_this = false
+                    self.like.setImage(UIImage(named:"heart-outline"), for: UIControlState.normal)
+                    return
+                }
                 
                 let str = value["liked"]
                 
@@ -483,8 +501,8 @@ extension serialPopup
             "token":User.getInstance().token,
             "type":"movie_serial",
             "id":self.serial.Id,
-            "like":(user_liked_this ? -1 : 1)
-            ] as [String : Any]
+            "like":(user_liked_this ? "-1" : "+1")
+        ] as [String : Any]
         
         print(body)
         Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
@@ -559,7 +577,7 @@ extension serialPopup
         
         if indexPath.row + 1 == self.comments.count {
             
-            if commentsPageSize < commentsPageIndex
+            if commentsPageSize <= commentsPageIndex
             {
                 
             }
@@ -592,7 +610,7 @@ extension serialPopup
     
     func getComments()
     {
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.serial.Id!)" ,  "\(self.pageSize)" , "\(self.commentsPageIndex+1)")
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["get_comments"]!, self.type , "\(self.serial.Id!)" ,  "\(self.commentsPageIndex+1)" , "\(self.pageSize)")
         requestToServer(url_dynamic_part: url_dynamic_part)
     }
     
@@ -602,7 +620,7 @@ extension serialPopup
         let url_dynamic_part = url_dynamic_part
         let url = Singleton.getInstance().url_static_part + url_dynamic_part
         
-        Alamofire.request(url).validate().responseJSON { response in
+        Alamofire.request(url , encoding: JSONEncoding.default).validate().responseJSON { response in
             switch response.result {
             case .success:
                 
@@ -624,7 +642,7 @@ extension serialPopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("نظری ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                 }
                 
@@ -659,7 +677,7 @@ extension serialPopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("قسمتی ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("قسمتی ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                     return
                 }
@@ -677,7 +695,7 @@ extension serialPopup
                 {
                     DispatchQueue.main.async {
                         
-                        self.view.showToast("قسمتی ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        //self.view.showToast("قسمتی ثبت نشده است!", position: .bottom, popTime: 2, dismissOnTap: false)
                     }
                 }
                 self.episodestableView.reloadData()
@@ -685,7 +703,7 @@ extension serialPopup
                 
             case .failure(let error):
                 
-                //print(error)
+                print(error)
                 break
             }
         }

@@ -8,6 +8,9 @@
 
 import UIKit
 import Alamofire
+import CoreAudio
+import AudioToolbox
+import AVFoundation
 
 final class Singleton {
     
@@ -49,7 +52,15 @@ final class Singleton {
         "movies_serial_by_genre" : "/movies_serial_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
         "music_album_by_genre" : "/music_album_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
         "like": "/users/like/",
-        "check_like":"/users/like_item/"
+        "check_like":"/users/like_item/",
+        "comment": "/users/comment/",
+    
+        "image_search":"/image_search/?param=%@&pageindex=%@&pagesize=%@",
+        "ebook_search": "/ebook_search/?param=%@&pageindex=%@&pagesize=%@",
+        "music_search":"/music_search/?param=%@&pagesize=%@&pageindex=%@",
+        "music_album_search": "/music_album_search/?param=%@&pageindex=%@&pagesize=%@",
+        "movie_search":"/movie_search/?param=%@&pageindex=%@&pagesize=%@",
+        "movie_serial_search": "/movie_serial_search/?param=%@&pageindex=%@&pagesize=%@"
     ]
     
     //: Singleton implementation
@@ -73,24 +84,31 @@ final class Singleton {
         let class_:String = requesterData["class"]!
         let function:String = requesterData["func"]!
         
+//        if url_dynamic_part.contains("get_comments")
+//        {
+//            do
+//            {
+//                let data = try Data(contentsOf: URL(string: "http://88.99.172.130:8000/get_comments/?type=news&id=129&pageindex=1&pagesize=8")!)
+//                print(data.base64EncodedString())
+//                let _data = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
+//                print(_data)
+//            }
+//            catch
+//            {
+//                
+//            }
+//        }
+        
         if requestType == .get
         {
             Alamofire.request(url).validate().responseJSON { response in
-                switch response.result {
-                case .success:
-                    
-                    let error:String = "nil"
-                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
-                    
-                case .failure(let error):
-                    
-                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
+                
+                //print(response.result.value)
+                if !response.result.isSuccess
+                {
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : ["":""] , "func":function , "error":"error"])
+                    return
                 }
-            }
-        }
-        else if requestType == RequestType.post
-        {
-            Alamofire.request(url, method: .post, parameters: body, encoding: URLEncoding.httpBody).validate().responseJSON { (response) in
                 
                 switch response.result {
                 case .success:
@@ -98,10 +116,53 @@ final class Singleton {
                     let error:String = "nil"
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
                     
-                case .failure(let error):
-                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
+//                case .failure(let error):
+//                    break
+                    
+                case .failure(_):
+                    break
                 }
             }
         }
+        else if requestType == RequestType.post
+        {
+            Alamofire.request(url, method: .post, parameters: body, encoding: URLEncoding.httpBody).validate().responseJSON { (response) in
+                
+                if !response.result.isSuccess
+                {
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : ["":""] , "func":function , "error":"error"])
+                    return
+                }
+                
+                switch response.result {
+                case .success:
+                    
+                    let error:String = "nil"
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
+                    
+                case .failure(_):
+                    break
+//                case .failure(let error):
+//                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: class_), object: nil, userInfo: [ "data" : response.result.value! , "func":function , "error":error])
+                }
+            }
+        }
+    }
+    
+    func headphone()->Bool
+    {
+        let currentRoute = AVAudioSession.sharedInstance().currentRoute
+        if currentRoute.outputs.count > 0{
+            for description in currentRoute.outputs {
+                if description.portType == AVAudioSessionPortHeadphones {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        } else {
+            return false
+        }
+        return false
     }
 }
