@@ -201,6 +201,7 @@ class albumPopup: UIViewController ,UITableViewDataSource , UITableViewDelegate{
         //h
         var heightConstraint = NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: UIScreen.main.bounds.height/2 - 10)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+        print(self.album.Picture_URLS)
         imageView.loadImageWithCasheWithUrl(self.album.Picture_URLS[0])
         
         scrollView.addSubview(playButton)
@@ -370,6 +371,12 @@ extension albumPopup
     
     @objc func leavingComment()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
+        
         self.performSegue(withIdentifier: "comment", sender: self)
     }
     
@@ -385,6 +392,7 @@ extension albumPopup
     
     func check_like()
     {
+        
         let url_dynamic_part = singleton.URLS["check_like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -430,7 +438,7 @@ extension albumPopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }
@@ -440,6 +448,12 @@ extension albumPopup
     
     @objc func Like()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
+        
         let url_dynamic_part = singleton.URLS["like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -484,7 +498,7 @@ extension albumPopup
                 }
                 else
                 {
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 
                 break
@@ -492,7 +506,7 @@ extension albumPopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }
@@ -542,6 +556,15 @@ extension albumPopup
         
         let cell = tableView.cellForRow(at: indexPath)
         cell?.selectionStyle = .none
+        
+        if tableView == tableViewMusics
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "musicPopup") as! musicPopup
+            controller.music = musics[indexPath.row]
+            self.present(controller, animated: true, completion: nil)
+            return
+        }
     }
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
     {
@@ -654,7 +677,7 @@ extension albumPopup
                 self.tableViewMusics.reloadData()
                 break
                 
-            case .failure(let error):
+            case .failure(let _):
                 
                 //print(error)
                 break

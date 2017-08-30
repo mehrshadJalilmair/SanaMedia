@@ -23,6 +23,7 @@ final class User {
             self.token = token as! String
             self.isLoggined = isLoggined as! Bool
             self.isRegistered = isRegistered as! Bool
+            self.phone = UserDefaults.standard.value(forKey: "phone") as! String
         }
     }
     
@@ -37,7 +38,7 @@ final class User {
     }
     
     //go on...
-    var token:String!
+    var token:String = ""
     var phone:String!
     var email:String!
     var pass:String!

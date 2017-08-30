@@ -20,6 +20,8 @@ class Profile: UIViewController , UITabBarDelegate , UITableViewDataSource{
     @IBOutlet var rate2: CosmosView!
     @IBOutlet var rate1: CosmosView!
     
+    @IBOutlet var mobile: UILabel!
+    
     @IBOutlet var messagesTableView: UITableView!
     var pageIndex:Int = 0
     var pageSize:Int = 10
@@ -44,6 +46,8 @@ class Profile: UIViewController , UITabBarDelegate , UITableViewDataSource{
             #selector(Logout)))
         feedBack.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(FeedBack)))
         mymessages.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(MyMessages)))
+        
+        self.mobile.text = User.getInstance().phone
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -91,7 +95,7 @@ class Profile: UIViewController , UITabBarDelegate , UITableViewDataSource{
         
         let body = [
             
-            "token":User.getInstance().token!
+            "token":User.getInstance().token
         ]
         
         Alamofire.request(url, method: .post, parameters: body, encoding:  JSONEncoding.default).validate().responseJSON { (response) in
@@ -148,7 +152,7 @@ class Profile: UIViewController , UITabBarDelegate , UITableViewDataSource{
         
         let body = [
             
-            "token":User.getInstance().token!,
+            "token":User.getInstance().token,
             "username":phone.text!
         ]
         
@@ -208,7 +212,7 @@ class Profile: UIViewController , UITabBarDelegate , UITableViewDataSource{
         
         let body = [
             
-            "token":User.getInstance().token!,
+            "token":User.getInstance().token,
             "question1":"کیفیت گرافیک سایت",
             "question2":"کیفیت ویدئو",
             "question3":"کیفیت موزیک",

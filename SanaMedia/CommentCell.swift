@@ -25,6 +25,14 @@ class CommentCell: UITableViewCell {
         view.textColor = UIColor.lightGray
         return view
     }()
+    var user:UILabel! =
+    {
+        var view = UILabel()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        //view.backgroundColor = UIColor.white
+        view.textColor = UIColor.lightGray
+        return view
+    }()
     var content:UILabel! =
     {
         var view = UILabel()
@@ -49,7 +57,7 @@ class CommentCell: UITableViewCell {
     {
         contentView.addSubview(date)
         //x
-        var horizontalConstraint = NSLayoutConstraint(item: date, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.trailing, multiplier: 1, constant: -3)
+        var horizontalConstraint = NSLayoutConstraint(item: date, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: +3)
         //y
         let verticalConstraint = NSLayoutConstraint(item: date, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.top, multiplier: 1, constant: +6)
         
@@ -75,11 +83,21 @@ class CommentCell: UITableViewCell {
         heightConstraint = NSLayoutConstraint(item: line, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: +1)
         NSLayoutConstraint.activate([horizontalConstraint, widthConstraint, heightConstraint])
         
+        contentView.addSubview(user)
+        //x
+        horizontalConstraint = NSLayoutConstraint(item: user, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.top, multiplier: 1, constant: +6)
+        //w
+        widthConstraint = NSLayoutConstraint(item: user, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: contentView, attribute: NSLayoutAttribute.trailing, multiplier: 1, constant: 0)
+        //h
+        heightConstraint = NSLayoutConstraint(item: user, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: +15)
+        NSLayoutConstraint.activate([horizontalConstraint, widthConstraint, heightConstraint])
+        
         let s:NSString = NSString(string: (comment?.Date)!)
         let Date = s.substring(with: NSRange(location: 0 , length: 16))
         self.date.text = Date
         
         self.content.text = comment.Content!
+        self.user.text = comment.User!
     }
     
     override func awakeFromNib() {

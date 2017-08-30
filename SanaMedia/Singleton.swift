@@ -24,7 +24,7 @@ final class Singleton {
     }
     
     //: api addressess
-    public let url_static_part = "http://88.99.172.130:8000"
+    public let url_static_part = "http://192.168.123.100"
     let URLS:[String:String] =
     [
         "newest_movies":"/newest_movies/?pagesize=%@&pageindex=%@&querytype=%@",
@@ -49,8 +49,8 @@ final class Singleton {
         "images_by_category" : "/images_by_category/?pagesize=%@&pageindex=%@&category_title=%@",
         "ebooks_by_category" : "/ebooks_by_category/?pagesize=%@&pageindex=%@&category_title=%@",
         "musics_by_genre" : "/musics_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
-        "movies_serial_by_genre" : "/movies_serial_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
-        "music_album_by_genre" : "/music_album_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
+        "movies_serials_by_genre" : "/movies_serials_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
+        "musics_album_by_genre" : "/musics_album_by_genre/?pagesize=%@&pageindex=%@&genre_first_level=%@",
         "like": "/users/like/",
         "check_like":"/users/like_item/",
         "comment": "/users/comment/",

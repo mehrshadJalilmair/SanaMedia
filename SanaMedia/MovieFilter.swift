@@ -168,11 +168,12 @@ class MovieFilter: UIViewController , UITableViewDelegate , UITableViewDataSourc
     {
         let splited = MovieGenres[selectedGenreIndex].split(separator: "-")
         let genre_first_level = String(splited[0])
-        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["movies_by_genre"]!, "\(pageSize)" , "\(newsPageIndex+1)" , genre_first_level)
+        let url_dynamic_part:String = String.localizedStringWithFormat(singleton.URLS["movies_by_genre"]!, "\(pageSize)" , "\(newsPageIndex+1)" , genre_first_level.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!)
         let url = Singleton.getInstance().url_static_part + url_dynamic_part
+        //let escapedString = url.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
         
         showActivityIndicatory(uiView: self.view)
-        Alamofire.request(url).validate().responseJSON { response in
+        Alamofire.request(url , method: .get , encoding: URLEncoding.default).validate().responseJSON { response in
             switch response.result {
             case .success:
                 

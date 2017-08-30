@@ -18,15 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        let audioSession = AVAudioSession.sharedInstance()
         
-        do {
-            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
-        }
-        catch {
-            print("Setting category to AVAudioSessionCategoryPlayback failed.")
-        }
+        UIApplication.shared.beginReceivingRemoteControlEvents()
         RunLoop.current.run(until: Date(timeIntervalSinceNow: 3))
         return true
     }

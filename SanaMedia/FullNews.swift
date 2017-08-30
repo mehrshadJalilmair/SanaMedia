@@ -247,6 +247,11 @@ extension FullNews
     }
     @objc func leavingComment()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
         self.performSegue(withIdentifier: "comment", sender: self)
     }
     
@@ -308,7 +313,7 @@ extension FullNews
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }
@@ -318,6 +323,11 @@ extension FullNews
     
     @objc func Like()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
         let url_dynamic_part = singleton.URLS["like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -364,7 +374,7 @@ extension FullNews
                 }
                 else
                 {
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 
                 break
@@ -372,7 +382,7 @@ extension FullNews
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }

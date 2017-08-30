@@ -390,12 +390,12 @@ class moviePopup: UIViewController , LIHSliderDelegate , UITableViewDataSource ,
         
         //add slider to container
         self.sliderVc1!.view.frame = self.slider1Container.frame
-        var images:[String] = [""]
+        var images:[String] = [String]()
         for url in self.movie.Picture_URLS
         {
             if url.characters.count > 7
             {
-                images.append(url)
+                images.append(singleton.url_static_part + url)
             }
         }
         self.sliderVc1.slider.sliderImages = images
@@ -456,7 +456,20 @@ extension moviePopup
         
         DispatchQueue.main.async {
             
-            if let url = URL(string: singleton.url_static_part + self.movie.Main_URL){
+            
+            var dd_url:String!
+            if self.movie.HLS_URL != ""
+            {
+                dd_url = self.movie.HLS_URL
+            }
+            else if self.movie.Main_URL != ""
+            {
+                dd_url = self.movie.Main_URL
+            }
+            
+            print(dd_url)
+            
+            if let url = URL(string: singleton.url_static_part + dd_url){
                 
                 print(url)
                 var player1:AVPlayer!
@@ -478,6 +491,12 @@ extension moviePopup
     
     @objc func leavingComment()
     {
+        
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
         self.performSegue(withIdentifier: "comment", sender: self)
     }
     
@@ -538,7 +557,7 @@ extension moviePopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }
@@ -548,6 +567,12 @@ extension moviePopup
     
     @objc func Like()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
+        
         let url_dynamic_part = singleton.URLS["like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -593,7 +618,7 @@ extension moviePopup
                 }
                 else
                 {
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 
                 break
@@ -601,7 +626,7 @@ extension moviePopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }

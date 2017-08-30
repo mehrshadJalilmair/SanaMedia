@@ -11,6 +11,7 @@ import Alamofire
 import AVKit
 import AVFoundation
 import EasyToast
+import MediaPlayer
 
 class musicPopup: UIViewController , UITableViewDataSource , UITableViewDelegate{
 
@@ -355,11 +356,30 @@ extension musicPopup
         
         do {
             
+            let audioSession = AVAudioSession.sharedInstance()
+            
+            do {
+                try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+                try audioSession.setActive(true)
+            }
+            catch {
+                print("Setting category to AVAudioSessionCategoryPlayback failed.")
+            }
+            
+            let cm = MPRemoteCommandCenter.shared()
+            cm.pauseCommand.isEnabled = true
+            cm.playCommand.isEnabled = true
+            cm.seekForwardCommand.isEnabled = true
+            cm.seekBackwardCommand.isEnabled = true
+            
             let playerItem = AVPlayerItem(url: _url!)
             
-            self.player = try AVPlayer(playerItem:playerItem)
+            self.player = AVPlayer(playerItem:playerItem)
             player!.volume = 1.0
             player!.play()
+            
+            //MPNowPlayingInfoCenter.default().nowPlayingInfo = [MPMediaItemPropertyTitle : self.music.Persian_Title , MPMediaItemPropertyArtist: self.music.Singer]
+            
         } catch let error as NSError {
             self.player = nil
             print(error.localizedDescription)
@@ -368,8 +388,35 @@ extension musicPopup
         }
     }
     
+    override func remoteControlReceived(with event: UIEvent?) {
+        
+        if event?.type == .remoteControl {
+            
+            if event?.subtype == .remoteControlPlay
+            {
+                if let player = self.player
+                {
+                    player.play()
+                }
+                
+            }
+            else if event?.subtype == .remoteControlPause
+            {
+                if let player = self.player
+                {
+                    player.pause()
+                }
+            }
+        }
+    }
+    
     @objc func leavingComment()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
         self.performSegue(withIdentifier: "comment", sender: self)
     }
     
@@ -384,6 +431,7 @@ extension musicPopup
     }
     func check_like()
     {
+        
         let url_dynamic_part = singleton.URLS["check_like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -429,7 +477,7 @@ extension musicPopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }
@@ -439,6 +487,12 @@ extension musicPopup
     
     @objc func Like()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
+        
         let url_dynamic_part = singleton.URLS["like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -484,7 +538,7 @@ extension musicPopup
                 }
                 else
                 {
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 
                 break
@@ -492,7 +546,7 @@ extension musicPopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }

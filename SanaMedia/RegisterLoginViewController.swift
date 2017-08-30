@@ -88,7 +88,8 @@ class RegisterLoginViewController: UIViewController {
                 {
                     if status == "true"
                     {
-                        User.getInstance().token = value["token"]
+                        self.view.showToast("با موفقیت وارد شدید!", position: .bottom, popTime: 2, dismissOnTap: false)
+                        User.getInstance().token = value["token"]!
                         User.getInstance().isLoggined = true
                         User.getInstance().phone = self.loginPhone.text!
                         User.getInstance().pass = self.loginPass.text!
@@ -162,10 +163,12 @@ class RegisterLoginViewController: UIViewController {
                         User.getInstance().email = self.email.text!
                         User.getInstance().pass = self.registerPass.text!
                         User.getInstance().phone = self.registerPhone.text!
-                        User.getInstance().token = value["token"]
+                        User.getInstance().token = value["token"]!
                         User.getInstance().isLoggined = true
                         User.getInstance().isRegistered = true
                         User.getInstance().setRegister()
+                        
+                        self.view.showToast("ثبت نام انجام شد.", position: .bottom, popTime: 2, dismissOnTap: false)
                         
                         self.dismiss(animated: true, completion: { 
                             

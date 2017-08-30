@@ -384,12 +384,12 @@ class serialPopup: UIViewController , LIHSliderDelegate , UITableViewDataSource 
         
         //add slider to container
         self.sliderVc1!.view.frame = self.slider1Container.frame
-        var images:[String] = [""]
+        var images:[String] = [String]()
         for url in self.serial.Picture_URLS
         {
             if url.characters.count > 7
             {
-                images.append(url)
+                images.append(singleton.url_static_part + url)
             }
         }
         self.sliderVc1.slider.sliderImages = images
@@ -424,6 +424,11 @@ extension serialPopup
     
     @objc func leavingComment()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
         self.performSegue(withIdentifier: "comment", sender: self)
     }
     
@@ -438,6 +443,7 @@ extension serialPopup
     }
     func check_like()
     {
+        
         let url_dynamic_part = singleton.URLS["check_like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -483,7 +489,7 @@ extension serialPopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }
@@ -493,6 +499,12 @@ extension serialPopup
     
     @objc func Like()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
+        
         let url_dynamic_part = singleton.URLS["like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -537,7 +549,7 @@ extension serialPopup
                 }
                 else
                 {
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 
                 break
@@ -545,7 +557,7 @@ extension serialPopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }
@@ -593,6 +605,15 @@ extension serialPopup
         
         let cell = tableView.cellForRow(at: indexPath)
         cell?.selectionStyle = .none
+        
+        if tableView == episodestableView
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "moviePopup") as! moviePopup
+            controller.movie = episodes[indexPath.row]
+            self.present(controller, animated: true, completion: nil)
+            return
+        }
     }
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
     {

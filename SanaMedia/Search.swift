@@ -102,6 +102,7 @@ class Search: UIViewController , UICollectionViewDataSource, UICollectionViewDel
     
     func Searching()
     {
+        let escapedString = self.seachBar.text!.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
         
         var url:String!
         var url_dynamic_part:String!
@@ -109,37 +110,39 @@ class Search: UIViewController , UICollectionViewDataSource, UICollectionViewDel
         switch searchType_ {
             
         case .movie:
-            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["movie_search"]!, self.seachBar.text! , "\(newsPageIndex + 1)" , "\(pageSize)")
+            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["movie_search"]!, escapedString! , "\(newsPageIndex + 1)" , "\(pageSize)")
             break
             
         case .music:
-            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["music_search"]!, self.seachBar.text! , "\(newsPageIndex + 1)" , "\(pageSize)")
+            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["music_search"]!, escapedString! , "\(newsPageIndex + 1)" , "\(pageSize)")
             break
             
         case .serial:
-            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["movie_serial_search"]!, self.seachBar.text! , "\(newsPageIndex + 1)" , "\(pageSize)")
+            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["movie_serial_search"]!, escapedString! , "\(newsPageIndex + 1)" , "\(pageSize)")
             break
             
         case .image:
-            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["image_search"]!, self.seachBar.text! , "\(newsPageIndex + 1)" , "\(pageSize)")
+            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["image_search"]!, escapedString! , "\(newsPageIndex + 1)" , "\(pageSize)")
             break
             
         case .album:
-            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["music_album_search"]!, self.seachBar.text! , "\(newsPageIndex + 1)" , "\(pageSize)")
+            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["music_album_search"]!, escapedString! , "\(newsPageIndex + 1)" , "\(pageSize)")
             break
             
         case .ebook:
-            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["ebook_search"]!, self.seachBar.text! , "\(newsPageIndex + 1)" , "\(pageSize)")
+            url_dynamic_part = String.localizedStringWithFormat(singleton.URLS["ebook_search"]!, escapedString! , "\(newsPageIndex + 1)" , "\(pageSize)")
             break
             
         default:
             break
         }
         
+        
         url = Singleton.getInstance().url_static_part + url_dynamic_part
+        //let escapedString = url.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
         
         showActivityIndicatory(uiView: self.view)
-        Alamofire.request(url).validate().responseJSON { response in
+        Alamofire.request(url , method: .get , encoding: URLEncoding.default).validate().responseJSON { response in
             switch response.result {
             case .success:
                 
@@ -147,7 +150,13 @@ class Search: UIViewController , UICollectionViewDataSource, UICollectionViewDel
                 
                 if let a = data["data"]
                 {
+                    self.view.showToast(a as! String, position: .bottom, popTime: 2, dismissOnTap: false)
                     if a as! String == "Empty Param"
+                    {
+                        return
+                    }
+                    
+                    if a as! String == "Bad Requests"
                     {
                         return
                     }

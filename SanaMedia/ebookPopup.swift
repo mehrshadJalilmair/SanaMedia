@@ -343,22 +343,29 @@ extension ebookPopup
         if let url = URL(string: singleton.url_static_part + self.ebook.URL) {
             
             //UIApplication.shared.openURL(url)
-            
-            let data = try! Data(contentsOf: url)
-            //Get the local docs directory and append your local filename.
-            var docURL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last as URL?
-            docURL = docURL?.appendingPathComponent( "myFileName_\(Date().description).pdf")
-            
-            //Lastly, write your file to the disk.
-            do
-            {
-                try data.write(to: docURL! as URL)
-                self.view.showToast( "در پوشه document ذخیره شد!", position: .bottom, popTime: 2, dismissOnTap: false)
-            }
-            catch(_)
-            {
+            DispatchQueue.global(qos: .userInteractive).async { //background thread
                 
+                let data = try! Data(contentsOf: url)
+                //Get the local docs directory and append your local filename.
+                var docURL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last as URL?
+                docURL = docURL?.appendingPathComponent( "myFileName_\(Date().description).pdf")
+                
+                //Lastly, write your file to the disk.
+                do
+                {
+                    try data.write(to: docURL! as URL)
+                    
+                    DispatchQueue.main.async {
+                        
+                        self.view.showToast( "در پوشه document ذخیره شد!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    }
+                }
+                catch(_)
+                {
+                    
+                }
             }
+            
         }
     }
     
@@ -376,9 +383,12 @@ extension ebookPopup
                 return
             }
             
-            webView = UIWebView(frame: CGRect(x:self.view.center.x,y:self.view.center.y,width:view.frame.size.width-40, height:view.frame.size.height-60))
+            self.view.showToast("لطفا چندثانیه منتظر بمانید!" , position: .bottom, popTime: 5, dismissOnTap: false)
+            
+            webView = UIWebView(frame: CGRect(x:self.view.center.x,y:self.view.center.y,width:view.frame.size.width-10, height:view.frame.size.height-10))
             webView.center = self.view.center
             webView.load(data, mimeType: "application/pdf", textEncodingName: "" , baseURL: url.deletingLastPathComponent())
+            webView.scalesPageToFit = true
             
             let button   = UIButton(type: .system) as UIButton
             let image = UIImage(named: "close") as UIImage?
@@ -406,6 +416,11 @@ extension ebookPopup
     
     @objc func leavingComment()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
         self.performSegue(withIdentifier: "comment", sender: self)
     }
     
@@ -420,6 +435,7 @@ extension ebookPopup
     }
     func check_like()
     {
+        
         let url_dynamic_part = singleton.URLS["check_like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -465,7 +481,7 @@ extension ebookPopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }
@@ -475,6 +491,12 @@ extension ebookPopup
     
     @objc func Like()
     {
+        if User.getInstance().token == ""
+        {
+            self.view.showToast("ابتدا از منوی سمت راست ثبت نام کنید یا وارد شوید!", position: .bottom, popTime: 2, dismissOnTap: false)
+            return
+        }
+        
         let url_dynamic_part = singleton.URLS["like"]
         let url = singleton.url_static_part + url_dynamic_part!
         
@@ -520,7 +542,7 @@ extension ebookPopup
                 }
                 else
                 {
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 
                 break
@@ -528,7 +550,7 @@ extension ebookPopup
             case .failure( _):
                 DispatchQueue.main.async {
                     
-                    self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
+                    //self.view.showToast("خطا!", position: .bottom, popTime: 2, dismissOnTap: false)
                 }
                 break
             }

@@ -470,7 +470,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5id-rd-jnq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="55"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-QN-FJl">
                                         <rect key="frame" x="343" y="31" width="24" height="24"/>
@@ -790,7 +790,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ایمیل" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-Q2-IW5" customClass="FloatLabelTextField" customModule="SanaMedia" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="نام کاریری" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-Q2-IW5" customClass="FloatLabelTextField" customModule="SanaMedia" customModuleProvider="target">
                                         <rect key="frame" x="84" y="83" width="206" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Jwr-CD-Dby"/>
@@ -967,24 +967,32 @@
                                             <action selector="close:" destination="xXl-qA-9JX" eventType="touchUpInside" id="V0C-iA-zoj"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgQ-4d-HL0">
+                                        <rect key="frame" x="166" y="25" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="1ey-JF-X9E" firstAttribute="top" secondItem="OdA-os-xtI" secondAttribute="top" constant="23" id="2jb-Il-PkC"/>
+                                    <constraint firstItem="RgQ-4d-HL0" firstAttribute="centerY" secondItem="1ey-JF-X9E" secondAttribute="centerY" id="6iq-sU-ptX"/>
                                     <constraint firstAttribute="height" constant="55" id="QUP-Sz-LCa"/>
                                     <constraint firstItem="1ey-JF-X9E" firstAttribute="leading" secondItem="OdA-os-xtI" secondAttribute="leading" constant="8" id="g9X-ca-UHe"/>
+                                    <constraint firstItem="RgQ-4d-HL0" firstAttribute="centerX" secondItem="OdA-os-xtI" secondAttribute="centerX" id="w6T-qj-0dz"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTv-kI-66h">
                                 <rect key="frame" x="0.0" y="55" width="375" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ویرایش اطلاعات حساب کاربری" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNA-kx-Cg0">
-                                        <rect key="frame" x="110" y="10" width="155.5" height="21"/>
+                                        <rect key="frame" x="78.5" y="10" width="219.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Wh8-IJ-MeL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <color key="textColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.23529411759999999" green="0.74901960779999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1000,11 +1008,11 @@
                                 <rect key="frame" x="0.0" y="231" width="375" height="40"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="خروج از حساب کاربری" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIi-fL-py4">
-                                        <rect key="frame" x="130" y="10" width="114" height="21"/>
+                                        <rect key="frame" x="108" y="10" width="160" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="1bs-rr-QhW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1021,11 +1029,11 @@
                                 <rect key="frame" x="0.0" y="279" width="375" height="40"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بازخورد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSo-Hp-oqY">
-                                        <rect key="frame" x="168" y="10" width="39" height="21"/>
+                                        <rect key="frame" x="160.5" y="10" width="55" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="j87-Bo-jkQ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1098,11 +1106,11 @@
                                 <rect key="frame" x="0.0" y="327" width="375" height="40"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="پیام ها" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCY-HH-8dK">
-                                        <rect key="frame" x="170" y="10" width="35.5" height="21"/>
+                                        <rect key="frame" x="163.5" y="10" width="49.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="2ZH-9D-WHl"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.25098039220000001" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1216,6 +1224,7 @@
                         <outlet property="feedBackView" destination="vxd-L0-koe" id="yyB-77-QWI"/>
                         <outlet property="logout" destination="LIi-fL-py4" id="rRH-sc-gmp"/>
                         <outlet property="messagesTableView" destination="iWz-Ic-SPN" id="GSR-JQ-ukK"/>
+                        <outlet property="mobile" destination="RgQ-4d-HL0" id="qpF-Q7-2cO"/>
                         <outlet property="mymessages" destination="HCY-HH-8dK" id="erb-Ci-zgN"/>
                         <outlet property="opinion" destination="Qsz-wM-u5Y" id="3kc-jF-FMf"/>
                         <outlet property="phone" destination="uFJ-sx-l06" id="Nfx-9p-ewr"/>
@@ -1529,7 +1538,7 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1430" y="-1316"/>
+            <point key="canvasLocation" x="1429.5999999999999" y="-1316.4917541229386"/>
         </scene>
         <!--Tab 1-->
         <scene sceneID="EZ2-Fw-tf8">

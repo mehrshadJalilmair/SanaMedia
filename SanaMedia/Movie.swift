@@ -21,6 +21,7 @@ class Movie: NSObject {
     var Country:String!
     var Persian_Title:String!
     var Main_URL:String!
+    var HLS_URL:String!
     var production_date:String!
     var Rate:String!
     var Duration:String!
@@ -165,6 +166,18 @@ class Movie: NSObject {
         Main_URL = {
             
             if let Main_URL = movie["Main URL"]
+            {
+                if Main_URL is NSNull
+                {
+                    return ""
+                }
+                return Main_URL as! String
+            }
+            return ""
+        }()
+        HLS_URL = {
+            
+            if let Main_URL = movie["HLS URL"]
             {
                 if Main_URL is NSNull
                 {

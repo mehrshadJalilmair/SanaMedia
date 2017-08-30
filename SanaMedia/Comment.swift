@@ -16,6 +16,7 @@ class Comment: NSObject {
     var rate:String!
     var Date:String!
     var Id:Int!
+    var User:String!
     
     init(comment:AnyObject) {
         
@@ -91,6 +92,19 @@ class Comment: NSObject {
                 return Icon as! String
             }
             return "0"
+        }()
+        
+        User = {
+            
+            if let User = comment["username"]
+            {
+                if User is NSNull
+                {
+                    return "بی نام"
+                }
+                return User as! String
+            }
+            return "بی نام"
         }()
     }
 }

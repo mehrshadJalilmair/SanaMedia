@@ -13,6 +13,7 @@ class CategoryViewController: UIViewController , CarbonTabSwipeNavigationDelegat
     
     @IBOutlet var topView: UIView!
     @IBOutlet var searchBtn: DesignableButton!
+    var carbonTabSwipeNavigation:CarbonTabSwipeNavigation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class CategoryViewController: UIViewController , CarbonTabSwipeNavigationDelegat
     func setTabs()
     {
         let items = ["فیلم", "تصویر", "کتاب" , "موزیک" , "آلبوم" , "سریال"]
-        let carbonTabSwipeNavigation = CarbonTabSwipeNavigation(items: items, delegate: self)
+        carbonTabSwipeNavigation = CarbonTabSwipeNavigation(items: items, delegate: self)
         carbonTabSwipeNavigation.insert(intoRootViewController: self)
         carbonTabSwipeNavigation.setIndicatorHeight(1.0)
         carbonTabSwipeNavigation.setIndicatorColor(UIColor(red: 255/255, green: 64/255, blue: 129/255, alpha: 1.0))
@@ -86,6 +87,36 @@ class CategoryViewController: UIViewController , CarbonTabSwipeNavigationDelegat
     
     @IBAction func goSearch(_ sender: Any) {
         
+        let index:Int = (self.carbonTabSwipeNavigation.carbonSegmentedControl?.selectedSegmentIndex)!
+        
+        switch index {
+        case 0:
+            searchType_ = .movie
+            break
+            
+        case 1:
+            searchType_ = .image
+            break
+            
+        case 3:
+            searchType_ = .music
+            break
+            
+        case 2:
+            searchType_ = .ebook
+            break
+            
+        case 5:
+            searchType_ = .serial
+            break
+            
+        case 4:
+            searchType_ = .album
+            break
+            
+        default:
+            break
+        }
         performSegue(withIdentifier: "goSearch", sender: self)
     }
 }

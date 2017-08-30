@@ -86,7 +86,7 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         
         let body = [
             
-            "token":User.getInstance().token!,
+            "token":User.getInstance().token,
             "question1":"کیفیت گرافیک سایت",
             "question2":"کیفیت ویدئو",
             "question3":"کیفیت موزیک",
@@ -387,6 +387,10 @@ class MainHomeViewController: UIViewController , UITableViewDataSource , UITable
         if let token = UserDefaults.standard.value(forKey: "token")
         {
             User.getInstance().token = token as! String
+        }
+        else
+        {
+            User.getInstance().token = ""
         }
         
         //: getting init data
